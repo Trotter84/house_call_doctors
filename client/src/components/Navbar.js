@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import {
-   Menu,
-   Icon,
-   Image
- } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import HCDLogo from '../images/HCDLogo.png';
 
 const styles = {
@@ -19,7 +16,9 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <Image style={styles.divStyle} src={HCDLogo} size='medium' />
+        <Link to={`/`}>
+          <Image style={styles.divStyle} src={HCDLogo} size='medium' />
+        </Link>
       </div>
     )
   }
