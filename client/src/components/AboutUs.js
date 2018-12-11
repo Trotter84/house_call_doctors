@@ -59,6 +59,10 @@ const styles = {
 
 class AboutUs extends Component {
 
+  componentDidMount() {
+    document.title='About Us'
+  }
+
 render() {
   return(
     <>
