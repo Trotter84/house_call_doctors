@@ -7,6 +7,7 @@ import Home from './Home';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import OurServices from './OurServices';
+import OurPrivacyPolicy from './OurPrivacyPolicy';
 import '../index.css';
 
 
@@ -31,6 +32,7 @@ class App extends Component {
         <Route exact path='/contact-us' component={ContactUs} />
         <Route exact path='/about-us' component={AboutUs} />
         <Route exact path='/our-services' component={OurServices} />
+        <Route exact path='/our-privacy-policy' component={OurPrivacyPolicy} />
         <Redirect to='/'/>
       </Switch>
       <div>
