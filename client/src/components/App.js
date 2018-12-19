@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './Home';
 import AboutUs from './AboutUs';
+import OurProviders from './OurProviders';
 import OurServices from './OurServices';
 import OurPrivacyPolicy from './OurPrivacyPolicy';
 import ContactUs from './ContactUs';
@@ -30,6 +31,7 @@ class App extends Component {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/about-us' component={AboutUs} />
+        <Route exact path='/our-providers' component={OurProviders} />
         <Route exact path='/our-services' component={OurServices} />
         <Route exact path='/our-privacy-policy' component={OurPrivacyPolicy} />
         <Route exact path='/contact-us' component={ContactUs} />
