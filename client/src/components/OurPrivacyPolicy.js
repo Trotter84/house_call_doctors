@@ -28,6 +28,13 @@ const SubText = Styled.p`
   font-size: 15px;
 `
 
+const Address = Styled.p`
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 const WhiteSpace = Styled.div`
   height: 80px;
 `
@@ -137,11 +144,17 @@ class OurPrivacyPolicy extends Component {
             <p>If you are concerned that your privacy rights may have been violated, or disagree with a decision that we made about access to your health information, you may contact us at:</p>
           </SubText>
 
+          <Address>
+            <p>House Call Doctors</p>
+            <p>522 E. 100 S. </p>
+            <p>Salt Lake City, UT 84102</p>
+            <p>(801) 485-5055</p>
+          </Address>
+
           <SubText>
             <p>We will investigate all complaints and will not retaliate against you for filing a complaint.   You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
             <p>For information on <b>HIPAA</b> laws <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html#1901" style={styles.link}><b>click here</b></a></p>
           </SubText>
-
         </MainContainer>
         <WhiteSpace>
         </WhiteSpace>

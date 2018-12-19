@@ -28,14 +28,14 @@ const AllText = Styled.div`
 `
 
 const Photo = Styled.div`
-  padding: 30px 30px 20px 0;
+  padding: 30px 30px 20px 20px;
+  width: 900px;
 `
 
 const SubTitle = Styled.h2`
   font-weight: bold;
   padding-top: 5px;
 `
-
 
 const SubText = Styled.p`
   color: #515151;
@@ -76,7 +76,7 @@ render() {
         <FlexBox>
           <AllText>
             <SubTitle>
-              <h2>OUR OFFICE</h2>
+              <h2>Our Office</h2>
             </SubTitle>
             <SubText>
               <p>Our office is open from <b>9:00 am</b> to <b>4:00 pm</b></p>

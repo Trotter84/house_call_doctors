@@ -157,7 +157,6 @@ class Home extends Component {
             </Homes>
           </Info>
         </MainContainer>
-
       </>
     );
   }
