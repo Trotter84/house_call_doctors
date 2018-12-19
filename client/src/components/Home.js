@@ -103,7 +103,6 @@ class Home extends Component {
     document.title='NEW House Call Doctors UT'
   };
 
-
   render() {
     return (
       <>

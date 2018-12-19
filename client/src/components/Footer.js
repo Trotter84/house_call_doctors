@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Styled from 'styled-components';
 
+
+
+const Color = Styled.div`
+  color: white;
+  font-weight: bold;
+  :hover{
+    color: #AF3120;
+  }
+`
 
 const styles = {
   footer:{
@@ -20,6 +30,9 @@ const styles = {
   },
 
   p:{
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
     padding: '25px 0 0 30px',
     color: '#878787',
   },
@@ -39,7 +52,7 @@ class Footer extends Component {
       <div style={styles.footer}>
         <div style={styles.container}>
           <div style={styles.box}>
-            <p style={styles.p}>Copyright © 2018 <Link to={`/`}>House Call Doctors of Utah.</Link> All rights reserved.</p>
+            <p style={styles.p}>Copyright © 2019 <Link to={`/`}><Color> &nbsp; House Call Doctors of Utah. &nbsp; </Color></Link>All rights reserved.</p>
             <div style={styles.right}>
               <p><Link to={'/'}>Home</Link> .</p>
               <p>. <Link to={'about-us'}>About Us</Link> .</p>

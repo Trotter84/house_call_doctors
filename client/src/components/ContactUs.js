@@ -5,7 +5,7 @@ import {
   Divider,
   Embed
 } from 'semantic-ui-react';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
+import ImageDivider from './ImageDivider';
 import MarkProfile from '../images/Mark-profile.png';
 import PerrineProfile from '../images/Perrine-profile.png';
 import SandraProfile from '../images/Sandra-profile.png';
@@ -95,9 +95,7 @@ class ContactUs extends Component {
   render() {
     return(
       <>
-        <div>
-          <Image src={MarkWithPatient} />
-        </div>
+        <ImageDivider />
         <MainContainer>
           <WhiteSpace>
           </WhiteSpace>
@@ -117,7 +115,7 @@ class ContactUs extends Component {
             </Profile>
             <Profile>
               <Image src={PerrineProfile} size='tiny' />
-              <p style={styles.info}><br /><b>Perrine Anderson, APRN</b><br />Pager: (801) 241-0623<br /><a href="mailto:SarahJohnson@housecalldoctorsut.com">SarahJohnson@housecalldoctorsut.com</a></p>
+              <p style={styles.info}><br /><b>Perrine Anderson, GNP</b><br />Pager: (801) 241-0623<br /><a href="mailto:SarahJohnson@housecalldoctorsut.com">SarahJohnson@housecalldoctorsut.com</a></p>
             </Profile>
             <Profile>
               <Image src={SandraProfile} size='tiny' />
