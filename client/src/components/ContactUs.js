@@ -5,7 +5,7 @@ import {
   Divider,
   Embed
 } from 'semantic-ui-react';
-import ImageDivider from './ImageDivider';
+import MarkWithPatient from '../images/markwithpatient1.jpg';
 import MarkProfile from '../images/Mark-profile.png';
 import PerrineProfile from '../images/Perrine-profile.png';
 import SandraProfile from '../images/Sandra-profile.png';
@@ -95,7 +95,9 @@ class ContactUs extends Component {
   render() {
     return(
       <>
-        <ImageDivider />
+        <div>
+          <Image src={MarkWithPatient} />
+        </div>
         <MainContainer>
           <WhiteSpace>
           </WhiteSpace>
