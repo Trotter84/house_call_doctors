@@ -12,6 +12,24 @@ const Color = Styled.div`
   }
 `
 
+const Nav = Styled.div`
+  width: 550px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: space-between;
+`
+
+const RedFade = Styled.div`
+  font-size: 13px;
+  color: white;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: #AF3120;
+  }
+`
+
 const styles = {
   footer:{
     backgroundColor: '#1C1C1C',
@@ -52,14 +70,16 @@ class Footer extends Component {
       <div style={styles.footer}>
         <div style={styles.container}>
           <div style={styles.box}>
-            <p style={styles.p}>Copyright © 2019 <Link to={`/`}><Color> &nbsp; House Call Doctors of Utah. &nbsp; </Color></Link>All rights reserved.</p>
+            <p style={styles.p}>Copyright © 2019 <Link to={`/`}><RedFade> &nbsp; House Call Doctors of Utah. &nbsp; </RedFade></Link>All rights reserved.</p>
             <div style={styles.right}>
-              <p><Link to={'/'}>Home</Link> .</p>
-              <p>. <Link to={'about-us'}>About Us</Link> .</p>
-              <p>. <Link to={'our-providers'}>Our Providers</Link> .</p>
-              <p>. <Link to={'our-services'}>Our Services</Link> .</p>
-              <p>. <Link to={'our-privacy-policy'}>Our Privacy Policy</Link> .</p>
-              <p>. <Link to={'contact-us'}>Contact Us</Link></p>
+              <Nav>
+                <Link to={'/'}><RedFade>Home</RedFade></Link>
+                <Link to={'about-us'}><RedFade>About Us</RedFade></Link>
+                <Link to={'our-providers'}><RedFade>Our Providers</RedFade></Link>
+                <Link to={'our-services'}><RedFade>Our Services</RedFade></Link>
+                <Link to={'our-privacy-policy'}><RedFade>Our Privacy Policy</RedFade></Link>
+                <Link to={'contact-us'}><RedFade>Contact Us</RedFade></Link>
+              </Nav>
             </div>
           </div>
         </div>

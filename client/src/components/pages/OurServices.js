@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
+import MarkWithPatient from '../../images/markwithpatient1.jpg';
 
 
 const MainContainer = Styled.div`
@@ -55,9 +55,8 @@ class OurServices extends Component {
             <p style={styles.points}>Providing Primary Care in the patient’s home, assisted living, and/or group home setting.</p>
             <p style={styles.points}>Your doctor is available 24/7 by pager for existing patients and their family members, care takers, and/or nurses.</p>
           </SubText>
-          <WhiteSpace>
-          </WhiteSpace>
         </MainContainer>
+        <WhiteSpace />
       </>
     )
   }

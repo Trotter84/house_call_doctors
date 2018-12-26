@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
-import HCDLogo from '../images/HCDLogo.png';
+import HCDLogo from '../../images/HCDLogo.png';
 
 
 const Nav = Styled.div`
-width: 800px;
-padding-right: 125px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-evenly;
-justify-content: space-between;
+  width: 800px;
+  padding-right: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: space-between;
 `
 
 const EachNav = Styled.div`

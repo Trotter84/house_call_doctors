@@ -5,13 +5,13 @@ import {
   Divider,
   Embed
 } from 'semantic-ui-react';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
-import MarkProfile from '../images/Mark-profile.png';
-import PerrineProfile from '../images/Perrine-profile.png';
-import SandraProfile from '../images/Sandra-profile.png';
-import RitaProfile from '../images/Rita-profile.png';
-import MarkWithFemale2 from '../images/MarkWithFemale2.jpg';
-import MarkWithMale from '../images/MarkWithMale.jpg';
+import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import MarkProfile from '../../images/Mark-profile.png';
+import PerrineProfile from '../../images/Perrine-profile.png';
+import SandraProfile from '../../images/Sandra-profile.png';
+import RitaProfile from '../../images/Rita-profile.png';
+import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
+import MarkWithMale from '../../images/MarkWithMale.jpg';
 
 
 const MainContainer = Styled.div`
@@ -144,8 +144,7 @@ class ContactUs extends Component {
             <p style={styles.directions}>Please note: our providers are never bothered by being paged. They like to know what’s going on with their patients and are very involved in each patient’s care.</p>
           </SubText>
         </MainContainer>
-        <WhiteSpace>
-        </WhiteSpace>
+        <WhiteSpace />
       </>
     )
   }

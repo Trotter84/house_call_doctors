@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
+import MarkWithPatient from '../../images/markwithpatient1.jpg';
 
 
 const MainContainer = Styled.div`
@@ -156,8 +156,7 @@ class OurPrivacyPolicy extends Component {
             <p>For information on <b>HIPAA</b> laws <a href="https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html#1901" style={styles.link}><b>click here</b></a></p>
           </SubText>
         </MainContainer>
-        <WhiteSpace>
-        </WhiteSpace>
+        <WhiteSpace />
       </>
     )
   }

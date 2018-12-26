@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
-import GroupPhoto from '../images/groupphoto.jpg';
+import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import GroupPhoto from '../../images/groupphoto.jpg';
 
 
 const MainContainer = Styled.div`
@@ -102,8 +102,7 @@ render() {
               <p>If you are a new patient, please fill out our <b>NEW PATIENT REGISTRATION</b> and return to our office 48 hours prior to your first appointment.<br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>
               <p>For fastest results, have your pharmacy fax us your refill requests to <b>801-363-1398</b> or <b>801-467-3296</b>.<br />Please allow 48-72 hours for a response.</p>
             </SubText>
-            <WhiteSpace>
-            </WhiteSpace>
+            <WhiteSpace />
           </AllText>
           <Photo>
             <div>

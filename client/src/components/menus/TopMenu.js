@@ -5,7 +5,8 @@ import Styled from 'styled-components';
 
 const Info = Styled.div`
   color: black;
-  :hover{
+  transition: all 200ms ease-in-out;
+  :hover {
     color: #AF3120;
   }
 `

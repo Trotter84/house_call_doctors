@@ -4,15 +4,15 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
-import TopMenu from './TopMenu';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import Home from './Home';
-import AboutUs from './AboutUs';
-import OurProviders from './OurProviders';
-import OurServices from './OurServices';
-import OurPrivacyPolicy from './OurPrivacyPolicy';
-import ContactUs from './ContactUs';
+import TopMenu from './menus/TopMenu';
+import Navbar from './menus/Navbar';
+import Footer from './menus/Footer';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import OurProviders from './pages/OurProviders';
+import OurServices from './pages/OurServices';
+import OurPrivacyPolicy from './pages/OurPrivacyPolicy';
+import ContactUs from './pages/ContactUs';
 import MarkInfo from './infoPages/MarkInfo';
 import PerrineInfo from './infoPages/PerrineInfo';
 import RitaInfo from './infoPages/RitaInfo';

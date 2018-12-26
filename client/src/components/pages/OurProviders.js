@@ -5,11 +5,11 @@ import {
   Divider
 } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import MarkWithPatient from '../images/markwithpatient1.jpg';
-import Mark from '../images/Mark.jpg';
-import Perrine from '../images/Perrine.jpg';
-import Sandra from '../images/Sandra.jpg';
-import Rita from '../images/Rita.jpg';
+import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import Mark from '../../images/Mark.jpg';
+import Perrine from '../../images/Perrine.jpg';
+import Sandra from '../../images/Sandra.jpg';
+import Rita from '../../images/Rita.jpg';
 
 
 const MainContainer = Styled.div`
@@ -97,8 +97,7 @@ class OurProviders extends Component {
             </Profile>
           </FullSection>
         </MainContainer>
-        <WhiteSpace>
-        </WhiteSpace>
+        <WhiteSpace />
       </>
     )
   }

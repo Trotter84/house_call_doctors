@@ -1,30 +1,11 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import DoctorDude from '../images/doctordude.jpg';
+import DoctorDude from '../../images/doctordude.jpg';
 import Styled from 'styled-components';
-import '../index.css';
+import '../../index.css';
 
 
-const styles = {
-  red:{
-    backgroundColor: '#AF3120',
-    height: '900px',
-  },
-
-  image:{
-    padding: '45px 0px 0px 25px',
-  },
-
-  h2:{
-    fontSize: '20px',
-    fontWeight: 'bold',
-  },
-
-  p:{
-    color: '#878787',
-  },
-};
 
 const MainContainer = Styled.div`
   width: 1250px;
@@ -97,6 +78,31 @@ const Icon = Styled.i`
   color: #AF3120;
 `
 
+const WhiteSpace = Styled.div`
+  height: 80px;
+`
+
+const styles = {
+  red:{
+    backgroundColor: '#AF3120',
+    height: '900px',
+  },
+
+  image:{
+    padding: '45px 0px 0px 25px',
+  },
+
+  h2:{
+    fontSize: '20px',
+    fontWeight: 'bold',
+  },
+
+  p:{
+    color: '#878787',
+  },
+};
+
+
 class Home extends Component {
 
   componentDidMount() {
@@ -156,6 +162,7 @@ class Home extends Component {
             </Homes>
           </Info>
         </MainContainer>
+        <WhiteSpace />
       </>
     );
   }
