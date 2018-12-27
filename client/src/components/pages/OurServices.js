@@ -51,7 +51,7 @@ class OurServices extends Component {
           </Title>
           <SubText>
             <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>
-            <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact Lara, Sienna, Crystal, Alexa, Katie, or Milena to schedule your free in-home exam!</p>
+            <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, <br />Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
             <p style={styles.points}>Providing Primary Care in the patient’s home, assisted living, and/or group home setting.</p>
             <p style={styles.points}>Your doctor is available 24/7 by pager for existing patients and their family members, care takers, and/or nurses.</p>
           </SubText>

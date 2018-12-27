@@ -21,7 +21,7 @@ const Nav = Styled.div`
   justify-content: space-between;
 `
 
-const RedFade = Styled.div`
+const StyledLink = Styled(Link)`
   font-size: 13px;
   color: white;
   transition: all 200ms ease-in-out;
@@ -70,15 +70,15 @@ class Footer extends Component {
       <div style={styles.footer}>
         <div style={styles.container}>
           <div style={styles.box}>
-            <p style={styles.p}>Copyright © 2019 <Link to={`/`}><RedFade> &nbsp; House Call Doctors of Utah. &nbsp; </RedFade></Link>All rights reserved.</p>
+            <p style={styles.p}>Copyright © 2019 <StyledLink to={`/`}> &nbsp; House Call Doctors of Utah. &nbsp; </StyledLink>All rights reserved.</p>
             <div style={styles.right}>
               <Nav>
-                <Link to={'/'}><RedFade>Home</RedFade></Link>
-                <Link to={'about-us'}><RedFade>About Us</RedFade></Link>
-                <Link to={'our-providers'}><RedFade>Our Providers</RedFade></Link>
-                <Link to={'our-services'}><RedFade>Our Services</RedFade></Link>
-                <Link to={'our-privacy-policy'}><RedFade>Our Privacy Policy</RedFade></Link>
-                <Link to={'contact-us'}><RedFade>Contact Us</RedFade></Link>
+                <StyledLink to={'/'}>Home</StyledLink>
+                <StyledLink to={'about-us'}>About Us</StyledLink>
+                <StyledLink to={'our-providers'}>Our Providers</StyledLink>
+                <StyledLink to={'our-services'}>Our Services</StyledLink>
+                <StyledLink to={'our-privacy-policy'}>Our Privacy Policy</StyledLink>
+                <StyledLink to={'contact-us'}>Contact Us</StyledLink>
               </Nav>
             </div>
           </div>

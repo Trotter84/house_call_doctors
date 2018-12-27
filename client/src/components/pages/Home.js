@@ -78,6 +78,15 @@ const Icon = Styled.i`
   color: #AF3120;
 `
 
+const StyledLink = Styled(Link)`
+  font-size: 13px;
+  color: black;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: #AF3120;
+  }
+`
+
 const WhiteSpace = Styled.div`
   height: 80px;
 `
@@ -148,7 +157,7 @@ class Home extends Component {
               </Icon>
               <h2 style={styles.h2}>ASSISTED LIVING</h2>
               <p style={styles.p}>
-                Our providers currently care for patients in more than 25 Assisted Living facilities across Salt Lake, Utah, and Davis Counties. <Link to={`/contact-us`}>Call us</Link> today to see if a provider is in your facility.
+                Our providers currently care for patients in more than 25 Assisted Living facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`}>Call us</StyledLink> today to see if a provider is in your facility.
               </p>
             </Living>
             <Homes>
@@ -157,7 +166,7 @@ class Home extends Component {
               </Icon>
               <h2 style={styles.h2}>GROUP HOMES</h2>
               <p style={styles.p}>
-                Our providers specialize in taking care of disabled persons in the Group Home setting. <Link to={`/contact-us`}>Call us</Link> today for an appointment.
+                Our providers specialize in taking care of disabled persons in the Group Home setting. <StyledLink to={`/contact-us`}>Call us</StyledLink> today for an appointment.
               </p>
             </Homes>
           </Info>
