@@ -3,7 +3,7 @@ import {
   Route,
   Switch,
   Redirect
-} from 'react-router-dom'
+} from 'react-router-dom';
 import TopMenu from './menus/TopMenu';
 import Navbar from './menus/Navbar';
 import Footer from './menus/Footer';
@@ -22,7 +22,7 @@ import '../index.css';
 
 const styles = {
   container:{
-    width: '1250px',
+    maxWidth: '1250px',
     margin: 'auto',
   },
 };

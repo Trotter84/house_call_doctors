@@ -6,15 +6,15 @@ import GroupPhoto from '../../images/groupphoto.jpg';
 
 
 const MainContainer = Styled.div`
-  width: 1175px;
+  max-width: 1175px;
   margin: auto;
 `
 
 const Title = Styled.h2`
-  font-weight: bold;
   padding-top: 25px;
   display: flex;
   justify-content: center;
+  font-weight: bold;
 `
 
 const FlexBox = Styled.div`
@@ -33,18 +33,19 @@ const Photo = Styled.div`
 `
 
 const SubTitle = Styled.h2`
-  font-weight: bold;
-  padding-top: 5px;
+    padding-top: 5px;
+    font-weight: bold;
 `
 
-const SubText = Styled.p`
-  color: #515151;
-  font-weight: normal;
+const SubText = Styled.div`
   padding-left: 20px;
-  font-size: 16px;
-`
 
-const SubText2 = Styled.h2`
+  p{
+    color: #515151;
+    font-weight: normal;
+    font-size: 16px;
+
+  }
 `
 
 const WhiteSpace = Styled.div`
@@ -71,20 +72,20 @@ render() {
       </div>
       <MainContainer>
         <Title>
-          <h2>YOUR GUIDE TO BETTER HEALTHCARE</h2>
+          YOUR GUIDE TO BETTER HEALTHCARE
         </Title>
         <FlexBox>
           <AllText>
             <SubTitle>
-              <h2>Our Office</h2>
+              Our Office
             </SubTitle>
             <SubText>
               <p>Our office is open from <b>9:00 am</b> to <b>4:00 pm</b></p>
               <p>Avoid the inconvenience of going to a doctor’s office.<br />Get the quality of care you deserve in the comfort of your own home.</p>
             </SubText>
-            <SubText2>
-              <h2>Primary Care in the home is our specialty</h2>
-            </SubText2>
+            <SubTitle>
+              Primary Care in the home is our specialty
+            </SubTitle>
             <SubText>
               <p>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
               <p style={styles.contacts}><b>Mark Cacciamani</b>, MD <b>801-241-4483</b></p>
@@ -94,9 +95,9 @@ render() {
               <p>These are numeric pagers, they do not accept voicemail or text messages.</p>
               <p>After dialing the pager number, dial your own phone number followed by the pound key.<br />Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>
             </SubText>
-            <SubText2>
-              <h2>Taking The Next Steps</h2>
-            </SubText2>
+            <SubTitle>
+              Taking The Next Steps
+            </SubTitle>
             <SubText>
               <p>For appointments, call our office at <b>801-485-5055</b>.<br />We have set aside a special day each month to visit you at your home or the facility where you reside.</p>
               <p>If you are a new patient, please fill out our <b>NEW PATIENT REGISTRATION</b> and return to our office 48 hours prior to your first appointment.<br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>

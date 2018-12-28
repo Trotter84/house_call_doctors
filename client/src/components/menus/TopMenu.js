@@ -50,7 +50,7 @@ class Navbar extends Component {
           <div>
             <Icon size='small' name='map marker alternate' />
           </div>
-          <a href="https://www.google.com/maps/dir//40.7668355,-111.8759418/@40.766836,-111.875942,17z?hl=en-US" target="_blank">
+          <a href="https://www.google.com/maps/dir//40.7668355,-111.8759418/@40.766836,-111.875942,17z?hl=en-US" target="_blank" rel="noopener noreferrer">
             <Info>Find Our Location</Info>
           </a>
           </Menu.Item>

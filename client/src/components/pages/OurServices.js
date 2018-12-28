@@ -5,21 +5,23 @@ import MarkWithPatient from '../../images/markwithpatient1.jpg';
 
 
 const MainContainer = Styled.div`
-  width: 1175px;
+  max-width: 1250px;
   margin: auto;
 `
 
 const Title = Styled.h2`
-  font-weight: normal;
-  font-size: 15px;
+  font-weight: bold;
   padding-top: 65px;
 `
 
-const SubText = Styled.p`
-  color: #515151;
-  font-weight: normal;
+const SubText = Styled.div`
   padding-left: 20px;
-  font-size: 16px;
+
+  p{
+    color: #515151;
+    font-weight: normal;
+    font-size: 16px;
+  }
 `
 
 const WhiteSpace = Styled.div`
@@ -47,7 +49,7 @@ class OurServices extends Component {
         </div>
         <MainContainer>
           <Title>
-            <h2>UNFORTUNATELY, WE ARE NOT CURRENTLY ACCEPTING HOUSE CALLS.<br />PLEASE CHECK BACK OFTEN AS THIS DOES CHANGE.</h2>
+            UNFORTUNATELY, WE ARE NOT CURRENTLY ACCEPTING HOUSE CALLS.<br />PLEASE CHECK BACK OFTEN AS THIS DOES CHANGE.
           </Title>
           <SubText>
             <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>

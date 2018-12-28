@@ -3,7 +3,6 @@ import Styled from 'styled-components';
 import {
   Image,
   Divider,
-  Embed
 } from 'semantic-ui-react';
 import MarkWithPatient from '../../images/markwithpatient1.jpg';
 import MarkProfile from '../../images/Mark-profile.png';
@@ -11,30 +10,30 @@ import PerrineProfile from '../../images/Perrine-profile.png';
 import SandraProfile from '../../images/Sandra-profile.png';
 import RitaProfile from '../../images/Rita-profile.png';
 import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
-import MarkWithMale from '../../images/MarkWithMale.jpg';
 
 
 const MainContainer = Styled.div`
-  width: 1175px;
+  max-width: 1250px;
   margin: auto;
 `
 
-const Info = Styled.p`
-  font-weight: normal;
-  font-size: 17px;
+const Info = Styled.div`
   padding-bottom: 0;
+
+  p{
+    font-weight: normal;
+    font-size: 17px;
+  }
 `
 
-const Title = Styled.p`
-  font-weight: normal;
-  font-size: 17px;
-`
-
-const SubText = Styled.p`
-  color: #515151;
-  font-weight: normal;
+const SubText = Styled.div`
   padding-left: 40px;
-  font-size: 16px;
+
+  p{
+    color: #515151;
+    font-weight: normal;
+    font-size: 16px;
+  }
 `
 
 const ProfileContainer = Styled.div`
@@ -51,9 +50,16 @@ const Profile = Styled.div`
   padding-bottom: 20px;
 `
 
-const SubTitle = Styled.h2`
-  font-weight: bold;
-  padding-top: 5px;
+const SubTitle = Styled.div`
+  padding: 5px 0 14px 0;
+
+  h2{
+    font-weight: bold;
+  }
+`
+
+const TopWhiteSpace = Styled.div`
+  height: 40px;
 `
 
 const WhiteSpace = Styled.div`
@@ -66,13 +72,14 @@ const styles = {
   },
 
   female2:{
-    padding: '10px 0 0 150px',
+    padding: '10px 0 0 140px',
   },
 
   map:{
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    margin: '25px',
   },
 
   info:{
@@ -99,15 +106,14 @@ class ContactUs extends Component {
           <Image src={MarkWithPatient} />
         </div>
         <MainContainer>
-          <WhiteSpace>
-          </WhiteSpace>
+          <TopWhiteSpace />
           <Info style={styles.map}>
             <div>
               <p style={styles.contact}>Office Phone: <b>(801) 485-5055</b></p>
               <p style={styles.contact}>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
               <Image style={styles.female2} src={MarkWithFemale2} />
             </div>
-            <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe title="House Call Doctors' location" width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
           </Info>
           <Divider />
           <ProfileContainer>

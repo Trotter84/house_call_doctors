@@ -5,18 +5,8 @@ import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
 
 
-const Nav = Styled.div`
-  width: 800px;
-  padding-right: 125px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  justify-content: space-between;
-`
-
-const EachNav = Styled.div`
-  font-size: 15px;
+const EachNav = Styled(Link)`
+  font-size: 17px;
   color: black;
   font-weight: bold;
   transition: all 200ms ease-in-out;
@@ -24,6 +14,23 @@ const EachNav = Styled.div`
     color: #AF3120;
     border-bottom: solid 2px;
   }
+`
+
+const Nav = Styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 25px;
+
+  ${EachNav} {
+    margin-left: 20px;
+  }
+`
+
+const StyledImage = Styled(Image)`
+  margin-left: 20px;
+  max-height: 190px;
 `
 
 
@@ -45,15 +52,15 @@ class Navbar extends Component {
     return (
       <div style={styles.container}>
         <Link to={`/`}>
-          <Image style={styles.divStyle} src={HCDLogo} size='medium' />
+          <StyledImage src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
         <Nav>
-          <Link to={'/'}><EachNav>HOME</EachNav></Link>
-          <Link to={'about-us'}><EachNav>ABOUT US</EachNav></Link>
-          <Link to={'our-providers'}><EachNav>OUR PROVIDERS</EachNav></Link>
-          <Link to={'our-services'}><EachNav>OUR SERVICES</EachNav></Link>
-          <Link to={'our-privacy-policy'}><EachNav>OUR PRIVACY POLICY</EachNav></Link>
-          <Link to={'contact-us'}><EachNav>CONTACT US</EachNav></Link>
+          <EachNav to={'/'}>HOME</EachNav>
+          <EachNav to={'about-us'}>ABOUT US</EachNav>
+          <EachNav to={'our-providers'}>OUR PROVIDERS</EachNav>
+          <EachNav to={'our-services'}>OUR SERVICES</EachNav>
+          <EachNav to={'our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
+          <EachNav to={'contact-us'}>CONTACT US</EachNav>
         </Nav>
       </div>
     )

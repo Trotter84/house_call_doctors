@@ -8,7 +8,7 @@ import '../../index.css';
 
 
 const MainContainer = Styled.div`
-  width: 1250px;
+  max-width: 1250px;
   margin: auto;
 `
 
@@ -107,7 +107,8 @@ const styles = {
   },
 
   p:{
-    color: '#878787',
+    color: '#494949',
+    fontSize: '14px',
   },
 };
 
@@ -144,7 +145,7 @@ class Home extends Component {
           <Info>
             <Visits>
               <Icon>
-                <i class='home huge icon color' />
+                <i className='home huge icon color' />
               </Icon>
               <h2 style={styles.h2}>HOME VISITS</h2>
               <p style={styles.p}>
@@ -153,7 +154,7 @@ class Home extends Component {
             </Visits>
             <Living>
               <Icon>
-                <i class='doctor huge icon color' />
+                <i className='doctor huge icon color' />
               </Icon>
               <h2 style={styles.h2}>ASSISTED LIVING</h2>
               <p style={styles.p}>
@@ -162,7 +163,7 @@ class Home extends Component {
             </Living>
             <Homes>
               <Icon>
-                <i class='hospital huge icon color' />
+                <i className='hospital huge icon color' />
               </Icon>
               <h2 style={styles.h2}>GROUP HOMES</h2>
               <p style={styles.p}>

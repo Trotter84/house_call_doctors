@@ -14,7 +14,7 @@ import DownArrow from '../../images/downArrow.png';
 
 
 const MainContainer = Styled.div`
-  width: 1175px;
+  max-width: 1250px;
   margin: auto;
 `
 
@@ -64,6 +64,10 @@ const Arrow = Styled.img`
   max-height: 10px;
 `
 
+const TopWhiteSpace = Styled.div`
+  height: 55px;
+`
+
 const WhiteSpace = Styled.div`
   height: 80px;
 `
@@ -87,16 +91,15 @@ class OurProviders extends Component {
         <div>
           <Image src={MarkWithPatient} />
         </div>
-        <WhiteSpace>
-        </WhiteSpace>
+        <TopWhiteSpace />
         <MainContainer>
           <Title>
-            <h2>OUR DOCTORS</h2>
+            OUR DOCTORS
           </Title>
           <Divider />
           <FullSection>
             <Profile>
-              <Link to={'marks-info'}><Pic><Image src={Mark} /></Pic>
+              <Link to={'marks-info'}><Pic><Image src={Mark} alt="Profile Picture of Mark" /></Pic>
               <Name>MARK J. CACCIAMANI, M.D.</Name></Link>
               <p> &nbsp; &nbsp; &nbsp; Dr. Mark Cacciamani has always had an interest in serving the underserved. He took a yearoff before attending medical school to volunteer in Southern California, aiding the Spanish-speaking community that didn’t have access to medical care.</p>
 
@@ -110,7 +113,7 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'perrines-info'}><Pic><Image src={Perrine} /></Pic>
+              <Link to={'perrines-info'}><Pic><Image src={Perrine} alt="Profile Picture of Perrine" /></Pic>
               <Name>PERRINE ANDERSON, GNP</Name></Link>
               <p> &nbsp; &nbsp; &nbsp; My experiences over the years clearly revealed the need for a unique practice which allows for continuity and collaboration of care for those living in the community who have difficulty accessing medical and psychiatric care.</p>
 
@@ -124,7 +127,7 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'sandras-info'}><Pic><Image src={Sandra} /></Pic>
+              <Link to={'sandras-info'}><Pic><Image src={Sandra} alt="Profile Picture of Sandra" /></Pic>
               <Name>SANDRA JENSE, APRN</Name></Link>
               <p> &nbsp; &nbsp; &nbsp; As a health care provider I’m devoted to helping my patients and families find a way to merge their values and goals with their medical needs. Very few people want to spend their time in a hospital or a clinic, waiting for medical care, and house calls are a way to support people’s medical needs while giving them more time to do what matters most to them.</p>
 
@@ -138,7 +141,7 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'ritas-info'}><Pic><Image src={Rita} /></Pic>
+              <Link to={'ritas-info'}><Pic><Image src={Rita} alt="Profile Picture of Rita" /></Pic>
               <Name>RITA RUTLAND, APRN</Name></Link>
               <p> &nbsp; &nbsp; &nbsp; </p>
 

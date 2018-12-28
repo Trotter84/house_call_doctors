@@ -3,30 +3,23 @@ import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 
 
-
-const Color = Styled.div`
-  color: white;
-  font-weight: bold;
-  :hover{
-    color: #AF3120;
-  }
-`
-
-const Nav = Styled.div`
-  width: 550px;
-  padding-right: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-content: space-between;
-`
-
 const StyledLink = Styled(Link)`
   font-size: 13px;
   color: white;
   transition: all 200ms ease-in-out;
   :hover {
     color: #AF3120;
+  }
+`
+
+const Nav = Styled.div`
+  margin-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  ${StyledLink} {
+    margin-left: 20px;
   }
 `
 
@@ -37,7 +30,7 @@ const styles = {
   },
 
   container:{
-    width: '1250px',
+    maxWidth: '1250px',
     margin: 'auto',
   },
 
@@ -48,9 +41,6 @@ const styles = {
   },
 
   p:{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
     padding: '25px 0 0 30px',
     color: '#878787',
   },
