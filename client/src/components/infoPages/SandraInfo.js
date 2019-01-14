@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
+import Styled from 'styled-components';
+import { Image } from 'semantic-ui-react';
+import SandraBio from '../../images/SandrasInfo.png';
 
 
-class MarkInfo extends Component {
+const WhiteSpace = Styled.div`
+  height: 80px;
+`
+
+
+class SandraInfo extends Component {
 
   render() {
     return(
-      <h1> Hello </h1>
+      <>
+        <Image src={SandraBio} />
+        <WhiteSpace />
+      </>
     )
   }
 
 };
 
-export default MarkInfo;
+export default SandraInfo;

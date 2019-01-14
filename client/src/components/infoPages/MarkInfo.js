@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
+import { Image } from 'semantic-ui-react';
+import MarkBio from '../../images/MarksInfo.png';
 
-const MainContainer = Styled.div`
-  width: 1250px;
-  margin: auto;
-`
 
 const WhiteSpace = Styled.div`
   height: 80px;
@@ -16,9 +14,7 @@ class MarkInfo extends Component {
   render() {
     return(
       <>
-        <MainContainer>
-          <h1> Hello </h1>
-        </MainContainer>
+        <Image src={MarkBio} />
         <WhiteSpace />
 
       </>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 
 
 const MainContainer = Styled.div`
@@ -67,7 +67,7 @@ class OurPrivacyPolicy extends Component {
     return(
       <>
         <div>
-          <Image src={MarkWithPatient} />
+          <Image src={HCDpageDivider} />
         </div>
         <MainContainer>
           <Title>

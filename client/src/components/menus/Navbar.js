@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
 
 
-const EachNav = Styled(Link)`
+const EachNav = Styled(NavLink)`
   font-size: 17px;
   color: black;
   font-weight: bold;
   transition: all 200ms ease-in-out;
-  :hover {
+  &:hover,&.active {
     color: #AF3120;
+  }
+  &.active {
     border-bottom: solid 2px;
   }
 `
@@ -29,7 +31,7 @@ const Nav = Styled.div`
 `
 
 const StyledImage = Styled(Image)`
-  margin-left: 20px;
+  margin: 0 0 5px 20px;
   max-height: 190px;
 `
 
@@ -55,12 +57,12 @@ class Navbar extends Component {
           <StyledImage src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
         <Nav>
-          <EachNav to={'/'}>HOME</EachNav>
-          <EachNav to={'about-us'}>ABOUT US</EachNav>
-          <EachNav to={'our-providers'}>OUR PROVIDERS</EachNav>
-          <EachNav to={'our-services'}>OUR SERVICES</EachNav>
-          <EachNav to={'our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
-          <EachNav to={'contact-us'}>CONTACT US</EachNav>
+          <EachNav exact to={'/'}>HOME</EachNav>
+          <EachNav to={'/about-us'}>ABOUT US</EachNav>
+          <EachNav to={'/our-providers'}>OUR PROVIDERS</EachNav>
+          <EachNav to={'/our-services'}>OUR SERVICES</EachNav>
+          <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
+          <EachNav to={'/contact-us'}>CONTACT US</EachNav>
         </Nav>
       </div>
     )

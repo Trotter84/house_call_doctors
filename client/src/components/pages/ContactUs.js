@@ -3,8 +3,14 @@ import Styled from 'styled-components';
 import {
   Image,
   Divider,
+  Dropdown,
+  Icon
 } from 'semantic-ui-react';
-import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import MarkDropdownMenu from '../menus/MarkDropdownMenu';
+import PerrineDropdownMenu from '../menus/PerrineDropdownMenu';
+import SandraDropdownMenu from '../menus/SandraDropdownMenu';
+import RitaDropdownMenu from '../menus/RitaDropdownMenu';
+import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import MarkProfile from '../../images/Mark-profile.png';
 import PerrineProfile from '../../images/Perrine-profile.png';
 import SandraProfile from '../../images/Sandra-profile.png';
@@ -93,6 +99,7 @@ const styles = {
   },
 }
 
+
 class ContactUs extends Component {
 
   componentDidMount() {
@@ -103,7 +110,7 @@ class ContactUs extends Component {
     return(
       <>
         <div>
-          <Image src={MarkWithPatient} />
+          <Image src={HCDpageDivider} />
         </div>
         <MainContainer>
           <TopWhiteSpace />
@@ -119,19 +126,19 @@ class ContactUs extends Component {
           <ProfileContainer>
             <Profile>
               <Image src={MarkProfile} size='tiny' />
-              <p style={styles.info}><br /><b>Mark Cacciamani, MD</b><br />Pager: (801) 241-4483<br /><a href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</a></p>
+              <MarkDropdownMenu />
             </Profile>
             <Profile>
               <Image src={PerrineProfile} size='tiny' />
-              <p style={styles.info}><br /><b>Perrine Anderson, GNP</b><br />Pager: (801) 241-0623<br /><a href="mailto:SarahJohnson@housecalldoctorsut.com">SarahJohnson@housecalldoctorsut.com</a></p>
+              <PerrineDropdownMenu />
             </Profile>
             <Profile>
               <Image src={SandraProfile} size='tiny' />
-              <p style={styles.info}><br /><b>Sandra Jense, APRN</b><br />Pager: (801) 241-0255<br /><a href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</a></p>
+              <SandraDropdownMenu />
             </Profile>
             <Profile>
               <Image src={RitaProfile} size='tiny' />
-              <p style={styles.info}><br /><b>Rita Rutland, APRN</b><br />Pager: (801) 241-0339<br /><a href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</a></p>
+              <RitaDropdownMenu />
             </Profile>
           </ProfileContainer>
           <Divider />

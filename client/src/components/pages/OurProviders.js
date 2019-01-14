@@ -4,13 +4,22 @@ import {
   Image,
   Divider
 } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
-import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import {
+  Link,
+  Route,
+  NavLink
+} from 'react-router-dom';
+import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import Mark from '../../images/Mark.jpg';
 import Perrine from '../../images/Perrine.jpg';
 import Sandra from '../../images/Sandra.jpg';
 import Rita from '../../images/Rita.jpg';
 import DownArrow from '../../images/downArrow.png';
+import MarkInfo from '../infoPages/MarkInfo';
+import PerrineInfo from '../infoPages/PerrineInfo';
+import RitaInfo from '../infoPages/RitaInfo';
+import SandraInfo from '../infoPages/SandraInfo';
+
 
 
 const MainContainer = Styled.div`
@@ -34,8 +43,8 @@ const Profile = Styled.div`
   padding: 10px 5px 0 5px;
 `
 
-const Pic = Styled.div`
-  :hover{
+const Pic = Styled(NavLink)`
+  &.active {
     transform: scale(1.02);
   }
 `
@@ -43,9 +52,6 @@ const Pic = Styled.div`
 const Name = Styled.h3`
   color: #AF3120;
   padding-bottom: 10px;
-  :hover{
-    color: black;
-  }
 `
 
 const DropArrow = Styled.div`
@@ -86,24 +92,28 @@ class OurProviders extends Component {
   }
 
   render() {
+
+    const BaseURL = this.props.match.url
+
     return(
+
       <>
         <div>
-          <Image src={MarkWithPatient} />
+          <Image src={HCDpageDivider} />
         </div>
         <TopWhiteSpace />
         <MainContainer>
           <Title>
-            OUR DOCTORS
+            OUR PROVIDERS
           </Title>
           <Divider />
           <FullSection>
             <Profile>
-              <Link to={'marks-info'}><Pic><Image src={Mark} alt="Profile Picture of Mark" /></Pic>
-              <Name>MARK J. CACCIAMANI, M.D.</Name></Link>
+              <Pic to={`${BaseURL}/mark`}><Image src={Mark} alt="Profile Picture of Mark" /></Pic>
+              <Name>MARK J. CACCIAMANI, M.D.</Name>
               <p> &nbsp; &nbsp; &nbsp; Dr. Mark Cacciamani has always had an interest in serving the underserved. He took a yearoff before attending medical school to volunteer in Southern California, aiding the Spanish-speaking community that didn’t have access to medical care.</p>
 
-              <Link to={'marks-info'}>
+              <Link to={`${BaseURL}/mark`}>
                 <DropArrow>
                   <Divider style={styles.line} />
                     <ArrowSpace><Arrow src={DownArrow}></Arrow></ArrowSpace>
@@ -113,11 +123,11 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'perrines-info'}><Pic><Image src={Perrine} alt="Profile Picture of Perrine" /></Pic>
-              <Name>PERRINE ANDERSON, GNP</Name></Link>
+              <Pic to={`${BaseURL}/perrine`}><Image src={Perrine} alt="Profile Picture of Perrine" /></Pic>
+              <Name>PERRINE ANDERSON, GNP</Name>
               <p> &nbsp; &nbsp; &nbsp; My experiences over the years clearly revealed the need for a unique practice which allows for continuity and collaboration of care for those living in the community who have difficulty accessing medical and psychiatric care.</p>
 
-              <Link to={'perrines-info'}>
+              <Link to={`${BaseURL}/perrine`}>
                 <DropArrow>
                   <Divider style={styles.line} />
                     <ArrowSpace><Arrow src={DownArrow}></Arrow></ArrowSpace>
@@ -127,11 +137,11 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'sandras-info'}><Pic><Image src={Sandra} alt="Profile Picture of Sandra" /></Pic>
-              <Name>SANDRA JENSE, APRN</Name></Link>
+              <Pic to={`${BaseURL}/sandra`}><Image src={Sandra} alt="Profile Picture of Sandra" /></Pic>
+              <Name>SANDRA JENSE, APRN</Name>
               <p> &nbsp; &nbsp; &nbsp; As a health care provider I’m devoted to helping my patients and families find a way to merge their values and goals with their medical needs. Very few people want to spend their time in a hospital or a clinic, waiting for medical care, and house calls are a way to support people’s medical needs while giving them more time to do what matters most to them.</p>
 
-              <Link to={'sandras-info'}>
+              <Link to={`${BaseURL}/sandra`}>
                 <DropArrow>
                   <Divider style={styles.line} />
                     <ArrowSpace><Arrow src={DownArrow}></Arrow></ArrowSpace>
@@ -141,11 +151,11 @@ class OurProviders extends Component {
 
             </Profile>
             <Profile>
-              <Link to={'ritas-info'}><Pic><Image src={Rita} alt="Profile Picture of Rita" /></Pic>
-              <Name>RITA RUTLAND, APRN</Name></Link>
+              <Pic to={`${BaseURL}/rita`}><Image src={Rita} alt="Profile Picture of Rita" /></Pic>
+              <Name>RITA RUTLAND, APRN</Name>
               <p> &nbsp; &nbsp; &nbsp; </p>
 
-              <Link to={'ritas-info'}>
+              <Link to={`${BaseURL}/rita`}>
                 <DropArrow>
                   <Divider style={styles.line} />
                     <ArrowSpace><Arrow src={DownArrow}></Arrow></ArrowSpace>
@@ -155,6 +165,12 @@ class OurProviders extends Component {
 
             </Profile>
           </FullSection>
+
+          <Route path={`${BaseURL}/mark`} component={MarkInfo} />
+          <Route path={`${BaseURL}/perrine`} component={PerrineInfo} />
+          <Route path={`${BaseURL}/rita`} component={RitaInfo} />
+          <Route path={`${BaseURL}/sandra`} component={SandraInfo} />
+
         </MainContainer>
         <WhiteSpace />
       </>

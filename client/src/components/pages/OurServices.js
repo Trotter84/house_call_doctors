@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import ContactField from '../ContactField';
 
 
 const MainContainer = Styled.div`
@@ -9,13 +10,32 @@ const MainContainer = Styled.div`
   margin: auto;
 `
 
-const Title = Styled.h2`
-  font-weight: bold;
+const SubSection = Styled.div`
+  display: flex;
+  flex-flow: row wrap;
   padding-top: 65px;
+  max-width: 1200px;
+`
+
+const Info = Styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  padding-left: 15px;
+`
+
+const Title = Styled.h2`
+  margin-bottom: 0px;
+`
+
+const SubTitle = Styled.h3`
+  margin-top: 9px;
+  padding-left: 20px;
+  font-size: 20px;
 `
 
 const SubText = Styled.div`
-  padding-left: 20px;
+  padding-left: 40px;
 
   p{
     color: #515151;
@@ -45,18 +65,26 @@ class OurServices extends Component {
     return(
       <>
         <div>
-          <Image src={MarkWithPatient} />
+          <Image src={HCDpageDivider} />
         </div>
         <MainContainer>
-          <Title>
-            UNFORTUNATELY, WE ARE NOT CURRENTLY ACCEPTING HOUSE CALLS.<br />PLEASE CHECK BACK OFTEN AS THIS DOES CHANGE.
-          </Title>
-          <SubText>
-            <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>
-            <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, <br />Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
-            <p style={styles.points}>Providing Primary Care in the patient’s home, assisted living, and/or group home setting.</p>
-            <p style={styles.points}>Your doctor is available 24/7 by pager for existing patients and their family members, care takers, and/or nurses.</p>
-          </SubText>
+          <SubSection>
+            <Info>
+              <Title>
+                UNFORTUNATELY, WE ARE NOT CURRENTLY ACCEPTING HOUSE CALLS.
+              </Title>
+              <SubTitle>
+                Please fill out the fields on the right & we will get back to you as openings become available.
+              </SubTitle>
+              <SubText>
+                <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>
+                <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, <br />Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
+                <p style={styles.points}>Providing Primary Care in the patient’s home, assisted living, and/or group home setting.</p>
+                <p style={styles.points}>Your doctor is available 24/7 by pager for existing patients and their family members, care takers, and/or nurses.</p>
+              </SubText>
+            </Info>
+            <ContactField />
+          </SubSection>
         </MainContainer>
         <WhiteSpace />
       </>

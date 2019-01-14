@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
+import Styled from 'styled-components';
+import { Image } from 'semantic-ui-react';
+import RitaBio from '../../images/RitasInfo.png';
 
 
-class MarkInfo extends Component {
+const WhiteSpace = Styled.div`
+  height: 80px;
+`
+
+
+class RitaInfo extends Component {
 
   render() {
     return(
-      <h1> Hello </h1>
+      <>
+        <Image src={RitaBio} />
+        <WhiteSpace />
+      </>
     )
   }
 
 };
 
-export default MarkInfo;
+export default RitaInfo;

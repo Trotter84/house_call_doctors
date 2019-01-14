@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import MarkWithPatient from '../../images/markwithpatient1.jpg';
+import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import GroupPhoto from '../../images/groupphoto.jpg';
 
 
@@ -68,7 +68,7 @@ render() {
   return(
     <>
       <div>
-        <Image src={MarkWithPatient} />
+        <Image src={HCDpageDivider} />
       </div>
       <MainContainer>
         <Title>
