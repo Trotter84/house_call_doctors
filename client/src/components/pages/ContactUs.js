@@ -6,6 +6,10 @@ import {
   Dropdown,
   Icon
 } from 'semantic-ui-react';
+import {
+  Link,
+  Route
+} from 'react-router-dom';
 import MarkDropdownMenu from '../menus/MarkDropdownMenu';
 import PerrineDropdownMenu from '../menus/PerrineDropdownMenu';
 import SandraDropdownMenu from '../menus/SandraDropdownMenu';
@@ -16,6 +20,10 @@ import PerrineProfile from '../../images/Perrine-profile.png';
 import SandraProfile from '../../images/Sandra-profile.png';
 import RitaProfile from '../../images/Rita-profile.png';
 import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
+import MarkContact from '../infoPages/MarkContact';
+import PerrineContact from '../infoPages/PerrineContact';
+import SandraContact from '../infoPages/SandraContact';
+import RitaContact from '../infoPages/RitaContact';
 
 
 const MainContainer = Styled.div`
@@ -47,6 +55,7 @@ const ProfileContainer = Styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 20px;
+  flex-wrap: wrap;
 `
 
 const Profile = Styled.div`
@@ -56,9 +65,30 @@ const Profile = Styled.div`
   padding-bottom: 20px;
 `
 
+const Names = Styled.p`
+  font-size: 16px;
+  padding-left: 6px;
+  margin-bottom: 0px;
+  max-width: 350px;
+`
+
+const Contact = Styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+const MInfo = Styled.h4`
+  color: #AF3120;
+  font-size: 14px;
+  padding-left: 10px;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: black;
+  }
+`
+
 const SubTitle = Styled.div`
   padding: 5px 0 14px 0;
-
   h2{
     font-weight: bold;
   }
@@ -88,6 +118,10 @@ const styles = {
     margin: '25px',
   },
 
+  line:{
+    margin: '6px 0 6px 3px',
+  },
+
   info:{
     fontSize: '14px',
     paddingLeft: '5px',
@@ -107,6 +141,9 @@ class ContactUs extends Component {
   }
 
   render() {
+
+    const BaseURL = this.props.match.url
+
     return(
       <>
         <div>
@@ -126,21 +163,43 @@ class ContactUs extends Component {
           <ProfileContainer>
             <Profile>
               <Image src={MarkProfile} size='tiny' />
-              <MarkDropdownMenu />
+              <Contact>
+                <Names><br /><b>Mark Cacciamani, MD</b></Names>
+                <Divider style={styles.line} />
+                <Link to={`${BaseURL}/mark`}><MInfo>More Info</MInfo></Link>
+              </Contact>
             </Profile>
             <Profile>
               <Image src={PerrineProfile} size='tiny' />
-              <PerrineDropdownMenu />
+              <Contact>
+                <Names><br /><b>Perrine Anderson, GNP</b></Names>
+                <Divider style={styles.line} />
+                <Link to={`${BaseURL}/perrine`}><MInfo>More Info</MInfo></Link>
+              </Contact>
             </Profile>
             <Profile>
               <Image src={SandraProfile} size='tiny' />
-              <SandraDropdownMenu />
+              <Contact>
+                <Names><br /><b>Sandra Jense, APRN</b></Names>
+                <Divider style={styles.line} />
+                <Link to={`${BaseURL}/sandra`}><MInfo>More Info</MInfo></Link>
+              </Contact>
             </Profile>
             <Profile>
               <Image src={RitaProfile} size='tiny' />
-              <RitaDropdownMenu />
+              <Contact>
+                <Names><br /><b>Rita Rutland, APRN</b></Names>
+                <Divider style={styles.line} />
+                <Link to={`${BaseURL}/rita`}><MInfo>More Info</MInfo></Link>
+              </Contact>
             </Profile>
           </ProfileContainer>
+
+          <Route path={`${BaseURL}/mark`} component={MarkContact} />
+          <Route path={`${BaseURL}/perrine`} component={PerrineContact} />
+          <Route path={`${BaseURL}/sandra`} component={SandraContact} />
+          <Route path={`${BaseURL}/rita`} component={RitaContact} />
+
           <Divider />
           <SubTitle>
             <h2>Instructions for paging your provider:</h2>

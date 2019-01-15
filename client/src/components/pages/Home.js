@@ -94,11 +94,12 @@ const WhiteSpace = Styled.div`
 const styles = {
   red:{
     backgroundColor: '#AF3120',
-    height: '950px',
+    height: '850px',
   },
 
   image:{
-    padding: '45px 0px 0px 10px',
+    padding: '45px 0px 0px 80px',
+    maxHeight: '700px',
   },
 
   h2:{

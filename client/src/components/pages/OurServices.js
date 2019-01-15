@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
-import ContactField from '../ContactField';
+import ContactField from '../coolStuffWorking/ContactField';
 
 
 const MainContainer = Styled.div`
