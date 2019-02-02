@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import DoctorDude from '../../images/doctordude.jpg';
+import FrontPageImage from '../coolStuffWorking/FrontPageImage';
 import Styled from 'styled-components';
+import Testimonials from '../coolStuffWorking/Testimonials';
 import '../../index.css';
 
 
@@ -10,6 +11,12 @@ import '../../index.css';
 const MainContainer = Styled.div`
   max-width: 1250px;
   margin: auto;
+`
+
+const CarouselContainer = Styled.div`
+  max-height: 600px;
+  max-width: 1166px;
+  padding: 45px 0 0 0;
 `
 
 const ContactUs = Styled.button`
@@ -33,6 +40,7 @@ const ContactArea = Styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  flex-wrap: wrap;
 `
 
 const ContactAreaLeft = Styled.div`
@@ -57,6 +65,7 @@ const Info = Styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 `
 
 const Visits = Styled.div`
@@ -88,7 +97,7 @@ const StyledLink = Styled(Link)`
 `
 
 const WhiteSpace = Styled.div`
-  height: 80px;
+  height: 120px;
 `
 
 const styles = {
@@ -103,13 +112,13 @@ const styles = {
   },
 
   h2:{
-    fontSize: '20px',
+    fontSize: '22px',
     fontWeight: 'bold',
   },
 
   p:{
     color: '#494949',
-    fontSize: '14px',
+    fontSize: '16px',
   },
 };
 
@@ -125,7 +134,9 @@ class Home extends Component {
       <>
         <div style={styles.red}>
           <MainContainer>
-              <Image style={styles.image} src={DoctorDude} />
+            <CarouselContainer>
+              <FrontPageImage />
+            </CarouselContainer>
             <ContactArea>
               <ContactAreaLeft>
                 <SectionHeader>
@@ -172,6 +183,7 @@ class Home extends Component {
               </p>
             </Homes>
           </Info>
+          <Testimonials />
         </MainContainer>
         <WhiteSpace />
       </>

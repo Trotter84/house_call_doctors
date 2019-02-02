@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import {
   Route,
   Switch,
-  Redirect
+  Redirect,
+  Router
 } from 'react-router-dom';
+import { ScrollManager, WindowScroller, ElementScroller } from 'react-scroll-manager';
+import { createBrowserHistory as createHistory } from 'history';
 import TopMenu from './menus/TopMenu';
 import Navbar from './menus/Navbar';
 import Footer from './menus/Footer';
@@ -23,28 +26,43 @@ const styles = {
   },
 };
 
+
+
 class App extends Component {
+
+  constructor() {
+    super();
+    this.history = createHistory();
+  }
 
   render() {
     return (
-      <div>
-        <TopMenu />
-        <div style={styles.container} >
-          <Navbar />
-        </div>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about-us' component={AboutUs} />
-          <Route path='/our-providers' component={OurProviders} />
-          <Route path='/our-services' component={OurServices} />
-          <Route path='/our-privacy-policy' component={OurPrivacyPolicy} />
-          <Route path='/contact-us' component={ContactUs} />
-          <Redirect to='/'/>
-        </Switch>
-        <div>
-          <Footer />
-        </div>
-      </div>
+      <ScrollManager history={this.history}>
+        <Router history={this.history}>
+          <WindowScroller>
+          <ElementScroller scrollKey="nav">
+            <div className="nav">
+              <TopMenu />
+              <div style={styles.container} >
+                <Navbar />
+              </div>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/about-us' component={AboutUs} />
+                <Route path='/our-providers' component={OurProviders} />
+                <Route path='/our-services' component={OurServices} />
+                <Route path='/our-privacy-policy' component={OurPrivacyPolicy} />
+                <Route path='/contact-us' component={ContactUs} />
+                <Redirect to='/'/>
+              </Switch>
+              <div>
+                <Footer />
+              </div>
+            </div>
+            </ElementScroller>
+            </WindowScroller>
+          </Router>
+        </ScrollManager>
     );
   }
 };
