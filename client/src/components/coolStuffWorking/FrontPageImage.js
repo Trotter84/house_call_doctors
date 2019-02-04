@@ -12,6 +12,13 @@ import MarkFrontPage3 from '../../images/MarkFrontPage3.jpg';
 const CarouselContainer = Styled.div`
   max-height: 600px;
   max-width: 1166px;
+  padding: 0 0 100px 70px;
+
+`
+
+const Photo = Styled.div`
+  max-height: 600px;
+  max-width: 1166px;
 `
 
 
@@ -19,19 +26,16 @@ class FrontPageImage extends Component {
     render() {
         return (
           <CarouselContainer>
-            <Carousel autoplay>
-                <div>
-                  <Image src={MarkFrontPage1} />
-                </div>
-                <div>
-                  <Image src={MarkFrontPage2} />
-                </div>
-                <div>
-                  <Image src={MarkFrontPage3} />
-                </div>
-                <div>
-                  <img />
-                </div>
+            <Carousel autoPlay interval={4000} showThumbs={false} infiniteLoop>
+                <Photo>
+                  <img src={MarkFrontPage1} />
+                </Photo>
+                <Photo>
+                  <img src={MarkFrontPage2} />
+                </Photo>
+                <Photo>
+                  <img src={MarkFrontPage3} />
+                </Photo>
             </Carousel>
           </CarouselContainer>
         );

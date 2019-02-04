@@ -40,7 +40,6 @@ class App extends Component {
       <ScrollManager history={this.history}>
         <Router history={this.history}>
           <WindowScroller>
-          <ElementScroller scrollKey="nav">
             <div className="nav">
               <TopMenu />
               <div style={styles.container} >
@@ -59,7 +58,6 @@ class App extends Component {
                 <Footer />
               </div>
             </div>
-            </ElementScroller>
             </WindowScroller>
           </Router>
         </ScrollManager>

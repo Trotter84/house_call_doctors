@@ -8,14 +8,19 @@ const WhiteSpace = Styled.div`
   height: 80px;
 `
 
+const BlackBox = Styled.div`
+  height: 500px;
+  background-color: black;
+`
+
 
 class MarkInfo extends Component {
 
   render() {
     return(
       <>
-        <Image src={MarkBio} />
-        <WhiteSpace />
+        <BlackBox>
+        </BlackBox>
 
       </>
     )

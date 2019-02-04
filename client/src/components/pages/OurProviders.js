@@ -43,7 +43,7 @@ const Profile = Styled.div`
   padding: 10px 5px 0 5px;
 `
 
-const Pic = Styled(NavLink)`
+const Pic = Styled.a`
   &.active {
     transform: scale(1.02);
   }
@@ -68,6 +68,13 @@ const Arrow = Styled.img`
   color: #9e9e9e;
   max-width: 50px;
   max-height: 10px;
+`
+
+const InfoSection = Styled.div`
+  display: none;
+  :target {
+    display: block;
+  }
 `
 
 const TopWhiteSpace = Styled.div`
@@ -109,7 +116,7 @@ class OurProviders extends Component {
           <Divider />
           <FullSection>
             <Profile>
-              <Pic to={`${BaseURL}/mark`}><Image src={Mark} alt="Profile Picture of Mark" /></Pic>
+              <Pic href={`#mark`}><Image src={Mark} alt="Profile Picture of Mark" /></Pic>
               <Name>MARK J. CACCIAMANI, M.D.</Name>
               <p> &nbsp; &nbsp; &nbsp; Dr. Mark Cacciamani has always had an interest in serving the underserved. He took a yearoff before attending medical school to volunteer in Southern California, aiding the Spanish-speaking community that didn’t have access to medical care.</p>
 
@@ -166,7 +173,7 @@ class OurProviders extends Component {
             </Profile>
           </FullSection>
 
-          <Route path={`${BaseURL}/mark`} component={MarkInfo} />
+          <InfoSection id='mark' children={<MarkInfo />} />
           <Route path={`${BaseURL}/perrine`} component={PerrineInfo} />
           <Route path={`${BaseURL}/rita`} component={RitaInfo} />
           <Route path={`${BaseURL}/sandra`} component={SandraInfo} />

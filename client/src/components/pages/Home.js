@@ -48,7 +48,7 @@ const ContactAreaLeft = Styled.div`
 `
 const SectionHeader = Styled.h1`
   color: white;
-  padding: 20px 0 0 25px;
+  padding: 80px 0 0 25px;
   margin-bottom: 5px;
   font-weight: normal;
 `
@@ -106,6 +106,10 @@ const styles = {
     height: '850px',
   },
 
+  contactUs:{
+    padding: '60px',
+  },
+
   image:{
     padding: '45px 0px 0px 80px',
     maxHeight: '700px',
@@ -146,7 +150,7 @@ class Home extends Component {
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
                 </Section>
               </ContactAreaLeft>
-              <Link to={`/contact-us`}>
+              <Link to={`/contact-us`} style={styles.contactUs}>
                 <ContactUs>CONTACT US</ContactUs>
               </Link>
             </ContactArea>
