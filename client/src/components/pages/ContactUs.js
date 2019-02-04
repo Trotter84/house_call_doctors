@@ -19,6 +19,7 @@ import MarkProfile from '../../images/Mark-profile.png';
 import PerrineProfile from '../../images/Perrine-profile.png';
 import SandraProfile from '../../images/Sandra-profile.png';
 import RitaProfile from '../../images/Rita-profile.png';
+import EdieProfile from '../../images/Edie-profile.png';
 import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
 import MarkContact from '../infoPages/MarkContact';
 import PerrineContact from '../infoPages/PerrineContact';
@@ -134,6 +135,35 @@ const styles = {
 }
 
 
+const profiles = [
+  {
+    name: 'Mark Cacciamani, MD',
+    linkName: 'mark',
+    image: MarkProfile,
+  },
+  {
+    name: 'Perrine Anderson, GNP',
+    linkName: 'perrine',
+    image: PerrineProfile,
+  },
+  {
+    name: 'Sandra Jense, APRN',
+    linkName: 'sandra',
+    image: SandraProfile,
+  },
+  {
+    name: 'Rita Rutland, APRN',
+    linkName: 'rita',
+    image: RitaProfile,
+  },
+  {
+    name: 'Edie',
+    linkName: 'edie',
+    image: EdieProfile,
+  },
+]
+
+
 class ContactUs extends Component {
 
   componentDidMount() {
@@ -161,38 +191,20 @@ class ContactUs extends Component {
           </Info>
           <Divider />
           <ProfileContainer>
-            <Profile>
-              <Image src={MarkProfile} size='tiny' />
-              <Contact>
-                <Names><br /><b>Mark Cacciamani, MD</b></Names>
-                <Divider style={styles.line} />
-                <Link to={`${BaseURL}/mark`}><MInfo>More Info</MInfo></Link>
-              </Contact>
-            </Profile>
-            <Profile>
-              <Image src={PerrineProfile} size='tiny' />
-              <Contact>
-                <Names><br /><b>Perrine Anderson, GNP</b></Names>
-                <Divider style={styles.line} />
-                <Link to={`${BaseURL}/perrine`}><MInfo>More Info</MInfo></Link>
-              </Contact>
-            </Profile>
-            <Profile>
-              <Image src={SandraProfile} size='tiny' />
-              <Contact>
-                <Names><br /><b>Sandra Jense, APRN</b></Names>
-                <Divider style={styles.line} />
-                <Link to={`${BaseURL}/sandra`}><MInfo>More Info</MInfo></Link>
-              </Contact>
-            </Profile>
-            <Profile>
-              <Image src={RitaProfile} size='tiny' />
-              <Contact>
-                <Names><br /><b>Rita Rutland, APRN</b></Names>
-                <Divider style={styles.line} />
-                <Link to={`${BaseURL}/rita`}><MInfo>More Info</MInfo></Link>
-              </Contact>
-            </Profile>
+
+      {profiles.map(profile => {
+        return(
+          <Profile>
+            <Image src={profile.image} size='tiny' />
+            <Contact>
+              <Names><br /><b>{profile.name}</b></Names>
+              <Divider style={styles.line} />
+              <Link to={`${BaseURL}/${profile.linkName}`}><MInfo>More Info</MInfo></Link>
+            </Contact>
+          </Profile>
+        )
+      })}
+
           </ProfileContainer>
 
           <Route path={`${BaseURL}/mark`} component={MarkContact} />
