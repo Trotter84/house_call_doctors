@@ -10,10 +10,6 @@ import {
   Link,
   Route
 } from 'react-router-dom';
-import MarkDropdownMenu from '../menus/MarkDropdownMenu';
-import PerrineDropdownMenu from '../menus/PerrineDropdownMenu';
-import SandraDropdownMenu from '../menus/SandraDropdownMenu';
-import RitaDropdownMenu from '../menus/RitaDropdownMenu';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import MarkProfile from '../../images/Mark-profile.png';
 import PerrineProfile from '../../images/Perrine-profile.png';
@@ -25,6 +21,7 @@ import MarkContact from '../infoPages/MarkContact';
 import PerrineContact from '../infoPages/PerrineContact';
 import SandraContact from '../infoPages/SandraContact';
 import RitaContact from '../infoPages/RitaContact';
+import EdieContact from '../infoPages/EdieContact';
 
 
 const MainContainer = Styled.div`
@@ -105,11 +102,11 @@ const WhiteSpace = Styled.div`
 
 const styles = {
   contact:{
-    paddingLeft: '20px',
+    paddingLeft: '150px',
   },
 
   female2:{
-    padding: '10px 0 0 140px',
+    padding: '10px 0 0 130px',
   },
 
   map:{
@@ -140,26 +137,31 @@ const profiles = [
     name: 'Mark Cacciamani, MD',
     linkName: 'mark',
     image: MarkProfile,
+    contact: MarkContact,
   },
   {
     name: 'Perrine Anderson, GNP',
     linkName: 'perrine',
     image: PerrineProfile,
+    contact: PerrineContact,
   },
   {
     name: 'Sandra Jense, APRN',
     linkName: 'sandra',
     image: SandraProfile,
+    contact: SandraContact,
   },
   {
     name: 'Rita Rutland, APRN',
     linkName: 'rita',
     image: RitaProfile,
+    contact: RitaContact,
   },
   {
     name: 'Edie',
     linkName: 'edie',
     image: EdieProfile,
+    contact: EdieContact,
   },
 ]
 
@@ -191,27 +193,24 @@ class ContactUs extends Component {
           </Info>
           <Divider />
           <ProfileContainer>
-
-      {profiles.map(profile => {
-        return(
-          <Profile>
-            <Image src={profile.image} size='tiny' />
-            <Contact>
-              <Names><br /><b>{profile.name}</b></Names>
-              <Divider style={styles.line} />
-              <Link to={`${BaseURL}/${profile.linkName}`}><MInfo>More Info</MInfo></Link>
-            </Contact>
-          </Profile>
-        )
-      })}
-
+            {profiles.map(profile => {
+              return(
+                <Profile>
+                  <Image src={profile.image} size='tiny' />
+                  <Contact>
+                    <Names><br /><b>{profile.name}</b></Names>
+                    <Divider style={styles.line} />
+                    <Link to={`${BaseURL}/${profile.linkName}`}><MInfo>More Info</MInfo></Link>
+                  </Contact>
+                </Profile>
+              )
+            })}
           </ProfileContainer>
-
-          <Route path={`${BaseURL}/mark`} component={MarkContact} />
-          <Route path={`${BaseURL}/perrine`} component={PerrineContact} />
-          <Route path={`${BaseURL}/sandra`} component={SandraContact} />
-          <Route path={`${BaseURL}/rita`} component={RitaContact} />
-
+            {profiles.map(profile => {
+              return(
+                <Route path={`${BaseURL}/${profile.linkName}`} component={profile.contact} />
+              )
+            })}
           <Divider />
           <SubTitle>
             <h2>Instructions for paging your provider:</h2>

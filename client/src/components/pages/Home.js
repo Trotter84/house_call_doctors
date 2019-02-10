@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import FrontPageImage from '../coolStuffWorking/FrontPageImage';
 import Styled from 'styled-components';

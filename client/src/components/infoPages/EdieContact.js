@@ -6,7 +6,7 @@ import {
   Route,
   NavLink
 } from 'react-router-dom';
-import SandraProfile from '../../images/Sandra-profile.png';
+import EdieProfile from '../../images/Edie-profile.png';
 
 
 const WhiteSpace = Styled.div`
@@ -61,28 +61,18 @@ const styles = {
   },
 }
 
-class SandraContact extends Component {
+class EdieContact extends Component {
 
 
   render() {
     return(
       <>
         <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
-          <Modal.Header>Sandra Jense</Modal.Header>
+          <Modal.Header>Edie</Modal.Header>
           <Modal.Content image>
-            <Image wrapped src={SandraProfile} size='tiny' />
+            <Image wrapped src={EdieProfile} size='tiny' />
             <Modal.Description>
-              <Info>
-                <Left>
-                  <p style={styles.info}>Office MA: <b>Terra Jacobs</b></p>
-                  <p style={styles.info}>Pager: <b>(801) 485-5055</b> ext: <b>1</b></p>
-                  <p style={styles.info}><Email href="mailto:Sarahjohnson@housecalldoctorsut.com">Sarahjohnson@housecalldoctorsut.com</Email></p>
-                </Left>
-                <Right>
-                  <p style={styles.info}>Field MA: <b>Kirby Trombetti</b></p>
-                  <p style={styles.info}><Email href="mailto:Kirby@housecalldoctorsut.com">Kirby@housecalldoctorsut.com</Email></p>
-                </Right>
-              </Info>
+
             </Modal.Description>
           </Modal.Content>
         </Modal>
@@ -91,4 +81,4 @@ class SandraContact extends Component {
   }
 };
 
-export default SandraContact;
+export default EdieContact;

@@ -65,8 +65,8 @@ class Footer extends Component {
               <Nav>
                 <StyledLink to={'/'}>Home</StyledLink>
                 <StyledLink to={'about-us'}>About Us</StyledLink>
-                <StyledLink to={'our-providers'}>Our Providers</StyledLink>
                 <StyledLink to={'our-services'}>Our Services</StyledLink>
+                <StyledLink to={'our-providers'}>Our Providers</StyledLink>
                 <StyledLink to={'our-privacy-policy'}>Our Privacy Policy</StyledLink>
                 <StyledLink to={'contact-us'}>Contact Us</StyledLink>
               </Nav>

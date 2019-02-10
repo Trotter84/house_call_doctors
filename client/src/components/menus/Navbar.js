@@ -59,8 +59,8 @@ class Navbar extends Component {
         <Nav>
           <EachNav exact to={'/'}>HOME</EachNav>
           <EachNav to={'/about-us'}>ABOUT US</EachNav>
-          <EachNav to={'/our-providers'}>OUR PROVIDERS</EachNav>
-          <EachNav to={'/our-services'}>OUR SERVICES</EachNav>
+          <EachNav to={'/our-services'}>PRIMARY CARE</EachNav>
+          <EachNav to={'/our-providers'}>IN HOME ASSESSMENTS</EachNav>
           <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
           <EachNav to={'/contact-us'}>CONTACT US</EachNav>
         </Nav>

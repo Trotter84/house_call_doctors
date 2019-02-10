@@ -70,9 +70,6 @@ class OurServices extends Component {
         <MainContainer>
           <SubSection>
             <Info>
-              <Title>
-                UNFORTUNATELY, WE ARE NOT CURRENTLY ACCEPTING HOUSE CALLS.
-              </Title>
               <SubTitle>
                 Please fill out the fields on the right & we will get back to you as openings become available.
               </SubTitle>
