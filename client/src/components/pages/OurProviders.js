@@ -71,6 +71,11 @@ const Bio = Styled.p`
   max-width: 600px;
 `
 
+const Info = Styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 const TopWhiteSpace = Styled.div`
   height: 55px;
 `
@@ -109,7 +114,7 @@ class OurProviders extends Component {
         <TopWhiteSpace />
         <MainContainer>
           <Title>
-            OUR PROVIDERS
+            PRIMARY CARE PROVIDERS
           </Title>
           <Divider />
           <FullSection>
@@ -118,7 +123,7 @@ class OurProviders extends Component {
                 <Profile>
                   <Image src={profile.image} alt={`Profile Picture of ${profile.shortName}`} />
                   <Name>{profile.name}</Name>
-                  <p> &nbsp; &nbsp; &nbsp; {profile.bio}</p>
+                  <p> &nbsp; &nbsp; &nbsp; {profile.shortBio}</p>
                   <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
                     <Modal.Header>{profile.name}</Modal.Header>
                     <Modal.Content image>
@@ -126,6 +131,20 @@ class OurProviders extends Component {
                       <Modal.Description>
                         <Bio>{profile.bio}</Bio>
                         <Divider style={styles.divider}/>
+                        <h3>Education and Experience</h3>
+                        <Info>
+                          <div>
+                            <Bio>{profile.edu1}</Bio>
+                            <Bio>{profile.edu2}</Bio>
+                            <Bio>{profile.edu3}</Bio>
+                            <Bio>{profile.edu4}</Bio>
+                            <Bio>{profile.edu5}</Bio>
+                            <Bio>{profile.edu6}</Bio>
+                            <Bio>{profile.edu7}</Bio>
+                            <Bio>{profile.edu8}</Bio>
+                          </div>
+                          <Divider vertical />
+                        </Info>
                       </Modal.Description>
                     </Modal.Content>
                   </Modal>
@@ -134,6 +153,11 @@ class OurProviders extends Component {
             })}
 
           </FullSection>
+          <WhiteSpace />
+          <Title>
+            IN HOUSE ASSESSMENT PROVIDERS
+          </Title>
+          <Divider />
 
         </MainContainer>
         <WhiteSpace />

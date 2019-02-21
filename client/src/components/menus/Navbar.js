@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'semantic-ui-react';
+import { Image, Dropdown, Menu } from 'semantic-ui-react';
 import { NavLink, Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
@@ -46,7 +46,21 @@ const styles = {
   divStyle:{
     margin: '0px 0px 0px 10px'
   },
+
+  menu:{
+    backgroundColor: ''
+  },
 }
+
+const options1 = [
+  { key: 1, text: 'Primary Care', value: 1 },
+  { key: 2, text: 'In House Assessments', value: 2 },
+]
+
+const options2 = [
+  { key: 3, text: 'Primary Care', value: 2 },
+  { key: 4, text: 'In House Assessments', value: 3 },
+]
 
 class Navbar extends Component {
 
@@ -59,8 +73,8 @@ class Navbar extends Component {
         <Nav>
           <EachNav exact to={'/'}>HOME</EachNav>
           <EachNav to={'/about-us'}>ABOUT US</EachNav>
-          <EachNav to={'/our-services'}>PRIMARY CARE</EachNav>
-          <EachNav to={'/our-providers'}>IN HOME ASSESSMENTS</EachNav>
+          <EachNav to={'/our-providers'}><Dropdown text='OUR PROVIDERS' options={options2} icon={false} simple item /></EachNav>
+          <EachNav to={'/our-services'}><Dropdown style={styles.menu} text='OUR SERVICES' options={options1} setSelected={'Our Providers'} icon={false} simple item /></EachNav>
           <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
           <EachNav to={'/contact-us'}>CONTACT US</EachNav>
         </Nav>

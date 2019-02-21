@@ -24,11 +24,7 @@ const Info = Styled.div`
   padding-left: 15px;
 `
 
-const Title = Styled.h2`
-  margin-bottom: 0px;
-`
-
-const SubTitle = Styled.h3`
+const Title = Styled.h3`
   margin-top: 9px;
   padding-left: 20px;
   font-size: 20px;
@@ -70,9 +66,9 @@ class OurServices extends Component {
         <MainContainer>
           <SubSection>
             <Info>
-              <SubTitle>
+              <Title>
                 Please fill out the fields on the right & we will get back to you as openings become available.
-              </SubTitle>
+              </Title>
               <SubText>
                 <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>
                 <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, <br />Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
