@@ -5,7 +5,7 @@ import {
   Redirect,
   Router
 } from 'react-router-dom';
-import { ScrollManager, WindowScroller, ElementScroller } from 'react-scroll-manager';
+import { ScrollManager, WindowScroller } from 'react-scroll-manager';
 import { createBrowserHistory as createHistory } from 'history';
 import TopMenu from './menus/TopMenu';
 import Navbar from './menus/Navbar';

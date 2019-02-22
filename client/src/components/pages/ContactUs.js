@@ -3,25 +3,12 @@ import Styled from 'styled-components';
 import {
   Image,
   Divider,
-  Dropdown,
-  Icon
+  Modal,
 } from 'semantic-ui-react';
-import {
-  Link,
-  Route
-} from 'react-router-dom';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
-import MarkProfile from '../../images/Mark-profile.png';
-import PerrineProfile from '../../images/Perrine-profile.png';
-import SandraProfile from '../../images/Sandra-profile.png';
-import RitaProfile from '../../images/Rita-profile.png';
-import EdieProfile from '../../images/Edie-profile.png';
 import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
-import MarkContact from '../infoPages/MarkContact';
-import PerrineContact from '../infoPages/PerrineContact';
-import SandraContact from '../infoPages/SandraContact';
-import RitaContact from '../infoPages/RitaContact';
-import EdieContact from '../infoPages/EdieContact';
+import profiles from '../ProfileInfo';
+
 
 
 const MainContainer = Styled.div`
@@ -53,6 +40,7 @@ const ProfileContainer = Styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 20px;
+  min-width: 1250px;
   flex-wrap: wrap;
 `
 
@@ -64,7 +52,7 @@ const Profile = Styled.div`
 `
 
 const Names = Styled.p`
-  font-size: 16px;
+  font-size: 14.5px;
   padding-left: 6px;
   margin-bottom: 0px;
   max-width: 350px;
@@ -75,14 +63,11 @@ const Contact = Styled.div`
   flex-direction: column;
 `
 
-const MInfo = Styled.h4`
-  color: #AF3120;
-  font-size: 14px;
-  padding-left: 10px;
-  transition: all 200ms ease-in-out;
-  :hover {
-    color: black;
-  }
+const InsideInfo = Styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 35px;
 `
 
 const SubTitle = Styled.div`
@@ -90,6 +75,26 @@ const SubTitle = Styled.div`
   h2{
     font-weight: bold;
   }
+`
+
+const InfoBtn = Styled.a`
+  font-size: 13px;
+  font-weight: bold;
+  color: #AF3120;
+  padding-left: 10px;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: black;
+    cursor: pointer;
+  }
+`
+
+const Left = Styled.div`
+  padding-right: 0px;
+`
+
+const Right = Styled.div`
+  padding-left: 70px;
 `
 
 const TopWhiteSpace = Styled.div`
@@ -132,40 +137,6 @@ const styles = {
 }
 
 
-const profiles = [
-  {
-    name: 'Mark Cacciamani, MD',
-    linkName: 'mark',
-    image: MarkProfile,
-    contact: MarkContact,
-  },
-  {
-    name: 'Perrine Anderson, GNP',
-    linkName: 'perrine',
-    image: PerrineProfile,
-    contact: PerrineContact,
-  },
-  {
-    name: 'Sandra Jense, APRN',
-    linkName: 'sandra',
-    image: SandraProfile,
-    contact: SandraContact,
-  },
-  {
-    name: 'Rita Rutland, APRN',
-    linkName: 'rita',
-    image: RitaProfile,
-    contact: RitaContact,
-  },
-  {
-    name: 'Edie',
-    linkName: 'edie',
-    image: EdieProfile,
-    contact: EdieContact,
-  },
-]
-
-
 class ContactUs extends Component {
 
   componentDidMount() {
@@ -173,8 +144,6 @@ class ContactUs extends Component {
   }
 
   render() {
-
-    const BaseURL = this.props.match.url
 
     return(
       <>
@@ -196,21 +165,35 @@ class ContactUs extends Component {
             {profiles.map(profile => {
               return(
                 <Profile>
-                  <Image src={profile.image} size='tiny' />
+                  <Image src={profile.profileImage} size='tiny' />
                   <Contact>
                     <Names><br /><b>{profile.name}</b></Names>
                     <Divider style={styles.line} />
-                    <Link to={`${BaseURL}/${profile.linkName}`}><MInfo>More Info</MInfo></Link>
+                    <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
+                      <Modal.Header>{profile.name}</Modal.Header>
+                      <Modal.Content image>
+                        <Image wrapped src={profile.profileImage} size='tiny' />
+                        <Modal.Description>
+                          <InsideInfo>
+                            <Left>
+                              <p style={styles.info}>Office MA: <b>{profile.info1}</b></p>
+                              <p style={styles.info}>Pager: <b>{profile.info2}</b></p>
+                              <p style={styles.info}>{profile.info3}</p>
+                            </Left>
+                            <Right>
+                              <p style={styles.info}>Field MA: <b>{profile.info4}</b></p>
+                              <p style={styles.info}>{profile.info5}</p>
+                            </Right>
+                          </InsideInfo>
+                        </Modal.Description>
+                      </Modal.Content>
+                    </Modal>
                   </Contact>
                 </Profile>
               )
             })}
           </ProfileContainer>
-            {profiles.map(profile => {
-              return(
-                <Route path={`${BaseURL}/${profile.linkName}`} component={profile.contact} />
-              )
-            })}
+
           <Divider />
           <SubTitle>
             <h2>Instructions for paging your provider:</h2>
