@@ -61,6 +61,10 @@ const TopWhiteSpace = Styled.div`
   height: 55px;
 `
 
+const HalfWhiteSpace = Styled.div`
+  height: 40px;
+`
+
 const WhiteSpace = Styled.div`
   height: 80px;
 `
@@ -129,9 +133,8 @@ class OurProviders extends Component {
                 </Profile>
               )
             })}
-
           </FullSection>
-          <WhiteSpace />
+          <HalfWhiteSpace />
           <Title>
             IN HOUSE ASSESSMENT PROVIDERS
           </Title>
