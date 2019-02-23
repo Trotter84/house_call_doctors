@@ -50,6 +50,10 @@ const Points = Styled.div`
   padding-left: 100px;
 `
 
+const QuarterWhiteSpace = Styled.div`
+  height: 20px;
+`
+
 const HalfWhiteSpace = Styled.div`
   height: 40px;
 `
@@ -92,7 +96,7 @@ class OurServices extends Component {
             </Info>
             <ContactField />
           </SubSection>
-          <HalfWhiteSpace />
+          <QuarterWhiteSpace />
           <Title>
             OUR PROVIDER SERVICES
           </Title>
@@ -100,8 +104,9 @@ class OurServices extends Component {
           <HalfWhiteSpace />
           <SubText>
             <p>
-              House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.  Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.   We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care   We work with a number of companies that provide services in the home.   These services include but are not limited to:
+              House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
             </p>
+            <p style={styles.points}>These services include but are not limited to:</p>
             <Points>
               <p>• X-ray</p>
               <p>• Ultrasound</p>
@@ -114,7 +119,8 @@ class OurServices extends Component {
               <p>• Talk Therapy</p>
               <p>• Home Health, Hospice, and much more.</p>
             </Points>
-            <p style={styles.points}>Please contact our office to schedule an appointment!</p>
+            <br />
+            <p style={styles.points}><b>Please contact our office to schedule an appointment!</b></p>
           </SubText>
           <HalfWhiteSpace />
           <Title>
@@ -122,9 +128,12 @@ class OurServices extends Component {
           </Title>
           <Divider />
           <SubText>
-            <p>
-              Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.  These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.  During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, and take basic vital signs. There is no fee for these visits. Your eligibility is determined by your health plan.  If you feel you are eligible for an in-home wellness check-up please contact your health plan.
-            </p>
+            <p>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
+            <p>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
+            <p>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, and take basic vital signs.</p>
+            <p>There is <b>no fee</b> for these visits.</p>
+            <p>Your eligibility is determined by your health plan.</p>
+            <p>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
           </SubText>
         </MainContainer>
         <WhiteSpace />

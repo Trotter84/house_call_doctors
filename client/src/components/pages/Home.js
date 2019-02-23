@@ -95,6 +95,10 @@ const StyledLink = Styled(Link)`
   }
 `
 
+const HalfWhiteSpace = Styled.div`
+  height: 50px;
+`
+
 const WhiteSpace = Styled.div`
   height: 120px;
 `
@@ -186,6 +190,7 @@ class Home extends Component {
               </p>
             </Homes>
           </Info>
+          <HalfWhiteSpace />
           <Testimonials />
         </MainContainer>
         <WhiteSpace />

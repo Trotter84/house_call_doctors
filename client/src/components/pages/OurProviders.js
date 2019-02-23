@@ -4,9 +4,10 @@ import {
   Image,
   Modal,
   Divider
-} from 'semantic-ui-react'
+} from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import profiles from '../ProfileInfo';
+import ihapProviders from '../IhapProviders';
 
 
 
@@ -57,6 +58,42 @@ const Info = Styled.div`
   flex-direction: row;
 `
 
+const Names = Styled.div`
+  display: none;
+`
+
+const Ihap = Styled.div`
+  padding: 10px 0 0 10px;
+  height: 50px;
+  width: 220px;
+  border: solid .5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  &:hover,&.active {
+    height: 100%;
+
+    ${Names} {
+      display: block;
+    }
+  }
+`
+
+const State = Styled.h2`
+  font-size: 19px;
+`
+
+const IhapSection = Styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  column-count: 3;
+`
+
+const BottomSection = Styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`
+
 const TopWhiteSpace = Styled.div`
   height: 55px;
 `
@@ -72,6 +109,14 @@ const WhiteSpace = Styled.div`
 const styles = {
   line:{
     margin: '6px 0 6px 0',
+  },
+
+  stateLine:{
+    maxWidth: '276px',
+  },
+
+  names:{
+
   },
 
   divider:{
@@ -139,7 +184,46 @@ class OurProviders extends Component {
             IN HOUSE ASSESSMENT PROVIDERS
           </Title>
           <Divider />
-
+          <BottomSection>
+            {ihapProviders.map(eachProvider => {
+              return(
+                <IhapSection>
+                  <Ihap>
+                    <State>{eachProvider.state} Providers:</State>
+                    <Divider style={styles.stateLine}/>
+                    <Names>
+                      <p style={styles.names}><b>{eachProvider.person1}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person2}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person3}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person4}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person5}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person6}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person7}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person8}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person9}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person10}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person11}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person12}</b></p>
+                      <Divider />
+                      <p style={styles.names}><b>{eachProvider.person13}</b></p>
+                      <Divider />
+                    </Names>
+                  </Ihap>
+                </IhapSection>
+              )
+            })}
+          </BottomSection>
         </MainContainer>
         <WhiteSpace />
       </>
