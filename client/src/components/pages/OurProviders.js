@@ -69,7 +69,7 @@ const Ihap = Styled.div`
   border: solid .5px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  &:hover,&.active {
+  &:hover,&:focus,&:active {
     height: 100%;
 
     ${Names} {
@@ -92,6 +92,7 @@ const IhapSection = Styled.div`
 const BottomSection = Styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `
 
 const TopWhiteSpace = Styled.div`
@@ -185,44 +186,27 @@ class OurProviders extends Component {
           </Title>
           <Divider />
           <BottomSection>
-            {ihapProviders.map(eachProvider => {
-              return(
-                <IhapSection>
-                  <Ihap>
-                    <State>{eachProvider.state} Providers:</State>
-                    <Divider style={styles.stateLine}/>
-                    <Names>
-                      <p style={styles.names}><b>{eachProvider.person1}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person2}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person3}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person4}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person5}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person6}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person7}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person8}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person9}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person10}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person11}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person12}</b></p>
-                      <Divider />
-                      <p style={styles.names}><b>{eachProvider.person13}</b></p>
-                      <Divider />
-                    </Names>
-                  </Ihap>
-                </IhapSection>
-              )
-            })}
+            {ihapProviders.map(eachProvider =>
+              <IhapSection>
+                <Ihap tabindex='0'>
+                  <State>{eachProvider.state} Providers:</State>
+                  <Divider style={styles.stateLine}/>
+                  <Names>
+                    <p style={styles.names}>
+                      <b>
+                        {eachProvider.people.map(person =>
+                          <>
+                            {person}
+                            <Divider />
+                          </>
+                        )}
+                      </b>
+                    </p>
+                    <div>{eachProvider.divider}</div>
+                  </Names>
+                </Ihap>
+              </IhapSection>
+            )}
           </BottomSection>
         </MainContainer>
         <WhiteSpace />

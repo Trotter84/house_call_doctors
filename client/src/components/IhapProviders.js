@@ -1,31 +1,79 @@
+import React from 'react';
+
+
 const ihapProviders = [
   {
     state: 'Utah',
-    person1: 'Ashley Reeder, PA',
-    person2: 'Chelsa Bringhurst, APRN',
-    person3: 'Colby Bliss, PA',
-    person4: 'Edie Shepherd, APRN',
-    person5: 'Gwen Mitchell, APRN',
-    person6: 'Jared Jackman, PA',
-    person7: 'Mark Cacciamani, MD',
-    person8: 'Perrine Anderson, GNP',
-    person9: 'Rich Persons, PA',
-    person10: 'Rita Rutland, APRN',
-    person11: 'Sandra Jense, APRN',
-    person12: 'Sarah Woolsey, MD',
-    person13: 'Stephen Bullock, APRN',
+    people: [
+     'Ashley Reeder, PA',
+     'Chelsa Bringhurst, APRN',
+     'Colby Bliss, PA',
+     'Edie Shepherd, APRN',
+     'Gwen Mitchell, APRN',
+     'Jared Jackman, PA',
+     'Mark Cacciamani, MD',
+     'Perrine Anderson, GNP',
+     'Rich Persons, PA',
+     'Rita Rutland, APRN',
+     'Sandra Jense, APRN',
+     'Sarah Woolsey, MD',
+     'Stephen Bullock, APRN'
+   ]
   },
   {
     state: 'Idaho',
+    people: [
+      'Ashley Reeder, PA',
+      'Brandon Durfee, PA',
+      'Caren Smith, PA',
+      'Jared Jackman, PA',
+      'Justin Nielsen, PA',
+      'Mark Cacciamani, MD',
+      'Raymond Price, PA',
+      'Rick Steinburg, PA',
+      'Rita Rutland, APRN',
+      'Sandra Jense, APRN',
+    ]
   },
   {
     state: 'New York',
+    people: [
+      'Ada Lee, APRN',
+      'Cecelia Nugent, APRN',
+      'Danielle O’Reggio Christopher, APRN',
+      'Delia Abitante,',
+      'Hakimah Beebe, APRN',
+      'Loretta Sullivan, APRN',
+      'Mark Cacciamani, MD',
+      'Neslie Francois, Technician',
+      'Rosetta Honovic, APRN',
+      'Sherina Richards, APRN',
+      'Tatiana Burgess, APRN',
+    ]
   },
   {
     state: 'Montana',
+    people: [
+      'Kristina Kreiger, PA',
+      'Mark Cacciamani, MD',
+      'Theresa Vonada, PA',
+    ]
   },
   {
     state: 'Washington',
+    people: [
+      'Alicia Farrell, PA',
+      'Bernadette Kimemia, APRN',
+      'Gwendolyn “Gabby” Lucas, APRN',
+      'Jeffery Selbig, APRN',
+      'Joan “Joni” Venturi, APRN',
+      'Lindsey Martin, APRN',
+      'Lori Dealy, APRN',
+      'Lori Dealy, APRN',
+      'Mark Cacciamani, MD',
+      'Ryan Marendiuk, APRN',
+      'Sara Brady, PA',
+    ]
   }
 ]
 
