@@ -69,8 +69,8 @@ class Navbar extends Component {
         <Nav>
           <EachNav exact to={'/'}>HOME</EachNav>
           <EachNav to={'/about-us'}>ABOUT US</EachNav>
-          <EachNav to={'/our-providers'}><Dropdown text='OUR PROVIDERS' options={options2} icon={false} simple item /></EachNav>
-          <EachNav to={'/our-services'}><Dropdown text='OUR SERVICES' options={options1} icon={false} simple item /></EachNav>
+          <EachNav to={'/our-providers'}>OUR PROVIDERS</EachNav>
+          <EachNav to={'/our-services'}>OUR SERVICES</EachNav>
           <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
           <EachNav to={'/contact-us'}>CONTACT US</EachNav>
         </Nav>

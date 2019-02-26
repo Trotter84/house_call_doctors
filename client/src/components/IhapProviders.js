@@ -6,7 +6,6 @@ const ihapProviders = [
     state: 'Utah',
     people: [
      'Ashley Reeder, PA',
-     'Chelsa Bringhurst, APRN',
      'Colby Bliss, PA',
      'Edie Shepherd, APRN',
      'Gwen Mitchell, APRN',

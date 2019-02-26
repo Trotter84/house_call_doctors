@@ -24,7 +24,7 @@ const Email = Styled.a`
 
 const profiles = [
   {
-    name: 'MARK J. CACCIAMANI, M.D.',
+    name: 'MARK CACCIAMANI, MD',
     linkName: 'mark',
     shortName: 'Mark',
     image: Mark,
@@ -88,7 +88,7 @@ const profiles = [
     info5: <Email href="mailto:Peter@housecalldoctorsut.com">Peter@housecalldoctorsut.com</Email>,
   },
   {
-    name: 'EDIE SHEPHERD, NP',
+    name: 'EDIE SHEPHERD, APRN',
     linkName: 'edie',
     shortName: 'Edie',
     image: Edie,

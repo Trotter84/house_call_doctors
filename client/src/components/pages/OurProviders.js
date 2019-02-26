@@ -182,7 +182,7 @@ class OurProviders extends Component {
           </FullSection>
           <HalfWhiteSpace />
           <Title>
-            IN HOUSE ASSESSMENT PROVIDERS
+            IN HOME ASSESSMENT PROVIDERS
           </Title>
           <Divider />
           <BottomSection>
