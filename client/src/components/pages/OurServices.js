@@ -85,13 +85,10 @@ class OurServices extends Component {
           <SubSection>
             <Info>
               <SubTitle>
-                Please fill out the fields on the right & we will get back to you as openings become available.
+                If you are interested in becoming a patient, please fill out the fields on the right & we will get back to you as openings become available.
               </SubTitle>
               <SubText>
-                <p>We are still accepting new patients in Assisted Living and Group Home facilities that we already service.</p>
-                <p style={styles.points}>We are currently scheduling 2018 In-Home Assessments for Molina Advantage, Emblem Healthcare, <br />Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
-                <p style={styles.points}>Providing Primary Care in the patient’s home, assisted living, and/or group home setting.</p>
-                <p style={styles.points}>Your doctor is available 24/7 by pager for existing patients and their family members, care takers, and/or nurses.</p>
+                <p>Our providers see patients in Assisted Living Facilities, Memory Care Units, Group Homes, and Individual Homes.</p>
               </SubText>
             </Info>
             <ContactField />
@@ -124,13 +121,14 @@ class OurServices extends Component {
           </SubText>
           <HalfWhiteSpace />
           <Title>
-            IN HOUSE ASSESSMENT SERVICES
+            IN HOME ASSESSMENT SERVICES
           </Title>
           <Divider />
           <SubText>
+            <p>We are currently scheduling 2019 In-Home Assessments for Molina Advantage, Emblem Healthcare, Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br /><br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
             <p>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
             <p>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
-            <p>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, and take basic vital signs.</p>
+            <p>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>
             <p>There is <b>no fee</b> for these visits.</p>
             <p>Your eligibility is determined by your health plan.</p>
             <p>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
