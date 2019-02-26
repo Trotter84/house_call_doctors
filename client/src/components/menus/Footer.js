@@ -60,7 +60,7 @@ class Footer extends Component {
       <div style={styles.footer}>
         <div style={styles.container}>
           <div style={styles.box}>
-            <p style={styles.p}>Copyright © 2019 <StyledLink to={`/`}> &nbsp; House Call Doctors of Utah. &nbsp; </StyledLink>All rights reserved.</p>
+            <p style={styles.p}>Copyright © 2019 <StyledLink to={`/`}> &nbsp; House Call Doctors Utah. &nbsp; </StyledLink>All rights reserved.</p>
             <div style={styles.right}>
               <Nav>
                 <StyledLink to={'/'}>Home</StyledLink>

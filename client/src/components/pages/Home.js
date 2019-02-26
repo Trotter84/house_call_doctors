@@ -87,11 +87,11 @@ const Icon = Styled.i`
 `
 
 const StyledLink = Styled(Link)`
-  font-size: 13px;
-  color: black;
+  font-size: 15px;
+  color: #AF3120;
   transition: all 200ms ease-in-out;
   :hover {
-    color: #AF3120;
+    color: black;
   }
 `
 
@@ -168,7 +168,7 @@ class Home extends Component {
               </Icon>
               <h2 style={styles.h2}>HOME VISITS</h2>
               <p style={styles.p}>
-                We are not currently accepting new house call patients, but please call our office or check in often as this does change frequently based on provider availability.
+                We <b>are</b> currently accepting new house call patients, please call our office or check in often as this does change frequently based on provider availability.
               </p>
             </Visits>
             <Living>

@@ -88,20 +88,30 @@ render() {
             </SubTitle>
             <SubText>
               <p>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
-              <p style={styles.contacts}><b>Mark Cacciamani</b>, MD <b>801-241-4483</b></p>
-              <p style={styles.contacts}><b>Perrine Anderson</b>, APRN <b>801-241-0623</b></p>
-              <p style={styles.contacts}><b>Sandra Jense</b>, APRN <b>801-241-0255</b></p>
-              <p style={styles.contacts}><b>Rita Rutland</b>, APRN <b>801-241-0339</b></p>
+              <p style={styles.contacts}><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
+              <p style={styles.contacts}><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></p>
+              <p style={styles.contacts}><b>Sandra Jense</b>, APRN <b>(801)241-0255</b></p>
+              <p style={styles.contacts}><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></p>
+              <p style={styles.contacts}><b>Edie Shepherd</b>, NP <b>(801) 485-5055</b></p>
               <p>These are numeric pagers, they do not accept voicemail or text messages.</p>
-              <p>After dialing the pager number, dial your own phone number followed by the pound key.<br />Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>
+              <p>After dialing the pager number, dial your own phone number followed by the pound key.</p>
+              <p>Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>
             </SubText>
             <SubTitle>
               Taking The Next Steps
             </SubTitle>
             <SubText>
               <p>For appointments, call our office at <b>801-485-5055</b>.<br />We have set aside a special day each month to visit you at your home or the facility where you reside.</p>
-              <p>If you are a new patient, please fill out our <b>NEW PATIENT REGISTRATION</b> and return to our office 48 hours prior to your first appointment.<br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>
-              <p>For fastest results, have your pharmacy fax us your refill requests<br /> to <b>801-363-1398</b> or <b>801-467-3296</b>.<br />Please allow 48-72 hours for a response.</p>
+              <p>If you are interested in becoming a new patient, please contact our office to obtain a copy of our <b>New Patient Registration</b> and return to our office 48 hours prior to your first appointment.<br /><br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>
+              <p>For fastest results, have your pharmacy fax us your refill requests<br /> to <b>801-363-1398</b> or <b>801-467-3296</b>.<br />Please allow 24-48 business hours for a response.</p>
+            </SubText>
+            <SubTitle>
+              Where It All Started
+            </SubTitle>
+            <SubText>
+              <p>
+                Dr. Mark Cacciamani began his medical career in a clinic setting where he was often unable to spend adequate time with his patients.<br />He realized during this clinical experience that his place was not with the "worried well" and he wanted to make a bigger difference in healthcare.<br /><br />He founded House Call Doctors in 2004 which allowed him to serve home-bound patients that would not otherwise have access to adequate health care.<br />Dr. Cacciamani's passion to bring better health care to the home-bound population is instilled in all of House Call Doctors' staff and we strive to better the quality of life for each of our patients.
+              </p>
             </SubText>
             <WhiteSpace />
           </AllText>

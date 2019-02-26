@@ -88,7 +88,7 @@ const profiles = [
     info5: <Email href="mailto:Peter@housecalldoctorsut.com">Peter@housecalldoctorsut.com</Email>,
   },
   {
-    name: 'EDIE SHEPHERDS, NP',
+    name: 'EDIE SHEPHERD, NP',
     linkName: 'edie',
     shortName: 'Edie',
     image: Edie,
