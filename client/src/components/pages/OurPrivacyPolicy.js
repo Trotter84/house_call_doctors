@@ -41,7 +41,7 @@ const WhiteSpace = Styled.div`
   height: 80px;
 `
 
-const StyledLink = Styled(Link)`
+const Hipaa = Styled.a`
   color: black;
   transition: all 200ms ease-in-out;
   :hover {
@@ -144,7 +144,7 @@ class OurPrivacyPolicy extends Component {
             <p>This notice describes the privacy practices of House Call Doctors.  Included are providers, employees, students, trainees, and volunteers.</p>
           </SubText>
           <h2>
-            <StyledLink to={'/contact-us'}>Contact Us:</StyledLink>
+            <Hipaa to={'/contact-us'}>Contact Us:</Hipaa>
           </h2>
           <SubText>
             <p>If you are concerned that your privacy rights may have been violated, or disagree with a decision that we made about access to your health information, you may contact us at:</p>
@@ -159,7 +159,7 @@ class OurPrivacyPolicy extends Component {
 
           <SubText>
             <p>We will investigate all complaints and will not retaliate against you for filing a complaint.   You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
-            <p>For information on <b>HIPAA</b> laws <StyledLink to={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html#1901'}><b>click here</b></StyledLink></p>
+            <p>For information on <b>HIPAA</b> laws <Hipaa href={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html'}><b>click here</b></Hipaa></p>
           </SubText>
         </MainContainer>
         <WhiteSpace />
