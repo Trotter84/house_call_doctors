@@ -141,7 +141,7 @@ class OurPrivacyPolicy extends Component {
             Our Organization:
           </h2>
           <SubText>
-            <p>This notice describes the privacy practices of House Call Doctors.  Included are providers, employees, students, trainees, and volunteers.</p>
+            <p>This notice describes the privacy practices of House Call Doctors. Included are providers, employees, students, trainees, and volunteers.</p>
           </SubText>
           <h2>
             <Hipaa to={'/contact-us'}>Contact Us:</Hipaa>
@@ -158,7 +158,7 @@ class OurPrivacyPolicy extends Component {
           </Address>
 
           <SubText>
-            <p>We will investigate all complaints and will not retaliate against you for filing a complaint.   You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
+            <p>We will investigate all complaints and will not retaliate against you for filing a complaint. You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
             <p>For information on <b>HIPAA</b> laws <Hipaa href={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html'}><b>click here</b></Hipaa></p>
           </SubText>
         </MainContainer>
