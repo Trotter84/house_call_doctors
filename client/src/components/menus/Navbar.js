@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Dropdown } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import { NavLink, Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
@@ -48,15 +48,6 @@ const styles = {
   },
 }
 
-const options1 = [
-  { key: 1, text: 'Primary Care', value: 1 },
-  { key: 2, text: 'In House Assessments', value: 2 },
-]
-
-const options2 = [
-  { key: 3, text: 'Primary Care', value: 2 },
-  { key: 4, text: 'In House Assessments', value: 3 },
-]
 
 class Navbar extends Component {
 

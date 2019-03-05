@@ -68,7 +68,7 @@ class ContactField extends Component {
 
   render() {
     return(
-      <InputField name="contact" method="POST" data-netlify="true">
+      <InputField name="contact" method="POST" netifly>
         <Names>
           <First>
             <label htmlFor="fname">First Name*</label>

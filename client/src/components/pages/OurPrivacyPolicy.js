@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 
 
