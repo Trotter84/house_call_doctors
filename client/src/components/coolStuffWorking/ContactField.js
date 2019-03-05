@@ -68,7 +68,7 @@ class ContactField extends Component {
 
   render() {
     return(
-      <InputField>
+      <InputField netlify>
         <Names>
           <First>
             <label htmlFor="fname">First Name*</label>
@@ -92,7 +92,7 @@ class ContactField extends Component {
           <textarea id="subject" name="subject" placeholder="How can we help?.." required></textarea>
         </Message>
         <Submit>
-          <a href="mailto:flare84@gmail.com?subject=Interested Client&body={'fname'}">Submit</a>
+          <button type="submit">Send</button>
         </Submit>
       </InputField>
     )
