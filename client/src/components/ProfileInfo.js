@@ -5,11 +5,11 @@ import Perrine from '../images/Perrine.jpg';
 import Sandra from '../images/Sandra.jpg';
 import Rita from '../images/Rita.jpg';
 import Edie from '../images/Edie.jpg';
-import MarkProfile from './../images/Mark-profile.png';
-import PerrineProfile from './../images/Perrine-profile.png';
-import SandraProfile from './../images/Sandra-profile.png';
-import RitaProfile from './../images/Rita-profile.png';
-import EdieProfile from './../images/Edie-profile.png';
+import MarkProfile from './../images/Mark-profile.jpg';
+import PerrineProfile from './../images/Perrine-profile.jpg';
+import SandraProfile from './../images/Sandra-profile.jpg';
+import RitaProfile from './../images/Rita-profile.jpg';
+import EdieProfile from './../images/Edie-profile.jpg';
 
 
 const Email = Styled.a`
@@ -40,10 +40,12 @@ const profiles = [
     edu8: 'Graduated from University of Scranton Biology Degree.',
     profileImage: MarkProfile,
     info1: 'Terra Jacobs',
-    info2: '(801) 485-5055 ext: 1',
-    info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
+    info2: '(801) 485-5055 ext. 1',
+    info3: <Email href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
     info4: 'Karen Singletary',
-    info5: <Email href="mailto:Peter@housecalldoctorsut.com">Peter@housecalldoctorsut.com</Email>,
+    info5: '(801) 485-5055 ext. 16',
+    info6: <Email href="mailto:Karen@housecalldoctorsut.com">Karen@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-4483'
   },
   {
     name: 'PERRINE ANDERSON, GNP',
@@ -54,10 +56,12 @@ const profiles = [
     bio: 'My experiences over the years clearly revealed the need for a unique practice which allows for continuity and collaboration of care for those living in the community who have difficulty accessing medical and psychiatric care.',
     profileImage: PerrineProfile,
     info1: 'Sarah Johnson',
-    info2: '(801) 485-5055 ext: 2',
+    info2: '(801) 485-5055 ext. 2',
     info3: <Email href="mailto:Sarahjohnson@housecalldoctorsut.com">Sarahjohnson@housecalldoctorsut.com</Email>,
-    info4: 'Courtney Leonard',
-    info5: <Email href="mailto:Courtney@housecalldoctorsut.com">Courtney@housecalldoctorsut.com</Email>,
+    info4: 'Annalise Sauter',
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:Annalise@housecalldoctorsut.com">Annalise@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0623'
   },
   {
     name: 'SANDRA JENSE, APRN',
@@ -68,10 +72,12 @@ const profiles = [
     bio: 'As a health care provider I’m devoted to helping my patients and families find a way to merge their values and goals with their medical needs. Very few people want to spend their time in a hospital or a clinic, waiting for medical care, and house calls are a way to support people’s medical needs while giving them more time to do what matters most to them.',
     profileImage: SandraProfile,
     info1: 'Terra Jacobs',
-    info2: '(801) 485-5055 ext: 1',
-    info3: <Email href="mailto:Sarahjohnson@housecalldoctorsut.com">Sarahjohnson@housecalldoctorsut.com</Email>,
+    info2: '(801) 485-5055 ext. 1',
+    info3: <Email href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
     info4: 'Kirby Trombetti',
-    info5: <Email href="mailto:Kirby@housecalldoctorsut.com">Kirby@housecalldoctorsut.com</Email>,
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:Kirby@housecalldoctorsut.com">Kirby@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0255'
   },
   {
     name: 'RITA RUTLAND, APRN',
@@ -85,7 +91,9 @@ const profiles = [
     info2: '(801) 485-5055 ext: 3',
     info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
     info4: 'Peter Haight',
-    info5: <Email href="mailto:Peter@housecalldoctorsut.com">Peter@housecalldoctorsut.com</Email>,
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:Peter@housecalldoctorsut.com">Peter@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0339'
   },
   {
     name: 'EDIE SHEPHERD, APRN',
@@ -99,7 +107,9 @@ const profiles = [
     info2: '(801) 485-5055 ext: 3',
     info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
     info4: 'Megan Widmer',
-    info5: <Email href="mailto:Megan@housecalldoctorsut.com">Megan@housecalldoctorsut.com</Email>,
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:Megan@housecalldoctorsut.com">Megan@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0021'
   },
 ]
 

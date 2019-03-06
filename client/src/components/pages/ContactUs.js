@@ -66,7 +66,7 @@ const Contact = Styled.div`
 const InsideInfo = Styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   padding-left: 35px;
 `
 
@@ -90,11 +90,18 @@ const InfoBtn = Styled.a`
 `
 
 const Left = Styled.div`
-  padding-right: 0px;
+  padding-right: 20px;
+`
+
+const Middle = Styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 0 20px;
 `
 
 const Right = Styled.div`
-  padding-left: 70px;
+  padding-left: 20px;
 `
 
 const TopWhiteSpace = Styled.div`
@@ -127,7 +134,6 @@ const styles = {
 
   info:{
     fontSize: '14px',
-    paddingLeft: '5px',
     maxWidth: '350px',
   },
 
@@ -177,12 +183,16 @@ class ContactUs extends Component {
                           <InsideInfo>
                             <Left>
                               <p style={styles.info}>Office MA: <b>{profile.info1}</b></p>
-                              <p style={styles.info}>Pager: <b>{profile.info2}</b></p>
+                              <p style={styles.info}>Phone: <b>{profile.info2}</b></p>
                               <p style={styles.info}>{profile.info3}</p>
                             </Left>
-                            <Right>
+                            <Middle>
                               <p style={styles.info}>Field MA: <b>{profile.info4}</b></p>
-                              <p style={styles.info}>{profile.info5}</p>
+                              <p style={styles.info}>Phone: <b>{profile.info5}</b></p>
+                              <p styles={styles.info}>{profile.info6}</p>
+                            </Middle>
+                            <Right>
+                              <p style={styles.info}>Pager: <b>{profile.info7}</b></p>
                             </Right>
                           </InsideInfo>
                         </Modal.Description>

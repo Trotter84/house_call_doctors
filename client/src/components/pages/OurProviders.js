@@ -59,7 +59,7 @@ const Info = Styled.div`
 `
 
 const Names = Styled.div`
-  display: none;
+  display: block;
 `
 
 const Ihap = Styled.div`
@@ -67,9 +67,6 @@ const Ihap = Styled.div`
   height: 50px;
   width: 220px;
   border: solid .5px;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-  &:hover,&:focus,&:active {
     height: 100%;
 
     ${Names} {
