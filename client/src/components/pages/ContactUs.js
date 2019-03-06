@@ -16,6 +16,22 @@ const MainContainer = Styled.div`
   margin: auto;
 `
 
+const Icon = Styled.i`
+  color: #AF3120;
+`
+
+const Office = Styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 150px;
+`
+
+const Fax = Styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 150px;
+`
+
 const Info = Styled.div`
   padding-bottom: 0;
 
@@ -113,10 +129,6 @@ const WhiteSpace = Styled.div`
 `
 
 const styles = {
-  contact:{
-    paddingLeft: '150px',
-  },
-
   female2:{
     padding: '10px 0 0 130px',
   },
@@ -160,8 +172,14 @@ class ContactUs extends Component {
           <TopWhiteSpace />
           <Info style={styles.map}>
             <div>
-              <p style={styles.contact}>Office Phone: <b>(801) 485-5055</b></p>
-              <p style={styles.contact}>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
+              <Office>
+                <Icon className='phone square large icon color' />
+                <p>Office Phone: <b>(801) 485-5055</b></p>
+              </Office>
+              <Fax>
+                <Icon className='fax large icon color' />
+                <p>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
+              </Fax>
               <Image style={styles.female2} src={MarkWithFemale2} />
             </div>
             <iframe title="House Call Doctors' location" width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
