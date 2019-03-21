@@ -49,13 +49,34 @@ const InfoBtn = Styled.a`
   }
 `
 
-const Bio = Styled.p`
+const Pic = Styled.div`
   max-width: 600px;
+`
+
+const Edu = Styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+`
+
+const Bio = Styled.p`
+  margin-bottom: 7px;
+`
+
+const Interests = Styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+`
+
+const Int = Styled.p`
+  margin-bottom: 7px;
 `
 
 const Info = Styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 `
 
 const Names = Styled.div`
@@ -154,11 +175,11 @@ class OurProviders extends Component {
                     <Modal.Content image>
                       <Image wrapped size='medium' src={profile.image} />
                       <Modal.Description>
-                        <Bio>{profile.bio}</Bio>
+                        <Pic>{profile.bio}</Pic>
                         <Divider style={styles.divider}/>
-                        <h3>Education and Experience</h3>
                         <Info>
-                          <div>
+                          <Edu>
+                            <h3>Education and Experience</h3>
                             <Bio>{profile.edu1}</Bio>
                             <Bio>{profile.edu2}</Bio>
                             <Bio>{profile.edu3}</Bio>
@@ -167,8 +188,17 @@ class OurProviders extends Component {
                             <Bio>{profile.edu6}</Bio>
                             <Bio>{profile.edu7}</Bio>
                             <Bio>{profile.edu8}</Bio>
-                          </div>
-                          <Divider vertical />
+                          </Edu>
+                          <Interests>
+                            <h3>Professional and Personal Interests</h3>
+                            <Int>{profile.interest1}</Int>
+                            <Int>{profile.interest2}</Int>
+                            <Int>{profile.interest3}</Int>
+                            <Int>{profile.interest4}</Int>
+                            <Int>{profile.interest5}</Int>
+                            <Int>{profile.interest6}</Int>
+                            <Int>{profile.interest7}</Int>
+                          </Interests>
                         </Info>
                       </Modal.Description>
                     </Modal.Content>
