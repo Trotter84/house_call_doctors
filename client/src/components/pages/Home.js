@@ -133,7 +133,7 @@ const styles = {
 class Home extends Component {
 
   componentDidMount() {
-    document.title='NEW House Call Doctors UT'
+    document.title='House Call Doctors UT'
   };
 
   render() {

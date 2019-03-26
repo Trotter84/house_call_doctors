@@ -91,7 +91,7 @@ class OurServices extends Component {
                 <p>Our providers see patients in Assisted Living Facilities, Memory Care Units, Group Homes, and Individual Homes.</p>
               </SubText>
             </Info>
-            <ContactField />
+
           </SubSection>
           <QuarterWhiteSpace />
           <Title>
