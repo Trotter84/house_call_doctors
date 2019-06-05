@@ -20,12 +20,9 @@ const ihapProviders = [
     state: 'Idaho',
     people: [
       'Ashley Reeder, PA',
-      'Brandon Durfee, PA',
-      'Caren Smith, PA',
       'Jared Jackman, PA',
       'Justin Nielsen, PA',
       'Mark Cacciamani, MD',
-      'Raymond Price, PA',
       'Rick Steinburg, PA',
       'Rita Rutland, APRN',
       'Sandra Jense, APRN',
@@ -52,7 +49,6 @@ const ihapProviders = [
     people: [
       'Kristina Kreiger, PA',
       'Mark Cacciamani, MD',
-      'Theresa Vonada, PA',
     ]
   },
   {

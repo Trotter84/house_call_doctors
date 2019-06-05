@@ -175,7 +175,7 @@ class OurProviders extends Component {
                     <Modal.Content image>
                       <Image wrapped size='medium' src={profile.image} />
                       <Modal.Description>
-                        <Pic>{profile.bio}</Pic>
+                        <Pic>{profile.bio}<br />{profile.bio2}</Pic>
                         <Divider style={styles.divider}/>
                         <Info>
                           <Edu>

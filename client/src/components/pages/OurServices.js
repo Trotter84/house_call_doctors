@@ -95,7 +95,7 @@ class OurServices extends Component {
           </SubSection>
           <QuarterWhiteSpace />
           <Title>
-            OUR PROVIDER SERVICES
+            PRIMARY CARE SERVICES
           </Title>
           <Divider />
           <HalfWhiteSpace />

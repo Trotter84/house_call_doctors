@@ -177,7 +177,7 @@ class Home extends Component {
               </Icon>
               <h2 style={styles.h2}>ASSISTED LIVING</h2>
               <p style={styles.p}>
-                Our providers currently care for patients in more than 25 Assisted Living facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`}>Call us</StyledLink> today to see if a provider is in your facility.
+                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`}>Call us</StyledLink> today to see if a provider is in your facility.
               </p>
             </Living>
             <Homes>
