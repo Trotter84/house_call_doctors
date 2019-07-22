@@ -5,6 +5,12 @@ import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
 
 
+const Container = Styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
 const EachNav = Styled(NavLink)`
   font-size: 17px;
   color: black;
@@ -36,24 +42,11 @@ const StyledImage = Styled(Image)`
 `
 
 
-const styles = {
-  container:{
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-
-  divStyle:{
-    margin: '0px 0px 0px 10px'
-  },
-}
-
-
 class Navbar extends Component {
 
   render() {
     return (
-      <div style={styles.container}>
+      <Container>
         <Link to={`/`}>
           <StyledImage src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
@@ -65,7 +58,7 @@ class Navbar extends Component {
           <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
           <EachNav to={'/contact-us'}>CONTACT US</EachNav>
         </Nav>
-      </div>
+      </Container>
     )
   }
 }

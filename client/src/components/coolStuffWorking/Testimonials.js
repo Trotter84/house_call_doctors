@@ -36,15 +36,14 @@ const Quote = Styled.div`
   padding-left: 10px;
 `
 
-const styles = {
-  carousel:{
-    minHeight: '250px',
-  },
+const DividerLine = Styled(Divider)`
+  margin: 6px 0 6px 3px;
+`
 
-  line:{
-    margin: '6px 0 6px 3px',
-  },
-}
+const CarouselStyle = Styled(Carousel)`
+  min-height: 250px;
+`
+
 
 const testimonials = [
   {
@@ -110,9 +109,9 @@ class Testimonials extends Component {
           <Title>
             TESTIMONIALS
           </Title>
-          <Divider style={styles.line} />
+          <DividerLine />
         </TopPart>
-        <Carousel style={styles.carousel}>
+        <CarouselStyle>
 
           {testimonials.map(person => {
             return(
@@ -127,7 +126,7 @@ class Testimonials extends Component {
              )
             })}
 
-        </Carousel>
+        </CarouselStyle>
       </FullSection>
     );
   }

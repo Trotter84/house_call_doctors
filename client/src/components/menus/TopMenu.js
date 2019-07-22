@@ -3,6 +3,18 @@ import { Menu, Icon } from 'semantic-ui-react';
 import Styled from 'styled-components';
 
 
+const MenuContainer = Styled(Menu)`
+  background-color: #f4f4f4;
+`
+
+const Bar = Styled.div`
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+`
+
 const Info = Styled.div`
   color: black;
   transition: all 200ms ease-in-out;
@@ -11,26 +23,13 @@ const Info = Styled.div`
   }
 `
 
-const styles = {
-  background:{
-    backgroundColor: '#f4f4f4',
-  },
-
-  bar:{
-    width: '1250px',
-    display: 'flex',
-    flexDirection: 'row',
-    margin: 'auto',
-  }
-
-};
 
 class Navbar extends Component {
 
   render() {
     return (
-      <Menu style={styles.background}>
-        <div style={styles.bar}>
+      <MenuContainer>
+        <Bar>
           <Menu.Item />
           <Menu.Item>
           <div>
@@ -54,8 +53,8 @@ class Navbar extends Component {
             <Info>Find Our Location</Info>
           </a>
           </Menu.Item>
-        </div>
-      </Menu>
+        </Bar>
+      </MenuContainer>
     )
   }
 }

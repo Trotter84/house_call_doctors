@@ -45,7 +45,11 @@ const SubText = Styled.div`
   }
 `
 
-const Points = Styled.div`
+const PointsTitle = Styled.p`
+  padding-left: 20px;
+`
+
+const PointsContainer = Styled.div`
   column-count: 2;
   padding-left: 100px;
 `
@@ -61,12 +65,6 @@ const HalfWhiteSpace = Styled.div`
 const WhiteSpace = Styled.div`
   height: 80px;
 `
-
-const styles = {
-  points:{
-    paddingLeft: '20px',
-  },
-}
 
 
 class OurServices extends Component {
@@ -103,8 +101,8 @@ class OurServices extends Component {
             <p>
               House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
             </p>
-            <p style={styles.points}>These services include but are not limited to:</p>
-            <Points>
+            <PointsTitle>These services include but are not limited to:</PointsTitle>
+            <PointsContainer>
               <p>• X-ray</p>
               <p>• Ultrasound</p>
               <p>• Sleep Studies</p>
@@ -115,9 +113,9 @@ class OurServices extends Component {
               <p>• Podiatry</p>
               <p>• Talk Therapy</p>
               <p>• Home Health, Hospice, and much more.</p>
-            </Points>
+            </PointsContainer>
             <br />
-            <p style={styles.points}><b>Please contact our office to schedule an appointment!</b></p>
+            <PointsTitle><b>Please contact our office to schedule an appointment!</b></PointsTitle>
           </SubText>
           <HalfWhiteSpace />
           <Title>

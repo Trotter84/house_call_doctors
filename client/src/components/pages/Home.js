@@ -12,10 +12,19 @@ const MainContainer = Styled.div`
   margin: auto;
 `
 
+const RedContainer = Styled.div`
+  background-color: #AF3120;
+  height: 850px;
+`
+
 const CarouselContainer = Styled.div`
   max-height: 600px;
   max-width: 1166px;
   padding: 45px 0 0 0;
+`
+
+const ContactUsLink = Styled(Link)`
+  padding: 60px;
 `
 
 const ContactUs = Styled.button`
@@ -57,6 +66,16 @@ const Section = Styled.h3`
   padding: 0px 25px;
   margin: 0;
   font-weight: normal;
+`
+
+const SubTitle = Styled.h2`
+  font-size: 22px;
+  font-weight: bold;
+`
+
+const SubText = Styled.p`
+  color: #494949;
+  font-size: 16px;
 `
 
 const Info = Styled.div`
@@ -103,32 +122,6 @@ const WhiteSpace = Styled.div`
   height: 120px;
 `
 
-const styles = {
-  red:{
-    backgroundColor: '#AF3120',
-    height: '850px',
-  },
-
-  contactUs:{
-    padding: '60px',
-  },
-
-  image:{
-    padding: '45px 0px 0px 80px',
-    maxHeight: '700px',
-  },
-
-  h2:{
-    fontSize: '22px',
-    fontWeight: 'bold',
-  },
-
-  p:{
-    color: '#494949',
-    fontSize: '16px',
-  },
-};
-
 
 class Home extends Component {
 
@@ -139,7 +132,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <div style={styles.red}>
+        <RedContainer>
           <MainContainer>
             <CarouselContainer>
               <FrontPageImage />
@@ -153,12 +146,12 @@ class Home extends Component {
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
                 </Section>
               </ContactAreaLeft>
-              <Link to={`/contact-us`} style={styles.contactUs}>
+              <ContactUsLink to={`/contact-us`}>
                 <ContactUs>CONTACT US</ContactUs>
-              </Link>
+              </ContactUsLink>
             </ContactArea>
           </MainContainer>
-        </div>
+        </RedContainer>
 
         <MainContainer>
           <Info>
@@ -166,28 +159,28 @@ class Home extends Component {
               <Icon>
                 <i className='home huge icon color' />
               </Icon>
-              <h2 style={styles.h2}>HOME VISITS</h2>
-              <p style={styles.p}>
+              <SubTitle>HOME VISITS</SubTitle>
+              <SubText>
                 We <b>are</b> currently accepting new house call patients, please call our office or check in often as this does change frequently based on provider availability.
-              </p>
+              </SubText>
             </Visits>
             <Living>
               <Icon>
                 <i className='doctor huge icon color' />
               </Icon>
-              <h2 style={styles.h2}>ASSISTED LIVING</h2>
-              <p style={styles.p}>
+              <SubTitle>ASSISTED LIVING</SubTitle>
+              <SubText>
                 Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`}>Call us</StyledLink> today to see if a provider is in your facility.
-              </p>
+              </SubText>
             </Living>
             <Homes>
               <Icon>
                 <i className='hospital huge icon color' />
               </Icon>
-              <h2 style={styles.h2}>GROUP HOMES</h2>
-              <p style={styles.p}>
+              <SubTitle>GROUP HOMES</SubTitle>
+              <SubText>
                 Our providers specialize in taking care of disabled persons in the Group Home setting. <StyledLink to={`/contact-us`}>Call us</StyledLink> today for an appointment.
-              </p>
+              </SubText>
             </Homes>
           </Info>
           <HalfWhiteSpace />

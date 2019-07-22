@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { ScrollManager, WindowScroller } from 'react-scroll-manager';
 import { createBrowserHistory as createHistory } from 'history';
+import Styled from 'styled-components';
 import TopMenu from './menus/TopMenu';
 import Navbar from './menus/Navbar';
 import Footer from './menus/Footer';
@@ -19,12 +20,11 @@ import ContactUs from './pages/ContactUs';
 import '../index.css';
 
 
-const styles = {
-  container:{
-    maxWidth: '1250px',
-    margin: 'auto',
-  },
-};
+const Container = Styled.div`
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+`
 
 
 
@@ -42,9 +42,9 @@ class App extends Component {
           <WindowScroller>
             <div className="nav">
               <TopMenu />
-              <div style={styles.container} >
+              <Container>
                 <Navbar />
-              </div>
+              </Container>
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about-us' component={AboutUs} />

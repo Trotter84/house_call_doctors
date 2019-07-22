@@ -48,15 +48,14 @@ const SubText = Styled.div`
   }
 `
 
+const Contacts = Styled.p`
+  padding-left: 20px;
+`
+
 const WhiteSpace = Styled.div`
   height: 80px;
 `
 
-const styles = {
-  contacts:{
-    paddingLeft: '20px',
-  },
-}
 
 class AboutUs extends Component {
 
@@ -88,11 +87,11 @@ render() {
             </SubTitle>
             <SubText>
               <p>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
-              <p style={styles.contacts}><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
-              <p style={styles.contacts}><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></p>
-              <p style={styles.contacts}><b>Sandra Jense</b>, APRN <b>(801)241-0255</b></p>
-              <p style={styles.contacts}><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></p>
-              <p style={styles.contacts}><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></p>
+              <Contacts><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></Contacts>
+              <Contacts><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></Contacts>
+              <Contacts><b>Sandra Jense</b>, APRN <b>(801)241-0255</b></Contacts>
+              <Contacts><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></Contacts>
+              <Contacts><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></Contacts>
               <p>These are numeric pagers, they do not accept voicemail or text messages.</p>
               <p>After dialing the pager number, dial your own phone number followed by the pound key.</p>
               <p>Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>

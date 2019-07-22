@@ -125,23 +125,13 @@ const WhiteSpace = Styled.div`
   height: 80px;
 `
 
-const styles = {
-  line:{
-    margin: '6px 0 6px 0',
-  },
+const DividerSetLength = Styled(Divider)`
+  width: 527px;
+`
 
-  stateLine:{
-    maxWidth: '276px',
-  },
-
-  names:{
-
-  },
-
-  divider:{
-    width: '527px',
-  },
-}
+const DividerStateLine = Styled(Divider)`
+  max-width: 276px;
+`
 
 
 class OurProviders extends Component {
@@ -176,7 +166,7 @@ class OurProviders extends Component {
                       <Image wrapped size='medium' src={profile.image} />
                       <Modal.Description>
                         <Pic>{profile.bio}<br />{profile.bio2}</Pic>
-                        <Divider style={styles.divider}/>
+                        <DividerSetLength />
                         <Info>
                           <Edu>
                             <h3>Education and Experience</h3>
@@ -217,9 +207,9 @@ class OurProviders extends Component {
               <IhapSection>
                 <Ihap tabindex='0'>
                   <State>{eachProvider.state} Providers:</State>
-                  <Divider style={styles.stateLine}/>
+                  <DividerStateLine />
                   <Names>
-                    <p style={styles.names}>
+                    <p>
                       <b>
                         {eachProvider.people.map(person =>
                           <>
