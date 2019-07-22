@@ -12,7 +12,7 @@ const Container = Styled.div`
 `
 
 const EachNav = Styled(NavLink)`
-  font-size: 17px;
+  font-size: 1.308em;
   color: black;
   font-weight: bold;
   transition: all 200ms ease-in-out;
@@ -20,7 +20,7 @@ const EachNav = Styled(NavLink)`
     color: #AF3120;
   }
   &.active {
-    border-bottom: solid 2px;
+    border-bottom: solid 0.154em;
   }
 `
 
@@ -29,10 +29,10 @@ const Nav = Styled.div`
   flex-flow: row wrap;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 25px;
+  margin-right: 1.563em;
 
   ${EachNav} {
-    margin-left: 20px;
+    margin-left: 1.250em;
   }
 `
 
@@ -46,7 +46,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <Container>
+      <Container id='NavbarContainer'>
         <Link to={`/`}>
           <StyledImage src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>

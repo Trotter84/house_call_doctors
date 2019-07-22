@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 import Styled from 'styled-components';
+import '../../index.css';
 
 
 const MenuContainer = Styled(Menu)`
@@ -28,8 +29,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <MenuContainer>
-        <Bar>
+      <MenuContainer id='TopMenuMenuContainer'>
+        <Bar id='TopMenuBar'>
           <Menu.Item />
           <Menu.Item>
           <div>

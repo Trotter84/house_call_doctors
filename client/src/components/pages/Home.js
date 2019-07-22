@@ -134,7 +134,7 @@ class Home extends Component {
       <>
         <RedContainer>
           <MainContainer>
-            <CarouselContainer>
+            <CarouselContainer className='CarouselContainer'>
               <FrontPageImage />
             </CarouselContainer>
             <ContactArea>

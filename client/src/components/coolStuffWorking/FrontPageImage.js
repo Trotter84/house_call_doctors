@@ -23,15 +23,15 @@ const Photo = Styled.div`
 class FrontPageImage extends Component {
     render() {
         return (
-          <CarouselContainer>
+          <CarouselContainer className='CarouselContainer'>
             <Carousel autoPlay interval={4000} showThumbs={false} infiniteLoop>
-                <Photo>
+                <Photo className='FrontPagePhoto'>
                   <img src={MarkFrontPage1} alt="Mark and Client" />
                 </Photo>
-                <Photo>
+                <Photo className='FrontPagePhoto'>
                   <img src={MarkFrontPage2} alt="Mark checking Client's heart beat" />
                 </Photo>
-                <Photo>
+                <Photo className='FrontPagePhoto'>
                   <img src={MarkFrontPage3} alt="Mark and Client laughing" />
                 </Photo>
             </Carousel>

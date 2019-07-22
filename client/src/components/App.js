@@ -24,6 +24,11 @@ const Container = Styled.div`
   max-width: 1250px;
   width: 100%;
   margin: auto;
+
+  @mobile screen and (max-device-width: 375px) {
+    max-width: 375px;
+    background-color: blue;
+  }
 `
 
 
@@ -42,7 +47,7 @@ class App extends Component {
           <WindowScroller>
             <div className="nav">
               <TopMenu />
-              <Container>
+              <Container id='AppContainer'>
                 <Navbar />
               </Container>
               <Switch>
