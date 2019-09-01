@@ -38,7 +38,7 @@ const Nav = Styled.div`
 
 const StyledImage = Styled(Image)`
   margin: 0 0 5px 20px;
-  max-height: 190px;
+  max-height: 11.875em;
 `
 
 
@@ -48,7 +48,7 @@ class Navbar extends Component {
     return (
       <Container id='NavbarContainer'>
         <Link to={`/`}>
-          <StyledImage src={HCDLogo} alt="House Call Doctors' logo" />
+          <StyledImage id='NavbarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
         <Nav>
           <EachNav exact to={'/'}>HOME</EachNav>

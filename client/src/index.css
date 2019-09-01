@@ -17,6 +17,9 @@
   #NavbarEachNav {
 
   }
+  #NavbarStyledImage {
+    margin: 0;
+  }
 
   .CarouselContainer {
     max-width: 765px;
