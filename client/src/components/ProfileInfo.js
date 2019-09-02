@@ -175,6 +175,11 @@ const profiles = [
     info1: 'Terra Jacobs',
     info2: '(801) 485-5055 ext. 1',
     info3: <Email href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
+    info4: 'N/A',
+    info5: 'N/A',
+    info6: 'N/A',
+    info7: 'N/A'
+
   }
 ]
 
