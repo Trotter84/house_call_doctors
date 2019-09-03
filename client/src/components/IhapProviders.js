@@ -13,7 +13,8 @@ const ihapProviders = [
      'Rita Rutland, APRN',
      'Sandra Jense, APRN',
      'Sarah Woolsey, MD',
-     'Stephen Bullock, APRN'
+     'Stephen Bullock, APRN',
+     'Trenaisa Nay, GNP-BC'
    ]
   },
   {
@@ -23,7 +24,6 @@ const ihapProviders = [
       'Jared Jackman, PA',
       'Justin Nielsen, PA',
       'Mark Cacciamani, MD',
-      'Rick Steinburg, PA',
       'Rita Rutland, APRN',
       'Sandra Jense, APRN',
     ]
@@ -42,13 +42,15 @@ const ihapProviders = [
       'Rosetta Honovic, APRN',
       'Sherina Richards, APRN',
       'Tatiana Burgess, APRN',
-    ]
-  },
-  {
-    state: 'Montana',
-    people: [
-      'Kristina Kreiger, PA',
-      'Mark Cacciamani, MD',
+      'Adrianny Carrion, Technician',
+      'Irfan David, FNP',
+      'Linda Mooney-Sumpter, NP',
+      'Mikhail Shvarts, FNP-C',
+       'Alina Akhsanov, NP',
+      'Carolyn Flaherty, NP',
+      'Georgette Dixon, NP',
+      'Toba Omidiji, NP',
+      'Meral Duran, NP',
     ]
   },
   {
@@ -61,10 +63,8 @@ const ihapProviders = [
       'Joan “Joni” Venturi, APRN',
       'Lindsey Martin, APRN',
       'Lori Dealy, APRN',
-      'Lori Dealy, APRN',
       'Mark Cacciamani, MD',
       'Ryan Marendiuk, APRN',
-      'Sara Brady, PA',
     ]
   }
 ]
