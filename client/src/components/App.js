@@ -63,9 +63,9 @@ class App extends Component {
                 <Footer />
               </div>
             </div>
-            </WindowScroller>
-          </Router>
-        </ScrollManager>
+          </WindowScroller>
+        </Router>
+      </ScrollManager>
     );
   }
 };
