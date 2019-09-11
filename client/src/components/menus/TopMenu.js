@@ -1,20 +1,7 @@
 import React, { Component } from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 import Styled from 'styled-components';
-import '../../index.css';
 
-
-const MenuContainer = Styled(Menu)`
-  background-color: #f4f4f4;
-`
-
-const Bar = Styled.div`
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-`
 
 const Info = Styled.div`
   color: black;
@@ -29,8 +16,8 @@ class Navbar extends Component {
 
   render() {
     return (
-      <MenuContainer id='TopMenuMenuContainer'>
-        <Bar id='TopMenuBar'>
+      <Menu id='topMenuMenuContainer'>
+        <div id='topMenuBar'>
           <Menu.Item />
           <Menu.Item>
           <div>
@@ -54,8 +41,8 @@ class Navbar extends Component {
             <Info>Find Our Location</Info>
           </a>
           </Menu.Item>
-        </Bar>
-      </MenuContainer>
+        </div>
+      </Menu>
     )
   }
 }

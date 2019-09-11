@@ -1,8 +1,17 @@
 /* ============================ DESKTOP Version ============================ */
 
 /* ________________________________ TopMenu ________________________________ */
+#topMenuMenuContainer {
+  background-color: #f4f4f4;
+}
 
-
+#topMenuBar {
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ NavBar _________________________________ */
@@ -194,15 +203,15 @@
 
 /* ============================= TABLET Version ============================= */
 @media (min-width: 426px) and (max-width: 769px) {
-#AppContainer {
+#appContainer {
   max-width: 765px;
 }
 /* ________________________________ TopMenu ________________________________ */
-#TopMenuMenuContainer {
+#topMenuMenuContainer {
   display: none;
 }
 
-#TopMenuBar {
+#topMenuBar {
   max-width: 765px;
 }
 /* -------------------------------------------------------------------------- */
