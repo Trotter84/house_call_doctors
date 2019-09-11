@@ -17,7 +17,7 @@ import OurProviders from './pages/OurProviders';
 import OurServices from './pages/OurServices';
 import OurPrivacyPolicy from './pages/OurPrivacyPolicy';
 import ContactUs from './pages/ContactUs';
-import '../index.css';
+import './app.css';
 
 
 const Container = Styled.div`
