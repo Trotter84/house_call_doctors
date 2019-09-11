@@ -10,34 +10,6 @@ import profiles from '../ProfileInfo';
 import ihapProviders from '../IhapProviders';
 
 
-
-const MainContainer = Styled.div`
-  max-width: 1250px;
-  margin: auto;
-`
-
-const Title = Styled.h2`
-  font-weight: bold;
-  padding-top: 5px;
-`
-
-const FullSection = Styled.div`
-  display: flex;
-  flex-direction: row;
-`
-
-const Profile = Styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 10px 5px 0 5px;
-  max-height: 600px;
-`
-
-const Name = Styled.h3`
-  color: #AF3120;
-  padding-bottom: 10px;
-`
-
 const InfoBtn = Styled.a`
   font-size: 15px;
   color: black;
@@ -47,82 +19,6 @@ const InfoBtn = Styled.a`
     color: #AF3120;
     cursor: pointer;
   }
-`
-
-const Pic = Styled.div`
-  max-width: 600px;
-`
-
-const Edu = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 260px;
-`
-
-const Bio = Styled.p`
-  margin-bottom: 7px;
-`
-
-const Interests = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
-`
-
-const Int = Styled.p`
-  margin-bottom: 7px;
-`
-
-const Info = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-`
-
-const Names = Styled.div`
-  display: block;
-`
-
-const Ihap = Styled.div`
-  padding: 10px 0 0 10px;
-  height: 50px;
-  width: 220px;
-  border: solid .5px;
-    height: 100%;
-
-    ${Names} {
-      display: block;
-    }
-  }
-`
-
-const State = Styled.h2`
-  font-size: 19px;
-`
-
-const IhapSection = Styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  padding: 10px;
-  column-count: 3;
-`
-
-const BottomSection = Styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-`
-
-const TopWhiteSpace = Styled.div`
-  height: 55px;
-`
-
-const HalfWhiteSpace = Styled.div`
-  height: 40px;
-`
-
-const WhiteSpace = Styled.div`
-  height: 80px;
 `
 
 const DividerSetLength = Styled(Divider)`
@@ -147,68 +43,68 @@ class OurProviders extends Component {
         <div>
           <Image src={HCDpageDivider} />
         </div>
-        <TopWhiteSpace />
-        <MainContainer>
-          <Title>
+        <div id='ourProvidersTopWhiteSpace'></div>
+        <div id='ourProvidersMainContainer'>
+          <h2 id='ourProvidersTitle'>
             PRIMARY CARE PROVIDERS
-          </Title>
+          </h2>
           <Divider />
-          <FullSection>
+          <div id='ourProvidersFullSection'>
             {profiles.map(profile => {
               return(
-                <Profile>
+                <div id='ourProvidersProfile'>
                   <Image src={profile.image} alt={`Profile Picture of ${profile.shortName}`} />
-                  <Name>{profile.name}</Name>
+                  <h3 id='ourProvidersName'>{profile.name}</h3>
                   <p> &nbsp; &nbsp; &nbsp; {profile.shortBio}</p>
                   <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
                     <Modal.Header>{profile.name}</Modal.Header>
                     <Modal.Content image>
                       <Image wrapped size='medium' src={profile.image} />
                       <Modal.Description>
-                        <Pic>{profile.bio}<br />{profile.bio2}</Pic>
+                        <div id='ourProvidersPic'>{profile.bio}<br />{profile.bio2}</div>
                         <DividerSetLength />
-                        <Info>
-                          <Edu>
+                        <div id='ourProvidersInfo'>
+                          <div id='ourProvidersEdu'>
                             <h3>Education and Experience</h3>
-                            <Bio>{profile.edu1}</Bio>
-                            <Bio>{profile.edu2}</Bio>
-                            <Bio>{profile.edu3}</Bio>
-                            <Bio>{profile.edu4}</Bio>
-                            <Bio>{profile.edu5}</Bio>
-                            <Bio>{profile.edu6}</Bio>
-                            <Bio>{profile.edu7}</Bio>
-                            <Bio>{profile.edu8}</Bio>
-                          </Edu>
-                          <Interests>
+                            <p id='ourProvidersBio'>{profile.edu1}</p>
+                            <p id='ourProvidersBio'>{profile.edu2}</p>
+                            <p id='ourProvidersBio'>{profile.edu3}</p>
+                            <p id='ourProvidersBio'>{profile.edu4}</p>
+                            <p id='ourProvidersBio'>{profile.edu5}</p>
+                            <p id='ourProvidersBio'>{profile.edu6}</p>
+                            <p id='ourProvidersBio'>{profile.edu7}</p>
+                            <p id='ourProvidersBio'>{profile.edu8}</p>
+                          </div>
+                          <div id='ourProvidersInterests'>
                             <h3>Professional and Personal Interests</h3>
-                            <Int>{profile.interest1}</Int>
-                            <Int>{profile.interest2}</Int>
-                            <Int>{profile.interest3}</Int>
-                            <Int>{profile.interest4}</Int>
-                            <Int>{profile.interest5}</Int>
-                            <Int>{profile.interest6}</Int>
-                            <Int>{profile.interest7}</Int>
-                          </Interests>
-                        </Info>
+                            <p id='ourProvidersInt'>{profile.interest1}</p>
+                            <p id='ourProvidersInt'>{profile.interest2}</p>
+                            <p id='ourProvidersInt'>{profile.interest3}</p>
+                            <p id='ourProvidersInt'>{profile.interest4}</p>
+                            <p id='ourProvidersInt'>{profile.interest5}</p>
+                            <p id='ourProvidersInt'>{profile.interest6}</p>
+                            <p id='ourProvidersInt'>{profile.interest7}</p>
+                          </div>
+                        </div>
                       </Modal.Description>
                     </Modal.Content>
                   </Modal>
-                </Profile>
+                </div>
               )
             })}
-          </FullSection>
-          <HalfWhiteSpace />
-          <Title>
+          </div>
+          <div id='ourProvidersHalfWhiteSpace'></div>
+          <h2 id='ourProvidersTile'>
             IN HOME ASSESSMENT PROVIDERS
-          </Title>
+          </h2>
           <Divider />
-          <BottomSection>
+          <div id='ourProvidersBottomSection'>
             {ihapProviders.map(eachProvider =>
-              <IhapSection>
-                <Ihap tabindex='0'>
-                  <State>{eachProvider.state} Providers:</State>
+              <div id='ourProvidersIhapSection'>
+                <div id='ourProvidersIhap' tabindex='0'>
+                  <h2 id='ourProvidersState'>{eachProvider.state} Providers:</h2>
                   <DividerStateLine />
-                  <Names>
+                  <div id='ourProvidersNames'>
                     <p>
                       <b>
                         {eachProvider.people.map(person =>
@@ -220,13 +116,13 @@ class OurProviders extends Component {
                       </b>
                     </p>
                     <div>{eachProvider.divider}</div>
-                  </Names>
-                </Ihap>
-              </IhapSection>
+                  </div>
+                </div>
+              </div>
             )}
-          </BottomSection>
-        </MainContainer>
-        <WhiteSpace />
+          </div>
+        </div>
+        <div id='ourProvidersWhiteSpace'></div>
       </>
     )
   }
