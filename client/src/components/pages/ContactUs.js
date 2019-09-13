@@ -33,8 +33,8 @@ class ContactUs extends Component {
 
     return(
       <>
-        <div>
-          <Image src={HCDpageDivider} />
+        <div id='imageDividerContainer'>
+          <Image id='imageDivider' src={HCDpageDivider} />
         </div>
         <div id='contactUsMainContainer'>
           <div id='contactUsTopWhiteSpace'></div>

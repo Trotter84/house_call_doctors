@@ -62,8 +62,8 @@ class OurPrivacyPolicy extends Component {
   render() {
     return(
       <>
-        <div>
-          <Image src={HCDpageDivider} />
+        <div id='imageDividerContainer'>
+          <Image id='imageDivider' src={HCDpageDivider} />
         </div>
         <MainContainer>
           <Title>

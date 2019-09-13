@@ -15,8 +15,31 @@
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ NavBar _________________________________ */
+#navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+#navBarStyledImage {
+  margin: 0 0 5px 20px;
+  max-height: 11.875em;
+}
 
+.navBarEachNav {
+  font-size: 1.308em;
+  color: black;
+  font-weight: bold;
+}
+
+#imageDividerContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#imageDivider {
+
+}
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
@@ -327,6 +350,8 @@
 #footerContainer {
   background-color: #1C1C1C;
   height: 100px;
+  width: 100%;
+  bottom: 0;
 }
 
 #footerMainContainer {
@@ -341,8 +366,13 @@
 }
 
 #footerCopyright {
+  font-size: 14px;
   padding: 25px 0 0 30px;
   color: #878787;
+}
+
+#footerLinkCopyright {
+  font-size: 14px;
 }
 
 #footerNavContainer {
@@ -350,6 +380,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#footerNav {
+  margin-right: 25px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.footerEachNav {
+  font-size: 14px;
+  color: white;
 }
 /* -------------------------------------------------------------------------- */
 /* ========================================================================== */
@@ -434,13 +476,50 @@
 @media (max-width: 426px) {
 
 /* ________________________________ TopMenu ________________________________ */
+#topMenuMenuContainer {
+  display: none;
+}
 
-
+#topMenuBar {
+  max-width: 426px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ NavBar _________________________________ */
+#navBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+#navBarStyledImage {
+  margin: 10px 0 5px 10px;
+  max-height: 6.7em;
+}
 
+#navBarNav {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1em;
+  max-width: 300px;
+}
+
+.navBarEachNav {
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
+}
+
+#imageDividerContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#imageDivider {
+  height: 60px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
@@ -449,20 +528,29 @@
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
-#aboutUsmainContainer {
+#aboutUsMainContainer {
   max-width: 1175px;
   margin: auto;
 }
 
-#aboutUstitle {
-  padding-top: 25px;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-#aboutUsflexBox {
+#aboutUsTitleContainer {
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+#aboutUsTitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#aboutUsFlexBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
 }
 
 #aboutUsAllText {
@@ -471,31 +559,32 @@
 }
 
 #aboutUsPhoto {
-  padding: 30px 30px 20px 20px;
-  width: 900px;
+  padding: 0 10px 40px 10px;
+  width: 100%;
 }
 
 .aboutUsSubTitle {
   padding-top: 5px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .aboutUsSubTextContainer {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .aboutUsSubText {
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .aboutUsContacts {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
-.AboutUsWhiteSpace {
-  height: 80px;
+.aboutUsWhiteSpace {
+  height: 40px;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -520,7 +609,51 @@
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ Footer _________________________________ */
+#footerContainer {
+  background-color: #1C1C1C;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
 
+#footerMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+#footerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footerCopyright {
+  font-size: 12px;
+  padding: 15px 0 0 15px;
+  color: #878787;
+}
+
+#footerLinkCopyright {
+  font-size: 12px;
+}
+
+#footerNavContainer {
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footerNav {
+  margin-right: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.footerEachNav {
+  font-size: 12px;
+  color: white;
+}
 /* -------------------------------------------------------------------------- */
 }

@@ -5,16 +5,7 @@ import Styled from 'styled-components';
 import HCDLogo from '../../images/HCDLogo.png';
 
 
-const Container = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`
-
 const EachNav = Styled(NavLink)`
-  font-size: 1.308em;
-  color: black;
-  font-weight: bold;
   transition: all 200ms ease-in-out;
   &:hover,&.active {
     color: #AF3120;
@@ -36,29 +27,24 @@ const Nav = Styled.div`
   }
 `
 
-const StyledImage = Styled(Image)`
-  margin: 0 0 5px 20px;
-  max-height: 11.875em;
-`
-
 
 class Navbar extends Component {
 
   render() {
     return (
-      <Container id='NavbarContainer'>
+      <div id='navBarContainer'>
         <Link to={`/`}>
-          <StyledImage id='NavbarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
+          <Image id='navBarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
-        <Nav>
-          <EachNav exact to={'/'}>HOME</EachNav>
-          <EachNav to={'/about-us'}>ABOUT US</EachNav>
-          <EachNav to={'/our-providers'}>OUR PROVIDERS</EachNav>
-          <EachNav to={'/our-services'}>OUR SERVICES</EachNav>
-          <EachNav to={'/our-privacy-policy'}>OUR PRIVACY POLICY</EachNav>
-          <EachNav to={'/contact-us'}>CONTACT US</EachNav>
+        <Nav id='navBarNav'>
+          <EachNav exact to={'/'} className='navBarEachNav'>HOME</EachNav>
+          <EachNav to={'/about-us'} className='navBarEachNav'>ABOUT US</EachNav>
+          <EachNav to={'/our-providers'} className='navBarEachNav'>OUR PROVIDERS</EachNav>
+          <EachNav to={'/our-services'} className='navBarEachNav'>OUR SERVICES</EachNav>
+          <EachNav to={'/our-privacy-policy'} className='navBarEachNav'>OUR PRIVACY POLICY</EachNav>
+          <EachNav to={'/contact-us'} className='navBarEachNav'>CONTACT US</EachNav>
         </Nav>
-      </Container>
+      </div>
     )
   }
 }

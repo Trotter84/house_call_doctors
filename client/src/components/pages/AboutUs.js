@@ -13,13 +13,13 @@ class AboutUs extends Component {
 render() {
   return(
     <>
-      <div>
-        <Image src={HCDpageDivider} />
+      <div id='imageDividerContainer'>
+        <Image id='imageDivider' src={HCDpageDivider} />
       </div>
       <div id='aboutUsMainContainer'>
-        <h2 id='aboutUsTitle'>
-          YOUR GUIDE TO BETTER HEALTHCARE
-        </h2>
+        <div id='aboutUsTitleContainer'>
+          <h2 id='aboutUsTitle'>YOUR GUIDE TO BETTER HEALTHCARE</h2>
+        </div>
         <div id='aboutUsFlexBox'>
           <div id='aboutUsAllText'>
             <h2 className='aboutUsSubTitle'>
@@ -36,7 +36,7 @@ render() {
               <p className='aboutUsSubText'>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
               <p className='aboutUsContacts'><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
               <p className='aboutUsContacts'><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></p>
-              <p className='aboutUsContacts'><b>Sandra Jense</b>, APRN <b>(801)241-0255</b></p>
+              <p className='aboutUsContacts'><b>Sandra Jense</b>, APRN <b>(801) 241-0255</b></p>
               <p className='aboutUsContacts'><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></p>
               <p className='aboutUsContacts'><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></p>
               <p className='aboutUsSubText'>These are numeric pagers, they do not accept voicemail or text messages.</p>
@@ -54,7 +54,7 @@ render() {
             <h2 className='aboutUsSubTitle'>
               Where It All Started
             </h2>
-            <div id='aboutUsSubTextContainer'>
+            <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubText'>
                 Dr. Mark Cacciamani began his medical career in a clinic setting where he was often unable to spend adequate time with his patients.<br />He realized during this clinical experience that his place was not with the "worried well" and he wanted to make a bigger difference in healthcare.<br /><br />He founded House Call Doctors in 2004 which allowed him to serve home-bound patients that would not otherwise have access to adequate health care.<br />Dr. Cacciamani's passion to bring better health care to the home-bound population is instilled in all of House Call Doctors' staff and we strive to better the quality of life for each of our patients.
               </p>
@@ -62,9 +62,7 @@ render() {
             <div className='aboutUsWhiteSpace'></div>
           </div>
           <div id='aboutUsPhoto'>
-            <div>
-              <Image src={GroupPhoto} />
-            </div>
+            <Image src={GroupPhoto} />
           </div>
         </div>
       </div>
