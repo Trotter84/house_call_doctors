@@ -3,26 +3,6 @@ import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 
 
-const FooterContainer = Styled.div`
-  background-color: #1C1C1C;
-  height: 100px;
-`
-
-const MainContainer = Styled.div`
-  max-width: 1250px;
-  margin: auto;
-`
-
-const Box = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`
-
-const Copyright = Styled.p`
-  padding: 25px 0 0 30px;
-  color: #878787;
-`
 
 const StyledLink = Styled(Link)`
   font-size: 13px;
@@ -33,12 +13,6 @@ const StyledLink = Styled(Link)`
   }
 `
 
-const NavContainer = Styled.div`
-  padding-top: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-`
 
 const Nav = Styled.div`
   margin-right: 25px;
@@ -56,11 +30,11 @@ class Footer extends Component {
 
   render() {
     return(
-      <FooterContainer>
-        <MainContainer>
-          <Box>
-            <Copyright>Copyright © 2019 <StyledLink to={`/`}> &nbsp; House Call Doctors Utah. &nbsp; </StyledLink>All rights reserved.</Copyright>
-            <NavContainer>
+      <div id='footerContainer'>
+        <div id='footerMainContainer'>
+          <div id='footerBox'>
+            <p id='footerCopyright'>Copyright © 2019 <StyledLink to={`/`}> &nbsp; House Call Doctors Utah. &nbsp; </StyledLink>All rights reserved.</p>
+            <div id='footerNavContainer'>
               <Nav>
                 <StyledLink to={'/'}>Home</StyledLink>
                 <StyledLink to={'about-us'}>About Us</StyledLink>
@@ -69,10 +43,10 @@ class Footer extends Component {
                 <StyledLink to={'our-privacy-policy'}>Our Privacy Policy</StyledLink>
                 <StyledLink to={'contact-us'}>Contact Us</StyledLink>
               </Nav>
-            </NavContainer>
-          </Box>
-        </MainContainer>
-      </FooterContainer>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 };

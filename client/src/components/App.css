@@ -324,8 +324,33 @@
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ Footer _________________________________ */
+#footerContainer {
+  background-color: #1C1C1C;
+  height: 100px;
+}
 
+#footerMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+#footerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footerCopyright {
+  padding: 25px 0 0 30px;
+  color: #878787;
+}
+
+#footerNavContainer {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 /* -------------------------------------------------------------------------- */
 /* ========================================================================== */
 
