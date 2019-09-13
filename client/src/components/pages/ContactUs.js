@@ -10,32 +10,6 @@ import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
 import profiles from '../ProfileInfo';
 
 
-
-const MainContainer = Styled.div`
-  max-width: 1250px;
-  margin: auto;
-`
-
-const Icon = Styled.i`
-  color: #AF3120;
-`
-
-const Office = Styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 10px 150px;
-`
-
-const Fax = Styled.div`
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 10px 150px;
-`
-
-const FemaleImage = Styled(Image)`
-  padding: 10px 0 0 130px;
-`
-
 const MapInfo = Styled.div`
   display: flex;
   flex-direction: row;
@@ -57,29 +31,6 @@ const SubText = Styled.div`
     font-weight: normal;
     font-size: 16px;
   }
-`
-
-const ProfileContainer = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 20px;
-  min-width: 1250px;
-  flex-wrap: wrap;
-`
-
-const Profile = Styled.div`
-  display: flex;
-  flex-direction: row;
-  max-height: 100px;
-  padding-bottom: 20px;
-`
-
-const Names = Styled.p`
-  font-size: 14.5px;
-  padding-left: 6px;
-  margin-bottom: 0px;
-  max-width: 350px;
 `
 
 const DividerProfile = Styled(Divider)`
@@ -163,30 +114,30 @@ class ContactUs extends Component {
         <div>
           <Image src={HCDpageDivider} />
         </div>
-        <MainContainer>
+        <div id='contactUsMainContainer'>
           <TopWhiteSpace />
           <MapInfo>
             <div>
-              <Office>
-                <Icon className='phone square large icon color' />
+              <div id='contactUsOffice'>
+                <i id='contactUsIcon' className='phone square large icon color'></i>
                 <p>Office Phone: <b>(801) 485-5055</b></p>
-              </Office>
-              <Fax>
-                <Icon className='fax large icon color' />
+              </div>
+              <div id='contactUsFax'>
+                <i id='contactUsIcon' className='fax large icon color'></i>
                 <p>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
-              </Fax>
-              <FemaleImage src={MarkWithFemale2} alt="Mark with client" />
+              </div>
+              <Image id='contactUsFemaleImage' src={MarkWithFemale2} alt="Mark with client"></Image>
             </div>
             <iframe title="House Call Doctors' location" width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
           </MapInfo>
           <Divider />
-          <ProfileContainer>
+          <div id='contactUsProfileContainer'>
             {profiles.map(profile => {
               return(
-                <Profile>
+                <div id='contactUsProfile'>
                   <Image src={profile.profileImage} size='tiny' />
                   <Contact>
-                    <Names><br /><b>{profile.name}</b></Names>
+                    <p id='contactUsNames'><br /><b>{profile.name}</b></p>
                     <DividerProfile />
                     <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
                       <Modal.Header>{profile.name}</Modal.Header>
@@ -212,10 +163,10 @@ class ContactUs extends Component {
                       </Modal.Content>
                     </Modal>
                   </Contact>
-                </Profile>
+                </div>
               )
             })}
-          </ProfileContainer>
+          </div>
 
           <Divider />
           <SubTitle>
@@ -232,7 +183,7 @@ class ContactUs extends Component {
             <Directions><b>If Urgent: Page the provider and wait 5 minutes, page them again, wait 5 more minutes, and then page them a third time. This lets our providers know to stop what they are doing and call you urgently.  This also ensures that they get the correct phone number.</b></Directions>
             <Directions>Please note: our providers are never bothered by being paged. They like to know what’s going on with their patients and are very involved in each patient’s care.</Directions>
           </SubText>
-        </MainContainer>
+        </div>
         <WhiteSpace />
       </>
     )

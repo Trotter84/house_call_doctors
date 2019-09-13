@@ -162,9 +162,6 @@
   font-size: 19px;
 }
 
-
-
-
 #ourProvidersTopWhiteSpace {
   height: 55px;
 }
@@ -189,8 +186,53 @@
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
+#contactUsMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+#contactUsIcon {
+  color: #AF3120;
+}
 
+#contactUsOffice {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 150px;
+}
+
+#contactUsFax {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 150px;
+}
+
+#contactUsFemaleImage {
+  padding: 10px 0 0 130px;
+}
+
+#contactUsProfileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  min-width: 1250px;
+  flex-wrap: wrap;
+}
+
+#contactUsProfile {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  padding-bottom: 20px;
+}
+
+#contactUsNames {
+  font-size: 14.5px;
+  padding-left: 6px;
+  margin-bottom: 0px;
+  max-width: 350px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ Footer _________________________________ */
