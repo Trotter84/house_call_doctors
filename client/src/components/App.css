@@ -43,8 +43,113 @@
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
+#homeMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+
+#homeRedContainer {
+  background-color: #AF3120;
+  height: 850px;
+}
+
+#homeCarouselContainer {
+  max-height: 600px;
+  max-width: 1166px;
+  padding: 45px 0 0 0;
+}
+
+#homeContactUsLink {
+  padding: 60px;
+}
+
+#homeContactUs {
+  background-color: #AF3120;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin: 28px 25px 0 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 
+#homeContactArea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#homeContactAreaLeft {
+  flex: 1;
+}
+
+#homeSectionHeader {
+  color: white;
+  padding: 80px 0 0 25px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+#homeSection {
+  color: white;
+  padding: 0px 25px;
+  margin: 0;
+  font-weight: normal;
+}
+.homeSubTitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.homeSubText {
+  color: #494949;
+  font-size: 16px;
+}
+
+#homeInfo {
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#homeVisits {
+  width: 30%;
+  margin-right: 15px;
+}
+
+#homeLiving {
+  width: 30%;
+  margin-right: 15px;
+}
+
+#homeHomes {
+  width: 30%;
+  margin-right: 15px;
+}
+
+.homeIcon {
+  color: #AF3120;
+}
+
+.homeStyledLink {
+  font-size: 15px;
+  color: #AF3120;
+}
+
+
+#homeHalfWhiteSpace {
+  height: 50px;
+}
+
+#homeWhiteSpace {
+  height: 120px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
