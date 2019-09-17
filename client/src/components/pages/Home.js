@@ -45,9 +45,9 @@ class Home extends Component {
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
                 </h3>
               </div>
-              <Link to={`/contact-us`} id='homeContactUsLink'>
-                <button id='homeContactUs'>CONTACT US</button>
-              </Link>
+              <StyledLink to={`/contact-us`} id='homeContactUsLink'>
+                <ContactUs id='homeContactUs'>CONTACT US</ContactUs>
+              </StyledLink>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ class Home extends Component {
               </i>
               <h2 className='homeSubTitle'>ASSISTED LIVING</h2>
               <p className='homeSubText'>
-                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Salt Lake, Utah, and Davis Counties. <Link to={`/contact-us`} className='homeStyledLink'>Call us</Link> today to see if a provider is in your facility.
+                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today to see if a provider is in your facility.
               </p>
             </div>
             <div id='homeHomes'>
@@ -78,7 +78,7 @@ class Home extends Component {
               </i>
               <h2 className='homeSubTitle'>GROUP HOMES</h2>
               <p className='homeSubText'>
-                Our providers specialize in taking care of disabled persons in the Group Home setting. <Link to={`/contact-us`} className='homeStyledLink'>Call us</Link> today for an appointment.
+                Our providers specialize in taking care of disabled persons in the Group Home setting. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today for an appointment.
               </p>
             </div>
           </div>
