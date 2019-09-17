@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Divider } from 'semantic-ui-react';
-import Carousel from 'nuka-carousel';
-import Styled from 'styled-components';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 const testimonials = [
@@ -62,6 +63,14 @@ const testimonials = [
 
 class Testimonials extends Component {
   render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
     return (
       <div id='testimonialsFullSection'>
         <div id='testimonialsTopPart'>
@@ -70,7 +79,7 @@ class Testimonials extends Component {
           </h2>
           <Divider id='testimonialsDividerLine' />
         </div>
-        <Carousel id='testimonialsCarouselStyle'>
+        <Slider {...settings} id='testimonialsCarouselStyle'>
 
           {testimonials.map(person => {
             return(
@@ -85,7 +94,7 @@ class Testimonials extends Component {
              )
             })}
 
-        </Carousel>
+        </Slider>
       </div>
     );
   }
