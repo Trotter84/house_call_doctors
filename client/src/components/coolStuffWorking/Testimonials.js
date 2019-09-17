@@ -4,47 +4,6 @@ import Carousel from 'nuka-carousel';
 import Styled from 'styled-components';
 
 
-const FullSection = Styled.div`
-  max-height: 250px;
-  max-width: 1170px;
-`
-
-const Title = Styled.h2`
-  font-size: 24px;
-  font-weight: bold;
-`
-
-const TopPart = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 1170px;
-`
-
-const Name = Styled.h3`
-  padding: 15px 0 0 30px;
-`
-
-const QuoteBox = Styled.div`
-  border-radius: 5px;
-  background-color: #DEDEDF;
-  min-height: 50px;
-  font-size: 15px;
-`
-
-const Quote = Styled.div`
-  max-width: 1100px;
-  padding-left: 10px;
-`
-
-const DividerLine = Styled(Divider)`
-  margin: 6px 0 6px 3px;
-`
-
-const CarouselStyle = Styled(Carousel)`
-  min-height: 250px;
-`
-
-
 const testimonials = [
   {
     name: "Judy, patient's mother",
@@ -104,30 +63,30 @@ const testimonials = [
 class Testimonials extends Component {
   render() {
     return (
-      <FullSection>
-        <TopPart>
-          <Title>
+      <div id='testimonialsFullSection'>
+        <div id='testimonialsTopPart'>
+          <h2 id='testimonialsTitle'>
             TESTIMONIALS
-          </Title>
-          <DividerLine />
-        </TopPart>
-        <CarouselStyle>
+          </h2>
+          <Divider id='testimonialsDividerLine' />
+        </div>
+        <Carousel id='testimonialsCarouselStyle'>
 
           {testimonials.map(person => {
             return(
-              <div>
-                <Name>{person.name}</Name>
-                <QuoteBox>
-                  <Quote>
+              <div id='testimonialsContainer'>
+                <h3 id='testimonialsName'>{person.name}</h3>
+                <div id='testimonialsQuoteBox'>
+                  <div id='testimonialsQuote'>
                     <p>&nbsp;&nbsp;&nbsp;&nbsp;{person.quote}</p>
-                  </Quote>
-                </QuoteBox>
+                  </div>
+                </div>
               </div>
              )
             })}
 
-        </CarouselStyle>
-      </FullSection>
+        </Carousel>
+      </div>
     );
   }
 }
