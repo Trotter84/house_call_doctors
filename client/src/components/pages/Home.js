@@ -56,7 +56,7 @@ class Home extends Component {
           <div id='homeInfo'>
             <div id='homeVisits'>
               <i className='homeIcon'>
-                <i className='home huge icon color' />
+                <i id='homeHomeIcon' className='home huge icon color' />
               </i>
               <h2 className='homeSubTitle'>HOME VISITS</h2>
               <p className='homeSubText'>
