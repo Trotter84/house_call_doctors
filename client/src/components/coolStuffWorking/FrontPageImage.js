@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import Styled from 'styled-components';
 import MarkFrontPage1 from '../../images/MarkFrontPage2.jpg';
 import MarkFrontPage2 from '../../images/MarkFrontPage1.jpg';
 import MarkFrontPage3 from '../../images/MarkFrontPage3.jpg';
