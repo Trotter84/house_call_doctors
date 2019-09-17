@@ -50,7 +50,7 @@
 
 #homeRedContainer {
   background-color: #AF3120;
-  height: 850px;
+  height: inherit;
 }
 
 #homeCarouselContainer {
@@ -112,7 +112,7 @@
 
 #homeSection {
   color: white;
-  padding: 0px 25px;
+  padding: 0px 25px 50px 25px;
   margin: 0;
   font-weight: normal;
 }
@@ -651,7 +651,7 @@
 
 #homeRedContainer {
   background-color: #AF3120;
-  height: 850px;
+  height: inherit;
 }
 
 #homeCarouselContainer {
@@ -666,7 +666,7 @@
   padding: 0 15px 0 15px;
   text-align: center;
   max-height: 600px;
-  max-width: 1166px;
+  max-width: 426px;
 }
 
 #frontPageImageCarousel {
@@ -679,14 +679,15 @@
 }
 
 #homeContactUsLink {
-  padding: 60px;
+  text-align: center;
+  padding: 20px 0 35px 0;
 }
 
 #homeContactUs {
   border: 1px solid white;
   color: white;
   padding: 10px 20px;
-  margin: 28px 25px 0 0;
+  margin: 0;
   text-align: center;
   display: inline-block;
   font-size: 16px;
@@ -695,8 +696,8 @@
 
 #homeContactArea {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -705,17 +706,17 @@
 }
 
 #homeSectionHeader {
-  color: white;
-  padding: 80px 0 0 25px;
+  text-align: center;
+  padding: 20px 20px 0 20px;
   margin-bottom: 5px;
-  font-weight: normal;
+  font-size: 25px;
 }
 
 #homeSection {
-  color: white;
-  padding: 0px 25px;
+  text-align: center;
+  padding: 0px 30px 0 30px;
   margin: 0;
-  font-weight: normal;
+  font-size: 16px;
 }
 .homeSubTitle {
   font-size: 22px;
