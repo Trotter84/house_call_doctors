@@ -66,6 +66,9 @@ class Testimonials extends Component {
     var settings = {
       dots: true,
       infinite: true,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      pauseOnDotsHover: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
