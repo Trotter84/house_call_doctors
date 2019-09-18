@@ -364,8 +364,48 @@
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
+#privacyMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+.privacyTitle {
+  font-weight: bold;
+  padding-top: 65px;
+}
 
+.privacySubTextContainer {
+  padding-left: 20px;
+}
+
+.privacySubText {
+  color: #494949;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.privacyPolicy {
+  color: #494949;
+  font-weight: normal;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+#privacyAddressContainer {
+  margin: 10px 0;
+}
+
+.privacyAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px 0 14px 0;
+  font-weight: bold;
+}
+
+#privacyWhiteSpace {
+  height: 80px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
@@ -945,8 +985,49 @@
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
+#privacyMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+.privacyTitle {
+  font-weight: bold;
+  padding-top: 65px;
+}
 
+.privacySubTextContainer {
+  padding-left: 20px;
+}
+
+.privacySubText {
+  color: #494949;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.privacyPolicy {
+  padding-left: 20px;
+}
+
+#privacyAddressContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.privactyAddress {
+  font-weight: bold;
+
+}
+
+#privacyWhiteSpace {
+  height: 80px;
+}
+
+#privacyHipaa {
+  color: black;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
