@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 
 
+const ContactUs = Styled(Link)`
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: #AF3120;
+  }
+`
+
 const Hipaa = Styled.a`
   cursor: pointer;
-  color: black;
   transition: all 200ms ease-in-out;
   :hover {
     color: #AF3120;
@@ -101,7 +109,7 @@ class OurPrivacyPolicy extends Component {
             <p className='privacySubText'>This notice describes the privacy practices of House Call Doctors. Included are providers, employees, students, trainees, and volunteers.</p>
           </div>
           <h2>
-            <Hipaa to={'/contact-us'}>Contact Us:</Hipaa>
+            <ContactUs to={'/contact-us'} className='privacyLink'>Contact Us:</ContactUs>
           </h2>
           <div className='privacySubTextContainer'>
             <p className='privacySubText'>If you are concerned that your privacy rights may have been violated, or disagree with a decision that we made about access to your health information, you may contact us at:</p>
@@ -114,7 +122,7 @@ class OurPrivacyPolicy extends Component {
           </div>
           <div className='privacySubTextContainer'>
             <p className='privacySubText'>We will investigate all complaints and will not retaliate against you for filing a complaint. You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
-            <p className='privacySubText'>For information on <b>HIPAA</b> laws <Hipaa href={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html'} target='_blank'><b>click here</b></Hipaa></p>
+            <p className='privacySubText'>For information on <b>HIPAA</b> laws <Hipaa className='privacyLink' href={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html'} target='_blank'><b>click here</b></Hipaa></p>
           </div>
         </div>
         <div id='privacyWhiteSpace' />

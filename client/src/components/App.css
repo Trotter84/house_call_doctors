@@ -403,6 +403,10 @@
   font-weight: bold;
 }
 
+.privacyLink {
+  color: black;
+}
+
 #privacyWhiteSpace {
   height: 80px;
 }
@@ -1006,27 +1010,26 @@
 }
 
 .privacyPolicy {
+  color: #494949;
+  font-weight: normal;
+  font-size: 15px;
   padding-left: 20px;
 }
 
 #privacyAddressContainer {
+  margin: 10px 0;
+}
+
+.privacyAddress {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0 10px 0;
-}
-
-.privactyAddress {
+  margin: 14px 0 14px 0;
   font-weight: bold;
-
 }
 
 #privacyWhiteSpace {
   height: 80px;
-}
-
-#privacyHipaa {
-  color: black;
 }
 /* -------------------------------------------------------------------------- */
 
