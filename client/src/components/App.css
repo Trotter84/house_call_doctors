@@ -1001,7 +1001,7 @@
 
 #privacyTitleTop {
   font-weight: bold;
-  padding-top: 65px;
+  padding-top: 35px;
   font-size: 20px;
 }
 
@@ -1011,7 +1011,7 @@
 }
 
 .privacySubTextContainer {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .privacySubText {
@@ -1024,7 +1024,7 @@
   color: #494949;
   font-weight: normal;
   font-size: 15px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 #privacyAddressContainer {
@@ -1040,7 +1040,7 @@
 }
 
 #privacyWhiteSpace {
-  height: 80px;
+  height: 40px;
 }
 /* -------------------------------------------------------------------------- */
 
