@@ -697,7 +697,7 @@
 #navBarContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #navBarStyledImage {
@@ -710,8 +710,9 @@
   flex-flow: column;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 1em;
+  margin-right: 1.4em;
   max-width: 350px;
+  margin: 5px 0;
 }
 
 .navBarEachNav {
