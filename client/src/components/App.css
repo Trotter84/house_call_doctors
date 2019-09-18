@@ -359,8 +359,56 @@
 /* -------------------------------------------------------------------------- */
 
 /* ______________________________ Our Services ______________________________ */
+#servicesMainContainer {
+  max-width: 1250px;
+  margin: auto;
+}
 
+#servicesSubSection {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 65px;
+  max-width: 1200px;
+}
 
+#servicesInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  padding-left: 15px;
+}
+
+.servicesTitle {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.servicesSubTitle {
+  margin-top: 9px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.servicesPointsTitle {
+  padding-left: 20px;
+}
+
+#servicesPointsContainer {
+  column-count: 2;
+  padding-left: 100px;
+}
+
+#servicesQuarterWhiteSpace {
+  height: 20px;
+}
+
+#servicesHalfWhiteSpace {
+  height: 40px;
+}
+
+#servicesWhiteSpace {
+  height: 80px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */

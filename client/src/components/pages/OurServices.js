@@ -3,37 +3,6 @@ import Styled from 'styled-components';
 import { Image, Divider } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 
-
-const MainContainer = Styled.div`
-  max-width: 1250px;
-  margin: auto;
-`
-
-const SubSection = Styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  padding-top: 65px;
-  max-width: 1200px;
-`
-
-const Info = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 850px;
-  padding-left: 15px;
-`
-
-const Title = Styled.h2`
-  font-weight: bold;
-  padding-top: 5px;
-`
-
-const SubTitle = Styled.h3`
-  margin-top: 9px;
-  padding-left: 20px;
-  font-size: 20px;
-`
-
 const SubText = Styled.div`
   padding-left: 40px;
 
@@ -42,27 +11,6 @@ const SubText = Styled.div`
     font-weight: normal;
     font-size: 16px;
   }
-`
-
-const PointsTitle = Styled.p`
-  padding-left: 20px;
-`
-
-const PointsContainer = Styled.div`
-  column-count: 2;
-  padding-left: 100px;
-`
-
-const QuarterWhiteSpace = Styled.div`
-  height: 20px;
-`
-
-const HalfWhiteSpace = Styled.div`
-  height: 40px;
-`
-
-const WhiteSpace = Styled.div`
-  height: 80px;
 `
 
 
@@ -78,30 +26,29 @@ class OurServices extends Component {
         <div id='imageDividerContainer'>
           <Image id='imageDivider' src={HCDpageDivider} />
         </div>
-        <MainContainer>
-          <SubSection>
-            <Info>
-              <SubTitle>
-                If you are interested in becoming a patient, please fill out the fields on the right & we will get back to you as openings become available.
-              </SubTitle>
+        <div id='servicesMainContainer'>
+          <div id='servicesSubSection'>
+            <div id='servicesInfo'>
+
+
               <SubText>
                 <p>Our providers see patients in Assisted Living Facilities, Memory Care Units, Group Homes, and Individual Homes.</p>
               </SubText>
-            </Info>
+            </div>
 
-          </SubSection>
-          <QuarterWhiteSpace />
-          <Title>
+          </div>
+          <div id='servicesQuarterWhiteSpace' />
+          <h2 className='servicesTitle'>
             PRIMARY CARE SERVICES
-          </Title>
+          </h2>
           <Divider />
-          <HalfWhiteSpace />
+          <div id='servicesHalfWhiteSpace' />
           <SubText>
             <p>
               House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
             </p>
-            <PointsTitle>These services include but are not limited to:</PointsTitle>
-            <PointsContainer>
+            <p className='servicesPointsTitle'>These services include but are not limited to:</p>
+            <div id='servicesPointsContainer'>
               <p>• X-ray</p>
               <p>• Ultrasound</p>
               <p>• Sleep Studies</p>
@@ -112,14 +59,14 @@ class OurServices extends Component {
               <p>• Podiatry</p>
               <p>• Talk Therapy</p>
               <p>• Home Health, Hospice, and much more.</p>
-            </PointsContainer>
+            </div>
             <br />
-            <PointsTitle><b>Please contact our office to schedule an appointment!</b></PointsTitle>
+            <p className='servicesPointsTitle'><b>Please contact our office to schedule an appointment!</b></p>
           </SubText>
-          <HalfWhiteSpace />
-          <Title>
+          <div id='servicesHalfWhiteSpace' />
+          <h2 className='servicesTitle'>
             IN HOME ASSESSMENT SERVICES
-          </Title>
+          </h2>
           <Divider />
           <SubText>
             <p>We are currently scheduling 2019 In-Home Assessments for Molina Advantage, Emblem Healthcare, Empire Healthcare, Mountain Health Co-Op, and Montana Health Co-Op.<br /><br />Please contact <b>Lara, Sienna, Crystal, Alexa, Katie, or Milena</b> to schedule your free in-home exam!</p>
@@ -130,13 +77,16 @@ class OurServices extends Component {
             <p>Your eligibility is determined by your health plan.</p>
             <p>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
           </SubText>
-        </MainContainer>
-        <WhiteSpace />
+        </div>
+        <div id='servicesWhiteSpace' />
       </>
     )
   }
 };
 
+// <h3 className='servicesSubTitle'>
+//   If you are interested in becoming a patient, please fill out the fields on the right & we will get back to you as openings become available.
+// </h3>
 
 
 
