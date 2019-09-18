@@ -35,13 +35,13 @@ class OurPrivacyPolicy extends Component {
           <Image id='imageDivider' src={HCDpageDivider} />
         </div>
         <div id='privacyMainContainer'>
-          <h2 className='privacyTitle'>
+          <h2 id='privacyTitleTop'>
             Privacy Promise:
           </h2>
           <div className='privacySubTextContainer'>
             <p className='privacySubText'>House Call Doctors understands that your medical and health information is personal. Protecting your health information is important.<br />We follow strict federal and state laws that require us to maintain the confidentiality of your health information.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             How We Use Your Health Information:
           </h2>
           <div className='privacySubTextContainer'>
@@ -51,7 +51,7 @@ class OurPrivacyPolicy extends Component {
               <p className='privacyPolicy'><b>Payment-</b> We may use and disclose your information in order to bill and collect payment for the services and items you may receive from us.  Your information may be used to obtain payment from you, your insurance company, or another third party.  We may also contact your insurance company to verify coverage for your care or to notify them of upcoming services that may need prior notice or approval.  For example, we may disclose health information about the services provided in order to obtain payment from your insurance company or Medicare.</p>
               <p className='privacyPolicy'><b>Health Care Operations-</b> We use health information to improve the quality of care, train staff and students, and provide customer service, manage costs, conduct required business duties, and make plans to better serve our patients.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             Sharing Your Health Information:
           </h2>
           <div className='privacySubTextContainer'>
@@ -71,7 +71,7 @@ class OurPrivacyPolicy extends Component {
               <p className='privacyPolicy'>For specialized government functions such as intelligence and national security.</p>
             <p className='privacySubText'>All other uses and disclosures, not described in this notice, require your signed authorization.  You may revoke your authorization at any time with a written statement.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             Our Privacy Responsibilities:
           </h2>
           <div className='privacySubTextContainer'>
@@ -80,7 +80,7 @@ class OurPrivacyPolicy extends Component {
               <p className='privacyPolicy'>Follow the terms of the notice currently in effect.</p>
             <p className='privacySubText'>We reserve the right to make changes to this notice at any time and apply the new privacy practices to all information we maintain.<br />Current notices will be posted at House Call Doctors’ main office.  You may also request a copy of this notice from our staff.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             Your Individual Rights:
           </h2>
           <div className='privacySubTextContainer'>
@@ -91,7 +91,7 @@ class OurPrivacyPolicy extends Component {
               <p className='privacyPolicy'>Request an accounting of certain disclosures we make of your health information.  The list does not include disclosures made for treatment, payment, and health care operations and some disclosures required by law. Your request must state the period of time requested for the accounting.  An accounting goes back only six years and does not cover disclosures made prior to August 13, 2004.  The first accounting is free but a fee will apply if more than one request is made in a 12 month period.</p>
               <p className='privacyPolicy'>Request a paper copy of this notice even if you agree to receive it electronically.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             Other Services We Provide:
           </h2>
           <div className='privacySubTextContainer'>
@@ -102,13 +102,13 @@ class OurPrivacyPolicy extends Component {
               <p className='privacyPolicy'>Share infomration with third parties who assist us with treatment, payment, and health care operations.  Our business associates must follow our privacy practices.</p>
               <p className='privacyPolicy'>Remind you of an appointment.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             Our Organization:
           </h2>
           <div className='privacySubTextContainer'>
             <p className='privacySubText'>This notice describes the privacy practices of House Call Doctors. Included are providers, employees, students, trainees, and volunteers.</p>
           </div>
-          <h2>
+          <h2 className='privacyTitle'>
             <ContactUs to={'/contact-us'} className='privacyLink'>Contact Us:</ContactUs>
           </h2>
           <div className='privacySubTextContainer'>

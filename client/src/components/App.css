@@ -369,9 +369,13 @@
   margin: auto;
 }
 
-.privacyTitle {
+#privacyTitle {
   font-weight: bold;
   padding-top: 65px;
+}
+
+.privacyTitle {
+  font-weight: bold;
 }
 
 .privacySubTextContainer {
@@ -919,7 +923,7 @@
 
 /* ________________________________ About Us ________________________________ */
 #aboutUsMainContainer {
-  max-width: 1175px;
+  max-width: 426px;
   margin: auto;
 }
 
@@ -990,13 +994,20 @@
 
 /* ___________________________ Our Privacy Policy ___________________________ */
 #privacyMainContainer {
-  max-width: 1250px;
+  max-width: 426px;
   margin: auto;
+  padding: 0 10px 0 10px;
+}
+
+#privacyTitleTop {
+  font-weight: bold;
+  padding-top: 65px;
+  font-size: 20px;
 }
 
 .privacyTitle {
   font-weight: bold;
-  padding-top: 65px;
+  font-size: 20px;
 }
 
 .privacySubTextContainer {
