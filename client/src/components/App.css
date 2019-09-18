@@ -1079,10 +1079,11 @@
 }
 
 #footerNavContainer {
-  padding-top: 2px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
 }
 
 #footerNav {
