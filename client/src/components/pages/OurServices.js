@@ -39,16 +39,16 @@ class OurServices extends Component {
             </p>
             <p className='servicesPointsTitle'>These services include but are not limited to:</p>
             <div id='servicesPointsContainer'>
-              <p className='servicesSubText'>• X-ray</p>
-              <p className='servicesSubText'>• Ultrasound</p>
-              <p className='servicesSubText'>• Sleep Studies</p>
-              <p className='servicesSubText'>• EEG/EKG/Echocardiogram</p>
-              <p className='servicesSubText'>• Eye Exams</p>
-              <p className='servicesSubText'>• Bone Density Screening</p>
-              <p className='servicesSubText'>• Bloodwork</p>
-              <p className='servicesSubText'>• Podiatry</p>
-              <p className='servicesSubText'>• Talk Therapy</p>
-              <p className='servicesSubText'>• Home Health, Hospice, and much more.</p>
+              <p className='servicesPointText'>• X-ray</p>
+              <p className='servicesPointText'>• Ultrasound</p>
+              <p className='servicesPointText'>• Sleep Studies</p>
+              <p className='servicesPointText'>• EEG/EKG/Echocardiogram</p>
+              <p className='servicesPointText'>• Eye Exams</p>
+              <p className='servicesPointText'>• Bone Density Screening</p>
+              <p className='servicesPointText'>• Bloodwork</p>
+              <p className='servicesPointText'>• Podiatry</p>
+              <p className='servicesPointText'>• Talk Therapy</p>
+              <p className='servicesPointText'>• Home Health, Hospice, and much more.</p>
             </div>
             <br />
             <p className='servicesPointsTitle'><b>Please contact our office to schedule an appointment!</b></p>

@@ -408,6 +408,12 @@
   padding-left: 100px;
 }
 
+.servicesPointText {
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 #servicesQuarterWhiteSpace {
   height: 20px;
 }
@@ -1029,7 +1035,7 @@
 .aboutUsSubText {
   color: #515151;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .aboutUsContacts {
@@ -1055,7 +1061,7 @@
 #servicesSubSection {
   display: flex;
   flex-flow: row wrap;
-  padding-top: 65px;
+  padding-top: 35px;
   max-width: 410px;
 }
 
@@ -1097,15 +1103,21 @@
 
 #servicesPointsContainer {
   column-count: 2;
-  padding-left: 100px;
+  padding-left: 0px;
+}
+
+.servicesPointText {
+  color: #515151;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 #servicesQuarterWhiteSpace {
-  height: 20px;
+  height: 0px;
 }
 
 #servicesHalfWhiteSpace {
-  height: 40px;
+  height: 20px;
 }
 
 #servicesWhiteSpace {
