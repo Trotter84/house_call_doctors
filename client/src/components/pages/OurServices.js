@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
 import { Image, Divider } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 

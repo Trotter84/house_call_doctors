@@ -1165,7 +1165,7 @@
   display: flex;
   flex-flow: row wrap;
   padding: 10px;
-  column-count: 3;
+  column-count: 2;
 }
 
 #ourProvidersIhap {
