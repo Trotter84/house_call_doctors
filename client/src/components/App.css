@@ -486,6 +486,14 @@
   margin: auto;
 }
 
+#contactUsContactInfoAndPhoto {
+
+}
+
+#contactUsInfoContainer {
+
+}
+
 #contactUsIcon {
   color: #AF3120;
 }
@@ -537,6 +545,15 @@
   padding-bottom: 0;
 }
 
+.contactUsMap {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5A7584;
+  margin-right: 105px;
+  width: 500px;
+  height: 400px;
+}
+
 #contactUsOfficeInfo {
   font-weight: normal;
   font-size: 17px;
@@ -581,6 +598,13 @@
 
 #contactUsDividerProfile {
   margin: 6px 0 6px 3px;
+}
+
+#contactUsInfoBtn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #AF3120;
+  padding-left: 10px;
 }
 
 #contactUsSubTitle {
@@ -1179,8 +1203,169 @@
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
+#contactUsMainContainer {
+  max-width: 426px;
+  margin: auto;
+}
 
+#contactUsContactInfoAndPhoto {
+  display: flex;
+  flex-direction: row;
+}
 
+#contactUsInfoContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactUsIcon {
+  color: #AF3120;
+}
+
+#contactUsOffice {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0px 0px;
+}
+
+#contactUsFax {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0px 0px;
+}
+
+#contactUsFemaleImage {
+  width: 150px;
+  height: auto;
+  padding: 0px 0 0 0px;
+}
+
+#contactUsProfileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  min-width: 426px;
+  flex-wrap: wrap;
+}
+
+#contactUsProfile {
+  display: flex;
+  flex-direction: row;
+  max-height: 100px;
+  padding-bottom: 20px;
+}
+
+#contactUsNames {
+  font-size: 14.5px;
+  padding-left: 6px;
+  margin-bottom: 0px;
+  max-width: 350px;
+}
+
+#contactUsMapInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px;
+  padding-bottom: 0;
+}
+
+.contactUsMap {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5A7584;
+  margin-right: 105px;
+  width: 400px;
+  height: 400px;
+}
+
+#contactUsOfficeInfo {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+#contactUsFaxInfo {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.contactUsProviderInfo {
+  font-size: 14px;
+  max-width: 350px;
+}
+
+#contactUsLeft {
+  padding-right: 20px;
+}
+
+#contactUsMiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 0 20px;
+}
+
+#contactUsRight {
+  padding-left: 20px;
+}
+
+#contactUsInsideInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 35px;
+}
+
+#contactUsContact {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactUsDividerProfile {
+  margin: 6px 0 6px 3px;
+}
+
+#contactUsInfoBtn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #AF3120;
+  padding-left: 10px;
+}
+
+#contactUsSubTitle {
+  padding: 5px 0 14px 0;
+}
+
+#contactUsSubH3 {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+#contactUsSubText {
+  padding-left: 40px;
+}
+
+#contactUsSubP{
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.contactUsDirections {
+  padding-left: 20px;
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#contactUsTopWhiteSpace {
+  height: 40px;
+}
+
+#contactUsWhiteSpace {
+  height: 80px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ Footer _________________________________ */

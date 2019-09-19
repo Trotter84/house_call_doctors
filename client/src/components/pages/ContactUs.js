@@ -11,10 +11,6 @@ import profiles from '../ProfileInfo';
 
 
 const InfoBtn = Styled.a`
-  font-size: 13px;
-  font-weight: bold;
-  color: #AF3120;
-  padding-left: 10px;
   transition: all 200ms ease-in-out;
   :hover {
     color: black;
@@ -39,18 +35,20 @@ class ContactUs extends Component {
         <div id='contactUsMainContainer'>
           <div id='contactUsTopWhiteSpace'></div>
           <div id='contactUsMapInfo'>
-            <div>
-              <div id='contactUsOffice'>
-                <i id='contactUsIcon' className='phone square large icon color'></i>
-                <p id='contactUsOfficeInfo'>Office Phone: <b>(801) 485-5055</b></p>
-              </div>
-              <div id='contactUsFax'>
-                <i id='contactUsIcon' className='fax large icon color'></i>
-                <p id='contactUsFaxInfo'>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
+            <div id='contactUsContactInfoAndPhoto'>
+              <div id='contactUsInfoContainer'>
+                <div id='contactUsOffice'>
+                  <i id='contactUsIcon' className='phone square large icon color'></i>
+                  <p id='contactUsOfficeInfo'>Office Phone: <b>(801) 485-5055</b></p>
+                </div>
+                <div id='contactUsFax'>
+                  <i id='contactUsIcon' className='fax large icon color'></i>
+                  <p id='contactUsFaxInfo'>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
+                </div>
               </div>
               <Image id='contactUsFemaleImage' src={MarkWithFemale2} alt="Mark with client"></Image>
             </div>
-            <iframe title="House Call Doctors' location" width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+            <iframe className='contactUsMap' title="House Call Doctors' location" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
           </div>
           <Divider />
           <div id='contactUsProfileContainer'>
@@ -61,7 +59,7 @@ class ContactUs extends Component {
                   <div id='contactUsContact'>
                     <p id='contactUsNames'><br /><b>{profile.name}</b></p>
                     <Divider id='#contactUsDividerProfile' />
-                    <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
+                    <Modal trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>}>
                       <Modal.Header>{profile.name}</Modal.Header>
                       <Modal.Content image>
                         <Image wrapped src={profile.profileImage} size='tiny' />
