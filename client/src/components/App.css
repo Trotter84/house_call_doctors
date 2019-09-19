@@ -1245,17 +1245,19 @@
 
 #contactUsProfileContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 20px;
-  min-width: 426px;
-  flex-wrap: wrap;
+  padding: 5px 0 0 10px;
+  min-width: 320px;
+  max-width: 350px;
+  flex-wrap: nowrap;
 }
 
 #contactUsProfile {
   display: flex;
   flex-direction: row;
   max-height: 100px;
+  max-width: 300px;
   padding-bottom: 20px;
 }
 
@@ -1271,7 +1273,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 10px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .contactUsMap {
@@ -1294,30 +1296,29 @@
 }
 
 .contactUsProviderInfo {
-  font-size: 14px;
-  max-width: 350px;
+  font-size: 17px;
+  max-width: 300px;
 }
 
 #contactUsLeft {
-  padding-right: 20px;
+  padding-right: 0px;
 }
 
 #contactUsMiddle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 20px 0 20px;
+  padding: 20px 0 20px 10px;
 }
 
 #contactUsRight {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 #contactUsInsideInfo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  padding-left: 35px;
+  align-items: center;
+  padding-left: 0px;
+  max-width: 350px;
 }
 
 #contactUsContact {
@@ -1326,7 +1327,7 @@
 }
 
 #contactUsDividerProfile {
-  margin: 6px 0 6px 3px;
+  margin: 6px 0 3px 3px;
 }
 
 #contactUsInfoBtn {
@@ -1337,16 +1338,16 @@
 }
 
 #contactUsSubTitle {
-  padding: 5px 0 14px 0;
+  padding: 5px 10px 14px 10px;
 }
 
 #contactUsSubH3 {
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 #contactUsSubText {
-  padding-left: 40px;
+  padding: 0 10px 0 20px;
 }
 
 #contactUsSubP{
@@ -1356,7 +1357,7 @@
 }
 
 .contactUsDirections {
-  padding-left: 20px;
+  padding-left: 10px;
   color: #515151;
   font-weight: normal;
   font-size: 16px;
@@ -1367,7 +1368,7 @@
 }
 
 #contactUsWhiteSpace {
-  height: 80px;
+  height: 40px;
 }
 /* -------------------------------------------------------------------------- */
 
