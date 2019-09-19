@@ -305,6 +305,10 @@
   margin-bottom: 7px;
 }
 
+#ourPrividersInsideImage {
+
+}
+
 #ourProvidersInterests {
   display: flex;
   flex-direction: column;
@@ -1125,6 +1129,10 @@
   margin-bottom: 7px;
 }
 
+#ourPrividersInsideImage {
+
+}
+
 #ourProvidersInterests {
   display: flex;
   flex-direction: column;
@@ -1142,7 +1150,7 @@
 }
 
 #ourProvidersPic {
-  height: 300px;
+  height: 100%;
   width: auto;
 }
 

@@ -59,7 +59,7 @@ class OurProviders extends Component {
                   <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
                     <Modal.Header>{profile.name}</Modal.Header>
                     <Modal.Content image>
-                      <Image wrapped size='medium' src={profile.image} />
+                      <Image id='ourPrividersInsideImage' wrapped size='medium' src={profile.image} />
                       <Modal.Description>
                         <div id='ourProvidersPic'>{profile.bio}<br />{profile.bio2}</div>
                         <DividerSetLength />
