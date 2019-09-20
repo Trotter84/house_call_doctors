@@ -27,6 +27,7 @@ const DividerSetLength = Styled(Divider)`
 
 const DividerStateLine = Styled(Divider)`
   max-width: 276px;
+  margin: 3px 0 3px 0;
 `
 
 
@@ -94,7 +95,7 @@ class OurProviders extends Component {
             })}
           </div>
           <div id='ourProvidersHalfWhiteSpace'></div>
-          <h2 id='ourProvidersTile'>
+          <h2 id='ourProvidersTitle'>
             IN HOME ASSESSMENT PROVIDERS
           </h2>
           <Divider />
@@ -104,8 +105,8 @@ class OurProviders extends Component {
                 <div id='ourProvidersIhap' tabindex='0'>
                   <h2 id='ourProvidersState'>{eachProvider.state} Providers:</h2>
                   <DividerStateLine />
-                  <div id='ourProvidersNames'>
-                    <p>
+                  <div>
+                    <p id='ourProvidersNamesState'>
                       <b>
                         {eachProvider.people.map(person =>
                           <>
