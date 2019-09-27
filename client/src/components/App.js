@@ -11,6 +11,7 @@ import Styled from 'styled-components';
 import TopMenu from './menus/TopMenu';
 import Navbar from './menus/Navbar';
 import Footer from './menus/Footer';
+import BottomMenuMobile from './menus/BottomMenuMobile';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import OurProviders from './pages/OurProviders';
@@ -57,6 +58,7 @@ class App extends Component {
               <div>
                 <Footer />
               </div>
+              <BottomMenuMobile />
             </div>
           </WindowScroller>
         </Router>
