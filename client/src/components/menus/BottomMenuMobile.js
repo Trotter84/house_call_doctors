@@ -23,25 +23,25 @@ class BottomMenuMobile extends Component {
         </Link>
         <div className='vl' />
         <Link to={'/about-us'} className='iconContainers'>
-          <Icons className='icons' size='' name="user">
+          <Icons className='icons' size='' name="users">
             <p className='bottomMenuText'>About Us</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/our-providers'} className='iconContainers'>
-          <Icons className='icons' size='' name="user med">
+          <Icons className='icons' size='' name="user md">
             <p className='bottomMenuText'>Providers</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/our-services'} className='iconContainers'>
-          <Icons className='icons' size='' name="!!!!!">
+          <Icons className='icons' size='' name="medkit">
             <p className='bottomMenuText'>Services</p>
           </Icons>
         </Link>
         <div className='vl' />
-        <Link to={'/our-providers'} className='iconContainers'>
-          <Icons className='icons' size='' name="!!!!!!">
+        <Link to={'/our-privacy-policy'} className='iconContainers'>
+          <Icons className='icons' size='' name="lock">
             <p className='bottomMenuText'>Privacy Policy</p>
           </Icons>
         </Link>
