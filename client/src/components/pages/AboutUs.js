@@ -64,6 +64,7 @@ render() {
           <div id='aboutUsPhoto'>
             <Image src={GroupPhoto} />
           </div>
+          <div id='aboutUsWhiteSpaceBottom'></div>
         </div>
       </div>
     </>
