@@ -1583,8 +1583,9 @@ ubTitle {
 .bottomMenuText {
   align-items: center;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
+  text-transform: uppercase;
   width: 60px;
   margin-left: -20px;
 }
@@ -1592,7 +1593,7 @@ ubTitle {
 .vl {
   height: 100%;
   border-left: 1px solid;
-  color: #7c7c7c;
+  color: #c6c6c6;
 }
 
 }
