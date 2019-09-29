@@ -1052,7 +1052,8 @@
 
 #aboutUsPhoto {
   padding: 0 10px 40px 10px;
-  width: 100%;
+  max-width: 390px;
+  max-height: 285px;
 }
 
 .aboutUsSubTitle {
