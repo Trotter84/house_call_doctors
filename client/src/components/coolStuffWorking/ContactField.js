@@ -12,13 +12,13 @@ class ContactField extends Component {
         {({ loading, error, success }) => (
           <div>
             {loading &&
-              <div>Loading...</div>
+              <div id='contactUsLoading'>Loading...</div>
             }
             {error &&
-              <div>Your information was not sent. Please try again later.</div>
+              <div id='contactUsError'>Your information was not sent. Please try again later.</div>
             }
             {success &&
-              <div>Thank you for contacting us!</div>
+              <div id='contactUsSuccess'>Thank you for contacting us!</div>
             }
             {!loading && !success &&
 
@@ -39,7 +39,7 @@ class ContactField extends Component {
                 </div>
                 <div id='contactFieldPhone'>
                   <label htmlFor="phone">Phone Number</label>
-                  <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
                 </div>
                 <div id='contactFieldMessage'>
                   <label htmlFor="subject">Message*</label>
