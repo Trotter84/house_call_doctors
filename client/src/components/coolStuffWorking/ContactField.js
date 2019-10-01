@@ -1,66 +1,5 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
-
-
-const Names = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 300px;
-`
-
-const First = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-  font-weight: bold;
-`
-
-const Last = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-  font-weight: bold;
-`
-
-const Email = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-`
-
-const Phone = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-`
-
-const Message = Styled.div`
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-`
-
-const Submit = Styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: bold;
-`
-
-const InputField = Styled.form`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 27px 0 0 30px;
-  min-width: 300px;
-  max-width: 350px;
-  min-height: 275px;
-`
-
+import NetlifyForm from 'react-netlify-form';
 
 
 class ContactField extends Component {
@@ -68,36 +7,66 @@ class ContactField extends Component {
 
   render() {
     return(
-      <InputField name="contact" method="POST" netifly>
-        <Names>
-          <First>
-            <label htmlFor="fname">First Name*</label>
-            <input type="text" id="fname" name="firstname" required />
-          </First>
-          <Last>
-            <label htmlFor="lname">Last Name*</label>
-            <input type="text" id="lname" name="lastname" required />
-          </Last>
-        </Names>
-        <Email>
-          <label htmlFor="email">Email*</label>
-          <input type="email" id="email" name="email" placeholder="example@domain.com" required />
-        </Email>
-        <Phone>
-          <label htmlFor="phone">Phone Number</label>
-          <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
-        </Phone>
-        <Message>
-          <label htmlFor="subject">Message*</label>
-          <textarea id="subject" name="subject" placeholder="How can we help?.." required></textarea>
-        </Message>
-        <Submit>
-          <button type="submit">Send</button>
-        </Submit>
-      </InputField>
+
+      <NetlifyForm name="Contact" method="POST" data-netlify="true">
+        {({ loading, error, success }) => (
+          <div>
+            {loading &&
+              <div>Loading...</div>
+            }
+            {error &&
+              <div>Your information was not sent. Please try again later.</div>
+            }
+            {success &&
+              <div>Thank you for contacting us!</div>
+            }
+            {!loading && !success &&
+
+              <div id='contactFieldInputField'>
+                <div id='contactFieldNames'>
+                  <div id='contactFieldFirst'>
+                    <label htmlFor="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname" required />
+                  </div>
+                  <div id='contactFieldLast'>
+                    <label htmlFor="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname" required />
+                  </div>
+                </div>
+                <div id='contactFieldEmail'>
+                  <label htmlFor="email">Email*</label>
+                  <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+                </div>
+                <div id='contactFieldPhone'>
+                  <label htmlFor="phone">Phone Number</label>
+                  <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
+                </div>
+                <div id='contactFieldMessage'>
+                  <label htmlFor="subject">Message*</label>
+                  <textarea id="subject" name="subject" placeholder="How can we help?.." required></textarea>
+                </div>
+                <div id='contactFieldSubmit'>
+                  <button type="submit">Send</button>
+                </div>
+                <p id='contactFieldRequired'>* required</p>
+              </div>
+            }
+          </div>
+        )}
+      </NetlifyForm>
     )
   }
 }
+
+
+        // <div id='contactForm'>
+        //     <label id="contactName">Name: <input type="text" name="name" /></label>
+        //     <label id="contactEmail">Email: <input type="email" name="email" /></label>
+        //     <label id="contactPhone">Phone: <input type="tel" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required /></label>
+        //     <label id="contactMessage">Message: <textarea name="message"></textarea></label>
+        //     <button type="submit" id="contactSubmit">Send</button>
+        // </div>
+
 
 
 export default ContactField;

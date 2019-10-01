@@ -436,6 +436,71 @@
 }
 /* -------------------------------------------------------------------------- */
 
+/* _____________________________ Contact Field _____________________________ */
+#contactFieldInputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 27px 0 0 30px;
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 275px;
+}
+
+#contactFieldNames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+#contactFieldFirst {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  font-weight: bold;
+}
+
+#contactFieldLast {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  font-weight: bold;
+}
+
+#contactFieldEmail {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldPhone {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldMessage {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#contactFieldRequired {
+  float: right;
+}
+/* -------------------------------------------------------------------------- */
+
 /* ___________________________ Our Privacy Policy ___________________________ */
 #privacyMainContainer {
   max-width: 1250px;
@@ -699,6 +764,9 @@
   color: white;
 }
 /* -------------------------------------------------------------------------- */
+#bottomMenuMainContainer {
+  display: none;
+}
 /* ========================================================================== */
 
 

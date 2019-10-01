@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image, Divider } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import ContactField from '../coolStuffWorking/ContactField';
 
 
 class OurServices extends Component {
@@ -18,13 +19,14 @@ class OurServices extends Component {
         <div id='servicesMainContainer'>
           <div id='servicesSubSection'>
             <div id='servicesInfo'>
-
-
+              <h3 className='servicesSubTitle'>
+                If you are interested in becoming a patient, please fill out the fields on the right & we will get back to you as openings become available.
+              </h3>
               <div className='servicesSubTextContainer'>
                 <p className='servicesSubText'>Our providers see patients in Assisted Living Facilities, Memory Care Units, Group Homes, and Individual Homes.</p>
               </div>
             </div>
-
+            <ContactField />
           </div>
           <div id='servicesQuarterWhiteSpace' />
           <h2 className='servicesTitle'>
@@ -72,11 +74,6 @@ class OurServices extends Component {
     )
   }
 };
-
-// <h3 className='servicesSubTitle'>
-//   If you are interested in becoming a patient, please fill out the fields on the right & we will get back to you as openings become available.
-// </h3>
-
 
 
 export default OurServices;

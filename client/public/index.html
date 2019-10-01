@@ -36,5 +36,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <form name="Contact" method="POST" data-netlify="true" hidden>
+      <input type="text" id="fname" name="firstname" required />
+      <input type="text" id="lname" name="lastname" required />
+      <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+      <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
+      <textarea id="subject" name="subject" placeholder="How can we help?.." required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </body>
 </html>
