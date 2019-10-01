@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Icon } from 'semantic-ui-react';
 import NetlifyForm from 'react-netlify-form';
 
 
@@ -12,13 +13,13 @@ class ContactField extends Component {
         {({ loading, error, success }) => (
           <div>
             {loading &&
-              <div id='contactUsLoading'>Loading...</div>
+              <div id='contactFieldLoading'>Loading  <Icon loading name='spinner' /></div>
             }
             {error &&
-              <div id='contactUsError'>Your information was not sent. Please try again later.</div>
+              <div id='contactFieldError'>Your information was not sent. Please try again later.</div>
             }
             {success &&
-              <div id='contactUsSuccess'>Thank you for contacting us!</div>
+              <div id='contactFieldSuccess'>Thank you for contacting us!</div>
             }
             {!loading && !success &&
 

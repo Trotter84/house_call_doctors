@@ -376,14 +376,16 @@
 #servicesSubSection {
   display: flex;
   flex-flow: row wrap;
+  align-items: baseline;
   padding-top: 65px;
   max-width: 1200px;
+  height: 340px;
 }
 
 #servicesInfo {
   display: flex;
   flex-direction: column;
-  max-width: 850px;
+  max-width: 625px;
   padding-left: 15px;
 }
 
@@ -437,11 +439,32 @@
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Contact Field _____________________________ */
+#contactFieldLoading {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+#contactFieldError {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+#contactFieldSuccess {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
 #contactFieldInputField {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 27px 0 0 30px;
+  padding: 27px 0 0 100px;
   min-width: 300px;
   max-width: 350px;
   min-height: 275px;
@@ -1309,10 +1332,11 @@
   padding: 5px 0 0 10px;
 }
 
-.servicesS#ourProvidersImage {
+#ourProvidersImage {
 
 }
-ubTitle {
+
+.servicesSubTitle {
   margin-top: 9px;
   padding-left: 20px;
   font-size: 20px;
