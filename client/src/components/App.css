@@ -1304,7 +1304,7 @@
 
 #servicesSubSection {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   padding-top: 35px;
   max-width: 410px;
 }
@@ -1338,7 +1338,7 @@
 
 .servicesSubTitle {
   margin-top: 9px;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
 }
 
@@ -1361,7 +1361,7 @@
 }
 
 #servicesQuarterWhiteSpace {
-  height: 0px;
+  height: 150px;
 }
 
 #servicesHalfWhiteSpace {
@@ -1370,6 +1370,92 @@
 
 #servicesWhiteSpace {
   height: 80px;
+}
+/* -------------------------------------------------------------------------- */
+
+/* _____________________________ Contact Field _____________________________ */
+#contactFieldLoading {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+#contactFieldError {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+#contactFieldSuccess {
+  display: flex;
+  flex-wrap: row wrap;
+  font-size: 17px;
+  margin-left: 60px;
+}
+
+#contactFieldInputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+  min-width: 300px;
+  max-width: 350px;
+  min-height: 275px;
+}
+
+#contactFieldNames {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+#contactFieldFirst {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  font-weight: bold;
+}
+
+#contactFieldLast {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  font-weight: bold;
+}
+
+#contactFieldEmail {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldPhone {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldMessage {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  font-weight: bold;
+}
+
+#contactFieldSubmit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#contactFieldRequired {
+  float: right;
 }
 /* -------------------------------------------------------------------------- */
 
