@@ -26,7 +26,9 @@ class OurServices extends Component {
                 <p className='servicesSubText'>Our providers see patients in Assisted Living Facilities, Memory Care Units, Group Homes, and Individual Homes.</p>
               </div>
             </div>
-            <ContactField />
+            <div id='contactFieldMainContainer'>
+              <ContactField />
+            </div>
           </div>
           <div id='servicesQuarterWhiteSpace' />
           <h2 className='servicesTitle'>
