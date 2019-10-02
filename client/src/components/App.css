@@ -1374,6 +1374,10 @@
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Contact Field _____________________________ */
+#contactFieldMainContainer {
+  height: 100%;
+}
+
 #contactFieldLoading {
   display: flex;
   flex-wrap: row wrap;
