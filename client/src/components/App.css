@@ -1143,7 +1143,7 @@
 
 #aboutUsPhoto {
   padding: 0 10px 30px 0px;
-  max-width: 90%;
+  width: 90%;
   min-width: 310px;
   max-height: 285px;
   height: 100%;
@@ -1199,7 +1199,7 @@
   display: flex;
   flex-flow: row wrap;
   column-count: 2;
-  padding: 10px 5px 0 5px;
+  padding: 10px 5px 20px 5px;
   max-height: 700px;
   max-width: 50%;
 }
