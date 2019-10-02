@@ -1142,8 +1142,9 @@
 }
 
 #aboutUsPhoto {
-  padding: 0 10px 40px 10px;
-  max-width: 390px;
+  padding: 0 10px 30px 0px;
+  max-width: 90%;
+  min-width: 310px;
   max-height: 285px;
 }
 
@@ -1172,7 +1173,7 @@
 }
 
 #aboutUsWhiteSpaceBottom {
-  height: 50px;
+  height: 80px;
 }
 /* -------------------------------------------------------------------------- */
 
