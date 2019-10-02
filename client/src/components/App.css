@@ -1146,6 +1146,7 @@
   max-width: 90%;
   min-width: 310px;
   max-height: 285px;
+  height: 100%;
 }
 
 .aboutUsSubTitle {
