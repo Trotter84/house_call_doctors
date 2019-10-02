@@ -1300,6 +1300,7 @@
 /* ______________________________ Our Services ______________________________ */
 #servicesMainContainer {
   max-width: 426px;
+  min-width: 315px;
   margin: auto;
   padding: 0 10px 0 10px;
 }
@@ -1378,7 +1379,7 @@
 
 /* _____________________________ Contact Field _____________________________ */
 #contactFieldMainContainer {
-  min-height: 300px;
+  min-height: 310px;
   min-width: 310px;
   width: 400px;
 }
