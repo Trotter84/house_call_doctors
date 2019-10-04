@@ -305,7 +305,8 @@ width: 100%;
 
 #ourProvidersInsideName {
   font-size: 30px;
-  padding: 8px 0 0 10px;
+  margin: 10px 0;
+  padding-left: 10px;
 }
 
 #ourProviderContent {
@@ -1261,7 +1262,8 @@ width: 100%;
 
 #ourProvidersInsideName {
   font-size: 22px;
-  padding: 8px 0 0 15px;
+  margin: 10px 0;
+  padding-left: 10px;
 }
 
 #ourProviderContent {

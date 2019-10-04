@@ -57,7 +57,7 @@ class OurProviders extends Component {
                   <img id='ourProvidersImage' src={profile.image} alt={`Profile of ${profile.shortName}`}></img>
                   <h3 id='ourProvidersName'>{profile.name}</h3>
                   <p id='ourProvidersShortBio'> &nbsp; &nbsp; &nbsp; {profile.shortBio}</p>
-                  <Modal trigger={<InfoBtn>More Info</InfoBtn>}>
+                  <Modal trigger={<InfoBtn>More Info</InfoBtn>} closeIcon>
                     <h3 id='ourProvidersInsideName'>{profile.name}</h3>
                     <Divider />
                     <div id='ourProviderContent'>
