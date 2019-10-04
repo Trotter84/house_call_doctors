@@ -59,7 +59,7 @@ class ContactUs extends Component {
                   <div id='contactUsContact'>
                     <p id='contactUsNames'><br /><b>{profile.name}</b></p>
                     <Divider id='contactUsDividerProfile' />
-                    <Modal trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>}>
+                    <Modal trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>} closeIcon>
                       <Modal.Header>{profile.name}</Modal.Header>
                       <Modal.Content image>
                         <Image wrapped src={profile.profileImage} size='tiny' />
