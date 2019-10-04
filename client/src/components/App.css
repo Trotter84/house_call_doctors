@@ -1282,7 +1282,8 @@ width: 100%;
   float: right;
   font-size: 14px;
   margin: 0 0 0 0px;
-  max-height: 250px;
+  max-height: 350px;
+  height: 100%;
   width: 100%;
   line-height: 18px;
 }
