@@ -54,14 +54,20 @@ width: 100%;
 }
 
 #homeCarouselContainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-height: 600px;
   max-width: 1166px;
   padding: 45px 0 0 0;
+  max-width: 95%;
 }
 
 #frontPageImageCarouselContainer {
-  padding: 0 0 100px 80px;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 100px 0;
   max-height: 600px;
   max-width: 1166px;
 }
@@ -187,7 +193,7 @@ width: 100%;
 
 #testimonialsQuote {
   max-width: 1100px;
-  padding-left: 10px;
+  padding: 15px 15px 15px 15px;
 }
 
 #testimonialsDividerLine {
@@ -1062,6 +1068,7 @@ width: 100%;
 #testimonialsQuote {
   max-width: 426px;
   padding-left: 10px;
+  margin: 10px;
 }
 
 #testimonialsDividerLine {
@@ -1078,8 +1085,71 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
+#aboutUsMainContainer {
+  max-width: 426px;
+  margin: auto;
+}
 
+#aboutUsTitleContainer {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
 
+#aboutUsTitle {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#aboutUsFlexBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+}
+
+#aboutUsAllText {
+  display: flex;
+  flex-direction: column;
+}
+
+#aboutUsPhoto {
+  padding: 0 10px 30px 10px;
+  width: 100%;
+  min-width: 310px;
+  max-height: 282px;
+  height: 100%;
+}
+
+.aboutUsSubTitle {
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutUsSubTextContainer {
+  padding-left: 10px;
+}
+
+.aboutUsSubText {
+  color: #515151;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.aboutUsContacts {
+  padding-left: 10px;
+}
+
+.aboutUsWhiteSpace {
+  height: 40px;
+}
+
+#aboutUsWhiteSpaceBottom {
+  height: 80px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Our Providers _____________________________ */
@@ -1429,6 +1499,7 @@ width: 100%;
 #testimonialsQuote {
   max-width: 426px;
   padding-left: 10px;
+  margin: 5px;
 }
 
 #testimonialsDividerLine {
