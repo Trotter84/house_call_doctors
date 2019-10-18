@@ -55,7 +55,7 @@ render() {
               Where It All Started
             </h2>
             <div className='aboutUsSubTextContainer'>
-              <p className='aboutUsSubText'>
+              <p className='aboutUsSubTextBottom'>
                 Dr. Mark Cacciamani began his medical career in a clinic setting where he was often unable to spend adequate time with his patients.<br />He realized during this clinical experience that his place was not with the "worried well" and he wanted to make a bigger difference in healthcare.<br /><br />He founded House Call Doctors in 2004 which allowed him to serve home-bound patients that would not otherwise have access to adequate health care.<br />Dr. Cacciamani's passion to bring better health care to the home-bound population is instilled in all of House Call Doctors' staff and we strive to better the quality of life for each of our patients.
               </p>
             </div>
@@ -64,8 +64,9 @@ render() {
           <div id='aboutUsPhoto'>
             <Image src={GroupPhoto} />
           </div>
-          <div id='aboutUsWhiteSpaceBottom'></div>
         </div>
+        <div id='aboutUsWhiteSpaceBottom'></div>
+
       </div>
     </>
   )
