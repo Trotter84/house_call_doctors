@@ -17,31 +17,31 @@ class BottomMenuMobile extends Component {
     return(
       <div id='bottomMenuMainContainer'>
         <Link to={'/home'} className='iconContainers'>
-          <Icons className='icons' size='' name="home">
+          <Icons className='icons' name="home">
             <p className='bottomMenuText'>Home</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/about-us'} className='iconContainers'>
-          <Icons className='icons' size='' name="users">
+          <Icons className='icons' name="users">
             <p className='bottomMenuText'>About Us</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/our-providers'} className='iconContainers'>
-          <Icons className='icons' size='' name="user md">
+          <Icons className='icons' name="user md">
             <p className='bottomMenuText'>Providers</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/our-services'} className='iconContainers'>
-          <Icons className='icons' size='' name="medkit">
+          <Icons className='icons' name="medkit">
             <p className='bottomMenuText'>Services</p>
           </Icons>
         </Link>
         <div className='vl' />
         <Link to={'/our-privacy-policy'} className='iconContainers'>
-          <Icons className='icons' size='' name="lock">
+          <Icons className='icons' name="lock">
             <p className='bottomMenuText'>Privacy Policy</p>
           </Icons>
         </Link>
