@@ -260,6 +260,12 @@ width: 100%;
   font-size: 16px;
 }
 
+.aboutUsSubTextBottom {
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 .aboutUsContacts {
   padding-left: 20px;
 }
@@ -1091,8 +1097,9 @@ width: 100%;
 
 /* ________________________________ About Us ________________________________ */
 #aboutUsMainContainer {
-  max-width: 426px;
+  max-width: 765px;
   margin: auto;
+  width: 95%;
 }
 
 #aboutUsTitleContainer {
@@ -1106,32 +1113,34 @@ width: 100%;
 #aboutUsTitle {
   display: inline-block;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 #aboutUsFlexBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 0 10px 0 10px;
+  float: left;
 }
 
 #aboutUsAllText {
   display: flex;
   flex-direction: column;
+  float: left;
 }
 
 #aboutUsPhoto {
-  padding: 0 10px 30px 10px;
+  padding: 20px 10px 30px 10px;
   width: 100%;
-  min-width: 310px;
-  max-height: 282px;
+  min-width: 350px;
+  max-height: 320px;
   height: 100%;
 }
 
 .aboutUsSubTitle {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .aboutUsSubTextContainer {
@@ -1141,7 +1150,14 @@ width: 100%;
 .aboutUsSubText {
   color: #515151;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
+}
+
+.aboutUsSubTextBottom {
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 50px;
 }
 
 .aboutUsContacts {
@@ -1153,7 +1169,10 @@ width: 100%;
 }
 
 #aboutUsWhiteSpaceBottom {
-  height: 80px;
+  position: absolute;
+  height: 100px;
+  bottom: 0;
+  background-color: black;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1573,6 +1592,13 @@ width: 100%;
   color: #515151;
   font-weight: normal;
   font-size: 12px;
+}
+
+.aboutUsSubTextBottom {
+  color: #515151;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 0;
 }
 
 .aboutUsContacts {
