@@ -1054,7 +1054,7 @@ width: 100%;
 #testimonialsTopPart {
   display: flex;
   flex-direction: column;
-  max-width: 426px;
+  max-width: 765px;
 }
 
 #testimonialsContainer {
@@ -1077,8 +1077,8 @@ width: 100%;
 }
 
 #testimonialsQuote {
-  max-width: 426px;
-  padding-left: 10px;
+  max-width: 765px;
+  padding: 0;
   margin: 10px;
 }
 
@@ -1522,7 +1522,7 @@ width: 100%;
 
 #testimonialsQuote {
   max-width: 426px;
-  padding-left: 10px;
+  padding: 0;
   margin: 5px;
 }
 
@@ -1535,7 +1535,7 @@ width: 100%;
 }
 
 #homeWhiteSpace {
-  height: 100px;
+  height: 125px;
 }
 /* -------------------------------------------------------------------------- */
 
