@@ -1187,8 +1187,55 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
+#privacyMainContainer {
+  max-width: 765px;
+  margin: auto;
+  padding: 0 10px 0 10px;
+}
 
+#privacyTitleTop {
+  font-weight: bold;
+  padding-top: 35px;
+  font-size: 23px;
+}
 
+.privacyTitle {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.privacySubTextContainer {
+  padding-left: 10px;
+}
+
+.privacySubText {
+  color: #494949;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.privacyPolicy {
+  color: #494949;
+  font-weight: normal;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+#privacyAddressContainer {
+  margin: 10px 0;
+}
+
+.privacyAddress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 14px 0 14px 0;
+  font-weight: bold;
+}
+
+#privacyWhiteSpace {
+  height: 90px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
