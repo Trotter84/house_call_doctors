@@ -1184,18 +1184,18 @@ width: 100%;
 
 /* ______________________________ Our Services ______________________________ */
 #servicesMainContainer {
-  max-width: 426px;
-  min-width: 315px;
+  max-width: 765px;
+  min-width: 615px;
   margin: auto;
   padding: 0 10px 0 10px;
 }
 
 #servicesSubSection {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: space-between;
   padding-top: 35px;
-  max-width: 400px;
+  max-width: 765px;
 }
 
 #servicesInfo {
@@ -1212,12 +1212,12 @@ width: 100%;
 .servicesSubText {
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .servicesTitle {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   padding: 5px 0 0 10px;
 }
 
@@ -1228,14 +1228,14 @@ width: 100%;
 .servicesSubTitle {
   margin-top: 9px;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .servicesPointsTitle {
   padding-left: 10px;
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #servicesPointsContainer {
@@ -1246,11 +1246,11 @@ width: 100%;
 .servicesPointText {
   color: #515151;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #servicesQuarterWhiteSpace {
-  height: 150px;
+  height: 0px;
 }
 
 #servicesHalfWhiteSpace {
@@ -1265,28 +1265,28 @@ width: 100%;
 /* _____________________________ Contact Field _____________________________ */
 #contactFieldMainContainer {
   min-height: 310px;
-  min-width: 310px;
-  width: 400px;
+  min-width: 380px;
+  width: 410px;
 }
 
 #contactFieldLoading {
   display: flex;
   flex-wrap: row wrap;
-  font-size: 17px;
+  font-size: 18px;
   margin: 20px 0 0 20px;
 }
 
 #contactFieldError {
   display: flex;
   flex-wrap: row wrap;
-  font-size: 17px;
+  font-size: 18px;
   margin: 20px 0 0 10px;
 }
 
 #contactFieldSuccess {
   display: flex;
   flex-wrap: row wrap;
-  font-size: 17px;
+  font-size: 18px;
   margin: 20px 0 0 10px;
 }
 
@@ -1304,12 +1304,14 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 17px;
   max-width: 300px;
 }
 
 #contactFieldFirst {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
   max-width: 150px;
   font-weight: bold;
 }
@@ -1317,6 +1319,7 @@ width: 100%;
 #contactFieldLast {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
   max-width: 150px;
   font-weight: bold;
 }
@@ -1324,6 +1327,7 @@ width: 100%;
 #contactFieldEmail {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
   max-width: 300px;
   font-weight: bold;
 }
@@ -1331,6 +1335,7 @@ width: 100%;
 #contactFieldPhone {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
   max-width: 300px;
   font-weight: bold;
 }
@@ -1338,6 +1343,7 @@ width: 100%;
 #contactFieldMessage {
   display: flex;
   flex-direction: column;
+  font-size: 17px;
   max-width: 300px;
   font-weight: bold;
 }
@@ -1346,6 +1352,7 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-size: 17px;
   font-weight: bold;
 }
 
