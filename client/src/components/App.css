@@ -1178,8 +1178,156 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Our Providers _____________________________ */
+#ourProvidersMainContainer {
+  max-width: 426px;
+  margin: auto;
+}
 
+#ourProvidersTitle {
+  font-weight: bold;
+  padding: 5px 0 0 10px;
+  font-size: 20px;
+}
 
+#ourProvidersFullSection {
+  display: flex;
+  flex-flow: wrap;
+}
+
+#ourProvidersProfile {
+  display: flex;
+  flex-flow: row wrap;
+  column-count: 2;
+  padding: 10px 5px 20px 5px;
+  height: 100%;
+  max-height: 700px;
+  max-width: 50%;
+}
+
+#ourProvidersImage {
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+  max-width: 202px;
+}
+
+#ourProvidersName {
+  display: block;
+  font-size: 15px;
+  color: #AF3120;
+  padding-bottom: 0px;
+}
+
+#ourProvidersShortBio {
+  font-size: 14px;
+}
+
+#ourProvidersInsideName {
+  font-size: 22px;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+#ourProviderContent {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 10px 10px 10px;
+}
+
+#ourProvidersInsideImage {
+  display: none;
+  float: left;
+  height: 100%;
+  width: 35%;
+}
+
+#ourProvidersInsideBio {
+  display: block;
+  float: right;
+  font-size: 14px;
+  margin: 0 0 0 0px;
+  max-height: 350px;
+  height: 100%;
+  width: 100%;
+  line-height: 18px;
+}
+
+#ourProvidersInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ourProvidersInfoTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#ourProvidersEdsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.ourProvidersEdu {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#ourProvidersIntContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.ourProvidersInt {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#ourProvidersBottomSection {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  column-count: 2;
+}
+
+#ourProvidersNamesState {
+  display: block;
+  font-size: 14px
+}
+
+#ourProvidersIhapSection {
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  padding: 10px;
+  column-count: 3;
+}
+
+#ourProvidersIhap {
+  padding: 10px 0 0 10px;
+  width: 190px;
+  border: solid .5px;
+  height: 100%;
+}
+
+#ourProvidersState {
+  font-size: 17px;
+}
+
+#ourProvidersTopWhiteSpace {
+  height: 30px;
+}
+
+#ourProvidersHalfWhiteSpace {
+  height: 20px;
+}
+
+#ourProvidersWhiteSpace {
+  height: 80px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* ______________________________ Our Services ______________________________ */
