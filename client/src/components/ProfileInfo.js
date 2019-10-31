@@ -14,8 +14,8 @@ import RitaProfile from '../images/Rita-profile.jpg';
 import EdieProfile from '../images/Edie-profile.jpg';
 import TrenaisaProfile from '../images/Trenaisa-profile.png';
 
-import Placeholder from '../images/female-placeholder.jpeg';
-import PlaceholderProfile from '../images/female-placeholder-profile.png';
+// import Placeholder from '../images/female-placeholder.jpeg';
+// import PlaceholderProfile from '../images/female-placeholder-profile.png';
 
 
 const Email = Styled.a`
