@@ -5,7 +5,7 @@ import Perrine from '../images/Perrine.jpg';
 import Sandra from '../images/Sandra.jpg';
 import Rita from '../images/Rita.jpg';
 import Edie from '../images/Edie.jpg';
-import Trenaisa from './../images/Trenaisa.jpg';
+import Trenaisa from '../images/trenaisa.jpg';
 
 import MarkProfile from '../images/Mark-profile.jpg';
 import PerrineProfile from '../images/Perrine-profile.jpg';
