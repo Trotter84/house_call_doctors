@@ -5,14 +5,17 @@ import Perrine from '../images/Perrine.jpg';
 import Sandra from '../images/Sandra.jpg';
 import Rita from '../images/Rita.jpg';
 import Edie from '../images/Edie.jpg';
-import MarkProfile from './../images/Mark-profile.jpg';
-import PerrineProfile from './../images/Perrine-profile.jpg';
-import SandraProfile from './../images/Sandra-profile.jpg';
-import RitaProfile from './../images/Rita-profile.jpg';
-import EdieProfile from './../images/Edie-profile.jpg';
+import Trenaisa from '../images/Trenaisa.jpg';
 
-import Placeholder from './../images/female-placeholder.jpeg';
-import PlaceholderProfile from './../images/female-placeholder-profile.png';
+import MarkProfile from '../images/Mark-profile.jpg';
+import PerrineProfile from '../images/Perrine-profile.jpg';
+import SandraProfile from '../images/Sandra-profile.jpg';
+import RitaProfile from '../images/Rita-profile.jpg';
+import EdieProfile from '../images/Edie-profile.jpg';
+import TrenaisaProfile from '../images/Trenaisa-profile.png';
+
+import Placeholder from '../images/female-placeholder.jpeg';
+import PlaceholderProfile from '../images/female-placeholder-profile.png';
 
 
 const Email = Styled.a`
@@ -161,7 +164,7 @@ const profiles = [
     name: 'TRENAISA NAY, GNP',
     linkName: 'trenaisa',
     shortName: 'Trenaisa',
-    image: Placeholder,
+    image: Trenaisa,
     shortBio: '"Theres no place like home.” I believe that rings true for most people, especially in times of an illness or deteriorating health. That is the reason I strongly believe in...',
     bio: '"Theres no place like home.” I believe that rings true for most people, especially in times of an illness or deteriorating health. That is the reason I strongly believe in bringing medical services to you! Being in your home allows for a more personal assessment and discussion about what matters the most to you. I believe whole- heartedly in allowing you and your family to make educated decisions that make the most sense for your health and wellness. As a Nurse Practitioner, I value spending time making sure your physical and mental health needs are met in order for you to have the best quality of life possible. As a provider for House Call Doctors, I am able to deliver quality health care in the comfort of your own home.',
     edu: 'Graduated from Weber State University (BSN, 1997), and University or Utah (MSN, 2003)',
@@ -174,7 +177,7 @@ const profiles = [
     interest2: 'I value discussions about your goals of care and what quality of life means to you.',
     interest3: 'I value time with my family, as my husband and three sons fill my heart.',
     interest4: 'I enjoy being with my family and our dogs, baking/cooking, running outside with my Golden-doodle, reading a good book, laughing with friends, and taking a nap whenever I can!',
-    profileImage: PlaceholderProfile,
+    profileImage: TrenaisaProfile,
     info1: 'Terra Jacobs',
     info2: '(801) 485-5055 ext. 1',
     info3: <Email href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
