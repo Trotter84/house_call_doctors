@@ -2389,7 +2389,7 @@ width: 100%;
 
 /* _____________________________ Contact Field _____________________________ */
 #contactFieldMainContainer {
-  display: block;
+  display: flex;
   min-height: 310px;
   min-width: 310px;
   width: 400px;
