@@ -1288,7 +1288,7 @@ width: 100%;
 
 #ourProvidersBottomSection {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: center;
   column-count: 2;
 }
@@ -1303,7 +1303,7 @@ width: 100%;
   flex-flow: row wrap;
   align-self: center;
   padding: 10px;
-  column-count: 3;
+  column-count: 4;
 }
 
 #ourProvidersIhap {
