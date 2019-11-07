@@ -1290,7 +1290,7 @@ width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  column-count: 2;
+  column-count: 4;
 }
 
 #ourProvidersNamesState {
@@ -1301,14 +1301,14 @@ width: 100%;
 #ourProvidersIhapSection {
   display: flex;
   flex-flow: row wrap;
-  align-self: center;
+  align-self: none;
   padding: 10px;
   column-count: 4;
 }
 
 #ourProvidersIhap {
   padding: 10px 0 0 10px;
-  width: 190px;
+  width: 170px;
   border: solid .5px;
   height: 100%;
 }
