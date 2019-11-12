@@ -39,6 +39,7 @@ render() {
               <p className='aboutUsContacts'><b>Sandra Jense</b>, APRN <b>(801) 241-0255</b></p>
               <p className='aboutUsContacts'><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></p>
               <p className='aboutUsContacts'><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></p>
+              <p className='aboutUsContacts'><b>Trenaisa Nay</b>, GNP <b>(801) 241-0484</b></p>
               <p className='aboutUsSubText'>These are numeric pagers, they do not accept voicemail or text messages.</p>
               <p className='aboutUsSubText'>After dialing the pager number, dial your own phone number followed by the pound key.</p>
               <p className='aboutUsSubText'>Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>
