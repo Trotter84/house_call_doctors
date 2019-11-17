@@ -76,9 +76,6 @@ class OurServices extends Component {
                   </div>
                 )}
               </NetlifyForm>
-            )
-          }
-        }
 
 
             </div>
