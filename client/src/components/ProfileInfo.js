@@ -81,9 +81,9 @@ const profiles = [
     interest5: 'Certified member of PSIA-Intermountain since 1978, teaching Alpine and Telemark skiing.',
     interest6: 'Enjoys camping, road trips, traveling, gardening, hiking, cooking, and kayaking.',
     profileImage: PerrineProfile,
-    info1: 'Karla Munozn',
+    info1: 'Sarah Sylvester',
     info2: '(801) 485-5055 ext. 2',
-    info3: <Email href="mailto:Karla@housecalldoctorsut.com">Karla@housecalldoctorsut.com</Email>,
+    info3: <Email href="mailto:SarahS@housecalldoctorsut.com">SarahS@housecalldoctorsut.com</Email>,
     info4: 'Annalise Sauter',
     info5: '(801) 485-5055 ext. 17',
     info6: <Email href="mailto:Annalise@housecalldoctorsut.com">Annalise@housecalldoctorsut.com</Email>,
@@ -178,13 +178,13 @@ const profiles = [
     interest3: 'I value time with my family, as my husband and three sons fill my heart.',
     interest4: 'I enjoy being with my family and our dogs, baking/cooking, running outside with my Golden-doodle, reading a good book, laughing with friends, and taking a nap whenever I can!',
     profileImage: TrenaisaProfile,
-    info1: 'Terra Jacobs',
-    info2: '(801) 485-5055 ext. 1',
-    info3: <Email href="mailto:Terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
-    info4: 'N/A',
-    info5: 'N/A',
-    info6: 'N/A',
-    info7: 'N/A'
+    info1: 'Sarah Sylvester',
+    info2: '(801) 485-5055 ext. 2',
+    info3: <Email href="mailto:SarahS@housecalldoctorsut.com">SarahS@housecalldoctorsut.com</Email>,
+    info4: 'Sasha Glass',
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:sasha@housecalldoctorsut.com">sasha@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0484'
   }
 ]
 
