@@ -5,7 +5,7 @@
   "dependencies": {
     "babel": "^6.23.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "nuka-carousel": "^4.4.7",
     "popper.js": "^1.14.6",
