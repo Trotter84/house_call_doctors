@@ -3,14 +3,14 @@ import Styled from 'styled-components';
 import Mark from '../images/Mark.jpg';
 import Perrine from '../images/Perrine.jpg';
 import Sandra from '../images/Sandra.jpg';
-import Rita from '../images/Rita.jpg';
+import Gwen from '../images/Gwen.jpg';
 import Edie from '../images/Edie.jpg';
 import Trenaisa from '../images/trenaisa.jpg';
 
 import MarkProfile from '../images/Mark-profile.jpg';
 import PerrineProfile from '../images/Perrine-profile.jpg';
 import SandraProfile from '../images/Sandra-profile.jpg';
-import RitaProfile from '../images/Rita-profile.jpg';
+import GwenProfile from '../images/Gwen-profile.png';
 import EdieProfile from '../images/Edie-profile.jpg';
 import TrenaisaProfile from '../images/Trenaisa-profile.png';
 
@@ -113,27 +113,28 @@ const profiles = [
     info7: '(801) 241-0255'
   },
   {
-    name: 'RITA RUTLAND, APRN',
-    linkName: 'rita',
-    shortName: 'Rita',
-    image: Rita,
-    shortBio: "My goal is to provide quality personalzed health care in a patient centered environment that prioritizes the patient's needs which is in line with the mission of House Call...",
-    bio: "My goal is to provide quality personalzed health care in a patient centered environment that prioritizes the patient's needs which is in line with the mission of House Call Doctors. Seeing patients in their home gives me the time and resources I need to manage their health care in a manner that improves health outcomes, allows for flexibility, and tailors their health care plan specific to each patients' needs.",
-    edu: 'Board certified as a Family Nurse Practitioner, AANP 2017',
-    edu2: "Master's of Nursing Practice, Georgetown University, D.C. 2017",
-    edu3: 'BSN in Geriatrics, University of Utah, 2009',
-    edu4: 'Over 18 years of healthcare experience, including Geriatrics for 15 years, Acute Care Rehab and Long Term Care, Hospice and Palliative Care for 10 years, Personal Trainer and Nutrition Coach for 6 years.',
-    edu5: 'From Canada, spent 18 years in Japan, and has lived in Utah for the past 20 years.',
-    interest1: 'Member of Hospice and Palliative Nurses Association, STTI Nursing Honor Society, Utah Nurse Practitioners, and American Association of Nurse Practitioners',
-    interest2: 'Enjoys the gym, paddle boarding, cooking, making costumes, puzzles, traveling, mentoring nursing students, and spending time with family',
-    profileImage: RitaProfile,
-    info1: 'Brittany Robb',
+    name: 'GWEN MITCHELL, APRN',
+    linkName: 'gwen',
+    shortName: 'Gwen',
+    image: Gwen,
+    shortBio: "Meeting with patients in their home environment gives me the opportunity to get to know them and their family/support system better, making it easier understand their needs...",
+    bio: "Meeting with patients in their home environment gives me the opportunity to get to know them and their family/support system better, making it easier understand their needs--psychosocial as well as medical.  In the home environment I am able to get to know my patients better as people, with concerns and preferences that often don’t get mentioned in a more sterile clinic setting.  Overall, I am able to assist a person with maximizing their health and function in a way that isn’t possible in a traditional 15-20 minute clinic visit.",
+    edu: 'Board certified Family Nurse Practitioner',
+    edu2: "MS in Nursing University of Utah 1992",
+    edu3: 'BS in Nursing Westminster College 1980',
+    edu4: '27+ years of experience as an APRN, with 25 years of experience at the VA Hospital providing medical care to Veterans in their homes',
+    interest1: 'Member of American Nurses Association and Utah Nurse Practitioners',
+    interest2: 'Supporting people through end of life of care',
+    interest3: 'Personally, I love to hike, camp, go indoor and outdoor climbing, curl up with a good murder mystery, and try out new ethnic food restaurants.',
+    interest4: 'I also have made 6 trips to Tanzania and Kenya for medical and humanitarian mission work.',
+    profileImage: GwenProfile,
+    info1: 'Brittany Morrill',
     info2: '(801) 485-5055 ext: 3',
     info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
-    info4: 'Sarah Johnson',
-    info5: '(801) 485-5055 ext. 17',
-    info6: <Email href="mailto:Sarahjohnson@housecalldoctorsut.com">Sarahjohnson@housecalldoctorsut.com</Email>,
-    info7: '(801) 241-0339'
+    info4: 'NA',
+    info5: 'NA',
+    info6: 'NA',
+    info7: 'NA'
   },
   {
     name: 'EDIE SHEPHERD, APRN',
@@ -152,7 +153,7 @@ const profiles = [
     interest3: 'Loves boating, four wheeling, and camping with kid and grandkids.',
     interest4: 'A patriot: there are American flags in my house and yard.',
     profileImage: EdieProfile,
-    info1: 'Brittany Robb',
+    info1: 'Brittany Morrill',
     info2: '(801) 485-5055 ext: 3',
     info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
     info4: 'Megan Widmer',
