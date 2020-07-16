@@ -2,9 +2,9 @@ const ihapProviders = [
   {
     state: 'Utah',
     people: [
+     'Aimee Steinly, APRN',
      'Ana Dalling, PA-C',
      'Andrew Heinecke, APRN',
-     'Aimee Steinly, APRN',
      'Ashley Reeder, PA',
      'Colby Bliss, PA',
      'Edie Shepherd, APRN',
