@@ -31,6 +31,7 @@ class Home extends Component {
   render() {
     return (
       <>
+        <h1 aria-label="Home"></h1>
         <div id='homeRedContainer'>
           <div id='homeMainContainer'>
             <div id='homeCarouselContainer' className='CarouselContainer'>
@@ -56,7 +57,7 @@ class Home extends Component {
           <div id='homeInfo'>
             <div id='homeVisits'>
               <i className='homeIcon'>
-                <i id='homeHomeIcon' className='home huge icon color' />
+                <i id='homeHomeIcon' className='home huge icon color' alt='icon of house' />
               </i>
               <h2 className='homeSubTitle'>HOME VISITS</h2>
               <p className='homeSubText'>

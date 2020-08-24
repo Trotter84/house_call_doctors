@@ -41,8 +41,9 @@ class OurProviders extends Component {
     return(
 
       <>
+        <h1 aria-label="Our Providers"></h1>
         <div id='imageDividerContainer'>
-          <Image id='imageDivider' src={HCDpageDivider} />
+          <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         </div>
         <div id='ourProvidersTopWhiteSpace'></div>
         <div id='ourProvidersMainContainer'>
@@ -102,7 +103,7 @@ class OurProviders extends Component {
             {ihapProviders.map(eachProvider =>
               <div id='ourProvidersIhapSection'>
                 <div id='ourProvidersIhap' tabindex='0'>
-                  <h2 id='ourProvidersState'>{eachProvider.state} Providers:</h2>
+                  <h3 id='ourProvidersState'>{eachProvider.state} Providers:</h3>
                   <DividerStateLine />
                   <div>
                     <p id='ourProvidersNamesState'>

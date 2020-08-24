@@ -13,8 +13,9 @@ class AboutUs extends Component {
 render() {
   return(
     <>
+      <h1 aria-label="About Us"></h1>
       <div id='imageDividerContainer'>
-        <Image id='imageDivider' src={HCDpageDivider} />
+        <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
       </div>
       <div id='aboutUsMainContainer'>
         <div id='aboutUsTitleContainer'>
@@ -63,7 +64,7 @@ render() {
             <div className='aboutUsWhiteSpace'></div>
           </div>
           <div id='aboutUsPhoto'>
-            <Image src={GroupPhoto} />
+            <Image src={GroupPhoto} alt='photo of House Call Doctors staff' />
           </div>
         </div>
         <div id='aboutUsWhiteSpaceBottom'></div>

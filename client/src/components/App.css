@@ -12,6 +12,17 @@
   flex-direction: row;
   margin: auto;
 }
+
+.accessibilityH1 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 /* -------------------------------------------------------------------------- */
 
 /* _________________________________ NavBar _________________________________ */
@@ -465,6 +476,7 @@ width: 100%;
 }
 
 .servicesPointsTitle {
+  font-size: 15px;
   padding-left: 20px;
 }
 
@@ -476,7 +488,7 @@ width: 100%;
 .servicesPointText {
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 #servicesQuarterWhiteSpace {

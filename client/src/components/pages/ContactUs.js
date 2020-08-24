@@ -29,8 +29,9 @@ class ContactUs extends Component {
 
     return(
       <>
+        <h1 aria-label="Contact Us"></h1>
         <div id='imageDividerContainer'>
-          <Image id='imageDivider' src={HCDpageDivider} />
+          <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         </div>
         <div id='contactUsMainContainer'>
           <div id='contactUsTopWhiteSpace'></div>
@@ -55,7 +56,7 @@ class ContactUs extends Component {
             {profiles.map(profile => {
               return(
                 <div id='contactUsProfile'>
-                  <Image src={profile.profileImage} size='tiny' />
+                  <Image src={profile.profileImage} alt={`Profile of ${profile.shortName}`} size='tiny' />
                   <div id='contactUsContact'>
                     <p id='contactUsNames'><br /><b>{profile.name}</b></p>
                     <Divider id='contactUsDividerProfile' />
@@ -90,7 +91,7 @@ class ContactUs extends Component {
 
           <Divider />
           <div id='contactUsSubTitle'>
-            <h3 id='contactUsSubH3'>Instructions for paging your provider:</h3>
+            <h2 id='contactUsSubH3'>Instructions for paging your provider:</h2>
           </div>
           <div id='contactUsSubText'>
             <p id='contactUsSubP'>House Call Doctors is dedicated to serving you, your family, and all of those involved in your care. We strive to provide the best medical care possible.<br />In order to ensure we are providing the highest quality of care, our providers are available 24/7 to their existing patients.</p>
