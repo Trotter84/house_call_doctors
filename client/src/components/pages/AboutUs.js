@@ -38,7 +38,7 @@ render() {
               <p className='aboutUsContacts'><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
               <p className='aboutUsContacts'><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></p>
               <p className='aboutUsContacts'><b>Sandra Jense</b>, APRN <b>(801) 241-0255</b></p>
-              <p className='aboutUsContacts'><b>Rita Rutland</b>, APRN <b>(801) 241-0339</b></p>
+              <p className='aboutUsContacts'><b>Gwen Mitchell</b>, APRN <b>(801) 241-0339</b></p>
               <p className='aboutUsContacts'><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></p>
               <p className='aboutUsContacts'><b>Trenaisa Nay</b>, GNP <b>(801) 241-0484</b></p>
               <p className='aboutUsSubText'>These are numeric pagers, they do not accept voicemail or text messages.</p>
@@ -51,7 +51,7 @@ render() {
             <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubText'>For appointments, call our office at <b>801-485-5055</b>.<br />We have set aside a special day each month to visit you at your home or the facility where you reside.</p>
               <p className='aboutUsSubText'>If you are interested in becoming a new patient, please contact our office to obtain a copy of our <b>New Patient Registration</b> and return to our office 48 hours prior to your first appointment.<br /><br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>
-              <p className='aboutUsSubText'>For fastest results, have your pharmacy fax us your refill requests<br /> to <b>801-363-1398</b> or <b>801-467-3296</b>.<br />Please allow 24-48 business hours for a response.</p>
+              <p className='aboutUsSubText'>For fastest results, have your pharmacy fax us your refill requests <b>801-467-3296</b>.<br />Please allow 24-48 business hours for a response.</p>
             </div>
             <h2 className='aboutUsSubTitle'>
               Where It All Started
