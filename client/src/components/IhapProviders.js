@@ -11,7 +11,6 @@ const ihapProviders = [
      'Edlira Farka, APRN',
      'Gwen Mitchell, APRN',
      'Jared Jackman, PA',
-     'Jennifer Trinidad, APRN',
      'Mark Cacciamani, MD',
      'Perrine Anderson, GNP',
      'Rich Persons, PA',
@@ -48,7 +47,6 @@ const ihapProviders = [
   {
     state: 'Washington',
     people: [
-      'Alicia Farrell, PA',
       'Bernadette Kimemia, APRN',
       'Gwendolyn “Gabby” Lucas, APRN',
       'Lori Dealy, APRN',
