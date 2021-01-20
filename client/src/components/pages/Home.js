@@ -70,7 +70,7 @@ class Home extends Component {
               </i>
               <h2 className='homeSubTitle'>ASSISTED LIVING</h2>
               <p className='homeSubText'>
-                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Salt Lake, Utah, and Davis Counties. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today to see if a provider is in your facility.
+                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Davis, Salt Lake, Tooele, and Weber Counties. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today to see if a provider is in your facility.
               </p>
             </div>
             <div id='homeHomes'>
