@@ -31,7 +31,7 @@ class Footer extends Component {
       <div id='footerContainer'>
         <div id='footerMainContainer'>
           <div id='footerBox'>
-            <p id='footerCopyright'>Copyright © 2021 <StyledLink id='footerLinkCopyright' to={`/`}> &nbsp; House Call Doctors Utah. &nbsp; </StyledLink>All rights reserved.</p>
+            <p id='footerCopyright'>Copyright © 2020 <StyledLink id='footerLinkCopyright' to={`/`}> &nbsp; House Call Doctors Utah. &nbsp; </StyledLink>All rights reserved.</p>
             <div id='footerNavContainer'>
               <Nav id='footerNav'>
                 <StyledLink to={'/'} className='footerEachNav' aria-current='Home' alt='Footer home link'>Home</StyledLink>
