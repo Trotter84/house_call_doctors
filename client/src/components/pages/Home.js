@@ -31,7 +31,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <h1 aria-label="Home"></h1>
+        <h1 className='pageTitleReader' aria-label="Home page">Home</h1>
         <div id='homeRedContainer'>
           <div id='homeMainContainer'>
             <div id='homeCarouselContainer' className='CarouselContainer'>

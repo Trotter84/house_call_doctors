@@ -41,7 +41,7 @@ class OurProviders extends Component {
     return(
 
       <>
-        <h1 aria-label="Our Providers"></h1>
+        <h1 className='pageTitleReader' aria-label="Our Providers page">Our Providers</h1>
         <div id='imageDividerContainer'>
           <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         </div>
