@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image, Divider, Icon } from 'semantic-ui-react';
 import NetlifyForm from 'react-netlify-form';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
-import ContactField from '../coolStuffWorking/ContactField';
 
 
 class OurServices extends Component {
@@ -14,7 +13,7 @@ class OurServices extends Component {
   render() {
     return(
       <>
-        <h1 aria-label="Our Services"></h1>
+        <h1 className='pageTitleReader' aria-label="Our Services page">Our Services</h1>
         <div id='imageDividerContainer'>
           <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         </div>

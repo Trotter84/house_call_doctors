@@ -1,5 +1,9 @@
 /* ============================ DESKTOP Version ============================ */
 
+.pageTitleReader {
+  display: none;
+}
+
 /* ________________________________ TopMenu ________________________________ */
 #topMenuMenuContainer {
   background-color: #f4f4f4;
@@ -44,6 +48,7 @@
 }
 
 #imageDividerContainer {
+  margin-top: 52px;
   height: 100%;
   width: 100%;
 }
@@ -60,6 +65,7 @@ width: 100%;
 }
 
 #homeRedContainer {
+  margin-top: 52px;
   background-color: #AF3120;
   height: inherit;
 }
@@ -236,7 +242,7 @@ width: 100%;
 }
 
 #aboutUsTitle {
-  padding-top: 25px;
+  padding-top: 38px;
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -906,6 +912,7 @@ width: 100%;
 }
 
 #imageDividerContainer {
+  margin-top: 45px;
   height: 100%;
   width: 100%;
 }
@@ -1890,6 +1897,7 @@ width: 100%;
 }
 
 #imageDividerContainer {
+  margin-top: 35px;
   height: 100%;
   width: 100%;
 }
