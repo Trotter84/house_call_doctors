@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Image, Divider, Icon } from 'semantic-ui-react';
 import NetlifyForm from 'react-netlify-form';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
-import ContactField from '../coolStuffWorking/ContactField';
 
 
 class OurServices extends Component {
