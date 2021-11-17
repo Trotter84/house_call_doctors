@@ -106,13 +106,13 @@ const profiles = [
     interest1: 'Member of Hospice and Palliative Nurses Association, and of STTI Nursing Honor Society.',
     interest2: 'Enjoys knitting, cooking, reading, raising backyard chickens, advocating for family centered policy change, and spending time with husband and three children.',
     profileImage: SandraProfile,
-    info1: 'Jenna Hughes',
-    info2: '(801) 485-5055 ext. 1',
-    info3: <Email href="mailto:jenna@housecalldoctorsut.com">Jenna@housecalldoctorsut.com</Email>,
-    info4: 'Weston Unice',
-    info5: '(801) 485-5055 ext. 17',
-    info6: <Email href="mailto:Weston@housecalldoctorsut.com">Weston@housecalldoctorsut.com</Email>,
-    info7: '(801) 241-0255'
+    info1: 'NA',
+    info2: 'NA',
+    info3: 'NA',
+    info4: 'NA',
+    info5: 'NA',
+    info6: 'NA',
+    info7: 'NA'
   },
   {
     name: 'GWEN MITCHELL, APRN',
@@ -190,7 +190,7 @@ const profiles = [
     info7: '(801) 241-0484'
   },
   {
-    name: 'Courtney Harper, PA-C',
+    name: 'COURTNEY HARPER, PA-C',
     linkName: 'courtney',
     shortName: 'Courtney',
     image: Courtney,
@@ -202,7 +202,14 @@ const profiles = [
     interest2: 'Member of the Utah Academy of Physician Assistants',
     interest3: 'Level 1 Alpine Ski Instructor',
     interest4: 'Enjoys traveling, hiking, biking, climbing, skiing, dog walking, and baking',
-    profileImage: CourtneyProfile
+    profileImage: CourtneyProfile,
+    info1: 'Jenna Hughes',
+    info2: '(801) 485-5055 ext. 1',
+    info3: <Email href="mailto:jenna@housecalldoctorsut.com">Jenna@housecalldoctorsut.com</Email>,
+    info4: 'Weston Unice',
+    info5: '(801) 485-5055 ext. 17',
+    info6: <Email href="mailto:Weston@housecalldoctorsut.com">Weston@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0255'
   }
 ]
 
