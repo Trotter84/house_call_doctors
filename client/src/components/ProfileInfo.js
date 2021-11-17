@@ -6,6 +6,7 @@ import Sandra from '../images/Sandra.jpg';
 import Gwen from '../images/Gwen.jpg';
 import Edie from '../images/Edie.jpg';
 import Trenaisa from '../images/trenaisa.jpg';
+import Courtney from '../images/Courtney.jpg';
 
 import MarkProfile from '../images/Mark-profile.jpg';
 import PerrineProfile from '../images/Perrine-profile.jpg';
@@ -13,6 +14,7 @@ import SandraProfile from '../images/Sandra-profile.jpg';
 import GwenProfile from '../images/Gwen-profile.png';
 import EdieProfile from '../images/Edie-profile.jpg';
 import TrenaisaProfile from '../images/Trenaisa-profile.png';
+import CourtneyProfile from '../images/Courtney-profile.png';
 
 // import Placeholder from '../images/female-placeholder.jpeg';
 // import PlaceholderProfile from '../images/female-placeholder-profile.png';
@@ -186,6 +188,21 @@ const profiles = [
     info5: '(801) 485-5055 ext. 17',
     info6: <Email href="mailto:sasha@housecalldoctorsut.com">sasha@housecalldoctorsut.com</Email>,
     info7: '(801) 241-0484'
+  },
+  {
+    name: 'Courtney Harper, PA-C',
+    linkName: 'courtney',
+    shortName: 'Courtney',
+    image: Courtney,
+    shortBio: 'As a provider, I always strive to put my patients first. Being able to visit patients in their homes while treating their healthcare needs allows for an overall better patient-centered experience...',
+    bio: 'As a provider, I always strive to put my patients first. Being able to visit patients in their homes while treating their healthcare needs allows for an overall better patient-centered experience. This is one of the main reasons why I chose to work in this field of medicine. I thoroughly enjoy bringing healthcare to the home where patients can be at ease while in the comfort of their own surroundings. I look forward to caring for you, your family, and your loved ones to meet your medical needs.',
+    edu: 'Rosalind Franklin University of Medicine and Science - MS Physician Assistant Studies - 2021',
+    edu2: 'University of Utah - BS Communication, Business Administration Minor, Honors College',
+    interest1: 'Member of the American Academy of Physician Assistants',
+    interest2: 'Member of the Utah Academy of Physician Assistants',
+    interest3: 'Level 1 Alpine Ski Instructor',
+    interest4: 'Enjoys traveling, hiking, biking, climbing, skiing, dog walking, and baking',
+    profileImage: CourtneyProfile
   }
 ]
 
