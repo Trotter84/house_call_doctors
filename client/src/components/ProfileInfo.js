@@ -203,12 +203,12 @@ const profiles = [
     interest3: 'Level 1 Alpine Ski Instructor',
     interest4: 'Enjoys traveling, hiking, biking, climbing, skiing, dog walking, and baking',
     profileImage: CourtneyProfile,
-    info1: 'Jenna Hughes',
-    info2: '(801) 485-5055 ext. 1',
-    info3: <Email href="mailto:jenna@housecalldoctorsut.com">Jenna@housecalldoctorsut.com</Email>,
-    info4: 'Weston Unice',
-    info5: '(801) 485-5055 ext. 17',
-    info6: <Email href="mailto:Weston@housecalldoctorsut.com">Weston@housecalldoctorsut.com</Email>,
+    info1: 'Terra Jacobs',
+    info2: '(801) 485-5055 opt 1',
+    info3: <Email href="mailto:terra@housecalldoctorsut.com">terra@housecalldoctorsut.com</Email>,
+    info4: 'Jenna Hughes',
+    info5: '(801) 485-5055 ext 17',
+    info6: <Email href="mailto:jenna@housecalldoctorsut.com">jenna@housecalldoctorsut.com</Email>,
     info7: '(801) 241-0255'
   }
 ]
