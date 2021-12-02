@@ -321,6 +321,7 @@ width: 100%;
 
 #ourProvidersImage {
   height: 290px;
+  max-height: 290px;
   width: 100%;
 }
 
