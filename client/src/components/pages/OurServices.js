@@ -112,7 +112,7 @@ class OurServices extends Component {
           </h2>
           <Divider />
           <div className='servicesSubTextContainer'>
-            <p className='servicesSubText'>We are currently scheduling 2019 In-Home Assessments for Emblem Healthcare, Empire Healthcare, Molina Advantage, Select Health, Steward Healthcare, and University of Utah Health.<br /><br />Please contact <b>Daisy, Henry, Jackie, Jeanne, Lara, Sienna</b> to schedule your free in-home exam!</p>
+            <p className='servicesSubText'>We are currently scheduling 2021 In-Home Assessments for Emblem Healthcare, Empire Healthcare, Molina Advantage, SelectHealth, Health Choice Utah, and University of Utah Health.<br /><br />Please contact <b>Daisy, Jackie, Jeanne, Lara, Sienna</b> to schedule your free in-home exam!</p>
             <p className='servicesSubText'>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
             <p className='servicesSubText'>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
             <p className='servicesSubText'>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>
