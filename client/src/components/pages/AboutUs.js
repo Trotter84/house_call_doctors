@@ -37,7 +37,7 @@ render() {
               <p className='aboutUsSubText'>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
               <p className='aboutUsContacts'><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
               <p className='aboutUsContacts'><b>Perrine Anderson</b>, APRN <b>(801) 241-0623</b></p>
-              <p className='aboutUsContacts'><b>Sandra Jense</b>, APRN <b>(801) 241-0255</b></p>
+              <p className='aboutUsContacts'><b>Courtney Harper</b>, PA-C <b>(801) 241-0255</b></p>
               <p className='aboutUsContacts'><b>Gwen Mitchell</b>, APRN <b>(801) 241-0339</b></p>
               <p className='aboutUsContacts'><b>Edie Shepherd</b>, APRN <b>(801) 241-0021</b></p>
               <p className='aboutUsContacts'><b>Trenaisa Nay</b>, GNP <b>(801) 241-0484</b></p>
