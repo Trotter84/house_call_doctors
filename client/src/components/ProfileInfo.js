@@ -86,9 +86,9 @@ const profiles = [
     info1: 'Sarah Sylvester',
     info2: '(801) 485-5055 ext. 2',
     info3: <Email href="mailto:SarahS@housecalldoctorsut.com">SarahS@housecalldoctorsut.com</Email>,
-    info4: 'Annalise Sauter',
+    info4: 'Prerna Kamath',
     info5: '(801) 485-5055 ext. 17',
-    info6: <Email href="mailto:Annalise@housecalldoctorsut.com">Annalise@housecalldoctorsut.com</Email>,
+    info6: <Email href="mailto:Prerna@housecalldoctorsut.com">Prerna@housecalldoctorsut.com</Email>,
     info7: '(801) 241-0623'
   },
   {
@@ -133,9 +133,9 @@ const profiles = [
     info1: 'Brittany Morrill',
     info2: '(801) 485-5055 ext: 3',
     info3: <Email href="mailto:Brittany@housecalldoctorsut.com">Brittany@housecalldoctorsut.com</Email>,
-    info4: 'Brooke Hulse',
+    info4: 'Tonya Betancourt',
     info5: '(801) 485-5055 ext. 17',
-    info6: <Email href="mailto:brooke@housecalldoctorsut.com">Brooke@housecalldoctorsut.com</Email>,
+    info6: <Email href="mailto:Tonya@housecalldoctorsut.com">Tonya@housecalldoctorsut.com</Email>,
     info7: '(801) 241-0339'
   },
   {
