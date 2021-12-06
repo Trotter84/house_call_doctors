@@ -198,6 +198,7 @@ const profiles = [
     bio: 'As a provider, I always strive to put my patients first. Being able to visit patients in their homes while treating their healthcare needs allows for an overall better patient-centered experience. This is one of the main reasons why I chose to work in this field of medicine. I thoroughly enjoy bringing healthcare to the home where patients can be at ease while in the comfort of their own surroundings. I look forward to caring for you, your family, and your loved ones to meet your medical needs.',
     edu: 'Rosalind Franklin University of Medicine and Science - MS Physician Assistant Studies - 2021',
     edu2: 'University of Utah - BS Communication, Business Administration Minor, Honors College',
+    edu3: 'Rosalind Franklin University of Medicine and Science - MS Physician Assistant Studies - 2021',
     interest1: 'Member of the American Academy of Physician Assistants',
     interest2: 'Member of the Utah Academy of Physician Assistants',
     interest3: 'Level 1 Alpine Ski Instructor',
