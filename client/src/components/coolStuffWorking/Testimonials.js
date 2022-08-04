@@ -14,10 +14,10 @@ const testimonials = [
     name: "Joseph, patient's son",
     quote: "Dear Dr. Cacciamani and Staff, Thank you for all of your help and great service in regards to our family. You all have been amazing and kind to us; your professionalism is the best! Being able to care for dad, through his last days at his home, was of the utmost importance to us as those were his true wishes. Thanks again!",
   },
-  {
-    name: "Rosemary, patient's daughter",
-    quote: "Dr. Strong, Thank you for all of your kind and tender care to my mother. You were so good to her. I appreciate all of your visits and excellent care.",
-  },
+  // {
+  //   name: "Rosemary, patient's daughter",
+  //   quote: "Dr. Strong, Thank you for all of your kind and tender care to my mother. You were so good to her. I appreciate all of your visits and excellent care.",
+  // },
   {
     name: "Sherrie, patient's daughter",
     quote: "Dear Perrine, Thank you for taking such good care of mom. You were always so patient, and caring, and thoughtful.",

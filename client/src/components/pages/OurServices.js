@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import { Image, Divider, Icon } from 'semantic-ui-react';
 import NetlifyForm from 'react-netlify-form';
+import Styled from 'styled-components';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 
+
+const Email = Styled.a`
+  color: black;
+  transition: all 200ms ease-in-out;
+  :hover {
+    color: #AF3120;
+  }
+`
 
 class OurServices extends Component {
 
@@ -112,13 +121,14 @@ class OurServices extends Component {
           </h2>
           <Divider />
           <div className='servicesSubTextContainer'>
-            <p className='servicesSubText'>We are currently scheduling 2022 In-Home Assessments for Emblem Healthcare, Empire Healthcare, Molina Advantage, SelectHealth, Health Choice Utah, and University of Utah Health.<br /><br />Please contact <b>Daisy, Jackie, Jeanne, Lara, Sienna</b> to schedule your free in-home exam!</p>
+            <p className='servicesSubText'>We are currently scheduling 2022 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Generations, and University of Utah Health.<br /><br />Please contact <b>Daisy, Jacqueline, Mary, Evelyn, Sienna, Bailey</b> to schedule your free in-home exam!</p>
             <p className='servicesSubText'>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
             <p className='servicesSubText'>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
             <p className='servicesSubText'>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>
             <p className='servicesSubText'>There is <b>no fee</b> for these visits.</p>
             <p className='servicesSubText'>Your eligibility is determined by your health plan.</p>
             <p className='servicesSubText'>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
+            <p className='servicesSubText'>For any questions regarding in-home assessments, please contact Emma Eakland at (801) 485-5055 or <Email href="mailto:Emma@housecalldoctorsut.com">Emma@housecalldoctorsut.com</Email>.</p>
           </div>
         </div>
         <div id='servicesWhiteSpace' />
