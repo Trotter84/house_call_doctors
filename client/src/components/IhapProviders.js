@@ -14,14 +14,17 @@ const ihapProviders = [
      'Karen Fronk, APRN',
      'Karen Waskowiz, DNP',
      'LeeAnn Johnson, FNP',
+     'Marcus Pace, PA-C',
      'Mark Cacciamani, MD',
      'Perrine Anderson, GNP',
      'Rich Persons, PA',
      'Sandra Jense, APRN',
+     'Shanlee Pierson, APRN',
      'Steve Newman, PA-C',
      'Steven Barker, PA-C',
      'Trenaisa Nay, GNP-BC',
      'Tristan Lubina, DNP',
+     'Tyson Smith, FNP',
    ]
   },
   {
@@ -34,12 +37,14 @@ const ihapProviders = [
       'Sandra Jense, APRN',
     ]
   },
-  // {
-  //   state: 'New York',
-  //   people: [
-
-  //   ]
-  // },
+  {
+    state: 'Nevada',
+    people: [
+      'Ashley Reeder, PA-C',
+      'Marcus Pace, PA-C',
+      'Mark Cacciamani, MD',
+    ]
+  },
   {
     state: 'Washington',
     people: [
