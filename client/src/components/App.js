@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {
   Route,
-  Switch,
-  Redirect,
+  Routes,
+  Navigate,
   Router
 } from 'react-router-dom';
 import { ScrollManager, WindowScroller } from 'react-scroll-manager';
@@ -46,15 +46,15 @@ class App extends Component {
               <Container id='AppContainer'>
                 <Navbar />
               </Container>
-              <Switch>
+              <Routes>
                 <Route exact path='/' component={Home} />
                 <Route path='/about-us' component={AboutUs} />
                 <Route path='/our-providers' component={OurProviders} />
                 <Route path='/our-services' component={OurServices} />
                 <Route path='/our-privacy-policy' component={OurPrivacyPolicy} />
                 <Route path='/contact-us' component={ContactUs} />
-                <Redirect to='/'/>
-              </Switch>
+                <Navigate to='/'/>
+              </Routes>
               <div>
                 <Footer />
               </div>
