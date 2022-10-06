@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {
+  BrowserRouter,
   Route,
-  Switch,
-  Redirect,
-  Router
+  Routes,
 } from 'react-router-dom';
 import { ScrollManager, WindowScroller } from 'react-scroll-manager';
 import { createBrowserHistory as createHistory } from 'history';
@@ -39,29 +38,29 @@ class App extends Component {
   render() {
     return (
       <ScrollManager history={this.history}>
-        <Router history={this.history}>
+        <BrowserRouter history={this.history}>
           <WindowScroller>
             <div className="nav">
               <TopMenu />
               <Container id='AppContainer'>
                 <Navbar />
               </Container>
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route path='/about-us' component={AboutUs} />
-                <Route path='/our-providers' component={OurProviders} />
-                <Route path='/our-services' component={OurServices} />
-                <Route path='/our-privacy-policy' component={OurPrivacyPolicy} />
-                <Route path='/contact-us' component={ContactUs} />
-                <Redirect to='/'/>
-              </Switch>
+              <Routes>
+                <Route  path='/' element={<Home />} />
+                <Route path='/about-us' element={<AboutUs />} />
+                <Route path='/our-providers' element={<OurProviders />} />
+                <Route path='/our-services' element={<OurServices />} />
+                <Route path='/our-privacy-policy' element={<OurPrivacyPolicy />} />
+                <Route path='/contact-us' element={<ContactUs />} />
+                <Route to='/'/>
+              </Routes>
               <div>
                 <Footer />
               </div>
               <BottomMenuMobile />
             </div>
           </WindowScroller>
-        </Router>
+        </BrowserRouter>
       </ScrollManager>
     );
   }
