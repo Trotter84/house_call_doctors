@@ -33,11 +33,11 @@ class Navbar extends Component {
   render() {
     return (
       <div id='navBarContainer'>
-        <Link to={`/home`}>
+        <Link to={`/`}>
           <Image id='navBarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
         <Nav id='navBarNav'>
-          <EachNav exact='true' to={'/home'} className='navBarEachNav' aria-current='page'>HOME</EachNav>
+          <EachNav exact='true' to={'/'} className='navBarEachNav' aria-current='page' end>HOME</EachNav>
           <EachNav to={'/about-us'} className='navBarEachNav' aria-current='page'>ABOUT US</EachNav>
           <EachNav to={'/our-providers'} className='navBarEachNav' aria-current='page'>OUR PROVIDERS</EachNav>
           <EachNav to={'/our-services'} className='navBarEachNav' aria-current='page'>OUR SERVICES</EachNav>
