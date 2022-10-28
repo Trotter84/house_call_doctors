@@ -37,12 +37,12 @@ class Navbar extends Component {
           <Image id='navBarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
         <Nav id='navBarNav'>
-          <EachNav exact='true' to={'/'} className='navBarEachNav' aria-current='page' end>HOME</EachNav>
-          <EachNav to={'/about-us'} className='navBarEachNav' aria-current='page'>ABOUT US</EachNav>
-          <EachNav to={'/our-providers'} className='navBarEachNav' aria-current='page'>OUR PROVIDERS</EachNav>
-          <EachNav to={'/our-services'} className='navBarEachNav' aria-current='page'>OUR SERVICES</EachNav>
-          <EachNav to={'/our-privacy-policy'} className='navBarEachNav' aria-current='page'>OUR PRIVACY POLICY</EachNav>
-          <EachNav to={'/contact-us'} className='navBarEachNav' aria-current='page'>CONTACT US</EachNav>
+          <EachNav exact='true' to={'/'} className='navBarEachNav' aria-current='Home page' end>HOME</EachNav>
+          <EachNav to={'/about-us'} className='navBarEachNav' aria-current='About Us page'>ABOUT US</EachNav>
+          <EachNav to={'/our-providers'} className='navBarEachNav' aria-current='Our Providers page'>OUR PROVIDERS</EachNav>
+          <EachNav to={'/our-services'} className='navBarEachNav' aria-current='Our Services page'>OUR SERVICES</EachNav>
+          <EachNav to={'/our-privacy-policy'} className='navBarEachNav' aria-current='Our Privacy Policy page'>OUR PRIVACY POLICY</EachNav>
+          <EachNav to={'/contact-us'} className='navBarEachNav' aria-current='Contact Us page'>CONTACT US</EachNav>
         </Nav>
       </div>
     )
