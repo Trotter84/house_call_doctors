@@ -39,9 +39,9 @@ class Home extends Component {
             </div>
             <div id='homeContactArea'>
               <div id='homeContactAreaLeft'>
-                <h1 id='homeSectionHeader'>
+                <h2 id='homeSectionHeader'>
                   THANK YOU FOR VISITING HOUSE CALL DOCTORS.
-                </h1>
+                </h2>
                 <h3 id='homeSection'>
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
                 </h3>
