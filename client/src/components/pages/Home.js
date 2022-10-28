@@ -42,9 +42,9 @@ class Home extends Component {
                 <h2 id='homeSectionHeader'>
                   THANK YOU FOR VISITING HOUSE CALL DOCTORS.
                 </h2>
-                <h3 id='homeSection'>
+                <p id='homeSection'>
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
-                </h3>
+                </p>
               </div>
               <StyledLink to={`/contact-us`} id='homeContactUsLink'>
                 <ContactUs id='homeContactUs'>CONTACT US</ContactUs>
