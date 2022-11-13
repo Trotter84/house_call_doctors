@@ -52,7 +52,7 @@ class ContactUs extends Component {
             <iframe className='contactUsMap' title="House Call Doctors' location" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
           </div>
           <Divider />
-          <div id='contactUsProfileContainer'>
+          <div alt="list of providers and more info on each" id='contactUsProfileContainer'>
             {profiles.map(profile => {
               return(
                 <div id='contactUsProfile'>
@@ -60,7 +60,7 @@ class ContactUs extends Component {
                   <div id='contactUsContact'>
                     <p id='contactUsNames'><br /><b>{profile.name}</b></p>
                     <Divider id='contactUsDividerProfile' />
-                    <Modal trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>} closeIcon>
+                    <Modal alt="More info about provider" trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>} closeIcon>
                       <Modal.Header>{profile.name}</Modal.Header>
                       <Modal.Content image>
                         <Image wrapped src={profile.profileImage} size='tiny' />

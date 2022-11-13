@@ -23,16 +23,16 @@ render() {
         </div>
         <div id='aboutUsFlexBox'>
           <div id='aboutUsAllText'>
-            <h2 className='aboutUsSubTitle'>
+            <h3 className='aboutUsSubTitle'>
               Our Office
-            </h2>
+            </h3>
             <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubText'>Our office is open from <b>9:00 am</b> to <b>4:00 pm</b></p>
               <p className='aboutUsSubText'>Avoid the inconvenience of going to a doctor’s office.<br />Get the quality of care you deserve in the comfort of your own home.</p>
             </div>
-            <h2 className='aboutUsSubTitle'>
+            <h3 className='aboutUsSubTitle'>
               Primary Care in the home is our specialty
-            </h2>
+            </h3>
             <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubText'>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
               <p className='aboutUsContacts'><b>Mark Cacciamani</b>, MD <b>(801) 241-4483</b></p>
@@ -45,17 +45,17 @@ render() {
               <p className='aboutUsSubText'>After dialing the pager number, dial your own phone number followed by the pound key.</p>
               <p className='aboutUsSubText'>Please allow 15-30 minutes for a return call, and repeat the process every 30 minutes until your call is returned.</p>
             </div>
-            <h2 className='aboutUsSubTitle'>
+            <h3 className='aboutUsSubTitle'>
               Taking The Next Steps
-            </h2>
+            </h3>
             <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubText'>For appointments, call our office at <b>801-485-5055</b>.<br />We have set aside a special day each month to visit you at your home or the facility where you reside.</p>
               <p className='aboutUsSubText'>If you are interested in becoming a new patient, please contact our office to obtain a copy of our <b>New Patient Registration</b> and return to our office 48 hours prior to your first appointment.<br /><br />This packet will help your doctor gather pertinent health information about you so that he/she can better focus on your issues today.</p>
               <p className='aboutUsSubText'>For fastest results, have your pharmacy fax us your refill requests <b>801-467-3296</b>.<br />Please allow 24-48 business hours for a response.</p>
             </div>
-            <h2 className='aboutUsSubTitle'>
+            <h3 className='aboutUsSubTitle'>
               Where It All Started
-            </h2>
+            </h3>
             <div className='aboutUsSubTextContainer'>
               <p className='aboutUsSubTextBottom'>
                 Dr. Mark Cacciamani began his medical career in a clinic setting where he was often unable to spend adequate time with his patients.<br />He realized during this clinical experience that his place was not with the "worried well" and he wanted to make a bigger difference in healthcare.<br /><br />He founded House Call Doctors in 2004 which allowed him to serve home-bound patients that would not otherwise have access to adequate health care.<br />Dr. Cacciamani's passion to bring better health care to the home-bound population is instilled in all of House Call Doctors' staff and we strive to better the quality of life for each of our patients.
