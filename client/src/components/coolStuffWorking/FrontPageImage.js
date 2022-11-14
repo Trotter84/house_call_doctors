@@ -10,7 +10,7 @@ class FrontPageImage extends Component {
     render() {
         return (
           <div id='frontPageImageCarouselContainer' className='CarouselContainer'>
-            <Carousel id='frontPageImageCarousel' autoPlay interval={4000} showThumbs={false} infiniteLoop>
+            <Carousel id='frontPageImageCarousel' autoPlay ariaLabel='Image carousel of Mark and patient.' interval={4000} showThumbs={false} infiniteLoop>
                 <div className='frontPageImagePhoto'>
                   <img src={MarkFrontPage1} alt="Mark and Client" />
                 </div>
