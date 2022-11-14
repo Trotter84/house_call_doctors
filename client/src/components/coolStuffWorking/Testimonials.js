@@ -65,6 +65,7 @@ class Testimonials extends Component {
   render() {
     var settings = {
       dots: true,
+      accessibility: true,
       arrows: false,
       infinite: true,
       autoplay: true,
