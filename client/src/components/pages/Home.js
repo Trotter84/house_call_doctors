@@ -6,21 +6,13 @@ import Testimonials from '../coolStuffWorking/Testimonials';
 import '../../index.css';
 
 
-const ContactUs = Styled.button`
+const StyledLink = Styled(Link)`
   transition: all 200ms ease-in-out;
   :hover {
     background-color: white;
     color: black;
   }
 `
-
-const StyledLink = Styled(Link)`
-  transition: all 200ms ease-in-out;
-  :hover {
-    color: black;
-  }
-`
-
 
 class Home extends Component {
 
@@ -46,8 +38,8 @@ class Home extends Component {
                   WE ARE DEDICATED TO PROVIDING BETTER PATIENT-FOCUSED PRIMARY CARE TO THE UNDERSERVED AND HOME LIMITED POPULATION.
                 </p>
               </div>
-              <StyledLink to={`/contact-us`} id='homeContactUsLink'>
-                <ContactUs id='homeContactUs'>CONTACT US</ContactUs>
+              <StyledLink to={`/contact-us`} id='homeContactUs'>
+                CONTACT US
               </StyledLink>
             </div>
           </div>
