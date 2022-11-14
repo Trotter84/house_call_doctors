@@ -10,7 +10,9 @@ import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
 import profiles from '../ProfileInfo';
 
 
-const InfoBtn = Styled.a`
+const InfoBtn = Styled.button`
+  background-color: white;
+  border: none;
   transition: all 200ms ease-in-out;
   :hover {
     color: black;

@@ -10,8 +10,10 @@ import profiles from '../ProfileInfo';
 import ihapProviders from '../IhapProviders';
 
 
-const InfoBtn = Styled.a`
+const InfoBtn = Styled.button`
   font-size: 15px;
+  background-color: white;
+  border: none;
   color: black;
   padding-left: 10px;
   transition: all 200ms ease-in-out;
