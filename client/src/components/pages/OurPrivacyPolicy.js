@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HIPAA from '../../images/HIPAA-Seal-of-Compliance.webp';
 
 
 const ContactUs = Styled(Link)`
@@ -124,7 +125,7 @@ class OurPrivacyPolicy extends Component {
           <div className='privacySubTextContainer'>
             <p className='privacySubText'>We will investigate all complaints and will not retaliate against you for filing a complaint. You may also file a written complaint with the Office of Civil Rights of the U.S. Department of Health and Human Services.</p>
             <p className='privacySubText'>For information on <b>HIPAA</b> laws <Hipaa className='privacyLink' href={'https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html'} target='_blank'><b>click here</b></Hipaa></p>
-            <a className='privacyAddress' href="https://compliancy-group.com/hipaa-compliance-verification" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-13813" src="https://1qy13e1kz4mu2twyf741jfes-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/HIPAA-Website-Verified-Seal.png" alt="HIPAA Seal of Compliance Verication" width="246" height="130" /></a>
+            <a className='privacyAddress' href="https://compliancy-group.com/hipaa-compliance-verification" target="_blank" rel="noopener noreferrer"><img class="aligncenter wp-image-13813" src={HIPAA} alt="HIPAA Seal of Compliance Verication" width="246" height="130" /></a>
           </div>
         </div>
         <div id='privacyWhiteSpace' />
