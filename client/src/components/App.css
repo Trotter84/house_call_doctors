@@ -237,61 +237,73 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
-#aboutUsMainContainer {
-  max-width: 1175px;
+.mainContainer-aboutUs {
+  max-width: 175vh;
   margin: auto;
   width: 95%;
 }
 
-#aboutUsTitle {
-  padding-top: 38px;
+.title-aboutUs {
+  padding: 38px 0 10px 0;
   display: flex;
   justify-content: center;
   font-weight: bold;
+  font-size: 3.5vh;
 }
-#aboutUsFlexBox {
+
+.container-aboutUs {
   display: flex;
   flex-direction: row;
+  align-items: space-between;
 }
 
-#aboutUsAllText {
+.leftHalf-aboutUs {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
 }
 
-#aboutUsPhoto {
-  padding: 30px 30px 20px 20px;
-  width: 900px;
+.rightHalf-aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
-.aboutUsSubTitle {
+.subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 3vh;
 }
 
-.aboutUsSubTextContainer {
+.office-subTitle-aboutUs {
+  display: none;
+}
+
+.subTextContainer-aboutUs {
   padding-left: 20px;
 }
 
-.aboutUsSubText {
+.subText-aboutUs {
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 2vh;
 }
 
-.aboutUsSubTextBottom {
-  color: #515151;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.aboutUsContacts {
+.contacts-aboutUs {
   padding-left: 20px;
+  font-size: 2vh;
 }
 
-.aboutUsWhiteSpace {
-  height: 80px;
+.photo-aboutUs {
+  max-width: 70vh;
+  min-width: 45vh;
+  padding: 30px 0 20px 10px;
+}
+
+.whiteSpace-aboutUs {
+  height: 11vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -928,7 +940,7 @@ width: 100%;
 
 /* __________________________________ Home __________________________________ */
 #homeMainContainer {
-  max-width: 765px;
+  max-width: 850px;
   margin: auto;
 }
 
@@ -1103,84 +1115,74 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
-#aboutUsMainContainer {
-  max-width: 765px;
+.mainContainer-aboutUs {
+  max-width: 850px;
   margin: auto;
   width: 95%;
 }
 
-#aboutUsTitleContainer {
+.title-aboutUs {
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  font-size: 3vh;
 }
 
-#aboutUsTitle {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 23px;
-}
-
-#aboutUsFlexBox {
+.container-aboutUs {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column-reverse;
   padding: 0 10px 0 10px;
   float: left;
 }
 
-#aboutUsAllText {
+.leftHalf-aboutUs {
   display: flex;
   flex-direction: column;
   float: left;
 }
 
-#aboutUsPhoto {
-  padding: 20px 10px 30px 10px;
-  width: 100%;
-  min-width: 350px;
-  max-height: 320px;
-  height: 100%;
-  margin-bottom: 125px;
-
+.rightHalf-aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.aboutUsSubTitle {
+.subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 2.8vh;
+  float: left;
 }
 
-.aboutUsSubTextContainer {
+.office-subTitle-aboutUs {
+  display: none;
+}
+
+.subTextContainer-aboutUs {
   padding-left: 10px;
 }
 
-.aboutUsSubText {
+.subText-aboutUs {
   color: #515151;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 2vh;
 }
 
-.aboutUsSubTextBottom {
-  color: #515151;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-.aboutUsContacts {
+.contacts-aboutUs {
   padding-left: 10px;
+  font-size: 2vh;
 }
 
-.aboutUsWhiteSpace {
-  height: 40px;
+.photo-aboutUs {
+  max-width: 55vh;
+  padding: 20px 0 20px 0px;
 }
 
-#aboutUsWhiteSpaceBottom {
-  position: absolute;
-  height: 100px;
-  bottom: 0;
-  background-color: var(--black);
+.whiteSpace-aboutUs {
+  height: 15vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -2072,77 +2074,73 @@ width: 100%;
 /* -------------------------------------------------------------------------- */
 
 /* ________________________________ About Us ________________________________ */
-#aboutUsMainContainer {
-  max-width: 426px;
+.mainContainer-aboutUs {
+  max-width: 100%;
   margin: auto;
+  width: 95%;
 }
 
-#aboutUsTitleContainer {
+.title-aboutUs {
   padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   text-align: center;
+  font-size: 2.7vh;
 }
 
-#aboutUsTitle {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-#aboutUsFlexBox {
+.container-aboutUs {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   padding: 0 10px 0 10px;
+  float: left;
 }
 
-#aboutUsAllText {
+.leftHalf-aboutUs {
   display: flex;
   flex-direction: column;
+  float: left;
 }
 
-#aboutUsPhoto {
-  padding: 0 10px 30px 10px;
-  width: 100%;
-  min-width: 310px;
-  max-height: 282px;
-  height: 100%;
+.rightHalf-aboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
-.aboutUsSubTitle {
+.subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.5vh;
+  float: left;
 }
 
-.aboutUsSubTextContainer {
+.office-subTitle-aboutUs {
+  display: none;
+}
+
+.subTextContainer-aboutUs {
   padding-left: 10px;
 }
 
-.aboutUsSubText {
+.subText-aboutUs {
   color: #515151;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1.8vh;
 }
 
-.aboutUsSubTextBottom {
-  color: #515151;
-  font-weight: normal;
-  font-size: 16px;
-  padding-bottom: 0;
-}
-
-.aboutUsContacts {
+.contacts-aboutUs {
   padding-left: 10px;
+  font-size: 1.8vh;
 }
 
-.aboutUsWhiteSpace {
-  height: 40px;
+.photo-aboutUs {
+  max-width: 10vh;
+  padding: 10px 0 20px 0px;
 }
 
-#aboutUsWhiteSpaceBottom {
-  height: 80px;
+.whiteSpace-aboutUs {
+  height: 15vh;
 }
 /* -------------------------------------------------------------------------- */
 
