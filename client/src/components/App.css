@@ -1,3 +1,13 @@
+:root {
+  --font-family: "acumin-pro-extra-condensed", sans-serif;
+
+  --bright-red: #AF3120;
+  --black: #000000;
+  --white: #ffffff;
+  --off-white: #f4f4f4;
+
+}
+
 /* ============================ DESKTOP Version ============================ */
 
 .pageTitleReader {
@@ -6,7 +16,7 @@
 
 /* ________________________________ TopMenu ________________________________ */
 #topMenuMenuContainer {
-  background-color: #f4f4f4;
+  background-color: var(--off-white);
 }
 
 #topMenuBar {
@@ -43,7 +53,7 @@
 
 .navBarEachNav {
   font-size: 1.308em;
-  color: black;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -66,7 +76,7 @@ width: 100%;
 
 #homeRedContainer {
   margin-top: 52px;
-  background-color: #AF3120;
+  background-color: var(--bright-red);
   height: inherit;
 }
 
@@ -103,9 +113,9 @@ width: 100%;
 }
 
 #homeContactUs {
-  background-color: #AF3120;
-  border: 1px solid white;
-  color: white;
+  background-color: var(--bright-red);
+  border: 1px solid var(--white);
+  color: var(--white);
   padding: 10px 20px;
   margin: 100px 25px 0 0;
   text-align: center;
@@ -127,7 +137,7 @@ width: 100%;
 }
 
 #homeSectionHeader {
-  color: white;
+  color: var(--white);
   padding: 80px 0 0 25px;
   margin-bottom: 5px;
   font-weight: normal;
@@ -135,7 +145,7 @@ width: 100%;
 }
 
 #homeSection {
-  color: white;
+  color: var(--white);
   padding: 0px 25px 50px 25px;
   margin: 0;
   font-weight: normal;
@@ -165,12 +175,12 @@ width: 100%;
 }
 
 .homeIcon {
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 .homeStyledLink {
   font-size: 15px;
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #testimonialsFullSection {
@@ -322,7 +332,7 @@ width: 100%;
   display: block;
   font-size: 16px;
   width: 100%;
-  color: #AF3120;
+  color: var(--bright-red);
   padding: 0 2px;
 }
 
@@ -635,7 +645,7 @@ width: 100%;
 }
 
 .privacyLink {
-  color: black;
+  color: var(--black);
 }
 
 #privacyWhiteSpace {
@@ -658,7 +668,7 @@ width: 100%;
 }
 
 #contactUsIcon {
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #contactUsOffice {
@@ -766,7 +776,7 @@ width: 100%;
 #contactUsInfoBtn {
   font-size: 13px;
   font-weight: bold;
-  color: #AF3120;
+  color: var(--bright-red);
   padding-left: 10px;
 }
 
@@ -850,7 +860,7 @@ width: 100%;
 
 .footerEachNav {
   font-size: 17px;
-  color: white;
+  color: var(--white);
 }
 /* -------------------------------------------------------------------------- */
 #bottomMenuMainContainer {
@@ -901,7 +911,7 @@ width: 100%;
 
 .navBarEachNav {
   font-size: 0.9em;
-  color: black;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -923,7 +933,7 @@ width: 100%;
 }
 
 #homeRedContainer {
-  background-color: #AF3120;
+  background-color: var(--bright-red);
   height: inherit;
 }
 
@@ -957,8 +967,8 @@ width: 100%;
 }
 
 #homeContactUs {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--white);
+  color: var(--white);
   padding: 10px 20px;
   margin: 0;
   text-align: center;
@@ -1020,7 +1030,7 @@ width: 100%;
 }
 
 .homeIcon {
-  color: #AF3120;
+  color: var(--bright-red);
   float: left;
 }
 
@@ -1030,7 +1040,7 @@ width: 100%;
 
 .homeStyledLink {
   font-size: 15px;
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #homeHalfWhiteSpace {
@@ -1170,7 +1180,7 @@ width: 100%;
   position: absolute;
   height: 100px;
   bottom: 0;
-  background-color: black;
+  background-color: var(--black);
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1211,7 +1221,7 @@ width: 100%;
 #ourProvidersName {
   display: block;
   font-size: 17px;
-  color: #AF3120;
+  color: var(--bright-red);
   padding-bottom: 0px;
 }
 
@@ -1588,7 +1598,7 @@ width: 100%;
 #contactUsIcon {
   width: 20px;
   height: auto;
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #contactUsOffice {
@@ -1694,7 +1704,7 @@ width: 100%;
 #contactUsInfoBtn {
   font-size: 13px;
   font-weight: bold;
-  color: #AF3120;
+  color: var(--bright-red);
   padding-left: 10px;
 }
 
@@ -1780,11 +1790,11 @@ width: 100%;
 
 .footerEachNav {
   font-size: 14px;
-  color: white;
+  color: var(--white);
 }
 /* -------------------------------------------------------------------------- */
 #bottomMenuMainContainer {
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 5px 6px 10px rgb(30, 30, 30, 0.8);
   display: flex;
   flex-direction: row;
@@ -1813,7 +1823,7 @@ width: 100%;
 }
 
 .icons {
-  color: black;
+  color: var(--black);
 }
 
 .bottomMenuText {
@@ -1870,7 +1880,7 @@ width: 100%;
 
 .navBarEachNav {
   font-size: 0.9em;
-  color: black;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -1892,7 +1902,7 @@ width: 100%;
 }
 
 #homeRedContainer {
-  background-color: #AF3120;
+  background-color: var(--bright-red);
   height: inherit;
 }
 
@@ -1926,8 +1936,8 @@ width: 100%;
 }
 
 #homeContactUs {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--white);
+  color: var(--white);
   padding: 10px 20px;
   margin: 0;
   text-align: center;
@@ -1989,7 +1999,7 @@ width: 100%;
 }
 
 .homeIcon {
-  color: #AF3120;
+  color: var(--bright-red);
   float: left;
 }
 
@@ -1999,7 +2009,7 @@ width: 100%;
 
 .homeStyledLink {
   font-size: 15px;
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #homeHalfWhiteSpace {
@@ -2173,7 +2183,7 @@ width: 100%;
 #ourProvidersName {
   display: block;
   font-size: 15px;
-  color: #AF3120;
+  color: var(--bright-red);
   padding-bottom: 0px;
 }
 
@@ -2535,7 +2545,7 @@ width: 100%;
 #contactUsIcon {
   width: 20px;
   height: auto;
-  color: #AF3120;
+  color: var(--bright-red);
 }
 
 #contactUsOffice {
@@ -2646,7 +2656,7 @@ width: 100%;
 #contactUsInfoBtn {
   font-size: 13px;
   font-weight: bold;
-  color: #AF3120;
+  color: var(--bright-red);
   padding-left: 10px;
 }
 
@@ -2732,11 +2742,11 @@ width: 100%;
 
 .footerEachNav {
   font-size: 12px;
-  color: white;
+  color: var(--white);
 }
 /* -------------------------------------------------------------------------- */
 #bottomMenuMainContainer {
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 5px 6px 10px rgb(30, 30, 30, 0.8);
   display: flex;
   flex-direction: row;
@@ -2765,7 +2775,7 @@ width: 100%;
 }
 
 .icons {
-  color: black;
+  color: var(--black);
 }
 
 .bottomMenuText {
