@@ -47,7 +47,8 @@ class Home extends Component {
 
         <div id='homeMainContainer'>
           <div id='homeInfo'>
-            <div id='homeVisits'>
+
+            <div className='summary homeVisits'>
               <i className='homeIcon'>
                 <i id='homeHomeIcon' className='home huge icon color' alt='icon of house' />
               </i>
@@ -56,16 +57,16 @@ class Home extends Component {
                 We <b>are</b> currently accepting new house call patients, please call our office or check in often as this does change frequently based on provider availability.
               </p>
             </div>
-            <div id='homeLiving'>
+            <div className='summary inOfficeVisits'>
               <i className='homeIcon'>
-                <i className='doctor huge icon color' />
+                <i className='building huge icon color' />
               </i>
-              <h2 className='homeSubTitle'>ASSISTED LIVING</h2>
+              <h2 className='homeSubTitle'>IN-OFFICE VISITS</h2>
               <p className='homeSubText'>
-                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Davis, Salt Lake, Tooele, Utah, and Weber Counties. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today to see if a provider is in your facility.
+                Due to interest from families, friends, caregivers, and the community, House Call Doctors is now offering primary care visits to non-homebound patients, age 18+, in our office!
               </p>
             </div>
-            <div id='homeHomes'>
+            <div className='summary groupHomes'>
               <i className='homeIcon'>
                 <i className='hospital huge icon color' />
               </i>
@@ -74,8 +75,26 @@ class Home extends Component {
                 Our providers specialize in taking care of disabled persons in the Group Home setting. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today for an appointment.
               </p>
             </div>
+            <div className='summary assistedLiving'>
+              <i className='homeIcon'>
+                <i className='doctor huge icon color' />
+              </i>
+              <h2 className='homeSubTitle'>ASSISTED LIVING</h2>
+              <p className='homeSubText'>
+                Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Davis, Salt Lake, Tooele, Utah, and Weber Counties. <StyledLink to={`/contact-us`} className='homeStyledLink'>Call us</StyledLink> today to see if a provider is in your facility.
+              </p>
+            </div>
+            <div className='summary weightLoss'>
+              <i className='homeIcon'>
+                <i className='weight huge icon color' />
+              </i>
+              <h2 className='homeSubTitle'>WEIGHT LOSS</h2>
+              <p className='homeSubText'>
+                If diet and exercise alone have been ineffective at helping you to reach or maintain a healthy weight, this revolutionary medication can be a stepping stone to help you reach your goal weight and live a healthier, happier life.  When combined with diet and exercise, this medication can result in even greater weight loss and help you learn to maintain results.
+              </p>
+            </div>
+
           </div>
-          <div id='homeHalfWhiteSpace' />
           <Testimonials />
         </div>
         <div id='homeWhiteSpace' />

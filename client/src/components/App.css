@@ -148,30 +148,20 @@ width: 100%;
 
 .homeSubText {
   color: #494949;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 #homeInfo {
-  margin: 40px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-#homeVisits {
-  width: 30%;
-  margin-right: 15px;
-}
-
-#homeLiving {
-  width: 30%;
-  margin-right: 15px;
-}
-
-#homeHomes {
-  width: 30%;
-  margin-right: 15px;
+.summary {
+  width: 31%;
+  margin: 10px 10px;
 }
 
 .homeIcon {
@@ -871,7 +861,7 @@ width: 100%;
 
 
 /* ============================= TABLET Version ============================= */
-@media (min-width: 465px) and (max-width: 769px) {
+@media (min-width: 465px) and (max-width: 850px) {
 #appContainer {
   max-width: 765px;
 }
@@ -1021,23 +1011,7 @@ width: 100%;
   flex-wrap: wrap;
 }
 
-#homeVisits {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
-}
-
-#homeLiving {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
-}
-
-#homeHomes {
+.summary {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -2006,23 +1980,7 @@ width: 100%;
   flex-wrap: wrap;
 }
 
-#homeVisits {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
-}
-
-#homeLiving {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
-}
-
-#homeHomes {
+.summary {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
