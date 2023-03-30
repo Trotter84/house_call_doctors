@@ -59,8 +59,8 @@ render() {
             
               <Image src={GroupPhoto} className='photo-aboutUs' alt='photo of House Call Doctors staff' />
           
-            <h3 className='office-subTitle-aboutUs'>Our Office</h3>
-            <div className='subTextContainer-aboutUs'>
+            <h3 className='officeTitle subTitle-aboutUs'>Our Office</h3>
+            <div className='officeText subTextContainer-aboutUs'>
               <p className='subText-aboutUs'>Our office is open from <b>9:00 am</b> to <b>4:00 pm</b></p>
               <p className='subText-aboutUs'>Avoid the inconvenience of going to a doctor’s office.<br />Get the quality of care you deserve in the comfort of your own home.</p>
             </div>
