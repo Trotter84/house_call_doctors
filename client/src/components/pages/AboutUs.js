@@ -52,7 +52,7 @@ render() {
               </div>
 
               <div className='whiteSpace-aboutUs'></div>
-
+            
             </div>
 
           <div className='rightHalf-aboutUs'>
@@ -66,7 +66,7 @@ render() {
             </div>
           </div>
         </div>
-        <div className='bottom-whiteSpace-aboutUs'></div>
+
       </div>
     </>
   )
