@@ -15,35 +15,28 @@ const EachNav = Styled(NavLink)`
   }
 `
 
-const Nav = Styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 1.563em;
-
-  ${EachNav} {
-    margin-left: 1.250em;
-  }
-`
-
 
 class Navbar extends Component {
 
   render() {
     return (
-      <div id='navBarContainer'>
+      <div id='mainContainer-navBar'>
         <Link to={`/`}>
-          <Image id='navBarStyledImage' src={HCDLogo} alt="House Call Doctors' logo" />
+          <Image id='logo-navBar' src={HCDLogo} alt="House Call Doctors' logo" />
         </Link>
-        <Nav id='navBarNav'>
-          <EachNav exact='true' to={'/'} className='navBarEachNav' aria-current='page' end>HOME</EachNav>
-          <EachNav to={'/about-us'} className='navBarEachNav' aria-current='page'>ABOUT US</EachNav>
-          <EachNav to={'/our-providers'} className='navBarEachNav' aria-current='page'>OUR PROVIDERS</EachNav>
-          <EachNav to={'/our-services'} className='navBarEachNav' aria-current='page'>OUR SERVICES</EachNav>
-          <EachNav to={'/our-privacy-policy'} className='navBarEachNav' aria-current='page'>OUR PRIVACY POLICY</EachNav>
-          <EachNav to={'/contact-us'} className='navBarEachNav' aria-current='page'>CONTACT US</EachNav>
-        </Nav>
+        <div id='container-navBar'>
+          <EachNav exact='true' to={'/'} className='eachNav-navBar' aria-current='page' end>HOME</EachNav>
+          <i className='circle tiny icon grey' />
+          <EachNav to={'/about-us'} className='eachNav-navBar' aria-current='page'>ABOUT US</EachNav>
+          <i className='circle tiny icon grey' />
+          <EachNav to={'/our-providers'} className='eachNav-navBar' aria-current='page'>OUR PROVIDERS</EachNav>
+          <i className='circle tiny icon grey' />
+          <EachNav to={'/our-services'} className='eachNav-navBar' aria-current='page'>OUR SERVICES</EachNav>
+          <i className='circle tiny icon grey' />
+          <EachNav to={'/our-privacy-policy'} className='eachNav-navBar' aria-current='page'>OUR PRIVACY POLICY</EachNav>
+          <i className='circle tiny icon grey' />
+          <EachNav to={'/contact-us'} className='eachNav-navBar' aria-current='page'>CONTACT US</EachNav>
+        </div>
       </div>
     )
   }

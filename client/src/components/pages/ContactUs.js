@@ -32,9 +32,7 @@ class ContactUs extends Component {
     return(
       <>
         <h1 className='pageTitleReader' aria-label="Contact Us page">Contact Us</h1>
-        <div id='imageDividerContainer'>
-          <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
-        </div>
+        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='contactUsMainContainer'>
           <div id='contactUsTopWhiteSpace'></div>
           <div id='contactUsMapInfo'>

@@ -23,9 +23,7 @@ class OurServices extends Component {
     return(
       <>
         <h1 className='pageTitleReader' aria-label="Our Services page">Our Services</h1>
-        <div id='imageDividerContainer'>
-          <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
-        </div>
+        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='servicesMainContainer'>
           <div id='servicesSubSection'>
             <div id='servicesInfo'>

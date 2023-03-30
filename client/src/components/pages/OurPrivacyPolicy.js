@@ -33,9 +33,7 @@ class OurPrivacyPolicy extends Component {
     return(
       <>
         <h1 className='pageTitleReader' aria-label="Our Privacy Policy page">Our Privacy Policy</h1>
-        <div id='imageDividerContainer'>
-          <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
-        </div>
+        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='privacyMainContainer'>
           <h2 id='privacyTitleTop'>
             Privacy Promise:

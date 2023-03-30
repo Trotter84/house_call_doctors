@@ -42,6 +42,7 @@ class Navbar extends Component {
           </a>
           </Menu.Item>
         </div>
+        <div></div>
       </Menu>
     )
   }

@@ -14,9 +14,9 @@ render() {
   return(
     <>
       <h1 className='pageTitleReader' aria-label="About Us page">About Us</h1>
-      <div id='imageDividerContainer'>
-        <Image id='imageDivider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
-      </div>
+      
+      <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+   
       <div className='mainContainer-aboutUs'>
         <h2 className='title-aboutUs'>YOUR GUIDE TO BETTER HEALTHCARE</h2>
         <div className='container-aboutUs'>
