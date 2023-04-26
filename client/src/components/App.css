@@ -242,9 +242,8 @@
 /* ________________________________ About Us ________________________________ */
 .mainContainer-aboutUs {
   max-width: 1700px;
-  width: 10vh;
   margin: auto;
-  width: 85%;
+  width: 90%;
 }
 
 .title-aboutUs {
@@ -252,7 +251,7 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .container-aboutUs {
@@ -278,7 +277,7 @@
 .subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .officeTitle {
@@ -315,7 +314,7 @@
 }
 
 .whiteSpace-aboutUs {
-  height: 11vh;
+  height: 6vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -625,55 +624,45 @@
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
-#privacyMainContainer {
-  max-width: 1250px;
+#mainContainerPrivacy {
+  max-width: 1700px;
   margin: auto;
+  width: 90%;
 }
 
-#privacyTitleTop {
+#mainContainerPrivacy > h2 {
   font-weight: bold;
-  padding-top: 65px;
+  font-size: 1.8rem;
 }
 
-.privacyTitle {
-  font-weight: bold;
+#mainContainerPrivacy > .top {
+  padding-top: 4vh;
 }
 
-.privacySubTextContainer {
-  padding-left: 20px;
-}
-
-.privacySubText {
-  color: #494949;
+#mainContainerPrivacy > p {
+  padding-left: 1.4rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 
-.privacyPolicy {
-  color: #494949;
+#mainContainerPrivacy > .policy {
+  padding-left: 2.8rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 15px;
-  padding-left: 20px;
+  font-size: 1.2rem;
 }
 
-#privacyAddressContainer {
-  margin: 10px 0;
-}
-
-.privacyAddress {
+#mainContainerPrivacy > .address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 14px 0 14px 0;
+  margin: 1rem 0 1rem 0;
   font-weight: bold;
 }
 
-.privacyLink {
-  color: var(--black);
-}
-
 #privacyWhiteSpace {
-  height: 80px;
+  height: 8vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1102,7 +1091,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .container-aboutUs {
@@ -1128,7 +1117,7 @@
 .subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   float: left;
 }
 
@@ -1151,12 +1140,12 @@
 .subText-aboutUs {
   color: #515151;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .contacts-aboutUs {
   padding-left: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .photo-aboutUs {
@@ -1165,7 +1154,7 @@
 }
 
 .whiteSpace-aboutUs {
-  height: 15vh;
+  height: 12vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1502,54 +1491,45 @@
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
-#privacyMainContainer {
-  max-width: 765px;
+#mainContainerPrivacy {
+  max-width: 1700px;
   margin: auto;
-  padding: 0 10px 0 10px;
+  width: 95%;
 }
 
-#privacyTitleTop {
+#mainContainerPrivacy > h2 {
   font-weight: bold;
-  padding-top: 35px;
-  font-size: 23px;
+  font-size: 1.7rem;
 }
 
-.privacyTitle {
-  font-weight: bold;
-  font-size: 23px;
+#mainContainerPrivacy > .top {
+  padding-top: 4vh;
 }
 
-.privacySubTextContainer {
-  padding-left: 10px;
-}
-
-.privacySubText {
-  color: #494949;
+#mainContainerPrivacy > p {
+  padding-left: 1.4rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 
-.privacyPolicy {
-  color: #494949;
+#mainContainerPrivacy > .policy {
+  padding-left: 2.8rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 17px;
-  padding-left: 10px;
+  font-size: 1.2rem;
 }
 
-#privacyAddressContainer {
-  margin: 10px 0;
-}
-
-.privacyAddress {
+#mainContainerPrivacy > .address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 14px 0 14px 0;
+  margin: 1rem 0 1rem 0;
   font-weight: bold;
 }
 
 #privacyWhiteSpace {
-  height: 90px;
+  height: 10vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -2033,7 +2013,7 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .container-aboutUs {
@@ -2059,7 +2039,7 @@
 .subTitle-aboutUs {
   padding-top: 5px;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   float: left;
 }
 
@@ -2079,12 +2059,12 @@
 .subText-aboutUs {
   color: #515151;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .contacts-aboutUs {
   padding-left: 5px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .photo-aboutUs {
@@ -2093,7 +2073,7 @@
 }
 
 .whiteSpace-aboutUs {
-  height: 15vh;
+  height: 13vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -2424,54 +2404,45 @@
 /* -------------------------------------------------------------------------- */
 
 /* ___________________________ Our Privacy Policy ___________________________ */
-#privacyMainContainer {
-  max-width: 426px;
+#mainContainerPrivacy {
+  max-width: 1700px;
   margin: auto;
-  padding: 0 10px 0 10px;
+  width: 95%;
 }
 
-#privacyTitleTop {
+#mainContainerPrivacy > h2 {
   font-weight: bold;
-  padding-top: 35px;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
-.privacyTitle {
-  font-weight: bold;
-  font-size: 20px;
+#mainContainerPrivacy > .top {
+  padding-top: 4vh;
 }
 
-.privacySubTextContainer {
-  padding-left: 10px;
-}
-
-.privacySubText {
-  color: #494949;
+#mainContainerPrivacy > p {
+  padding-left: 1rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 15px;
+  font-size: 1.1rem;
 }
 
-.privacyPolicy {
-  color: #494949;
+#mainContainerPrivacy > .policy {
+  padding-left: 2rem;
+  color: var(--gray);
   font-weight: normal;
-  font-size: 15px;
-  padding-left: 10px;
+  font-size: 1.1rem;
 }
 
-#privacyAddressContainer {
-  margin: 10px 0;
-}
-
-.privacyAddress {
+#mainContainerPrivacy > .address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 14px 0 14px 0;
+  margin: 1rem 0 1rem 0;
   font-weight: bold;
 }
 
 #privacyWhiteSpace {
-  height: 80px;
+  height: 15vh;
 }
 /* -------------------------------------------------------------------------- */
 
