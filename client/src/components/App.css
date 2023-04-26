@@ -220,7 +220,7 @@
 
 #testimonialsQuoteBox {
   border-radius: 5px;
-  background-color: #f3f3f3;
+  background-color: var(--off-white);
   min-height: 50px;
   font-size: 1.2rem;
 }
@@ -1074,7 +1074,7 @@
 
 #testimonialsQuoteBox {
   border-radius: 5px;
-  background-color: #f3f3f3;
+  background-color: var(--off-white);
   min-height: 1.8vh;
   font-size: 1.2rem;
 }
@@ -2006,7 +2006,7 @@
 
 #testimonialsQuoteBox {
   border-radius: 5px;
-  background-color: #f3f3f3;
+  background-color: var(--off-white);
   min-height: 1.5vh;
   font-size: 1.2rem;
 }
