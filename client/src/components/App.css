@@ -667,44 +667,65 @@
 /* -------------------------------------------------------------------------- */
 
 /* _______________________________ Contact Us _______________________________ */
-#contactUsMainContainer {
-  max-width: 1250px;
+#mainContainerContactUs {
+  max-width: 1700px;
   margin: auto;
+  width: 90%;
 }
 
-#contactUsContactInfoAndPhoto {
+#mapInfoContactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem;
+  padding: 3vh 0 0 0;
+}
+
+#infoAndPhotoContactUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+#infoContainerContactUs {
 
 }
 
-#contactUsInfoContainer {
-
+#officeContactUs {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 1rem 10rem;
 }
 
-#contactUsIcon {
+#officeContactUs > .icon {
   color: var(--bright-red);
 }
 
-#contactUsOffice {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 10px 150px;
+#officeContactUs > p {
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
-#contactUsFax {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 10px 150px;
+#infoAndPhotoContactUs > img {
+  padding: 1rem 0 0 11rem;
+  width: 100%;
 }
 
-#contactUsFemaleImage {
-  padding: 10px 0 0 130px;
+#mapInfoContactUs > iframe {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5A7584;
+  margin-right: 2rem;
+  width: 55%;
+  height: auto;
 }
 
-#contactUsProfileContainer {
+#profileContainerContactUs {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-top: 20px;
+  padding-top: 2rem;
   max-width: 100%;
   flex-wrap: wrap;
 }
@@ -712,69 +733,7 @@
 #contactUsProfile {
   display: flex;
   flex-direction: row;
-  max-height: 100px;
-  padding-bottom: 20px;
-}
-
-#contactUsNames {
-  font-size: 14.5px;
-  padding-left: 6px;
-  margin-bottom: 0px;
-  max-width: 350px;
-}
-
-#contactUsMapInfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 25px;
-  padding-bottom: 0;
-}
-
-.contactUsMap {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #5A7584;
-  margin-right: 105px;
-  width: 500px;
-  height: 400px;
-}
-
-#contactUsOfficeInfo {
-  font-weight: normal;
-  font-size: 17px;
-}
-
-#contactUsFaxInfo {
-  font-weight: normal;
-  font-size: 17px;
-}
-
-.contactUsProviderInfo {
-  font-size: 14px;
-  max-width: 350px;
-}
-
-#contactUsLeft {
-  padding-right: 20px;
-}
-
-#contactUsMiddle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 20px 0 20px;
-}
-
-#contactUsRight {
-  padding-left: 20px;
-}
-
-#contactUsInsideInfo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 35px;
+  padding-bottom: 2rem;
 }
 
 #contactUsContact {
@@ -782,49 +741,75 @@
   flex-direction: column;
 }
 
+#contactUsNames {
+  font-size: 1.2rem;
+  padding-left: 0.4rem;
+  margin-bottom: 0;
+  max-width: 20vw;
+}
+
 #contactUsDividerProfile {
-  margin: 6px 0 6px 3px;
+  margin: 0.5rem 0 0.5rem 0.1rem;
 }
 
 #contactUsInfoBtn {
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--bright-red);
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
-#contactUsSubTitle {
-  padding: 5px 0 14px 10px;
+#modalContainer {
+  width: 70rem;
 }
 
-#contactUsSubH3 {
-  font-weight: bold;
-  font-size: 23px;
+#contactUsInsideInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  min-width: 60rem;
+  max-width: 100%;
+}
+
+.contactUsProviderInfo {
+  font-size: 1.3rem;
+  max-width: 100%;
+}
+
+#contactUsLeft {
+  
+}
+
+#contactUsMiddle {
+  
+
+}
+
+#contactUsRight {
+
+}
+
+
+#mainContainerContactUs > h2 {
+  font-size: 1.7rem;
 }
 
 #contactUsSubText {
-  padding-left: 40px;
+  padding-left: 2.8rem;
 }
 
-#contactUsSubP{
+#contactUsSubText > p {
   color: #515151;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 
-.contactUsDirections {
-  padding-left: 20px;
-  color: #515151;
-  font-weight: normal;
-  font-size: 16px;
-}
-
-#contactUsTopWhiteSpace {
-  height: 40px;
+#contactUsSubText > .directions {
+  padding-left: 1.4rem;
 }
 
 #contactUsWhiteSpace {
-  height: 80px;
+  height: 8vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1492,7 +1477,7 @@
 
 /* ___________________________ Our Privacy Policy ___________________________ */
 #mainContainerPrivacy {
-  max-width: 1700px;
+  max-width: 100%;
   margin: auto;
   width: 95%;
 }
@@ -1547,13 +1532,13 @@
   padding-bottom: 5px;
 }
 
-#contactUsContactInfoAndPhoto {
+#infoAndPhotoContactUs {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-#contactUsInfoContainer {
+#infoContainerContactUs {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1566,7 +1551,7 @@
   color: var(--bright-red);
 }
 
-#contactUsOffice {
+#officeContactUs {
   display: flex;
   flex-direction: row;
   padding: 0 0 0 0;
@@ -2405,7 +2390,7 @@
 
 /* ___________________________ Our Privacy Policy ___________________________ */
 #mainContainerPrivacy {
-  max-width: 1700px;
+  max-width: 100%;
   margin: auto;
   width: 95%;
 }
@@ -2452,13 +2437,13 @@
   margin: auto;
 }
 
-#contactUsContactInfoAndPhoto {
+#infoAndPhotoContactUs {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
 
-#contactUsInfoContainer {
+#infoContainerContactUs {
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -2470,7 +2455,7 @@
   color: var(--bright-red);
 }
 
-#contactUsOffice {
+#officeContactUs {
   display: flex;
   flex-direction: column;
   padding: 0 0 0 0;
