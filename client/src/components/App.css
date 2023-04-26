@@ -3,6 +3,7 @@
 
   --bright-red: #AF3120;
   --black: #000000;
+  --gray: #494949;
   --white: #ffffff;
   --off-white: #f4f4f4;
 
@@ -27,7 +28,6 @@
 #topMenuBar {
   display: flex;
   flex-direction: row;
-
   max-width: 100rem;
   width: 100%;
   margin-left: 15rem;
@@ -79,169 +79,163 @@
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
-#homeMainContainer {
-  max-width: 1250px;
-  margin: auto;
-}
-
-#homeRedContainer {
+#redContainerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: fit-content;
   background-color: var(--bright-red);
-  height: inherit;
 }
 
-#homeCarouselContainer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 600px;
-  max-width: 1166px;
+#carouselContainerHome {
+  max-height: inherit;
   padding: 45px 0 0 0;
-  max-width: 95%;
+  max-width: 68vw;
 }
 
-#frontPageImageCarouselContainer {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 0 100px 0;
-  max-height: 600px;
-  max-width: 1166px;
+#contactAreaHome {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 85vw;
 }
 
-#frontPageImageCarousel {
-  display: inline-block;
+#homeContactAreaText {
+  display: flex;
+  flex-direction: column;
+  max-width: 205vh;
+  padding: 4rem 2rem;
 }
 
-.frontPageImagePhoto {
-  max-height: 600px;
-  max-width: 1166px;
+#homeContactAreaText > h2 {
+  color: var(--white);
+  margin: 0 0 0.7rem 0.8rem;
+  font-weight: normal;
+  font-size: 2.1rem;
 }
 
-#homeContactUsLink {
-  padding: 60px;
+#homeContactAreaText > p {
+  color: var(--white);
+  margin: 0;
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
-#homeContactUs {
+#contactUsButtonHome {
   background-color: var(--bright-red);
   border: 1px solid var(--white);
   color: var(--white);
-  padding: 10px 20px;
-  margin: 100px 25px 0 0;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-
-#homeContactArea {
+  padding: 1.5rem 0.5rem;
+  margin: 0 2rem;
+  min-width: 14%;
+  max-width: 100%;
+  width: auto;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+} #contactUsButtonHome:hover {
+    background-color: var(--off-white);
+    color: var(--bright-red);
 }
 
-#homeContactAreaLeft {
-  flex: 1;
-}
-
-#homeSectionHeader {
-  color: var(--white);
-  padding: 80px 0 0 25px;
-  margin-bottom: 5px;
-  font-weight: normal;
-  font-size: 28px;
-}
-
-#homeSection {
-  color: var(--white);
-  padding: 0px 25px 50px 25px;
-  margin: 0;
-  font-weight: normal;
-  font-size: 18px;
-}
-.homeSubTitle {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.homeSubText {
-  color: #494949;
-  font-size: 17px;
+#summaryContainerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 #homeInfo {
-  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 90vw;
+  margin: 3vh 0;
 }
 
 .summary {
-  width: 31%;
-  margin: 10px 10px;
+  max-width: 25vw;
+  margin: 1rem 1rem;
 }
 
-.homeIcon {
+.summary > i {
   color: var(--bright-red);
 }
 
-.homeStyledLink {
-  font-size: 15px;
-  color: var(--bright-red);
+.summary > h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
-#testimonialsFullSection {
+.summary > p {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+
+.homeLink {
+  font-size: 1.2rem;
+  color: var(--bright-red);
+} .homeLink:hover {
+  color: var(--gray);
+}
+
+#testimonialsSection {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: 250px;
-  max-width: 1170px;
+  max-width: 75%;
   width: 95%;
-}
-
-#testimonialsTitle {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 #testimonialsTopPart {
   display: flex;
   flex-direction: column;
-  max-width: 1170px;
+}
+
+#testimonialsTopPart > h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#testimonialsTopPart > div {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightgray;
+  margin: 6px 0 6px 3px;
 }
 
 #testimonialsName {
-  padding: 15px 0 0 30px;
+  padding: 0.7rem 0 0 1rem;
 }
 
 #testimonialsQuoteBox {
   border-radius: 5px;
   background-color: #f3f3f3;
   min-height: 50px;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 
 #testimonialsQuote {
-  max-width: 1100px;
-  padding: 15px 15px 15px 15px;
-}
-
-#testimonialsDividerLine {
-  margin: 6px 0 6px 3px;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 #testimonialsCarouselStyle {
-  min-height: 250px;
-}
-
-#homeHalfWhiteSpace {
-  height: 50px;
+  width: 100%;
 }
 
 #homeWhiteSpace {
-  height: 120px;
+  height: 7vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -906,11 +900,6 @@
   max-width: 100%;
 }
 /* ________________________________ TopMenu ________________________________ */
-#topMenuMenuContainer {
-
-  background-color: var(--off-white);
-}
-
 #topMenuBar {
   display: flex;
   justify-content: flex-start;
@@ -929,18 +918,12 @@
 }
 
 #logo-navBar {
-  max-width: 15vw;
-  min-width: 10vw;
+  max-width: 25vw;
+  min-width: 20vw;
 }
 
 #container-navBar {
   display: none;
-  flex-flow: column;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 1.4em;
-  max-width: 350px;
-  margin: 5px 0;
 }
 
 .eachNav-navBar {
@@ -955,178 +938,154 @@
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
-#homeMainContainer {
-  max-width: auto;
-  margin: auto;
-}
-
-#homeRedContainer {
-  background-color: var(--bright-red);
-  height: inherit;
-}
-
-#homeCarouselContainer {
-  text-align: center;
-  max-height: 600px;
-  max-width: 765px;
-  padding: 25px 0 0 0;
-  padding-left: 0px;
-}
-
-#frontPageImageCarouselContainer {
-  padding: 0 15px 0 15px;
-  text-align: center;
-  max-height: 600px;
-  max-width: 765px;
-}
-
-#frontPageImageCarousel {
-  display: inline-block;
-}
-
-.frontPageImagePhoto {
-  max-height: 600px;
-  max-width: 1166px;
-}
-
-#homeContactUsLink {
-  text-align: center;
-  padding: 20px 0 35px 0;
-}
-
-#homeContactUs {
-  border: 1px solid var(--white);
-  color: var(--white);
-  padding: 10px 20px;
-  margin: 0;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-}
-
-#homeContactArea {
+#redContainerHome {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: fit-content;
+  background-color: var(--bright-red);
 }
 
-#homeContactAreaLeft {
-  flex: 1;
+#carouselContainerHome {
+  max-height: inherit;
+  padding-top: 2vh;
+  max-width: 95%;
 }
 
-#homeSectionHeader {
-  text-align: center;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 5px;
-  font-size: 27px;
+#contactAreaHome {
+  display: flex;
+  flex-direction: row;
+  max-width: 97%;
 }
 
-#homeSection {
-  text-align: center;
-  padding: 0px 30px 0 30px;
+#homeContactAreaText {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 2rem 1rem;
+}
+
+#homeContactAreaText > h2 {
+  color: var(--white);
+  margin: 0 0 0.7rem 0.8rem;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+#homeContactAreaText > p {
+  color: var(--white);
   margin: 0;
-  font-size: 17px;
+  font-weight: normal;
+  font-size: 1.1rem;
 }
 
-.homeSubTitle {
+#contactUsButtonHome {
+  background-color: var(--bright-red);
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 1.5rem 0.5rem;
+  margin: 0 2rem;
+  min-width: 18%;
+  max-width: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 100px;
+  align-self: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+} #contactUsButtonHome:hover {
+    background-color: var(--off-white);
+    color: var(--bright-red);
 }
 
-.homeSubText {
-  color: #494949;
-  font-size: 16px;
+#summaryContainerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 #homeInfo {
-  margin: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1.5vh 0;
 }
 
 .summary {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
+  max-width: 45%;
+  margin: 0.5rem 0.9rem;
 }
 
-.homeIcon {
-  color: var(--bright-red);
-  float: left;
-}
-
-#homeHomeIcon {
-  max-height: 50px;
-}
-
-.homeStyledLink {
-  font-size: 15px;
+.summary > i {
   color: var(--bright-red);
 }
 
-#homeHalfWhiteSpace {
-  height: 25px;
-}
-
-#testimonialsFullSection {
-  max-height: 250px;
-  max-width: 765px;
-}
-
-#testimonialsTitle {
-  font-size: 22px;
+.summary > h2 {
+  font-size: 1.7rem;
   font-weight: bold;
-  padding-left: 10px;
+}
+
+.summary > p {
+  color: var(--gray);
+  font-size: 1.3rem;
+}
+
+.homeLink {
+  font-size: 1.3rem;
+  color: var(--bright-red);
+} .homeLink:hover {
+  color: var(--gray);
+}
+
+#testimonialsSection {
+  display: block;
+  min-width: 93%;
 }
 
 #testimonialsTopPart {
   display: flex;
   flex-direction: column;
-  max-width: 765px;
 }
 
-#testimonialsContainer {
-  text-align: center;
+#testimonialsTopPart > h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
-#testimonialsName {
-  float: left;
-  padding: 10px 0 0 20px;
-}
-
-#testimonialsQuoteBox {
-  display: inline-block;
-  border-radius: 5px;
-  background-color: #f3f3f3;
-  padding-right: 10px;
-  min-height: 50px;
-  font-size: 15px;
-  width: 95%;
-}
-
-#testimonialsQuote {
-  max-width: 765px;
-  padding: 0;
-  margin: 10px;
-}
-
-#testimonialsDividerLine {
+#testimonialsTopPart > div {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightgray;
   margin: 6px 0 6px 3px;
 }
 
-#testimonialsCarouselStyle {
-  min-height: 250px;
+#testimonialsName {
+  padding: 0.7rem 0 0 1rem;
+}
+
+#testimonialsQuoteBox {
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  min-height: 1.8vh;
+  font-size: 1.2rem;
+}
+
+#testimonialsQuote {
+  max-width: 100%;
+  padding: 1rem;
 }
 
 #homeWhiteSpace {
-  height: 100px;
+  height: 10vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1887,6 +1846,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 1vh 0;
 }
 
 #logo-navBar {
@@ -1896,12 +1856,6 @@
 
 #container-navBar {
   display: none;
-  flex-flow: column;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 1.4em;
-  max-width: 350px;
-  margin: 5px 0;
 }
 
 .eachNav-navBar {
@@ -1916,178 +1870,154 @@
 /* -------------------------------------------------------------------------- */
 
 /* __________________________________ Home __________________________________ */
-#homeMainContainer {
-  max-width: 426px;
-  margin: auto;
-}
-
-#homeRedContainer {
-  background-color: var(--bright-red);
-  height: inherit;
-}
-
-#homeCarouselContainer {
-  text-align: center;
-  max-height: 600px;
-  max-width: 426px;
-  padding: 25px 0 0 0;
-  padding-left: 0px;
-}
-
-#frontPageImageCarouselContainer {
-  padding: 0 15px 0 15px;
-  text-align: center;
-  max-height: 600px;
-  max-width: 426px;
-}
-
-#frontPageImageCarousel {
-  display: inline-block;
-}
-
-.frontPageImagePhoto {
-  max-height: 600px;
-  max-width: 1166px;
-}
-
-#homeContactUsLink {
-  text-align: center;
-  padding: 20px 0 35px 0;
-}
-
-#homeContactUs {
-  border: 1px solid var(--white);
-  color: var(--white);
-  padding: 10px 20px;
-  margin: 0;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-}
-
-#homeContactArea {
+#redContainerHome {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  max-width: 100%;
+  max-height: fit-content;
+  background-color: var(--bright-red);
 }
 
-#homeContactAreaLeft {
-  flex: 1;
+#carouselContainerHome {
+  max-height: inherit;
+  padding-top: 2vh;
+  max-width: 95%;
 }
 
-#homeSectionHeader {
+#contactAreaHome {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+#homeContactAreaText {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 1vh;
+}
+
+#homeContactAreaText > h2 {
+  color: var(--white);
+  margin: 0 0 0.7rem 0.3rem;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+#homeContactAreaText > p {
+  color: var(--white);
+  margin: 0.2rem;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+#contactUsButtonHome {
+  background-color: var(--bright-red);
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 1rem 0.5rem;
+  margin: 0 0 0.9rem 0;
+  min-width: 14%;
+  max-width: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding: 20px 20px 0 20px;
-  margin-bottom: 5px;
-  font-size: 26px;
+  align-self: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+} #contactUsButtonHome:hover {
+    background-color: var(--off-white);
+    color: var(--bright-red);
 }
 
-#homeSection {
-  text-align: center;
-  padding: 0px 30px 0 30px;
-  margin: 0;
-  font-size: 16px;
-}
-
-.homeSubTitle {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 100px;
-}
-
-.homeSubText {
-  color: #494949;
-  font-size: 16px;
+#summaryContainerHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: fit-content;
 }
 
 #homeInfo {
-  margin: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 100%;
+  margin: 2vh 0;
 }
 
 .summary {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 98%;
-  margin: 10px 0px 10px 2px;
+  max-width: 100%;
+  margin: 0.5rem 0.7rem;
 }
 
-.homeIcon {
-  color: var(--bright-red);
-  float: left;
-}
-
-#homeHomeIcon {
-  max-height: 50px;
-}
-
-.homeStyledLink {
-  font-size: 15px;
+.summary > i {
   color: var(--bright-red);
 }
 
-#homeHalfWhiteSpace {
-  height: 25px;
-}
-
-#testimonialsFullSection {
-  max-height: 250px;
-  max-width: 410px;
-}
-
-#testimonialsTitle {
-  font-size: 22px;
+.summary > h2 {
+  font-size: 1.6rem;
   font-weight: bold;
-  padding-left: 10px;
+}
+
+.summary > p {
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+
+.homeLink {
+  font-size: 1.2rem;
+  color: var(--bright-red);
+} .homeLink:hover {
+  color: var(--gray);
+}
+
+#testimonialsSection {
+  display: block;
+  min-width: 90%;
 }
 
 #testimonialsTopPart {
   display: flex;
   flex-direction: column;
-  max-width: 426px;
 }
 
-#testimonialsContainer {
-  text-align: center;
+#testimonialsTopPart > h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+#testimonialsTopPart > div {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: lightgray;
+  margin: 0;
 }
 
 #testimonialsName {
-  float: left;
-  padding: 10px 0 0 20px;
+  padding: 0.5rem 0 0 1rem;
 }
 
 #testimonialsQuoteBox {
-  display: inline-block;
   border-radius: 5px;
   background-color: #f3f3f3;
-  padding-right: 10px;
-  min-height: 50px;
-  font-size: 15px;
-  width: 95%;
+  min-height: 1.5vh;
+  font-size: 1.2rem;
 }
 
 #testimonialsQuote {
-  max-width: 426px;
-  padding: 0;
-  margin: 5px;
-}
-
-#testimonialsDividerLine {
-  margin: 6px 0 6px 3px;
-}
-
-#testimonialsCarouselStyle {
-  min-height: 250px;
+  width: 100%;
+  padding: 1rem;
 }
 
 #homeWhiteSpace {
-  height: 125px;
+  height: 20vh;
 }
 /* -------------------------------------------------------------------------- */
 

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Divider } from 'semantic-ui-react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -64,7 +63,7 @@ const testimonials = [
 class Testimonials extends Component {
   render() {
     var settings = {
-      dots: true,
+      dots: false,
       accessibility: true,
       arrows: false,
       infinite: true,
@@ -77,12 +76,10 @@ class Testimonials extends Component {
     };
 
     return (
-      <div id='testimonialsFullSection'>
+      <div id='testimonialsSection'>
         <div id='testimonialsTopPart'>
-          <h2 id='testimonialsTitle'>
-            TESTIMONIALS
-          </h2>
-          <Divider id='testimonialsDividerLine' />
+          <h2>TESTIMONIALS</h2>
+          <div />
         </div>
         <Slider {...settings} id='testimonialsCarouselStyle'>
 

@@ -16,7 +16,7 @@ class BottomMenuMobile extends Component {
   render() {
     return(
       <div id='bottomMenuMainContainer'>
-        <Link to={'/home'} aria-current='page' className='iconContainers'>
+        <Link to={'/'} aria-current='page' className='iconContainers'>
           <Icons className='icons' name="home">
             <p className='bottomMenuText'>Home</p>
           </Icons>

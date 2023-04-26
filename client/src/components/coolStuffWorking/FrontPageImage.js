@@ -9,17 +9,11 @@ import MarkFrontPage3 from '../../images/MarkFrontPage3.jpg';
 class FrontPageImage extends Component {
     render() {
         return (
-          <div id='frontPageImageCarouselContainer' className='CarouselContainer'>
+          <div id='carouselContainerHome'>
             <Carousel id='frontPageImageCarousel' autoPlay ariaLabel='Image carousel of Mark and patient.' interval={4000} showThumbs={false} infiniteLoop>
-                <div className='frontPageImagePhoto'>
-                  <img src={MarkFrontPage1} alt="Mark and Client" />
-                </div>
-                <div className='frontPageImagePhoto'>
-                  <img src={MarkFrontPage2} alt="Mark checking Client's heart beat" />
-                </div>
-                <div className='frontPageImagePhoto'>
-                  <img src={MarkFrontPage3} alt="Mark and Client laughing" />
-                </div>
+                <img src={MarkFrontPage1} alt="Mark and Client" />
+                <img src={MarkFrontPage2} alt="Mark checking Client's heart beat" />
+                <img src={MarkFrontPage3} alt="Mark and Client laughing" />
             </Carousel>
           </div>
         );
