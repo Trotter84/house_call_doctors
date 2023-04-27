@@ -13,43 +13,45 @@ class ContactField extends Component {
         {({ loading, error, success }) => (
           <div>
             {loading &&
-              <div id='contactFieldLoading'>Loading  <Icon loading name='spinner' /></div>
+              <div className='status loading'>Loading... <Icon loading name='spinner' /></div>
             }
             {error &&
-              <div id='contactFieldError'>Your information was not sent. Please try again later.</div>
+              <div className='status error'>Your information was not sent. Please try again later.</div>
             }
             {success &&
-              <div id='contactFieldSuccess'>Thank you for contacting us!</div>
+              <div className='status success'>Thank you for contacting us!</div>
             }
             {!loading && !success &&
 
-              <div id='contactFieldInputField'>
-                <div id='contactFieldNames'>
-                  <div id='contactFieldFirst'>
-                    <label htmlFor="fname">First Name*</label>
-                    <input type="text" id="fname" name="firstname" required />
+              <div id='contactFieldContainer'>
+                <div className='contactFieldGroups'>
+                  <div className='contactField first'>
+                    <label className='label' htmlFor="fname">First Name*</label>
+                    <input className='input' type="text" id="fname" name="firstname" required />
                   </div>
-                  <div id='contactFieldLast'>
-                    <label htmlFor="lname">Last Name*</label>
-                    <input type="text" id="lname" name="lastname" required />
+                  <div className='contactField last'>
+                    <label className='label' htmlFor="lname">Last Name*</label>
+                    <input className='input' type="text" id="lname" name="lastname" required />
                   </div>
                 </div>
-                <div id='contactFieldEmail'>
-                  <label htmlFor="email">Email*</label>
-                  <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+                <div className='contactFieldGroups'>
+                  <div className='contactField email'>
+                    <label className='label' htmlFor="email">Email*</label>
+                    <input className='input' type="email" id="email" name="email" placeholder="example@domain.com" required />
+                  </div>
+                  <div className='contactField phone'>
+                    <label className='label' htmlFor="phone">Phone Number</label>
+                    <input className='input' type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890" />
+                  </div>
                 </div>
-                <div id='contactFieldPhone'>
-                  <label htmlFor="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1233456789" />
+                <div className='contactField message'>
+                  <label className='label' htmlFor="subject">Message*</label>
+                  <textarea className='input message' id="subject" name="subject" placeholder="How can we help?.." required></textarea>
                 </div>
-                <div id='contactFieldMessage'>
-                  <label htmlFor="subject">Message*</label>
-                  <textarea id="subject" name="subject" placeholder="How can we help?.." required></textarea>
+                <div className='contactField submit'>
+                  <button id='submitBtn' type="submit">Send</button>
                 </div>
-                <div id='contactFieldSubmit'>
-                  <button type="submit">Send</button>
-                </div>
-                <p id='contactFieldRequired'>* required</p>
+                <p className='contactField required'>* required</p>
               </div>
             }
           </div>

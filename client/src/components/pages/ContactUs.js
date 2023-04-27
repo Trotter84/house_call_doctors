@@ -6,6 +6,7 @@ import {
   Modal,
 } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import ContactField from '../coolStuffWorking/ContactField';
 import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
 import profiles from '../ProfileInfo';
 
@@ -35,20 +36,19 @@ class ContactUs extends Component {
         <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainContainerContactUs'>
           <div id='mapInfoContactUs'>
-            <div id='infoAndPhotoContactUs'>
-              <div id='infoContainerContactUs'>
-                <div id='officeContactUs'>
-                  <i className='phone square large icon color'></i>
-                  <p>Office Phone: <b>(801) 485-5055</b></p>
-                </div>
-                <div id='officeContactUs'>
-                  <i className='fax large icon color'></i>
-                  <p>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
-                </div>
-              </div>
-              <img src={MarkWithFemale2} alt="Mark with client"></img>
+            <div className='phoneInfo infoContactUs'>
+              <i className='phone square big icon color'></i>
+              <p>Office Phone: <b>(801) 485-5055</b></p>
+            </div>
+            <div className='faxInfo infoContactUs'>
+              <i className='fax big icon color'></i>
+              <p>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
             </div>
             <iframe title="House Call Doctors' location" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+            <div id='contactFieldPlacement'>
+              <ContactField />
+            </div>
+            {/* <img src={MarkWithFemale2} alt="Mark with client"></img> */}
           </div>
           <Divider />
           <div alt="list of providers and more info on each" id='profileContainerContactUs'>
@@ -58,7 +58,7 @@ class ContactUs extends Component {
                   <Image src={profile.profileImage} alt={`Profile of ${profile.shortName}`} size='tiny' />
                   <div id='contactUsContact'>
                     <p id='contactUsNames'><br /><b>{profile.name}</b></p>
-                    <Divider id='contactUsDividerProfile' />
+                    <div id='contactUsDividerProfile' />
                     <Modal id='modalContainer' alt="More info about provider" trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>} closeIcon>
                       <Modal.Header>{profile.name}</Modal.Header>
                       <Modal.Content image>

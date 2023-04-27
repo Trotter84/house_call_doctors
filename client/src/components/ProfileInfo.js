@@ -21,7 +21,6 @@ import CourtneyProfile from '../images/Courtney-profile.png';
 
 
 const Email = Styled.a`
-  font-size: 13px;
   color: #AF3120;
   transition: all 200ms ease-in-out;
   :hover {

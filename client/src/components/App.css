@@ -537,92 +537,6 @@
 }
 /* -------------------------------------------------------------------------- */
 
-/* _____________________________ Contact Field _____________________________ */
-#contactFieldLoading {
-  display: flex;
-  flex-wrap: row wrap;
-  font-size: 17px;
-  margin-left: 60px;
-}
-
-#contactFieldError {
-  display: flex;
-  flex-wrap: row wrap;
-  font-size: 17px;
-  margin-left: 60px;
-}
-
-#contactFieldSuccess {
-  display: flex;
-  flex-wrap: row wrap;
-  font-size: 17px;
-  margin-left: 60px;
-}
-
-#contactFieldInputField {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 27px 0 0 100px;
-  min-width: 300px;
-  max-width: 350px;
-  min-height: 275px;
-}
-
-#contactFieldNames {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 300px;
-}
-
-#contactFieldFirst {
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-  font-weight: bold;
-}
-
-#contactFieldLast {
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-  font-weight: bold;
-}
-
-#contactFieldEmail {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-}
-
-#contactFieldPhone {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-}
-
-#contactFieldMessage {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  font-weight: bold;
-}
-
-#contactFieldSubmit {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: bold;
-}
-
-#contactFieldRequired {
-  float: right;
-}
-/* -------------------------------------------------------------------------- */
-
 /* ___________________________ Our Privacy Policy ___________________________ */
 #mainContainerPrivacy {
   max-width: 1700px;
@@ -674,57 +588,72 @@
 }
 
 #mapInfoContactUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 2rem;
-  padding: 3vh 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 6rem 26rem;
+  grid-template-areas: 
+    "phone fax"
+    "map contactField";
+  margin: 5vh 0;
 }
 
-#infoAndPhotoContactUs {
+.infoContactUs {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-self: center;
 }
 
-#infoContainerContactUs {
-
-}
-
-#officeContactUs {
-  display: flex;
-  flex-direction: row;
-  padding: 0 0 1rem 10rem;
-}
-
-#officeContactUs > .icon {
+.infoContactUs > .icon {
   color: var(--bright-red);
+  font-size: 1.5rem;
 }
 
-#officeContactUs > p {
+.infoContactUs > p {
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
-#infoAndPhotoContactUs > img {
+.phoneInfo {
+  grid-area: phone;
+}
+
+.faxInfo {
+  grid-area: fax;
+}
+
+/* #infoAndPhotoContactUs > img {
+  display: none;
   padding: 1rem 0 0 11rem;
   width: 100%;
-}
+} */
 
 #mapInfoContactUs > iframe {
+  grid-area: map;
+  display: flex;
+  justify-self: center;
+  align-self: center;
   border-style: solid;
   border-width: 1px;
   border-color: #5A7584;
-  margin-right: 2rem;
-  width: 55%;
-  height: auto;
+  box-shadow: 0.1rem 0.1rem #d4d4d4;
+  min-width: 90%;
+  max-width: 96%;
+  height: 100%;
+}
+
+#contactFieldPlacement {
+  grid-area: contactField;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  height: 100%;
 }
 
 #profileContainerContactUs {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-top: 2rem;
   max-width: 100%;
   flex-wrap: wrap;
@@ -749,6 +678,9 @@
 }
 
 #contactUsDividerProfile {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4e4e4;
   margin: 0.5rem 0 0.5rem 0.1rem;
 }
 
@@ -810,6 +742,69 @@
 
 #contactUsWhiteSpace {
   height: 8vh;
+}
+/* -------------------------------------------------------------------------- */
+
+/* _____________________________ Contact Field _____________________________ */
+#contactFieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-style: solid;
+  border-color: #d4d4d4;
+  border-width: 2px;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem #d4d4d4;
+}
+
+.status {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 1vh 0 2vh 0;
+}
+
+.contactField {
+  margin: 0.9rem 0;
+  font-size: 1.4rem;
+}
+
+.label {
+  margin-right: 0.4rem;
+}
+
+.input {
+  padding: 0.2rem 0.7rem;
+  margin-right: 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.message {
+  align-self: center;
+  width: 80%;
+}
+
+.submit {
+  align-self: center;
+}
+
+#submitBtn {
+  border-radius: 0.6rem;
+  box-shadow: 0.1rem 0.1rem lightgray;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.5rem;
+}
+
+.contactFieldGroups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 100%;
 }
 /* -------------------------------------------------------------------------- */
 
