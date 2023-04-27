@@ -26,11 +26,11 @@ class ContactField extends Component {
               <div id='contactFieldContainer'>
                 <div className='contactFieldGroups'>
                   <div className='contactField first'>
-                    <label className='label' htmlFor="fname">First Name*</label>
+                    <label className='label' htmlFor="fname">First*</label>
                     <input className='input' type="text" id="fname" name="firstname" required />
                   </div>
                   <div className='contactField last'>
-                    <label className='label' htmlFor="lname">Last Name*</label>
+                    <label className='label' htmlFor="lname">Last*</label>
                     <input className='input' type="text" id="lname" name="lastname" required />
                   </div>
                 </div>
@@ -40,7 +40,7 @@ class ContactField extends Component {
                     <input className='input' type="email" id="email" name="email" placeholder="example@domain.com" required />
                   </div>
                   <div className='contactField phone'>
-                    <label className='label' htmlFor="phone">Phone Number</label>
+                    <label className='label' htmlFor="phone">Phone</label>
                     <input className='input' type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890" />
                   </div>
                 </div>

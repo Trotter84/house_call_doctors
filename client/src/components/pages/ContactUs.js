@@ -62,20 +62,20 @@ class ContactUs extends Component {
                     <Modal id='modalContainer' alt="More info about provider" trigger={<InfoBtn id='contactUsInfoBtn'>More Info</InfoBtn>} closeIcon>
                       <Modal.Header>{profile.name}</Modal.Header>
                       <Modal.Content image>
-                        <Image wrapped src={profile.profileImage} size='tiny' />
+                        <Image wrapped src={profile.profileImage} size='small' />
                         <Modal.Description>
                           <div id='contactUsInsideInfo'>
-                            <div id='contactUsLeft'>
+                            <div className='modalGroup'>
                               <p className='contactUsProviderInfo'>Office MA: <b>{profile.info1}</b></p>
                               <p className='contactUsProviderInfo'>Phone: <b>{profile.info2}</b></p>
                               <p className='contactUsProviderInfo'>{profile.info3}</p>
                             </div>
-                            <div id='contactUsMiddle'>
+                            <div className='modalGroup'>
                               <p className='contactUsProviderInfo'>Field MA: <b>{profile.info4}</b></p>
                               <p className='contactUsProviderInfo'>Phone: <b>{profile.info5}</b></p>
                               <p className='contactUsProviderInfo'>{profile.info6}</p>
                             </div>
-                            <div id='contactUsRight'>
+                            <div className='modalGroup'>
                               <p className='contactUsProviderInfo'>Pager: <b>{profile.info7}</b></p>
                             </div>
                           </div>
