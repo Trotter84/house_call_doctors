@@ -11,7 +11,7 @@ import ihapProviders from '../IhapProviders';
 
 
 const InfoBtn = Styled.button`
-  font-size: 15px;
+  font-size: 1.1rem;
   background-color: white;
   border: none;
   color: black;
@@ -28,7 +28,7 @@ const DividerSetLength = Styled(Divider)`
 `
 
 const DividerStateLine = Styled(Divider)`
-  max-width: 276px;
+  max-width: 100%;
   margin: 3px 0 3px 0;
 `
 
@@ -45,20 +45,17 @@ class OurProviders extends Component {
       <>
         <h1 className='pageTitleReader' aria-label="Our Providers page">Our Providers</h1>
         <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
-        <div id='ourProvidersTopWhiteSpace'></div>
-        <div id='ourProvidersMainContainer'>
-          <h2 id='ourProvidersTitle'>
-            PRIMARY CARE PROVIDERS
-          </h2>
+        <div id='mainContainerOurProviders'>
+          <h2>PRIMARY CARE PROVIDERS</h2>
           <Divider />
-          <div id='ourProvidersFullSection'>
+          <div id='profileSectionOurProviders'>
             {profiles.map(profile => {
               return(
-                <div id='ourProvidersProfile'>
-                  <img id='ourProvidersImage' src={profile.image} alt={`Profile of ${profile.shortName}`}></img>
-                  <h3 id='ourProvidersName'>{profile.name}</h3>
-                  <p id='ourProvidersShortBio'> &nbsp; &nbsp; &nbsp; {profile.shortBio}</p>
-                  <Modal trigger={<InfoBtn>More Info</InfoBtn>} closeIcon>
+                <div id='eachProfileOurProviders'>
+                  <img src={profile.image} alt={`Profile of ${profile.shortName}`}></img>
+                  <h3>{profile.name}</h3>
+                  <p> &nbsp; &nbsp; &nbsp; {profile.shortBio}</p>
+                  <Modal trigger={<InfoBtn>More Info..</InfoBtn>} closeIcon>
                     <h3 id='ourProvidersInsideName'>{profile.name}</h3>
                     <Divider />
                     <div id='ourProviderContent'>
@@ -94,7 +91,6 @@ class OurProviders extends Component {
               )
             })}
           </div>
-          <div id='ourProvidersHalfWhiteSpace'></div>
           <h2 id='ourProvidersTitle'>
             IN HOME ASSESSMENT PROVIDERS
           </h2>
@@ -110,8 +106,8 @@ class OurProviders extends Component {
                       <b>
                         {eachProvider.people.map(person =>
                           <>
-                            {person}
-                            <Divider />
+                            <p id='stateProvider'>{person}</p>
+                            <Divider  id='providerDivider'/>
                           </>
                         )}
                       </b>
@@ -122,8 +118,8 @@ class OurProviders extends Component {
               </div>
             )}
           </div>
+          <div id='ourProvidersWhiteSpace'></div>
         </div>
-        <div id='ourProvidersWhiteSpace'></div>
       </>
     )
   }

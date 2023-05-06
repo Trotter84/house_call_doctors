@@ -31,7 +31,7 @@ const Email = Styled.a`
 
 const profiles = [
   {
-    name: 'MARK CACCIAMANI, MD',
+    name: 'Mark Cacciamani, MD',
     linkName: 'mark',
     shortName: 'Mark',
     image: Mark,
@@ -63,7 +63,7 @@ const profiles = [
     info7: '(801) 241-4483'
   },
   {
-    name: 'PERRINE ANDERSON, GNP',
+    name: 'Perrine Anderson, GNP',
     linkName: 'perrine',
     shortName: 'Perrine',
     image: Perrine,
@@ -91,7 +91,7 @@ const profiles = [
     info7: '(801) 241-0623'
   },
   {
-    name: 'SANDRA JENSE, APRN',
+    name: 'Sandra Jense, APRN',
     linkName: 'sandra',
     shortName: 'Sandra',
     image: Sandra,
@@ -114,7 +114,7 @@ const profiles = [
     info7: 'N/A'
   },
   {
-    name: 'GWEN MITCHELL, APRN',
+    name: 'Gwen Mitchell, APRN',
     linkName: 'gwen',
     shortName: 'Gwen',
     image: Gwen,
@@ -138,7 +138,7 @@ const profiles = [
     info7: '(801) 241-0339'
   },
   {
-    name: 'EDIE SHEPHERD, APRN',
+    name: 'Edie Shepherd, APRN',
     linkName: 'edie',
     shortName: 'Edie',
     image: Edie,
@@ -163,7 +163,7 @@ const profiles = [
     info7: '(801) 241-0021'
   },
   {
-    name: 'TRENAISA NAY, GNP',
+    name: 'Trenaisa Nay, GNP',
     linkName: 'trenaisa',
     shortName: 'Trenaisa',
     image: Trenaisa,
@@ -189,7 +189,7 @@ const profiles = [
     info7: '(801) 241-0484'
   },
   {
-    name: 'COURTNEY HARPER, PA-C',
+    name: 'Courtney Harper, PA-C',
     linkName: 'courtney',
     shortName: 'Courtney',
     image: Courtney,

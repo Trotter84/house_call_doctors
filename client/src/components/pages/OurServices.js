@@ -37,7 +37,7 @@ class OurServices extends Component {
             <div id='contactFieldMainContainer'>
 
 
-              <NetlifyForm name="Contact" method="POST" data-netlify="true">
+              {/* <NetlifyForm name="Contact" method="POST" data-netlify="true">
                 {({ loading, error, success }) => (
                   <div>
                     {loading &&
@@ -82,7 +82,7 @@ class OurServices extends Component {
                     }
                   </div>
                 )}
-              </NetlifyForm>
+              </NetlifyForm> */}
 
 
             </div>

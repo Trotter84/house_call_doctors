@@ -91,8 +91,8 @@
 
 #carouselContainerHome {
   max-height: inherit;
-  padding: 45px 0 0 0;
-  max-width: 68vw;
+  padding: 3rem 0 0 0;
+  max-width: 60vw;
 }
 
 #contactAreaHome {
@@ -106,7 +106,7 @@
   display: flex;
   flex-direction: column;
   max-width: 205vh;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 
 #homeContactAreaText > h2 {
@@ -319,78 +319,80 @@
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Our Providers _____________________________ */
-#ourProvidersMainContainer {
-  max-width: 1250px;
+#mainContainerOurProviders {
+  max-width: 1700px;
   margin: auto;
+  width: 90%;
 }
 
-#ourProvidersTitle {
+#mainContainerOurProviders > h2 {
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 5vh;
 }
 
-#ourProvidersFullSection {
+#profileSectionOurProviders {
   display: flex;
   flex-direction: row;
   align-content: center;
-  max-width: 1250px;
   width: 100%;
+  padding-bottom: 1vh;
 }
 
-#ourProvidersProfile {
+#eachProfileOurProviders {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 10px 4px 0 4px;
-  max-height: 500px;
+  padding: 1rem 0.4rem 0 0.4rem;
+  height: 100%;
 }
 
-#ourProvidersImage {
-  height: 290px;
-  max-height: 290px;
+#eachProfileOurProviders > img {
+  height: 100%;
   width: 100%;
 }
 
-#ourProvidersName {
+#eachProfileOurProviders > h3 {
   display: block;
-  font-size: 16px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   width: 100%;
   color: var(--bright-red);
-  padding: 0 2px;
+  padding: 0;
 }
 
-#ourProvidersShortBio {
+#eachProfileOurProviders > p {
+  font-size: 1.05rem;
   width: 100%;
-  padding: 0 5px;
+  padding: 0 0.1rem;
 }
 
 #ourProvidersInsideName {
-  font-size: 30px;
-  margin: 10px 0;
-  padding-left: 10px;
+  font-size: 2.1rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 #ourProviderContent {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 20px 20px 20px;
+  margin: 0 2rem 2rem 2rem;
 }
 
 #ourProvidersInsideImage {
   float: left;
   height: 100%;
-  width: 20%;
+  width: 7vw;
 }
 
 #ourProvidersInsideBio {
   display: block;
   float: right;
-  font-size: 17px;
-  margin: 5px 0 0 15px;
+  font-size: 1.2rem;
+  margin: 0.1rem 0 0 1.5rem;
   height: 100%;
-  max-height: 225px;
+  max-height: 22vh;
   width: 75%;
-  line-height: 25px;
+  line-height: 2rem;
 }
 
 #ourProvidersInfo {
@@ -400,7 +402,7 @@
 }
 
 .ourProvidersInfoTitle {
-  font-size: 22px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -411,57 +413,56 @@
 }
 
 .ourProvidersEdu {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 #ourProvidersIntContainer {
   display: flex;
   flex-direction: column;
   width: 45%;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 .ourProvidersInt {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
 }
 
 #ourProvidersBottomSection {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-height: auto;
 }
 
 #ourProvidersIhapSection {
   display: flex;
   flex-flow: row wrap;
-  padding: 10px;
-  column-count: 3;
+  padding: 1.5rem;
+  height: 40vh;
 }
 
 #ourProvidersIhap {
-  padding: 10px 0 0 10px;
-  height: 50px;
-  width: 220px;
+  overflow: scroll;
+  padding: 0.8rem 0 0 0rem;
+  min-width: 17rem;
+  width: 100%;
   border: solid .5px;
   height: 100%;
 }
 
 #ourProvidersState {
-  font-size: 19px;
+  font-size: 1.4rem;
+  padding-left: 1rem;
 }
 
-#ourProvidersTopWhiteSpace {
-  height: 55px;
-}
-
-#ourProvidersHalfWhiteSpace {
-  height: 40px;
+#stateProvider {
+  padding-left: 1rem;
 }
 
 #ourProvidersWhiteSpace {
-  height: 80px;
+  height: 7vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1129,88 +1130,91 @@
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Our Providers _____________________________ */
-#ourProvidersMainContainer {
-  max-width: 765px;
+#mainContainerOurProviders {
+  max-width: 100%;
   margin: auto;
+  width: 90%;
 }
 
-#ourProvidersTitle {
+#mainContainerOurProviders > h2 {
   font-weight: bold;
-  padding: 5px 0 0 10px;
-  font-size: 23px;
+  padding-top: 4vh;
 }
 
-#ourProvidersFullSection {
-  display: flex;
-  flex-flow: wrap;
-}
-
-#ourProvidersProfile {
+#profileSectionOurProviders {
   display: flex;
   flex-flow: row wrap;
-  column-count: 3;
-  padding: 10px 5px 20px 5px;
-  height: 100%;
-  max-height: 700px;
-  max-width: 33%;
-}
-
-#ourProvidersImage {
-  height: 100%;
-  max-height: 350px;
+  align-content: center;
   width: 100%;
-  max-width: 252px;
+  padding-bottom: 0vh;
 }
 
-#ourProvidersName {
+#eachProfileOurProviders {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 1rem 0.2rem 0 0.2rem;
+  padding-bottom: 1vh;
+  height: 100%;
+}
+
+#eachProfileOurProviders > img {
+  height: 100%;
+  width: 100%;
+}
+
+#eachProfileOurProviders > h3 {
   display: block;
-  font-size: 17px;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  width: 100%;
   color: var(--bright-red);
-  padding-bottom: 0px;
+  padding: 0;
 }
 
-#ourProvidersShortBio {
-  font-size: 15px;
+#eachProfileOurProviders > p {
+  font-size: 1.05rem;
+  width: 100%;
+  padding: 0 0.1rem;
 }
 
 #ourProvidersInsideName {
-  font-size: 23px;
-  margin: 10px 0;
-  padding-left: 10px;
+  font-size: 1.9rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 #ourProviderContent {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 10px 10px 10px;
+  margin: 0 1rem 1rem 1rem;
 }
 
 #ourProvidersInsideImage {
-  display: none;
   float: left;
   height: 100%;
-  width: 35%;
+  width: 25%;
 }
 
 #ourProvidersInsideBio {
   display: block;
   float: right;
-  font-size: 17px;
-  margin: 0 0 0 0px;
-  max-height: 350px;
+  font-size: 1.2rem;
+  margin: 0.1rem 0 0 1.4rem;
   height: 100%;
-  width: 100%;
-  line-height: 18px;
+  max-height: 31vh;
+  width: 63%;
+  line-height: 1.7rem;
 }
 
 #ourProvidersInfo {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
 }
 
 .ourProvidersInfoTitle {
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -1221,63 +1225,58 @@
 }
 
 .ourProvidersEdu {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.6rem;
 }
 
 #ourProvidersIntContainer {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .ourProvidersInt {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.5rem;
 }
 
 #ourProvidersBottomSection {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  column-count: 4;
-}
-
-#ourProvidersNamesState {
-  display: block;
-  font-size: 14px
+  max-height: auto;
 }
 
 #ourProvidersIhapSection {
   display: flex;
   flex-flow: row wrap;
-  align-self: none;
-  padding: 10px;
-  column-count: 4;
+  padding: 1.5rem;
+  height: 30vh;
 }
 
 #ourProvidersIhap {
-  padding: 10px 0 0 10px;
-  width: 170px;
+  overflow: scroll;
+  padding: 0.8rem 0 0 0rem;
+  min-width: 17rem;
+  width: 100%;
   border: solid .5px;
-  height: 100%;
+  height: 95%;
 }
 
 #ourProvidersState {
-  font-size: 17px;
+  font-size: 1.4rem;
+  padding-left: 1rem;
 }
 
-#ourProvidersTopWhiteSpace {
-  height: 30px;
-}
-
-#ourProvidersHalfWhiteSpace {
-  height: 20px;
+#stateProvider {
+  padding-left: 1rem;
 }
 
 #ourProvidersWhiteSpace {
-  height: 80px;
+  height: 7vh;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -1995,155 +1994,158 @@
 /* -------------------------------------------------------------------------- */
 
 /* _____________________________ Our Providers _____________________________ */
-#ourProvidersMainContainer {
-  max-width: 426px;
+#mainContainerOurProviders {
+  max-width: 100%;
   margin: auto;
+  width: 95%;
 }
 
-#ourProvidersTitle {
+#mainContainerOurProviders > h2 {
   font-weight: bold;
-  padding: 5px 0 0 10px;
-  font-size: 20px;
+  padding-top: 5vh;
+  font-size: 1.4rem;
 }
 
-#ourProvidersFullSection {
-  display: flex;
-  flex-flow: wrap;
-}
-
-#ourProvidersProfile {
+#profileSectionOurProviders {
   display: flex;
   flex-flow: row wrap;
-  column-count: 2;
-  padding: 10px 5px 20px 5px;
-  height: 100%;
-  max-height: 700px;
-  max-width: 50%;
-}
-
-#ourProvidersImage {
-  height: 100%;
-  max-height: 300px;
+  align-content: center;
   width: 100%;
-  max-width: 202px;
+  padding-bottom: 1vh;
 }
 
-#ourProvidersName {
+#eachProfileOurProviders {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 1rem 0.2rem 0 0.2rem;
+  height: 100%;
+}
+
+#eachProfileOurProviders > img {
+  height: 100%;
+  width: 100%;
+}
+
+#eachProfileOurProviders > h3 {
   display: block;
-  font-size: 15px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  width: 100%;
   color: var(--bright-red);
-  padding-bottom: 0px;
+  padding: 0;
 }
 
-#ourProvidersShortBio {
-  font-size: 14px;
+#eachProfileOurProviders > p {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0 0.1rem;
 }
 
 #ourProvidersInsideName {
-  font-size: 22px;
-  margin: 10px 0;
-  padding-left: 10px;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
 }
 
 #ourProviderContent {
   display: flex;
-  flex-flow: row wrap;
-  margin: 0 10px 10px 10px;
+  flex-flow: column;
+  margin: 0 1rem 1rem 1rem;
 }
 
 #ourProvidersInsideImage {
   display: none;
-  float: left;
+  float: none;
   height: 100%;
-  width: 35%;
+  width: 25%;
 }
 
 #ourProvidersInsideBio {
   display: block;
-  float: right;
-  font-size: 14px;
-  margin: 0 0 0 0px;
-  max-height: 350px;
+  float: none;
+  font-size: 17px;
+  margin: 0.1rem 0 0 0.1rem;
   height: 100%;
+  max-height: 50vh;
   width: 100%;
-  line-height: 18px;
+  line-height: 1.5rem;
 }
 
 #ourProvidersInfo {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
 }
 
 .ourProvidersInfoTitle {
-  font-size: 16px;
+  font-size: 1.4rem;
   font-weight: bold;
+  padding-top: 0.7rem;
 }
 
 #ourProvidersEduContainer {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .ourProvidersEdu {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+
 }
 
 #ourProvidersIntContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-left: 10px;
+  width: 100%;
+  margin-left: 0.1rem;
+  margin-bottom: 1rem;
 }
 
 .ourProvidersInt {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
 }
 
 #ourProvidersBottomSection {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: center;
-  column-count: 2;
-}
-
-#ourProvidersNamesState {
-  display: block;
-  font-size: 14px
+  max-height: auto;
 }
 
 #ourProvidersIhapSection {
   display: flex;
   flex-flow: row wrap;
-  align-self: center;
-  padding: 10px;
-  column-count: 3;
+  padding: 0.6rem;
+  height: 35vh;
 }
 
 #ourProvidersIhap {
-  padding: 10px 0 0 10px;
-  width: 190px;
+  overflow: scroll;
+  padding: 0.8rem 0 0 0rem;
+  min-width: 17rem;
+  width: 100%;
   border: solid .5px;
-  height: 100%;
+  height: 95%;
 }
 
 #ourProvidersState {
-  font-size: 17px;
+  font-size: 1.4rem;
+  padding-left: 1rem;
 }
 
-#ourProvidersTopWhiteSpace {
-  height: 30px;
-}
-
-#ourProvidersHalfWhiteSpace {
-  height: 20px;
+#stateProvider {
+  padding-left: 1rem;
 }
 
 #ourProvidersWhiteSpace {
-  height: 80px;
+  height: 7vh;
 }
 /* -------------------------------------------------------------------------- */
 
