@@ -37,6 +37,7 @@
   max-width: 100rem;
   width: 100%;
   margin-left: 15rem;
+  font-size: var(--p-text);
 }
 
 .accessibilityH1 {
