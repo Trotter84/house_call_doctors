@@ -7,7 +7,7 @@ import {
 } from 'semantic-ui-react';
 import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import ContactField from '../coolStuffWorking/ContactField';
-import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
+// import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
 import profiles from '../ProfileInfo';
 
 
@@ -89,7 +89,7 @@ class ContactUs extends Component {
           </div>
 
           <Divider />
-          <h2>Instructions for paging your provider:</h2>
+          <h3>Instructions for paging your provider:</h3>
           <div id='contactUsSubText'>
             <p>House Call Doctors is dedicated to serving you, your family, and all of those involved in your care. We strive to provide the best medical care possible.<br />In order to ensure we are providing the highest quality of care, our providers are available 24/7 to their existing patients.</p>
             <p>Our providers are <b>always</b> available to their patients, families, nurses, and facility staff by pager.<br />In order to help ensure that you are receiving the highest quality of care:</p>

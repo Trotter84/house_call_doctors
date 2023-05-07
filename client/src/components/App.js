@@ -17,6 +17,7 @@ import OurProviders from './pages/OurProviders';
 import OurServices from './pages/OurServices';
 import OurPrivacyPolicy from './pages/OurPrivacyPolicy';
 import ContactUs from './pages/ContactUs';
+import WeightLoss from './pages/WeightLoss';
 import './App.css';
 
 
@@ -52,6 +53,7 @@ class App extends Component {
                 <Route path='/our-services' element={<OurServices />} />
                 <Route path='/our-privacy-policy' element={<OurPrivacyPolicy />} />
                 <Route path='/contact-us' element={<ContactUs />} />
+                <Route path='/weight-loss' element={<WeightLoss />} />
                 <Route to='/'/>
               </Routes>
               <div>

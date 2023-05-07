@@ -78,7 +78,7 @@ class Testimonials extends Component {
     return (
       <div id='testimonialsSection'>
         <div id='testimonialsTopPart'>
-          <h2>TESTIMONIALS</h2>
+          <h3>TESTIMONIALS</h3>
           <div />
         </div>
         <Slider {...settings} id='testimonialsCarouselStyle'>
