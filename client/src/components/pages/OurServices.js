@@ -26,7 +26,7 @@ class OurServices extends Component {
         <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainCharacterOurServices'>
 
-          <h2 className='servicesTitle'>PRIMARY CARE SERVICES</h2>
+          <h2 className='servicesTitle'>HOUSE CALL PRIMARY CARE SERVICES</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>
@@ -49,36 +49,7 @@ class OurServices extends Component {
             <p className='servicesPointsTitle'><b>Please contact our office to schedule an appointment!</b></p>
           </div>
 
-          <h2 className='servicesTitle'>WEIGHT LOSS</h2>
-          <Divider />
-          <div className='servicesSubTextContainer'>
-            <p className='servicesSubText'>What is Semaglutide and How Does it Work?</p>
-            <ul id='weightListContainer'>
-              <li className='weightListText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
-              <li className='weightListText'>It works by mimicking hormones that your body naturally produces called incretin hormones.  </li>
-              <li className='weightListText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”) </li>
-              <li className='weightListText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
-              <li className='weightListText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.  </li>
-              <li className='weightListText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
-              <li className='weightListText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
-            </ul>
-            <Link to={'/weight-loss'} id='weightLossButton'>For more info</Link>
-          </div>
-
-          <h2 className='servicesTitle'>IN HOME ASSESSMENT SERVICES</h2>
-          <Divider />
-          <div className='servicesSubTextContainer'>
-            <p className='servicesSubText'>We are currently scheduling 2023 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Generations, and University of Utah Health.<br /><br />Please contact our scheduling department to schedule your free in-home exam!  Dial 801-485-5055, press option 2, then: <br /><b>Sienna: opt 2, Daisy: opt 3, Jackie: opt 4, Mary: opt 5, Cinthia: opt 6, Bailey: opt 7, Sharlee: opt 8, Jeanne: opt 10</b></p>
-            <p className='servicesSubText'>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
-            <p className='servicesSubText'>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
-            <p className='servicesSubText'>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>
-            <p className='servicesSubText'>There is <b>no fee</b> for these visits.</p>
-            <p className='servicesSubText'>Your eligibility is determined by your health plan.</p>
-            <p className='servicesSubText'>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
-            <p className='servicesSubText'>For any questions regarding in-home assessments, please contact Emma Eakland at (801) 485-5055 or <Email href="mailto:Emma@housecalldoctorsut.com">Emma@housecalldoctorsut.com</Email>.</p>
-          </div>
-
-          <h2 className='servicesTitle'>IN-OFFICE VISITS</h2>
+          <h2 className='servicesTitle'>IN-OFFICE PRIMARY CARE VISITS</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>Due to interest from families, friends, caregivers, and the community, House Call Doctors is now offering primary care visits to non-homebound patients, age 18+, in our office! </p>
@@ -91,7 +62,8 @@ class OurServices extends Component {
               <p className='servicesPointText'>• Bloodwork</p>
               <p className='servicesPointText'>• Ear Lavage</p>
             </div>
-            <p className='servicesSubText'>We see patients for a variety of reasons.  If you have a question or concern that you would like to have addressed that isn’t listed above, please contact our office. </p>
+            <p className='servicesSubText'>We see patients for a variety of reasons.  If you have a question or concern that you would like to have addressed that isn’t listed above, please contact our office.</p>
+            <p className='servicesSubText'>We are in network with the following health plans:</p>
             <div id='insuranceListContainer'>
               <div id='insuranceList'>
                 <ul>
@@ -145,6 +117,36 @@ class OurServices extends Component {
               </div>
             </div>
           </div>
+
+          <h2 className='servicesTitle'>MEDICATION ASSISTED WEIGHT LOSS</h2>
+          <Divider />
+          <div className='servicesSubTextContainer'>
+            <p className='servicesSubText'>What is Semaglutide and How Does it Work?</p>
+            <ul id='weightListContainer'>
+              <li className='weightListText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
+              <li className='weightListText'>It works by mimicking hormones that your body naturally produces called incretin hormones.  </li>
+              <li className='weightListText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”) </li>
+              <li className='weightListText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
+              <li className='weightListText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.  </li>
+              <li className='weightListText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
+              <li className='weightListText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
+            </ul>
+            <Link to={'/weight-loss'} id='weightLossButton'>For more info</Link>
+          </div>
+
+          <h2 className='servicesTitle'>IN HOME ASSESSMENT SERVICES</h2>
+          <Divider />
+          <div className='servicesSubTextContainer'>
+            <p className='servicesSubText'>We are currently scheduling 2023 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Generations, and University of Utah Health.<br /><br />Please contact our scheduling department to schedule your free in-home exam!  Dial 801-485-5055, press option 2, then: <br /><b>Sienna: opt 2, Daisy: opt 3, Jackie: opt 4, Mary: opt 5, Cinthia: opt 6, Bailey: opt 7, Sharlee: opt 8, Jeanne: opt 10</b></p>
+            <p className='servicesSubText'>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
+            <p className='servicesSubText'>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
+            <p className='servicesSubText'>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>
+            <p className='servicesSubText'>There is <b>no fee</b> for these visits.</p>
+            <p className='servicesSubText'>Your eligibility is determined by your health plan.</p>
+            <p className='servicesSubText'>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
+            <p className='servicesSubText'>For any questions regarding in-home assessments, please contact Emma Eakland at (801) 485-5055 or <Email href="mailto:Emma@housecalldoctorsut.com">Emma@housecalldoctorsut.com</Email>.</p>
+          </div>
+
         </div>
         <div id='servicesWhiteSpace' />
       </>

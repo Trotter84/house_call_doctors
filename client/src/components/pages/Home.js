@@ -31,12 +31,16 @@ class Home extends Component {
         <div id='summaryContainerHome'>
           <div id='homeInfo'>
             <div className='summary homeVisits'>
-              <i id='homeHomeIcon' className='home huge icon color' alt='icon of house' />
-              <h3>HOME VISITS</h3>
-              <p>We <b>are</b> currently accepting new house call patients, please call our office or check in often as this does change frequently based on provider availability.</p>
+              <Link to={`/our-services`} id='iconButton'>
+                <i id='homeHomeIcon' className='home huge icon color' alt='icon of house' />
+              </Link>
+              <h3>IN-HOME ASSESSMENTS</h3>
+              <p>We partner with numerous health plans to provide an in-home or telemedicine visit to their members.  These visits provide a comprehensive medical picture that is useful for the plan, the member, and the member's primary care provider.  These visits ensure that the member doesn't have any gaps in care, and quality measures are met appropriately.<br />Please call our office for availability.</p>
             </div>
             <div className='summary inOfficeVisits'>
-              <i className='building huge icon color' alt='icon of office'/>
+              <Link to={`/our-services`} id='iconButton'>
+                <i className='building huge icon color' alt='icon of office'/>
+              </Link>
               <h3>IN-OFFICE VISITS</h3>
               <p>Due to interest from families, friends, caregivers, and the community, House Call Doctors is now offering primary care visits to non-homebound patients, age 18+, in our office!</p>
             </div>
@@ -51,8 +55,10 @@ class Home extends Component {
               <p>Our providers currently care for patients in more than 50 Assisted Livings, Group Homes, and Memory Care facilities across Davis, Salt Lake, Tooele, Utah, and Weber Counties. <Link to={`/contact-us`} className='homeLink'>Call us</Link> today to see if a provider is in your facility.</p>
             </div>
             <div className='summary weightLoss'>
-              <i className='weight huge icon color' alt='icon of scale'/>
-              <h3>WEIGHT LOSS</h3>
+              <Link to={`/weight-loss`} id='iconButton'>
+                <i className='weight huge icon color' alt='icon of scale'/>
+              </Link>
+              <h3>MEDICATION ASSISTED WEIGHT LOSS</h3>
               <p>If diet and exercise alone have been ineffective at helping you to reach or maintain a healthy weight, this revolutionary medication can be a stepping stone to help you reach your goal weight and live a healthier, happier life.  When combined with diet and exercise, this medication can result in even greater weight loss and help you learn to maintain results.</p>
             </div>
           </div>
