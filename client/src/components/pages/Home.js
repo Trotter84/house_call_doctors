@@ -35,7 +35,7 @@ class Home extends Component {
                 <i id='homeHomeIcon' className='home huge icon color' alt='icon of house' />
               </Link>
               <h3>IN-HOME ASSESSMENTS</h3>
-              <p>We partner with numerous health plans to provide an in-home or telemedicine visit to their members.  These visits provide a comprehensive medical picture that is useful for the plan, the member, and the member's primary care provider.  These visits ensure that the member doesn't have any gaps in care, and quality measures are met appropriately.<br />Please call our office for availability.</p>
+              <p>We partner with numerous health plans to provide an in-home or telemedicine visit to their members.  These visits provide a comprehensive medical picture that is useful for the plan, the member, and the member's primary care provider.  These visits ensure that the member doesn't have any gaps in care, and quality measures are met appropriately.<br /><b>Please call</b> our office for availability.</p>
             </div>
             <div className='summary inOfficeVisits'>
               <Link to={`/our-services`} id='iconButton'>

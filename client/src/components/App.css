@@ -571,10 +571,6 @@
   padding-top: 4.5vh;
 }
 
-#weightSubTextContainer {
-  
-}
-
 #weightTopSection {
   display: flex;
   flex-direction: row;
@@ -1471,6 +1467,46 @@
   padding-top: 4.5vh;
 }
 
+#weightTopSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#weightBeforeAfterSection {
+
+}
+
+.beforeAfterTitle {
+  font-size: 1.5rem;
+}
+
+#weightImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 50vw;
+  min-width: 35vw;
+  border-left: solid;
+  border-color: #bdbdbd;
+  border-width: 0.1vh;
+  border-radius: 0.3vw;
+}
+
+
+.beforeAfterPhoto {
+  border-radius: 0.2rem;
+  max-height: 60vh;
+  min-height: 25vh;
+  box-shadow: 0.2rem 0.3rem 0.9rem black;
+}
+
+.beforeAfterText {
+  font-size: var(--p-text);
+  margin: 0.6rem 1rem;
+}
+
 .weightSubText {
   color: var(--black);
   font-weight: normal;
@@ -1494,21 +1530,6 @@
 
 .columnList {
   column-count: 3;
-}
-
-#weightImageContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 70vw;
-}
-
-.beforeAfterContainer {
-  font-size: 1.2rem;
-}
-
-.beforeAfterPhoto {
-  max-height: 25vh;
 }
 
 #weightWhiteSpace {
@@ -2395,6 +2416,50 @@
   padding-top: 4.5vh;
 }
 
+#weightTopSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.beforeAfterTitle {
+  font-size: 1.3rem;
+  border-top: solid;
+  border-color: #bdbdbd;
+  border-width: 0.1vh;
+  border-radius: 0.5vw;
+}
+
+#weightImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 2rem 0;
+  border-bottom: solid;
+  border-color: #bdbdbd;
+  border-width: 0.1vh;
+  border-radius: 0.5vw;
+ 
+}
+
+.beforeAfterContainer {
+  font-size: var(--p-text);
+  margin-right: 1rem;
+}
+
+.beforeAfterPhoto {
+  border-radius: 0.2rem;
+  height: 100vh;
+  box-shadow: 0.2rem 0.3rem 0.9rem black;
+}
+
+.beforeAfterText {
+  font-size: var(--p-text);
+  margin: 0.6rem 1rem;
+}
+
 .weightSubText {
   color: var(--black);
   font-weight: normal;
@@ -2417,21 +2482,6 @@
 
 .columnList {
   column-count: 2;
-}
-
-#weightImageContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 100vw;
-}
-
-.beforeAfterContainer {
-  font-size: 1rem;
-}
-
-.beforeAfterPhoto {
-  max-height: 20vh;
 }
 
 #weightWhiteSpace {

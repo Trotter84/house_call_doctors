@@ -1,7 +1,7 @@
 import React from 'react';
 import Styled from 'styled-components';
 import Mark from '../images/Mark.jpg';
-import Perrine from '../images/Perrine.jpg';
+// import Perrine from '../images/Perrine.jpg';
 import Sandra from '../images/Sandra.jpg';
 import Gwen from '../images/Gwen.jpg';
 import Edie from '../images/Edie.jpg';
@@ -9,7 +9,7 @@ import Trenaisa from '../images/trenaisa.jpg';
 import Courtney from '../images/Courtney.jpg';
 
 import MarkProfile from '../images/Mark-profile.jpg';
-import PerrineProfile from '../images/Perrine-profile.jpg';
+// import PerrineProfile from '../images/Perrine-profile.jpg';
 import SandraProfile from '../images/Sandra-profile.jpg';
 import GwenProfile from '../images/Gwen-profile.png';
 import EdieProfile from '../images/Edie-profile.jpg';
