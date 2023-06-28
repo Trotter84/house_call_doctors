@@ -24,7 +24,6 @@
 }
 
 #AppContainer {
-
   max-width: 100vw;
 }
 
@@ -65,6 +64,11 @@
 #logo-navBar {
   max-width: 15vw;
   min-width: 10vw;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+} #logo-navBar:hover {
+    margin-top: -0.6rem;
+    margin-bottom: 0.6rem;
 }
 
 #container-navBar {
@@ -80,6 +84,12 @@
   color: var(--black);
   font-weight: bold;
   margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+} .eachNav-navBar:hover {
+    font-size: 1.8rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 #image-divider {
@@ -152,6 +162,7 @@
 } #contactUsButtonHome:hover {
     background-color: var(--off-white);
     color: var(--bright-red);
+    box-shadow: 0.1rem 0.1rem 2rem rgb(63, 0, 0);
 }
 
 #summaryContainerHome {
@@ -177,8 +188,7 @@
   color: var(--bright-red);
   transition: all 200ms ease-in-out;
 } .iconButton:hover {
-    color: var(--black);
-    cursor: pointer;
+  color: var(--black);
 }
 
 .summary {
