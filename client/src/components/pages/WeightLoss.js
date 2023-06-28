@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import { Image, Divider } from 'semantic-ui-react';
 import KarenBefore from '../../images/karenbefore.jpg';
 import KarenAfter from '../../images/karenafter.jpeg';
@@ -15,11 +16,26 @@ class WeightLoss extends Component {
         return(
             <>
                 <h1 className='pageTitleReader' aria-label="Weight Loss">Weight Loss</h1>
-                <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+                <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
                 <div id='mainCharacterWeightLoss'>
 
-                    <h2 className='weightTitle'>WEIGHT LOSS</h2>
+                    <h2 className='weightTitle'>MEDICATION ASSISTED WEIGHT LOSS</h2>
                     <Divider />
+
+                    <div id='weightBeforeAfterSection'>
+                        <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
+                        <div id='weightImageContainer'>
+                            <div className='beforeAfterContainer'>
+                                <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
+                                <p className='beforeAfterText'>Before</p>
+                            </div>
+                            <div className='beforeAfterContainer'>
+                                <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
+                                <p className='beforeAfterText'>After</p>
+                            </div>
+                        </div>
+                    </div>
+                            
                     <div className='weightSubTextContainer'>
                             <p className='weightSubText'>What is Semaglutide and How Does it Work?</p>
                             <div id='weightTopSection'>
@@ -32,19 +48,7 @@ class WeightLoss extends Component {
                                 <li className='weightListText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
                                 <li className='weightListText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
                             </ul>
-                            <div id='weightBeforeAfterSection'>
-                            <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
-                                <div id='weightImageContainer'>
-                                    <div className='beforeAfterContainer'>
-                                        <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
-                                        <p className='beforeAfterText'>Before</p>
-                                    </div>
-                                    <div className='beforeAfterContainer'>
-                                        <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
-                                        <p className='beforeAfterText'>After</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
 
                         <p className='weightSubText'>What is Tirzepatide and How Does it Work?</p>

@@ -5,7 +5,8 @@ import {
   Modal,
   Divider
 } from 'semantic-ui-react';
-import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import profiles from '../ProfileInfo';
 import ihapProviders from '../IhapProviders';
 
@@ -44,7 +45,7 @@ class OurProviders extends Component {
 
       <>
         <h1 className='pageTitleReader' aria-label="Our Providers page">Our Providers</h1>
-        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+        <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainContainerOurProviders'>
           <h2>PRIMARY CARE PROVIDERS</h2>
           <Divider />

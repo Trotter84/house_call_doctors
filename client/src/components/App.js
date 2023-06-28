@@ -19,6 +19,7 @@ import OurPrivacyPolicy from './pages/OurPrivacyPolicy';
 import ContactUs from './pages/ContactUs';
 import WeightLoss from './pages/WeightLoss';
 import './App.css';
+import ScrollToTop from '../ScrollToTop';
 
 
 const Container = Styled.div`
@@ -46,6 +47,7 @@ class App extends Component {
               <Container id='AppContainer'>
                 <Navbar />
               </Container>
+              <ScrollToTop />
               <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about-us' element={<AboutUs />} />

@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Image, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
-import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
+import KarenBefore from '../../images/karenbefore.jpg';
+import KarenAfter from '../../images/karenafter.jpeg';
+
 
 
 const Email = Styled.a`
@@ -23,10 +27,10 @@ class OurServices extends Component {
     return(
       <>
         <h1 className='pageTitleReader' aria-label="Our Services page">Our Services</h1>
-        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+        <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainCharacterOurServices'>
 
-          <h2 className='servicesTitle'>HOUSE CALL PRIMARY CARE SERVICES</h2>
+          <h2 id='PCS' className='servicesTitle'>HOUSE CALL PRIMARY CARE SERVICES</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>
@@ -49,7 +53,7 @@ class OurServices extends Component {
             <p className='servicesPointsTitle'><b>Please contact our office to schedule an appointment!</b></p>
           </div>
 
-          <h2 className='servicesTitle'>IN-OFFICE PRIMARY CARE VISITS</h2>
+          <h2 id='IOP' className='servicesTitle'>IN-OFFICE PRIMARY CARE VISITS</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>Due to interest from families, friends, caregivers, and the community, House Call Doctors is now offering primary care visits to non-homebound patients, age 18+, in our office! </p>
@@ -118,8 +122,21 @@ class OurServices extends Component {
             </div>
           </div>
 
-          <h2 className='servicesTitle'>MEDICATION ASSISTED WEIGHT LOSS</h2>
+          <h2 id='weightLoss' className='servicesTitle'>MEDICATION ASSISTED WEIGHT LOSS</h2>
           <Divider />
+          <div id='ourServicesWeight'>
+            <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
+            <div id='weightServicesImageContainer'>
+                <div className='beforeAfterContainer'>
+                    <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
+                    <p className='beforeAfterText'>Before</p>
+                </div>
+                <div className='beforeAfterContainer'>
+                    <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
+                    <p className='beforeAfterText'>After</p>
+                </div>
+              </div>
+          </div>
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>What is Semaglutide and How Does it Work?</p>
             <ul id='weightListContainer'>
@@ -133,8 +150,7 @@ class OurServices extends Component {
             </ul>
             <Link to={'/weight-loss'} id='weightLossButton'>For more info</Link>
           </div>
-
-          <h2 className='servicesTitle'>IN HOME ASSESSMENT SERVICES</h2>
+          <h2 id='IHA' className='servicesTitle'>IN HOME ASSESSMENT SERVICES</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>We are currently scheduling 2023 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Generations, and University of Utah Health.<br /><br />Please contact our scheduling department to schedule your free in-home exam!  Dial 801-485-5055, press option 2, then: <br /><b>Sienna: opt 2, Daisy: opt 3, Jackie: opt 4, Mary: opt 5, Cinthia: opt 6, Bailey: opt 7, Sharlee: opt 8, Jeanne: opt 10</b></p>
@@ -146,7 +162,6 @@ class OurServices extends Component {
             <p className='servicesSubText'>If you feel you are eligible for an in-home wellness check-up please contact your health plan.</p>
             <p className='servicesSubText'>For any questions regarding in-home assessments, please contact Emma Eakland at (801) 485-5055 or <Email href="mailto:Emma@housecalldoctorsut.com">Emma@housecalldoctorsut.com</Email>.</p>
           </div>
-
         </div>
         <div id='servicesWhiteSpace' />
       </>

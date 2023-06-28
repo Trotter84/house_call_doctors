@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
-import HCDpageDivider from '../../images/HCDpageDivider.jpg';
-import GroupPhoto from '../../images/groupphoto.jpg';
+// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
+import GroupPhoto from '../../images/HCD_group.jpg';
 
 
 class AboutUs extends Component {
@@ -15,7 +16,7 @@ render() {
     <>
       <h1 className='pageTitleReader' aria-label="About Us page">About Us</h1>
       
-      <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+      <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
    
       <div className='mainContainerAboutUs'>
         <h2 className='titleAboutUs'>YOUR GUIDE TO BETTER HEALTHCARE</h2>

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import { Image } from 'semantic-ui-react';
-import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
+import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import HIPAA from '../../images/HIPAA-Seal-of-Compliance.webp';
 
 
@@ -35,7 +36,7 @@ class Ourpolicy extends Component {
     return(
       <>
         <h1 className='pageTitleReader' aria-label="Our Privacy Policy page">Our Privacy Policy</h1>
-        <Image id='image-divider' src={HCDpageDivider} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
+        <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainContainerPrivacy'>
           <h2 className='top'>Privacy Promise:</h2>
             <p>House Call Doctors understands that your medical and health information is personal. Protecting your health information is important.<br />We follow strict federal and state laws that require us to maintain the confidentiality of your health information.</p>

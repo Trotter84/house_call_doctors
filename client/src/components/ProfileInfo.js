@@ -105,13 +105,13 @@ const profiles = [
     interest1: 'Member of Hospice and Palliative Nurses Association, and of STTI Nursing Honor Society.',
     interest2: 'Enjoys knitting, cooking, reading, raising backyard chickens, advocating for family centered policy change, and spending time with husband and three children.',
     profileImage: SandraProfile,
-    info1: 'N/A',
-    info2: 'N/A',
-    info3: '',
-    info4: 'N/A',
-    info5: 'N/A',
-    info6: '',
-    info7: 'N/A'
+    info1: 'Lara Vanderlaan',
+    info2: '(801) 485-5055 ext 3',
+    info3: <Email href="mailto:lara@housecalldoctorsut.com">Lara@housecalldoctorsut.com</Email>,
+    info4: 'Kaden Decker',
+    info5: '(801) 485-5055',
+    info6: <Email href="mailto:kaden@housecalldoctorsut.com">Kaden@housecalldoctorsut.com</Email>,
+    info7: '(801) 241-0255'
   },
   {
     name: 'Gwen Mitchell, APRN',
@@ -183,9 +183,9 @@ const profiles = [
     info1: 'Terra Jacobs',
     info2: '(801) 485-5055 ext 2',
     info3: <Email href="mailto:terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
-    info4: 'N/A',
-    info5: 'N/A',
-    info6: '',
+    info4: 'Misha Hernandez',
+    info5: '(801) 485-5055',
+    info6: <Email href="mailto:misha@housecalldoctorsut.com">Misha@housecalldoctorsut.com</Email>,
     info7: '(801) 241-0484'
   },
   {
@@ -205,7 +205,7 @@ const profiles = [
     profileImage: CourtneyProfile,
     info1: 'Lara Vanderlaan',
     info2: '(801) 485-5055 ext 3',
-    info3: <Email href="mailto:terra@housecalldoctorsut.com">Terra@housecalldoctorsut.com</Email>,
+    info3: <Email href="mailto:lara@housecalldoctorsut.com">Lara@housecalldoctorsut.com</Email>,
     info4: 'Kaden Decker',
     info5: '(801) 485-5055',
     info6: <Email href="mailto:kaden@housecalldoctorsut.com">Kaden@housecalldoctorsut.com</Email>,
