@@ -677,6 +677,18 @@
   display: none;
 }
 
+.weightContactText {
+  font-size: var(--h2-text);
+}
+
+#weightContactButton {
+  color: var(--bright-red);
+  transition: all 200ms ease-in-out;
+}#weightContactButton:hover {
+    color: black;
+    cursor: pointer;
+}
+
 #weightWhiteSpace {
   height: 7vh;
 }
@@ -832,6 +844,10 @@
   font-weight: bold;
   color: var(--bright-red);
   padding-left: 1rem;
+  transition: all 200ms ease-in-out;
+}#contactUsInfoBtn:hover {
+    color: black;
+    cursor: pointer;
 }
 
 #modalContainer {
@@ -854,10 +870,6 @@
 
 #mainContainerContactUs > h2 {
   font-size: 1.7rem;
-}
-
-#contactUsBottomContainer {
-
 }
 
 #contactUsSubText {

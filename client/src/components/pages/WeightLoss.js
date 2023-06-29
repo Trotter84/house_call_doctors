@@ -134,6 +134,7 @@ class WeightLoss extends Component {
                             <li className='weightSubListText'>Drink clear or ice-cold drinks.</li>
                             <li className='weightSubListText'>Pepto Bismol or Prevacid can also be effective at managing side effects.</li>
                         </ul>
+                        <h3 className='weightContactText'><a href='/contact-us#image-divider' id='weightContactButton'>Contact us</a> to schedule.</h3>
                     </div>
                 </div>
                 <div id='weightWhiteSpace' />
