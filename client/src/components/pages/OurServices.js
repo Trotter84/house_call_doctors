@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Image, Divider } from 'semantic-ui-react';
+import {
+  Image,
+  Divider,
+  Icon
+} from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 // import HCDpageDivider from '../../images/HCDpageDivider.jpg';
@@ -29,6 +33,10 @@ class OurServices extends Component {
         <h1 className='pageTitleReader' aria-label="Our Services page">Our Services</h1>
         <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainCharacterOurServices'>
+
+        <a href='tel:8014855055' className='iconButton phoneButton'>
+            <Icon className='phone square huge color' />
+        </a>
 
           <h2 id='PCS' className='servicesTitle'>HOUSE CALL PRIMARY CARE SERVICES</h2>
           <Divider />
