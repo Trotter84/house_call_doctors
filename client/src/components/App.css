@@ -673,6 +673,10 @@
   column-count: 3;
 }
 
+.phoneButton {
+  display: none;
+}
+
 #weightWhiteSpace {
   height: 7vh;
 }
@@ -2576,6 +2580,13 @@
 
 .columnList {
   column-count: 2;
+}
+
+.phoneButton {
+  display: block;
+  position: fixed;
+  bottom: 70px;
+  right: 14px;
 }
 
 #weightWhiteSpace {
