@@ -2261,6 +2261,7 @@
 #photoAboutUs {
   flex: 0.6;
   margin: 1rem 0 1.1rem 0px;
+  max-height: 19rem;
   max-width: 100%;
   min-width: 65%;
   box-shadow: 0.3rem 0.3rem 0.7rem rgb(132, 132, 132);
