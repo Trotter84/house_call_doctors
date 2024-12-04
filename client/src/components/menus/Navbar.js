@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { NavLink, Link } from 'react-router-dom';
 import Styled from 'styled-components';
-import HCDLogo from '../../images/HCDLogo.png';
+import HCDLogo from '../../images/HC_Logo.png';
+import DROLogo from '../../images/DRO_Logo.png';
 
 
 const EachNav = Styled(NavLink)`
@@ -21,8 +22,8 @@ class Navbar extends Component {
   render() {
     return (
       <div id='mainContainer-navBar'>
-        <Link to={`/`}>
-          <Image id='logo-navBar' src={HCDLogo} alt="House Call Doctors' logo" />
+        <Link to={`/`} className='logo-navBar'>
+          <Image id='hcdLogo' src={HCDLogo} alt="House Call Doctors logo" />
         </Link>
         <div id='container-navBar'>
           <EachNav exact='true' to={'/'} className='eachNav-navBar' aria-current='page' end>HOME</EachNav>
@@ -37,6 +38,9 @@ class Navbar extends Component {
           <i className='circle tiny icon grey' />
           <EachNav to={'/contact-us'} className='eachNav-navBar' aria-current='page'>CONTACT US</EachNav>
         </div>
+        <Link to={`/`} className='logo-navBar'>
+          <Image id='droLogo' src={DROLogo} alt="The Doctors Office logo" />
+        </Link>
       </div>
     )
   }
