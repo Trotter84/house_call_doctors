@@ -57,37 +57,49 @@
 #mainContainer-navBar {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 1vh;
+  justify-content: center;
+  margin: 0 0vw 1.5vh 0vw;
 }
 
-#logo-navBar {
-  max-width: 15vw;
-  min-width: 10vw;
+.logo-navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-} #logo-navBar:hover {
+} .logo-navBar:hover {
     margin-top: -0.6rem;
     margin-bottom: 0.6rem;
 }
 
+#hcdLogo {
+  max-width: auto;
+  min-width: auto;
+}
+
+#droLogo {
+  max-width: auto;
+  min-width: auto;
+}
+
 #container-navBar {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 90vw;
+  max-width: auto;
+  margin: 0 2vw;
 }
 
 .eachNav-navBar {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--black);
   font-weight: bold;
   margin: 0 0.5rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 } .eachNav-navBar:hover {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: -0.2rem;
     margin-bottom: 0.2rem;
 }
@@ -1041,13 +1053,13 @@
 #mainContainer-navBar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-#logo-navBar {
-  max-width: 25vw;
-  min-width: 20vw;
+.logo-navBar {
+  max-width: auto;
+  min-width: auto;
 }
 
 #container-navBar {
@@ -1799,10 +1811,6 @@
   font-size: 1.6rem;
 }
 
-#contactUsBottomContainer {
-
-}
-
 #contactUsPhoto {
   float: right;
   max-width: 50%;
@@ -2016,13 +2024,13 @@
 #mainContainer-navBar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 1vh 0;
 }
 
-#logo-navBar {
-  max-width: 40vw;
-  min-width: 35vw;
+.logo-navBar {
+  max-width: auto;
+  min-width: auto;
 }
 
 #container-navBar {

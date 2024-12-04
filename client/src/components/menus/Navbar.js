@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react';
 import { NavLink, Link } from 'react-router-dom';
 import Styled from 'styled-components';
-import HCDLogo from '../../images/HCDLogo.png';
-import DROLogo from '../../images/DROLogo.png';
+import HCDLogo from '../../images/HC_Logo.png';
+import DROLogo from '../../images/DRO_Logo.png';
 
 
 const EachNav = Styled(NavLink)`
