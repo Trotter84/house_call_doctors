@@ -68,17 +68,22 @@ class ContactUs extends Component {
                         <Modal.Description>
                           <div id='contactUsInsideInfo'>
                             <div className='modalGroup'>
-                              <p className='contactUsProviderInfo'>Office MA: <b>{profile.info1}</b></p>
-                              <p className='contactUsProviderInfo'>Phone: <b>{profile.info2}</b></p>
-                              <p className='contactUsProviderInfo'>{profile.info3}</p>
+                              <p className='contactUsProviderInfo'>Office MA:</p>
+                              <p className='contactUsProviderInfo'><b>{profile.officeName}</b></p>
+                              <p className='contactUsProviderInfo'>Phone: <b>{profile.officePhone}</b></p>
+                              <p className='contactUsProviderInfo'>{profile.officeEmail}</p>
                             </div>
                             <div className='modalGroup'>
-                              <p className='contactUsProviderInfo'>Field MA: <b>{profile.info4}</b></p>
-                              <p className='contactUsProviderInfo'>Phone: <b>{profile.info5}</b></p>
-                              <p className='contactUsProviderInfo'>{profile.info6}</p>
+                              <p className='contactUsProviderInfo'>Clinical MA's:</p>
+                              <p className='contactUsProviderInfo'><b>{profile.clinicalName}</b></p>
+                              <p className='contactUsProviderInfo'>Phone: <b>{profile.clinicalPhone}</b></p>
+                              <p className='contactUsProviderInfo'>{profile.clinicalEmail}</p>
+                              <p className='contactUsProviderInfo'><b>{profile.clinicalName2}</b></p>
+                              <p className='contactUsProviderInfo'>Phone: <b>{profile.clinicalPhone2}</b></p>
+                              <p className='contactUsProviderInfo'>{profile.clinicalEmail2}</p>
                             </div>
                             <div className='modalGroup'>
-                              <p className='contactUsProviderInfo'>Pager: <b>{profile.info7}</b></p>
+                              <p className='contactUsProviderInfo'>Pager: <b>{profile.pager}</b></p>
                             </div>
                           </div>
                         </Modal.Description>

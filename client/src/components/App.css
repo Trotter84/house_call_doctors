@@ -360,7 +360,7 @@
 }
 /* -------------------------------------------------------------------------- */
 
-/* _____________________________ Our Providers _____________________________ */
+/* _____________________________ Our Providers ______________________________ */
 #mainContainerOurProviders {
   max-width: 1700px;
   margin: auto;
@@ -376,17 +376,16 @@
 #profileSectionOurProviders {
   display: flex;
   flex-direction: row;
-  align-content: center;
   width: 100%;
-  padding-bottom: 1vh;
+  padding: 0 6vw 1vh 6vw;
 }
 
 #eachProfileOurProviders {
   display: flex;
   flex-direction: column;
+  height: 100%;
   width: 100%;
   padding: 1rem 0.4rem 0 0.4rem;
-  height: 100%;
 }
 
 #eachProfileOurProviders > img {
@@ -820,7 +819,7 @@
 
 #profileContainerContactUs {
   display: block;
-  column-count: 3;
+  column-count: 4;
   margin: auto;
   padding-top: 2rem;
   max-width: 90%;
@@ -829,6 +828,7 @@
 #contactUsProfile {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding-bottom: 2rem;
 }
 
@@ -863,7 +863,8 @@
 }
 
 #modalContainer {
-  width: 95rem;
+  width: auto;
+  padding: 1vh 1vw;
 }
 
 #contactUsInsideInfo {
