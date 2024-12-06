@@ -1,21 +1,21 @@
 import React from 'react';
 import Styled from 'styled-components';
 import Mark from '../images/Mark.jpg';
+import Edie from '../images/Edie.jpg';
+import Trenaisa from '../images/Trenaisa.jpg';
 import Likio from '../images/Likio.jpeg';
 // import Perrine from '../images/Perrine.jpg';
 // import Sandra from '../images/Sandra.jpg';
 // import Gwen from '../images/Gwen.jpg';
-import Edie from '../images/Edie.jpg';
-import Trenaisa from '../images/Trenaisa.jpg';
 // import Courtney from '../images/Courtney.jpg';
 
 import MarkProfile from '../images/Mark-profile.png';
+import EdieProfile from '../images/Edie-profile.png';
+import TrenaisaProfile from '../images/Trenaisa-profile.png';
 import LikioProfile from '../images/Likio-profile.png';
 // import PerrineProfile from '../images/Perrine-profile.jpg';
 // import SandraProfile from '../images/Sandra-profile.jpg';
 // import GwenProfile from '../images/Gwen-profile.png';
-import EdieProfile from '../images/Edie-profile.png';
-import TrenaisaProfile from '../images/Trenaisa-profile.png';
 // import CourtneyProfile from '../images/Courtney-profile.png';
 
 // import Placeholder from '../images/female-placeholder.jpeg';
