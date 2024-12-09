@@ -31,6 +31,13 @@ render() {
                 </p>
               </div>
 
+            <h3 className='subTitleAboutUs'>Where We're Heading</h3>
+              <div className='subTextContainerAboutUs'>
+                <p className='subTextAboutUs'>
+                  Medicine today is very different from what it was 20 years ago.  I have been a primary care physician for over 20 years with experience in family medicine,  hospice and palliative care, aesthetic medicine, and most recently bioidentical hormone replacement therapy.   I noticed there are very few places that offer comprehensive care, encompassing insurance covered treatments as well as ancillary services not covered by insurance.  These often non-covered services include weight loss therapies such as GLP-1 agonists (Semaglutide and Tirzepatide), bioidentical hormone replacement therapy, chiropractic care, massage therapy, nutritional therapies, acupuncture, and cognitive behavioral therapy. Insurance covered services and ancillary services are often siloed and paid separately, making your care segmented and often incongruent.   Not incorporating a patient's personal and predetermined preferences in medical care.<br /> <br />Here at The Doctor's Office we believe there is an overwhelming benefit to partnering and communicating with all these separate disciplines.  Family Medicine is the broadest specialty but there so much that is outside our formal training. For example, in this past decade, the specialty of restorative and regenerative medicine has emerged and can greatly affect our approach to wellness.   It is rare to find a primary care physician/provider who understands and is accepting of these complementary medical services and strives to incorporate the latest developments in medicine.  We at The Doctor's Office strive to be that provider.  Our providers can evaluate and recommend  these therapies while taking into consideration a patient’s underlying illness burden.
+                </p>
+              </div>
+
               <h3 className='subTitleAboutUs'>Primary Care in the home is our specialty</h3>
               <div className='subTextContainerAboutUs'>
                 <p className='subTextAboutUs'>After hours, weekends, and holidays:<br />(Our providers are always available via pager!)</p>
