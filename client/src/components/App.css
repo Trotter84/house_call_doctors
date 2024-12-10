@@ -666,7 +666,7 @@
   padding-left: 1.5rem;
 }
 
-.weightListText {
+.listItemText {
   font-size: var(--p-text);
   margin-left: 1.5rem;
   padding-bottom: 0.6rem;
@@ -1612,7 +1612,7 @@
   padding-left: 1rem;
 }
 
-.weightListText {
+.listItemText {
   font-size: 1.2rem;
   margin-left: 1rem;
   padding-bottom: 0.6rem;
@@ -2587,7 +2587,7 @@
   padding-left: 0rem;
 }
 
-.weightListText {
+.listItemText {
   font-size: 1.1rem;
   margin-left: 0rem;
   padding-bottom: 0.6rem;

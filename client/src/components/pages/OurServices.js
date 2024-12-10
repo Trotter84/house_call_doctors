@@ -42,7 +42,7 @@ class OurServices extends Component {
           <Divider />
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>
-              House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
+              &emsp;House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
             </p>
             <p className='servicesPointsTitle'>These services include but are not limited to:</p>
             <div id='servicesPointsContainer'>
@@ -102,7 +102,7 @@ class OurServices extends Component {
                   <li className='insurancePlan'>PEHP: Par Preferred, Advantage, Summit, Capital Network</li>
                   <li className='insurancePlan'>Regence BCBS Utah: Participating, Blue Options, Preferred Value Care, MedAdvantage PPO, FEP</li>
                   <li className='insurancePlan'>Select Health: SelectAdvantage, SelectChoice, SelectMed, SelectShare, Select Value, Community Care</li>
-                  <li className='insurancePlan'>Steward Health - Health Choice UT Medicaid or Health Choice Generations (Medicare) -> Now Health Choice</li>
+                  <li className='insurancePlan'>Steward Health - Health Choice UT Medicaid or Health Choice Generations (Medicare) -{'>'} Now Health Choice</li>
                   <li className='insurancePlan'>TriCare for Life (We do not take VA, our services aren’t covered)</li>
                   <li className='insurancePlan'>UMR</li>
                   <li className='insurancePlan'>United Healthcare – all lines of business</li>
@@ -147,17 +147,62 @@ class OurServices extends Component {
           </div>
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>What is Semaglutide and How Does it Work?</p>
-            <ul id='weightListContainer'>
-              <li className='weightListText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
-              <li className='weightListText'>It works by mimicking hormones that your body naturally produces called incretin hormones.  </li>
-              <li className='weightListText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”) </li>
-              <li className='weightListText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
-              <li className='weightListText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.  </li>
-              <li className='weightListText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
-              <li className='weightListText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
+            <ul className='listItemContainer'>
+              <li className='listItemText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
+              <li className='listItemText'>It works by mimicking hormones that your body naturally produces called incretin hormones.  </li>
+              <li className='listItemText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”) </li>
+              <li className='listItemText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
+              <li className='listItemText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.  </li>
+              <li className='listItemText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
+              <li className='listItemText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
             </ul>
             <Link to={'/weight-loss'} id='weightLossButton'>For more info</Link>
           </div>
+
+          <h2 className='servicesTitle'>Aesthetics</h2>
+          <Divider />
+            <div id='servicesPointsContainer'>
+              <p className='servicesPointText'>• Toxin</p>
+              <p className='servicesPointText'>• Filler</p>
+              <p className='servicesPointText'>• Kybella</p>
+            </div>
+            <br />
+            <br />
+            
+          <div className='servicesSubTextContainer'>
+            <h3 className='servicesPointsTitle'>Pre/Post Care For Your Botox & Dysport</h3>
+            <ul className='listItemContainer'>
+              <p className='servicesSubText'>&emsp;This is the number one cosmetic procedure in the world. This treatment works. Botox and Dysport are muscle relaxants, they are used in strategic patterns to relax the muscles of your forehead, frown, and crow’s feet.  This softens the fine lines and wrinkles of your face. This treatment can be paired with other aesthetic and cosmetic procedures to enhance your natural beauty. Your provider may suggest other treatments based on your individual needs.</p>
+              <p className='servicesSubText'>Getting ready for your toxin treatment:</p>
+              <p className='servicesSubText'>Please arrive on time.<br />Avoid alcohol and NSAIDS prior to your appointment to reduce the chance of bruising.</p>
+            </ul>
+
+            <h3 className='servicesPointsTitle'>Pre-Treatment requirements:</h3>
+            <ul className='listItemContainer'>
+              <li className='listItemText'>Make sure to avoid taking Aspirin, Fish Oil, NSAID’s including Advil, Aleve, Motrin, Ibuprofen, and Naproxen for 7 days prior to your treatment.</li>
+              <li className='listItemText'>Please avoid alcohol consumption for at least 2 days prior to your treatment.</li>
+              <li className='listItemText'>Please tell your provider if you have any allergies to milk or eggs.</li>
+            </ul>
+
+            <h3 className='servicesPointsTitle'>Post-Treatment care:</h3>
+            <ul className='listItemContainer'>
+              <li className='listItemText'>After your treatment, you may notice bruising or redness. Both will resolve within 7-10 days.</li>
+              <li className='listItemText'>Don’t use active products like Retinol, Tretinoin, Hydroquinone, or Benzoyl Peroxide for the first day after treatment.</li>
+            </ul>
+
+            <h3 className='servicesPointsTitle'>Things to avoid:</h3>
+            <ul className='listItemContainer'>
+              <li className='listItemText'>Avoid elevating your core temperature after treatment. This includes: steam room, sauna, hot yoga, or cross fit for 24 hours.</li>
+              <li className='listItemText'>Avoid massage or laying directly on the treated area for the first day.</li>
+              <li className='listItemText'>Avoid all aesthetic treatments including laser hair removal for 2 weeks.</li>
+              <li className='listItemText'>Do not allow your pet to lick your face or insertion points.</li>
+            </ul>
+            <br />
+
+            <p className='servicesPointsTitle'><b>Your provider can be reached anytime by pager if you have questions or concerns following your treatment.</b></p>
+          </div>
+
+
           <h2 id='IHA' className='servicesTitle'>IN HOME ASSESSMENT SERVICES</h2>
           <Divider />
           <div className='servicesSubTextContainer'>
