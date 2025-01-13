@@ -47,23 +47,23 @@ class WeightLoss extends Component {
                     <div className='weightSubTextContainer'>
                             <p className='weightSubText'>What is Semaglutide and How Does it Work?</p>
                             <div id='weightTopSection'>
-                            <ul className='weightListContainer'>
-                                <li className='weightListText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
-                                <li className='weightListText'>It works by mimicking hormones that your body naturally produces called incretin hormones.</li>
-                                <li className='weightListText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”).</li>
-                                <li className='weightListText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
-                                <li className='weightListText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.</li>
-                                <li className='weightListText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
-                                <li className='weightListText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
+                            <ul className='listItemContainer'>
+                                <li className='servicesSubText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
+                                <li className='servicesSubText'>It works by mimicking hormones that your body naturally produces called incretin hormones.</li>
+                                <li className='servicesSubText'>Incretin hormones are released by the small intestine and signal the brain, GI system, and other body systems that the body has consumed food and is ready to be metabolized.  This creates a feeling of satiety (or feeling “full”).</li>
+                                <li className='servicesSubText'>Semaglutide is a glucagon-like peptide-1 (GLP-1) receptor agonist. It works by mimicking the action of an incretin hormone called GLP-1, which is naturally produced by the body. GLP-1 helps to regulate blood sugar levels and reduce appetite.</li>
+                                <li className='servicesSubText'>GLP-1’s are different from previous classes of prescription weight loss medications because they work on underlying metabolic pathways to help support weight loss.</li>
+                                <li className='servicesSubText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
+                                <li className='servicesSubText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
                             </ul>
                             
                         </div>
 
                         <p className='weightSubText'>What is Tirzepatide and How Does it Work?</p>
-                        <ul id='weightListContainer'>
-                            <li className='weightListText'>Tizepatide works much like Semaglutide, however, it works on both GLP-1 and GIP receptors.</li>
-                            <li className='weightListText'>The GIP receptor (glucose-dependent insulinotropic polypeptide) is a protein found on the surface of certain cells in the body.  This receptor is activated by the hormone GIP which is released by the small intestine in response to the presence of food.</li>
-                            <li className='weightListText'>Clinical trials have shown that Tirzepatide can lead to significant weight loss in people with type 2 diabetes and those without diabetes.</li>
+                        <ul id='listItemContainer'>
+                            <li className='servicesSubText'>Tizepatide works much like Semaglutide, however, it works on both GLP-1 and GIP receptors.</li>
+                            <li className='servicesSubText'>The GIP receptor (glucose-dependent insulinotropic polypeptide) is a protein found on the surface of certain cells in the body.  This receptor is activated by the hormone GIP which is released by the small intestine in response to the presence of food.</li>
+                            <li className='servicesSubText'>Clinical trials have shown that Tirzepatide can lead to significant weight loss in people with type 2 diabetes and those without diabetes.</li>
                             <li className='weightSubListText'>In a trial including patients with type 2 diabetes, those who took Tirzepatide lost an average of 12.4% of their body weight over 72 weeks, compared to 2.4% for those who received a placebo.</li>
                             <li className='weightSubListText'>In another trial, people without diabetes who took Tirzepatide lost an average of 11.5% of their body weight over 26 weeks.</li>
                         </ul>
@@ -71,7 +71,7 @@ class WeightLoss extends Component {
 
                         <p className='weightSubText'>Who Qualifies?</p>
                         <ul className='weightList'>
-                            <li className='weightListText'>Patients Must:</li>
+                            <li className='servicesSubText'>Patients Must:</li>
                             <li className='weightSubListText'>Have a BMI of 30 or greater</li>
                             <li className='weightSubListText'>OR have a BMI of 27-30 with a weight related complication, such as hyperlipidemia, hypertension, chronic low back pain, etc.</li>
                             <li className='weightSubListText'>Not be pregnant, nursing or planning to become pregnant</li>
@@ -80,29 +80,28 @@ class WeightLoss extends Component {
                         </ul>
                         <p className='weightSubText'>How Much Does it Cost?</p>
                         <ul className='weightList'>
-                            <li className='weightListText'>If you do not have a diagnosis of diabetes, or if you have diabetes and have been unable to get the medication covered by your insurance, we ARE able to obtain the medication for you through a compounding pharmacy. However you will need to pay cash for your medication monthly by credit/debit card/HSA account.</li>
-                            <li className='weightListText'>While FDA approved for weight loss, if you DO NOT have a diagnosis of diabetes, this medically assisted approach will NOT be covered by your insurance and you must pay cash.</li>
-                            <li className='weightListText'>Cash price for Semaglutide:</li>
-                            <li className='weightSubListText'>$250.00/patient for the first month.</li>
-                            <li className='weightSubListText'>$300.00/patient for the second month.</li>
+                            <li className='servicesSubText'>If you do not have a diagnosis of diabetes, or if you have diabetes and have been unable to get the medication covered by your insurance, we ARE able to obtain the medication for you through a compounding pharmacy. However you will need to pay cash for your medication monthly by credit/debit card/HSA account.</li>
+                            <li className='servicesSubText'>While FDA approved for weight loss, if you DO NOT have a diagnosis of diabetes, this medically assisted approach will NOT be covered by your insurance and you must pay cash.</li>
+                            <li className='servicesSubText'>Cash price for Semaglutide:</li>
+                            <li className='weightSubListText'>$250.00/patient for the 1st month.</li>
+                            <li className='weightSubListText'>$300.00/patient for the 2nd month.</li>
                             <li className='weightSubListText'>$350.00/patient for each subsequent month.</li>
                         </ul>
                         <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Semaglutide is roughly $879.60 - $1070.49).</p>
                         <p className='weightSubText'>Cash price for Tirzepatide:</p>
                         <ul className='weightList'>
-                            <li className='weightSubListText'>$350.00/patient for the first month.</li>
-                            <li className='weightSubListText'>$400.00/patient for the second month.</li>
-                            <li className='weightSubListText'>$500.00/patient for the third month.</li>
-                            <li className='weightSubListText'>$550.00/patient for the fourth month.</li>
-                            <li className='weightSubListText'>$750.00/patient for each additional month.</li>
+                            <li className='weightSubListText'>$350.00/patient for the 1st-3rd months.</li>
+                            <li className='weightSubListText'>$400.00/patient for the 4th month.</li>
+                            <li className='weightSubListText'>$450.00/patient for the 5th month.</li>
+                            <li className='weightSubListText'>$500.00/patient for any additional months.</li>
                         </ul>
                         <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Tirzepatide is roughly $944.31 - $1169.00 if using a GoodRx discount card).</p>
                         <p className='weightSubText'>What To Expect?</p>
                         <ul className='weightList'>
-                            <li className='weightListText'>Semaglutide and Tirzepatide are an injection administered under the skin once weekly.</li>
-                            <li className='weightListText'>Our highly skilled clinicians will work closely with you to ensure you feel comfortable administering these injections on your own.</li>
-                            <li className='weightListText'>Expect to see our clinician for a follow up appointment once per month. </li>
-                            <li className='weightListText'>Potential side effects of treatment with Semaglutide or Tirzepatide:</li>
+                            <li className='servicesSubText'>Semaglutide and Tirzepatide are an injection administered under the skin once weekly.</li>
+                            <li className='servicesSubText'>Our highly skilled clinicians will work closely with you to ensure you feel comfortable administering these injections on your own.</li>
+                            <li className='servicesSubText'>Expect to see our clinician for a follow up appointment once per month. </li>
+                            <li className='servicesSubText'>Potential side effects of treatment with Semaglutide or Tirzepatide:</li>
                         </ul>
                         <ul className='weightList columnList'>
                             <li className='weightSubListText'>Nausea</li>
@@ -117,7 +116,7 @@ class WeightLoss extends Component {
                             <li className='weightSubListText'>Hypoglycemia</li>
                         </ul>
                         <ul className='weightList'>
-                            <li className='weightListText'>Tips for managing potential side effects:</li>
+                            <li className='servicesSubText'>Tips for managing potential side effects:</li>
 
                         </ul>
                         <ul className='weightList columnList'>

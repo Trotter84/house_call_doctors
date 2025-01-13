@@ -674,7 +674,7 @@
 
 .weightSubListText {
   font-size: var(--p-text);
-  margin-left: 1.5rem;
+  padding-top: 0.6rem;
   padding-bottom: 0.6rem;
   margin-left: 3rem;
   list-style-type: circle;

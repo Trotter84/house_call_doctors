@@ -46,7 +46,7 @@ class ContactUs extends Component {
               <i className='fax big icon color'></i>
               <p>Fax: <b>(801) 467-3296</b> or <b>(801) 363-1309</b></p>
             </div>
-            <iframe title="House Call Doctors' location" id="gmap_canvas" src="https://maps.google.com/maps?q=house%20call%20doctors%20utah&t=&z=17&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+            <iframe title="House Call Doctors' location" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.171489272965!2d-111.87755440000001!3d40.7582528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f56a553b0015%3A0xee6690693324d3da!2s466%20E%20500%20S%20%23200%2C%20Salt%20Lake%20City%2C%20UT%2084111!5e0!3m2!1sen!2sus!4v1736794199299!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div id='contactFieldPlacement'>
               <ContactField />
             </div>
