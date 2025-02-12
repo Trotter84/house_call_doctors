@@ -10,6 +10,10 @@ import Styled from 'styled-components';
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import KarenBefore from '../../images/karenbefore.jpg';
 import KarenAfter from '../../images/karenafter.jpeg';
+import PrePelletQR from '../../images/Pre-Pellet_QR.png';
+import PostPelletQR from '../../images/Post-Pellet_QR.png';
+import PelletsQR from '../../images/Pellets_QR.png';
+import NutraceuticalsQR from '../../images/Nutraceuticals_QR.png';
 
 
 
@@ -24,19 +28,19 @@ const Email = Styled.a`
 class OurServices extends Component {
 
   componentDidMount() {
-    document.title='Our Services'
+    document.title = 'Our Services'
   }
 
   render() {
-    return(
+    return (
       <>
         <h1 className='pageTitleReader' aria-label="Our Services page">Our Services</h1>
         <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
         <div id='mainCharacterOurServices'>
 
-        <a href='tel:8014855055' className='iconButton phoneButton'>
+          <a href='tel:8014855055' className='iconButton phoneButton'>
             <Icon className='phone square huge color' />
-        </a>
+          </a>
 
           <h2 id='PCS' className='servicesTitle'>HOUSE CALL PRIMARY CARE SERVICES</h2>
           <Divider />
@@ -135,15 +139,15 @@ class OurServices extends Component {
           <div id='ourServicesWeight'>
             <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
             <div id='weightServicesImageContainer'>
-                <div className='beforeAfterContainer'>
-                    <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
-                    <p className='beforeAfterText'>Before</p>
-                </div>
-                <div className='beforeAfterContainer'>
-                    <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
-                    <p className='beforeAfterText'>After</p>
-                </div>
+              <div className='beforeAfterContainer'>
+                <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
+                <p className='beforeAfterText'>Before</p>
               </div>
+              <div className='beforeAfterContainer'>
+                <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
+                <p className='beforeAfterText'>After</p>
+              </div>
+            </div>
           </div>
           <div className='servicesSubTextContainer'>
             <p className='servicesSubText'>What is Semaglutide and How Does it Work?</p>
@@ -159,16 +163,25 @@ class OurServices extends Component {
             <Link to={'/weight-loss'} id='weightLossButton'>For more info</Link>
           </div>
 
-          <h2 className='servicesTitle'>Aesthetics</h2>
+          <h2 className='servicesTitle'>HORMONE REPLACEMENT</h2>
           <Divider />
-            <div id='servicesPointsContainer'>
-              <p className='servicesPointText'>• Toxin</p>
-              <p className='servicesPointText'>• Filler</p>
-              <p className='servicesPointText'>• Kybella</p>
-            </div>
-            <br />
-            <br />
-            
+          <div id='ourServicesHormone'>
+            <Image src={PrePelletQR} className='qrCode' alt='Pre-Pellet QR code.' />
+            <Image src={PostPelletQR} className='qrCode' alt='Post-Pellet QR code.' />
+            <Image src={PelletsQR} className='qrCode' alt='Pellets QR code.' />
+            <Image src={NutraceuticalsQR} className='qrCode' alt='Nutraceuticals QR code.' />
+          </div>
+
+          <h2 className='servicesTitle'>AESTETICS</h2>
+          <Divider />
+          <div id='servicesPointsContainer'>
+            <p className='servicesPointText'>• Toxin</p>
+            <p className='servicesPointText'>• Filler</p>
+            <p className='servicesPointText'>• Kybella</p>
+          </div>
+          <br />
+          <br />
+
           <div className='servicesSubTextContainer'>
             <h3 className='servicesPointsTitle'>Pre/Post Care For Your Botox & Dysport</h3>
             <ul className='listItemContainer'>
