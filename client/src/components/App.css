@@ -533,7 +533,7 @@
 .servicesTitle {
   font-size: var(--h2-text);
   font-weight: bold;
-  padding-top: 4vh;
+  padding: 2vh;
 }
 
 .servicesSubText {
