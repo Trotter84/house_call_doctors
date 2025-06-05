@@ -9,10 +9,11 @@ import {
 } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
+import AestheticsImage from '../coolStuffWorking/AestheticsImage';
 // import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import KarenBefore from '../../images/karenbefore.jpg';
-import KarenAfter from '../../images/karenafter.jpeg';
+import KarenAfter from '../../images/karenafter.jpg';
 import PrePelletQR from '../../images/Pre-Pellet_QR.png';
 import PostPelletQR from '../../images/Post-Pellet_QR.png';
 import PelletsQR from '../../images/Pellets_QR.png';
@@ -67,18 +68,18 @@ class OurServices extends Component {
                   &emsp;House Call Doctors has been providing primary care services to patients in assisted livings, group homes, and individual homes since 2004.<br />Our providers specialize in geriatrics, hospice and palliative care, dementia, and caring for disabled adults in the group home setting.<br />We are dedicated to our patients and strive to provide the most comprehensive and compassionate patient care.<br />We work with a number of companies that provide services in the home.
                 </p>
                 <p className='servicesPointsTitle'>These services include but are not limited to:</p>
-                <div id='servicesPointsContainer'>
-                  <p className='servicesPointText'>• X-ray</p>
-                  <p className='servicesPointText'>• Ultrasound</p>
-                  <p className='servicesPointText'>• Sleep Studies</p>
-                  <p className='servicesPointText'>• EEG/EKG/Echocardiogram</p>
-                  <p className='servicesPointText'>• Eye Exams</p>
-                  <p className='servicesPointText'>• Bone Density Screening</p>
-                  <p className='servicesPointText'>• Bloodwork</p>
-                  <p className='servicesPointText'>• Podiatry</p>
-                  <p className='servicesPointText'>• Talk Therapy</p>
-                  <p className='servicesPointText'>• Home Health, Hospice, and much more.</p>
-                </div>
+                <ul id='servicesPointsContainer'>
+                  <li className='servicesPointText'>X-ray</li>
+                  <li className='servicesPointText'>Ultrasound</li>
+                  <li className='servicesPointText'>Sleep Studies</li>
+                  <li className='servicesPointText'>EEG/EKG/Echocardiogram</li>
+                  <li className='servicesPointText'>Eye Exams</li>
+                  <li className='servicesPointText'>Bone Density Screening</li>
+                  <li className='servicesPointText'>Bloodwork</li>
+                  <li className='servicesPointText'>Podiatry</li>
+                  <li className='servicesPointText'>Talk Therapy</li>
+                  <li className='servicesPointText'>Home Health, Hospice, and much more.</li>
+                </ul>
                 <br />
                 <p className='servicesPointsTitle'><b>Please contact our office to schedule an appointment!</b></p>
               </div>
@@ -95,7 +96,9 @@ class OurServices extends Component {
                 <p className='servicesPointsTitle'>Services We Can Provide:</p>
                 <div id='servicesPointsContainer'>
                   <p className='servicesPointText'>• Primary Care Visits</p>
-                  <p className='servicesPointText'>• Physical Exams (excluding Pap Smears)</p>
+                  <p className='servicesPointText'>• Physical Exams</p>
+                  <p className='servicesPointText'>• Pap Smears</p>
+                  <p className='servicesPointText'>• Influenza Vaccines</p>
                   <p className='servicesPointText'>• Management of Chronic Conditions</p>
                   <p className='servicesPointText'>• Medication Refills</p>
                   <p className='servicesPointText'>• Bloodwork</p>
@@ -165,7 +168,7 @@ class OurServices extends Component {
             <AccordionContent active={activeIndex === 2}>
               <Divider />
               <div id='ourServicesWeight'>
-                <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
+                <p className='beforeAfterTitle'>Karen, 116lbs lost</p>
                 <div id='weightServicesImageContainer'>
                   <div className='beforeAfterContainer'>
                     <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
@@ -194,10 +197,41 @@ class OurServices extends Component {
 
             <Divider />
             <AccordionTitle active={activeIndex === 3} index={3} onClick={this.handleClick}>
-              <h2 className='servicesTitle'><Icon name='dropdown' />HORMONE REPLACEMENT</h2>
+              <h2 className='servicesTitle'><Icon name='dropdown' />BIOIDENTICAL HORMONE REPLACEMENT</h2>
             </AccordionTitle>
             <AccordionContent active={activeIndex === 3}>
               <Divider />
+              <div className='servicesSubTextContainer'>
+                <h3 className='servicesPointsTitle'>Personalized Care. Lasting Results.</h3>
+                <ul className='listItemContainer'>
+                  <p className='servicesSubText'>&emsp;At our practice, we offer a comprehensive Bioidentical Hormone Replacement Therapy (HRT) program designed to restore balance, improve quality of life, and support long-term health. Our approach goes beyond symptom management—we treat the whole person.</p>
+                </ul>
+                <h3 className='servicesPointsTitle'>What Sets Us Apart</h3>
+                <ul className='listItemContainer'>
+                  <p className='servicesSubText'>&emsp;We provide <b>personalized hormone therapy</b> that’s rooted in evidence-based care and tailored to your unique needs. Our monthly HRT program includes all necessary lab work, so your progress is monitored closely with no hidden fees.</p>
+                  <p className='servicesSubText'>&emsp;Our team takes the time to understand your <b>entire health profile</b>, including any underlying conditions, lifestyle factors, and personal goals. This allows us to create a customized treatment plan that supports your hormonal health and overall well-being.</p>
+                </ul>
+                <h3 className='servicesPointsTitle'>A Primary Care Approach</h3>
+                <ul className='listItemContainer'>
+                  <p className='servicesSubText'>&emsp;Unlike many HRT clinics, we go beyond hormone management. We offer <b>primary care services</b> for our HRT patients, ensuring all aspects of your health are coordinated and cared for under one roof. This holistic approach leads to better outcomes and a more connected healthcare experience.</p>
+                </ul>
+                <h3 className='servicesPointsTitle'>Flexible Delivery Options</h3>
+                <ul className='listItemContainer'>
+                  <p className='servicesSubText'>&emsp;We offer multiple HRT delivery methods to fit your lifestyle and preferences:</p>
+                  <ul>
+                    <li className='listItemText'>Oral medications</li>
+                    <li className='listItemText'>Topical creams</li>
+                    <li className='listItemText'>Long-lasting hormone pellets</li>
+                  </ul>
+                  <p className='servicesSubText'>&emsp;Our goal is to find the most effective and convenient option for you.</p>
+                </ul>
+              </div>
+              <Divider />
+              <ul className='listItemContainer'>
+                <p className='servicesSubText'>&emsp;<b>Experience the difference of personalized, integrative hormone care.</b></p>
+                <p className='servicesSubText'>&emsp;Schedule your consultation today and take the first step toward feeling your best.</p>
+              </ul>
+
               <div id='ourServicesHormone'>
                 <Image src={PrePelletQR} className='qrCode' alt='Pre-Pellet QR code.' />
                 <Image src={PostPelletQR} className='qrCode' alt='Post-Pellet QR code.' />
@@ -208,50 +242,59 @@ class OurServices extends Component {
 
             <Divider />
             <AccordionTitle active={activeIndex === 4} index={4} onClick={this.handleClick}>
-              <h2 className='servicesTitle'><Icon name='dropdown' />AESTETICS</h2>
+              <h2 className='servicesTitle'><Icon name='dropdown' />AESTHETICS</h2>
             </AccordionTitle>
             <AccordionContent active={activeIndex === 4}>
               <Divider />
-              <div id='servicesPointsContainer'>
-                <p className='servicesPointText'>• Toxin</p>
-                <p className='servicesPointText'>• Filler</p>
-                <p className='servicesPointText'>• Kybella</p>
+              <div id='ourServicesAestheticContainer'>
+
+                <div id='ourServicesAestheticImage'>
+                  <AestheticsImage />
+                </div>
+
+                <div id='ourServicesAestheticText'>
+                  <div id='servicesPointsContainer'>
+                    <p className='servicesPointText'>• Toxin</p>
+                    <p className='servicesPointText'>• Filler</p>
+                    <p className='servicesPointText'>• Kybella</p>
+                  </div>
+                  <br />
+                  <br />
+                  <div className='servicesSubTextContainer'>
+                    <h3 className='servicesPointsTitle'>Pre/Post Care For Your Botox & Dysport</h3>
+                    <ul className='listItemContainer'>
+                      <p className='servicesSubText'>&emsp;This is the number one cosmetic procedure in the world. This treatment works. Botox and Dysport are muscle relaxants, they are used in strategic patterns to relax the muscles of your forehead, frown, and crow’s feet.  This softens the fine lines and wrinkles of your face. This treatment can be paired with other aesthetic and cosmetic procedures to enhance your natural beauty. Your provider may suggest other treatments based on your individual needs.</p>
+                      <p className='servicesSubText'>Getting ready for your toxin treatment:</p>
+                      <p className='servicesSubText'>Please arrive on time.<br />Avoid alcohol and NSAIDS prior to your appointment to reduce the chance of bruising.</p>
+                    </ul>
+
+                    <h3 className='servicesPointsTitle'>Pre-Treatment requirements:</h3>
+                    <ul className='listItemContainer'>
+                      <li className='listItemText'>Make sure to avoid taking Aspirin, Fish Oil, NSAID’s including Advil, Aleve, Motrin, Ibuprofen, and Naproxen for 7 days prior to your treatment.</li>
+                      <li className='listItemText'>Please avoid alcohol consumption for at least 2 days prior to your treatment.</li>
+                      <li className='listItemText'>Please tell your provider if you have any allergies to milk or eggs.</li>
+                    </ul>
+
+                    <h3 className='servicesPointsTitle'>Post-Treatment care:</h3>
+                    <ul className='listItemContainer'>
+                      <li className='listItemText'>After your treatment, you may notice bruising or redness. Both will resolve within 7-10 days.</li>
+                      <li className='listItemText'>Don’t use active products like Retinol, Tretinoin, Hydroquinone, or Benzoyl Peroxide for the first day after treatment.</li>
+                    </ul>
+
+                    <h3 className='servicesPointsTitle'>Things to avoid:</h3>
+                    <ul className='listItemContainer'>
+                      <li className='listItemText'>Avoid elevating your core temperature after treatment. This includes: steam room, sauna, hot yoga, or cross fit for 24 hours.</li>
+                      <li className='listItemText'>Avoid massage or laying directly on the treated area for the first day.</li>
+                      <li className='listItemText'>Avoid all aesthetic treatments including laser hair removal for 2 weeks.</li>
+                      <li className='listItemText'>Do not allow your pet to lick your face or insertion points.</li>
+                    </ul>
+                    <br />
+                    <p className='servicesPointsTitle'><b>Your provider can be reached anytime by pager if you have questions or concerns following your treatment.</b></p>
+                  </div>
+                </div>
               </div>
-              <br />
-              <br />
+              {/* <AestheticsImage /> */}
 
-              <div className='servicesSubTextContainer'>
-                <h3 className='servicesPointsTitle'>Pre/Post Care For Your Botox & Dysport</h3>
-                <ul className='listItemContainer'>
-                  <p className='servicesSubText'>&emsp;This is the number one cosmetic procedure in the world. This treatment works. Botox and Dysport are muscle relaxants, they are used in strategic patterns to relax the muscles of your forehead, frown, and crow’s feet.  This softens the fine lines and wrinkles of your face. This treatment can be paired with other aesthetic and cosmetic procedures to enhance your natural beauty. Your provider may suggest other treatments based on your individual needs.</p>
-                  <p className='servicesSubText'>Getting ready for your toxin treatment:</p>
-                  <p className='servicesSubText'>Please arrive on time.<br />Avoid alcohol and NSAIDS prior to your appointment to reduce the chance of bruising.</p>
-                </ul>
-
-                <h3 className='servicesPointsTitle'>Pre-Treatment requirements:</h3>
-                <ul className='listItemContainer'>
-                  <li className='listItemText'>Make sure to avoid taking Aspirin, Fish Oil, NSAID’s including Advil, Aleve, Motrin, Ibuprofen, and Naproxen for 7 days prior to your treatment.</li>
-                  <li className='listItemText'>Please avoid alcohol consumption for at least 2 days prior to your treatment.</li>
-                  <li className='listItemText'>Please tell your provider if you have any allergies to milk or eggs.</li>
-                </ul>
-
-                <h3 className='servicesPointsTitle'>Post-Treatment care:</h3>
-                <ul className='listItemContainer'>
-                  <li className='listItemText'>After your treatment, you may notice bruising or redness. Both will resolve within 7-10 days.</li>
-                  <li className='listItemText'>Don’t use active products like Retinol, Tretinoin, Hydroquinone, or Benzoyl Peroxide for the first day after treatment.</li>
-                </ul>
-
-                <h3 className='servicesPointsTitle'>Things to avoid:</h3>
-                <ul className='listItemContainer'>
-                  <li className='listItemText'>Avoid elevating your core temperature after treatment. This includes: steam room, sauna, hot yoga, or cross fit for 24 hours.</li>
-                  <li className='listItemText'>Avoid massage or laying directly on the treated area for the first day.</li>
-                  <li className='listItemText'>Avoid all aesthetic treatments including laser hair removal for 2 weeks.</li>
-                  <li className='listItemText'>Do not allow your pet to lick your face or insertion points.</li>
-                </ul>
-                <br />
-
-                <p className='servicesPointsTitle'><b>Your provider can be reached anytime by pager if you have questions or concerns following your treatment.</b></p>
-              </div>
             </AccordionContent>
 
             <Divider />
@@ -261,7 +304,21 @@ class OurServices extends Component {
             <AccordionContent active={activeIndex === 5}>
               <Divider />
               <div className='servicesSubTextContainer'>
-                <p className='servicesSubText'>We are currently scheduling 2025 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Generations, and University of Utah Health.<br /><br />Please contact our scheduling department to schedule your free in-home exam!  Dial 801-485-5055, press option 2, then: <br /><b>Daisy: opt 2, Jackie: opt 3, Mary: opt 4, Cinthia: opt 5, Bailey: opt 6, Sharlee: opt 7, Jeanne: opt 9, Ashley: opt 10, Allanaha: opt 14, Grace: opt 15</b></p>
+                <p className='servicesSubText'>We are currently scheduling 2025 In-Home Assessments for Molina Healthcare, SelectHealth, Health Choice Medicaid, and University of Utah Health.<br /><br />Please contact our scheduling department to schedule your free in-home exam!  Dial 801-485-5055, press option 2, then:</p>
+                <ul id='servicesPointsContainer'>
+                  <li className='servicesPointText'><b>Daisy: opt 2</b></li>
+                  <li className='servicesPointText'><b>Jackie: opt 3</b></li>
+                  <li className='servicesPointText'><b>Mary: opt 4</b></li>
+                  <li className='servicesPointText'><b>Cinthia: opt 5</b></li>
+                  <li className='servicesPointText'><b>Bailey: opt 6</b></li>
+                  <li className='servicesPointText'><b>Sharlee: opt 7</b></li>
+                  <li className='servicesPointText'><b>Jeanne: opt 8</b></li>
+                  <li className='servicesPointText'><b>Ashley: opt 9</b></li>
+                  <li className='servicesPointText'><b>Jesenia: opt 10</b></li>
+                  <li className='servicesPointText'><b>Allanah: opt 11</b></li>
+                  <li className='servicesPointText'><b>Grace: opt 12</b></li>
+                  <li className='servicesPointText'><b>Emma: opt 13</b></li>
+                </ul>
                 <p className='servicesSubText'>Since 2012 House Call Doctors has worked with numerous health plans to provide convenient, annual wellness check-ups in the home.</p>
                 <p className='servicesSubText'>These visits are requested by your insurance company to aid them in updating member information and ensuring all benefits are being utilized.</p>
                 <p className='servicesSubText'>During these visits our skilled and professional provider will review your diagnosis history and medications, recommend preventive screenings, take basic vital signs, and perform some point-of-care testing.</p>

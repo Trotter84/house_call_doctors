@@ -7,46 +7,76 @@ import {
     Icon
 } from 'semantic-ui-react';
 import KarenBefore from '../../images/karenbefore.jpg';
-import KarenAfter from '../../images/karenafter.jpeg';
+import KarenAfter from '../../images/karenafter.jpg';
+import JillBefore from '../../images/jill_g_before.jpeg';
+import JillAfter from '../../images/jill_g_after.jpeg';
+import JamieBefore from '../../images/Jamie_before.png';
+import JamieAfter from '../../images/Jamie_after.png';
 
 
+const weightLossProfiles = [
+    {
+        name: 'Karen',
+        weightLossed: '116',
+        photoBefore: KarenBefore,
+        photoAfter: KarenAfter
+    },
+    {
+        name: 'Jill',
+        weightLossed: '65',
+        photoBefore: JillBefore,
+        photoAfter: JillAfter
+    },
+    {
+        name: 'Jamie',
+        weightLossed: '',
+        photoBefore: JamieBefore,
+        photoAfter: JamieAfter
+    }
+]
 
 class WeightLoss extends Component {
     componentDidMount() {
-        document.title='Weight Loss'
+        document.title = 'Weight Loss'
     }
 
     render() {
-        return(
+        return (
             <>
                 <h1 className='pageTitleReader' aria-label="Weight Loss">Weight Loss</h1>
                 <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
 
 
-                <div id='mainCharacterWeightLoss'>
-                <a href='tel:8014855055' className='iconButton phoneButton'>
-                    <Icon className='phone square huge color' />
-                </a>
+                <div id='mainContainerWeightLoss'>
+                    <a href='tel:8014855055' className='iconButton phoneButton'>
+                        <Icon className='phone square huge color' />
+                    </a>
                     <h2 className='weightTitle'>MEDICATION ASSISTED WEIGHT LOSS</h2>
                     <Divider />
 
                     <div id='weightBeforeAfterSection'>
-                        <p className='beforeAfterTitle'>Karen, 112lbs lost</p>
-                        <div id='weightImageContainer'>
-                            <div className='beforeAfterContainer'>
-                                <Image src={KarenBefore} className='beforeAfterPhoto' alt='A patient before' />
-                                <p className='beforeAfterText'>Before</p>
-                            </div>
-                            <div className='beforeAfterContainer'>
-                                <Image src={KarenAfter} className='beforeAfterPhoto' alt='A patient after' />
-                                <p className='beforeAfterText'>After</p>
-                            </div>
-                        </div>
+                        {weightLossProfiles.map(profile => {
+                            return (
+                                <div id='eachWeightBeforeAfterSection'>
+                                    <p className='beforeAfterTitle'>{profile.name}, {profile.weightLossed}lbs lost</p>
+                                    <div id='weightImageContainer'>
+                                        <div className='beforeAfterContainer'>
+                                            <Image src={profile.photoBefore} className='beforeAfterPhoto' alt='A patient before' />
+                                            <p className='beforeAfterText'>Before</p>
+                                        </div>
+                                        <div className='beforeAfterContainer'>
+                                            <Image src={profile.photoAfter} className='beforeAfterPhoto' alt='A patient after' />
+                                            <p className='beforeAfterText'>After</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
                     </div>
-                            
+
                     <div className='weightSubTextContainer'>
-                            <p className='weightSubText'>What is Semaglutide and How Does it Work?</p>
-                            <div id='weightTopSection'>
+                        <p className='weightSubText'>What is Semaglutide and How Does it Work?</p>
+                        <div id='weightTopSection'>
                             <ul className='listItemContainer'>
                                 <li className='servicesSubText'>Semaglutide is a prescription medication that is used to help with weight loss in adults who are overweight or obese.</li>
                                 <li className='servicesSubText'>It works by mimicking hormones that your body naturally produces called incretin hormones.</li>
@@ -56,7 +86,7 @@ class WeightLoss extends Component {
                                 <li className='servicesSubText'>Semaglutide is given as a once-weekly injection, and it works by helping to control hunger and reduce the amount of food that a person eats. In clinical trials, patients taking Semaglutide lost significantly more weight than those who were given a placebo.</li>
                                 <li className='servicesSubText'>It is important to note that Semaglutide should not be a substitute for healthy lifestyle changes, such as diet and exercise, and it should only be used under the guidance of a healthcare professional. It may also cause side effects, so it is important to discuss the risks and benefits with your doctor before starting treatment.</li>
                             </ul>
-                            
+
                         </div>
 
                         <p className='weightSubText'>What is Tirzepatide and How Does it Work?</p>
@@ -87,7 +117,7 @@ class WeightLoss extends Component {
                             <li className='weightSubListText'>$300.00/patient for the 2nd month.</li>
                             <li className='weightSubListText'>$350.00/patient for each subsequent month.</li>
                         </ul>
-                        <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Semaglutide is roughly $879.60 - $1070.49).</p>
+                        <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Semaglutide is roughly $964 - $1,071).</p>
                         <p className='weightSubText'>Cash price for Tirzepatide:</p>
                         <ul className='weightList'>
                             <li className='weightSubListText'>$350.00/patient for the 1st-3rd months.</li>
@@ -95,7 +125,7 @@ class WeightLoss extends Component {
                             <li className='weightSubListText'>$450.00/patient for the 5th month.</li>
                             <li className='weightSubListText'>$500.00/patient for any additional months.</li>
                         </ul>
-                        <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Tirzepatide is roughly $944.31 - $1169.00 if using a GoodRx discount card).</p>
+                        <p className='weightSubText'>(This is a significant reduction in the retail price you would pay at a local retail pharmacy. The retail range for a month's supply of Tirzepatide is roughly $1,049 - $1,166 if using a GoodRx discount card).</p>
                         <p className='weightSubText'>What To Expect?</p>
                         <ul className='weightList'>
                             <li className='servicesSubText'>Semaglutide and Tirzepatide are an injection administered under the skin once weekly.</li>

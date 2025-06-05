@@ -97,7 +97,7 @@
 }
 
 .eachNav-navBar {
-  font-size: var(--h3-text);
+  font-size: 1.1vw;
   color: var(--black);
   font-weight: bold;
   margin: 0 0.4rem;
@@ -106,7 +106,7 @@
 }
 
 .eachNav-navBar:hover {
-  font-size: var(--h2-text);
+  font-size: 1.3vw;
   margin-top: -0.2rem;
   margin-bottom: 0.2rem;
 }
@@ -561,6 +561,7 @@
   color: var(--black);
   font-weight: normal;
   font-size: var(--p-text);
+  padding-top: 1rem;
 }
 
 #insuranceListContainer {
@@ -591,6 +592,7 @@
 
 #servicesSubTextContainer {
   float: left;
+  min-height: 1000px;
 }
 
 #ourServicesWeight {
@@ -623,6 +625,12 @@
   margin-left: 1.5rem;
 }
 
+#ourServicesAestheticImage {
+  float: right;
+  align-self: center;
+  width: 35%;
+}
+
 #ourServicesHormone {
   display: block;
   column-count: 4;
@@ -644,9 +652,11 @@
 /* -------------------------------------------------------------------------- */
 
 /* ______________________________ Weight Loss _______________________________ */
-#mainCharacterWeightLoss {
+#mainContainerWeightLoss {
+  display: block;
   max-width: 1700px;
   margin: auto;
+  margin-top: 0vh;
   width: 90%;
 }
 
@@ -660,33 +670,43 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  min-width: 100%;
 }
 
 #weightBeforeAfterSection {
-  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+#eachWeightBeforeAfterSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .beforeAfterTitle {
   font-size: var(--h3-text);
-  margin-left: 0.8rem;
 }
 
 #weightImageContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 40%;
+  max-width: 60%;
 }
 
 .beforeAfterContainer {
-  font-size: var(--p-text);
   margin-right: 0.4rem;
+
 }
 
 .beforeAfterPhoto {
   border-radius: 0.2rem;
-  max-height: 90%;
+
   box-shadow: 0.2rem 0.3rem 0.9rem black;
 }
 
@@ -1082,7 +1102,7 @@
 
 
 /* ============================= TABLET Version ============================= */
-@media (min-width: 465px) and (max-width: 1300px) {
+@media (min-width: 600px) and (max-width: 1300px) {
   #AppContainer {
     max-width: 100%;
   }
@@ -1608,6 +1628,17 @@
     color: #000000;
   }
 
+  #ourServicesAestheticContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #ourServicesAestheticImage {
+    float: none;
+    align-self: center;
+    width: 50%;
+  }
+
   #ourServicesHormone {
     display: block;
     column-count: 2;
@@ -1624,9 +1655,11 @@
   /* -------------------------------------------------------------------------- */
 
   /* ______________________________ Weight Loss _______________________________ */
-  #mainCharacterWeightLoss {
+  #mainContainerWeightLoss {
+    display: block;
     max-width: 765px;
     margin: auto;
+    margin-top: 0vh;
     width: 95%;
   }
 
@@ -1644,7 +1677,17 @@
   }
 
   #weightBeforeAfterSection {
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+
+  #eachWeightBeforeAfterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 
   .beforeAfterTitle {
@@ -1655,7 +1698,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 50%;
+    max-width: 100%;
+    max-height: 100%;
     border-left: solid;
     border-color: #bdbdbd;
     border-width: 0.1vh;
@@ -1664,8 +1708,6 @@
 
   .beforeAfterPhoto {
     border-radius: 0.2rem;
-    max-height: 60vh;
-    min-height: 25vh;
     box-shadow: 0.2rem 0.3rem 0.9rem black;
   }
 
@@ -1700,7 +1742,7 @@
   }
 
   #weightWhiteSpace {
-    height: 7vh;
+    height: 10vh;
   }
 
   /* -------------------------------------------------------------------------- */
@@ -2084,7 +2126,7 @@
 
 
 /* ============================= MOBILE VERSION ============================= */
-@media (max-width: 465px) {
+@media (max-width: 600px) {
 
   /* ________________________________ TopMenu ________________________________ */
   #topMenuMenuContainer {
@@ -2609,6 +2651,18 @@
     color: #000000;
   }
 
+  #ourServicesAestheticContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #ourServicesAestheticImage {
+    float: none;
+    width: 80%;
+  }
+
+  #aestheticImageCarouselContainer {}
+
   #ourServicesHormone {
     display: block;
     column-count: 1;
@@ -2625,9 +2679,12 @@
   /* -------------------------------------------------------------------------- */
 
   /* ______________________________ Weight Loss _______________________________ */
-  #mainCharacterWeightLoss {
+  #mainContainerWeightLoss {
+    display: flex;
+    flex-direction: column-reverse;
     max-width: 100%;
     margin: auto;
+    margin-top: 5vh;
     width: 95%;
   }
 
@@ -2641,7 +2698,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    min-width: 100%;
+  }
+
+  #weightBeforeAfterSection {
+    columns: 1;
+    display: block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  #eachWeightBeforeAfterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
   }
 
   .beforeAfterTitle {
@@ -2653,7 +2727,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     max-width: 100%;
-    margin: 2rem 0;
+    margin: 0rem 0;
     border-bottom: solid;
     border-color: #bdbdbd;
     border-width: 0.1vh;

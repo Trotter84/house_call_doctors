@@ -9,7 +9,8 @@ import {
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import ContactField from '../coolStuffWorking/ContactField';
 // import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
-import PatientMale from '../../images/patient_male.jpg';
+// import PatientMale from '../../images/patient_male.jpg';
+import TrenaisaWithPatient from '../../images/Trenaisa_with_patient.jpg';
 import profiles from '../ProfileInfo';
 
 
@@ -27,12 +28,12 @@ const InfoBtn = Styled.button`
 class ContactUs extends Component {
 
   componentDidMount() {
-    document.title='Contact Us'
+    document.title = 'Contact Us'
   }
 
   render() {
 
-    return(
+    return (
       <>
         <h1 className='pageTitleReader' aria-label="Contact Us page">Contact Us</h1>
         <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
@@ -55,7 +56,7 @@ class ContactUs extends Component {
           <Divider />
           <div alt="list of providers and more info on each" id='profileContainerContactUs'>
             {profiles.map(profile => {
-              return(
+              return (
                 <div id='contactUsProfile'>
                   <Image src={profile.profileImage} alt={`Profile of ${profile.shortName}`} size='tiny' />
                   <div id='contactUsContact'>
@@ -78,9 +79,6 @@ class ContactUs extends Component {
                               <p className='contactUsProviderInfo'><b>{profile.clinicalName}</b></p>
                               <p className='contactUsProviderInfo'>Phone: <b>{profile.clinicalPhone}</b></p>
                               <p className='contactUsProviderInfo'>{profile.clinicalEmail}</p>
-                              <p className='contactUsProviderInfo'><b>{profile.clinicalName2}</b></p>
-                              <p className='contactUsProviderInfo'>Phone: <b>{profile.clinicalPhone2}</b></p>
-                              <p className='contactUsProviderInfo'>{profile.clinicalEmail2}</p>
                             </div>
                             <div className='modalGroup'>
                               <p className='contactUsProviderInfo'>Pager: <b>{profile.pager}</b></p>
@@ -97,10 +95,10 @@ class ContactUs extends Component {
 
           <Divider />
           <div id='contactUsBottomContainer'>
-          <img id='contactUsPhoto' src={PatientMale} alt='employee with patient' />
+            <img id='contactUsPhoto' src={TrenaisaWithPatient} alt='employee with patient' />
 
             <div id='contactUsSubText'>
-            <h3>Instructions for paging your provider:</h3>
+              <h3>Instructions for paging your provider:</h3>
               <p>House Call Doctors is dedicated to serving you, your family, and all of those involved in your care. We strive to provide the best medical care possible.<br />In order to ensure we are providing the highest quality of care, our providers are available 24/7 to their existing patients.</p>
               <p>Our providers are <b>always</b> available to their patients, families, nurses, and facility staff by pager.<br />In order to help ensure that you are receiving the highest quality of care:</p>
               <p className='directions'>Dial the pager number, it will ask for a numeric message.  Dial <b>your</b> phone number, then press pound and hang up.</p>

@@ -61,7 +61,7 @@ const profiles = [
     officePhone: '(801) 485-5055 ext 3',
     officeEmail: <Email href="mailto:lara@housecalldoctorsut.com">Lara@housecalldoctorsut.com</Email>,
     clinicalName: 'Karen Singletary',
-    clinicalPhone: '(801) 485-5055',
+    clinicalPhone: '(801) 485-5055 ext 7',
     clinicalEmail: <Email href="mailto:Karen@housecalldoctorsut.com">Karen@housecalldoctorsut.com</Email>,
     pager: '(801) 241-4483'
   },
@@ -89,9 +89,6 @@ const profiles = [
     clinicalName: 'Tonya Ganigan',
     clinicalPhone: '(801) 485-5055',
     clinicalEmail: <Email href="mailto:tonya@housecalldoctorsut.com">Tonya@housecalldoctorsut.com</Email>,
-    clinicalName2: 'Sandra Barlow',
-    clinicalPhone2: '(801) 485-5055',
-    clinicalEmail2: <Email href="mailto:sandrab@housecalldoctorsut.com">Sandrab@housecalldoctorsut.com</Email>,
     pager: '(801) 241-0484'
   },
   {
@@ -113,12 +110,9 @@ const profiles = [
     officeName: 'Lara Vanderlaan',
     officePhone: '(801) 485-5055 ext 3',
     officeEmail: <Email href="mailto:lara@housecalldoctorsut.com">Lara@housecalldoctorsut.com</Email>,
-    clinicalName: 'Tonya Ganigan',
+    clinicalName: 'Sandra Barlow',
     clinicalPhone: '(801) 485-5055',
-    clinicalEmail: <Email href="mailto:tonya@housecalldoctorsut.com">Tonya@housecalldoctorsut.com</Email>,
-    clinicalName2: 'Sandra Barlow',
-    clinicalPhone2: '(801) 485-5055',
-    clinicalEmail2: <Email href="mailto:sandrab@housecalldoctorsut.com">Sandrab@housecalldoctorsut.com</Email>,
+    clinicalEmail: <Email href="mailto:sandrab@housecalldoctorsut.com">Sandrab@housecalldoctorsut.com</Email>,
     pager: '(801) 241-0255'
   },
   // {
