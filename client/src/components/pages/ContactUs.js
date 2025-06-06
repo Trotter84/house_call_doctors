@@ -5,11 +5,8 @@ import {
   Divider,
   Modal,
 } from 'semantic-ui-react';
-// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import ContactField from '../coolStuffWorking/ContactField';
-// import MarkWithFemale2 from '../../images/MarkWithFemale2.jpg';
-// import PatientMale from '../../images/patient_male.jpg';
 import TrenaisaWithPatient from '../../images/Trenaisa_with_patient.jpg';
 import profiles from '../ProfileInfo';
 
@@ -32,7 +29,6 @@ class ContactUs extends Component {
   }
 
   render() {
-
     return (
       <>
         <h1 className='pageTitleReader' aria-label="Contact Us page">Contact Us</h1>

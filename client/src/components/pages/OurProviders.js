@@ -5,7 +5,6 @@ import {
   Modal,
   Divider
 } from 'semantic-ui-react';
-// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import profiles from '../ProfileInfo';
 import ihapProviders from '../IhapProviders';
@@ -37,11 +36,11 @@ const DividerStateLine = Styled(Divider)`
 class OurProviders extends Component {
 
   componentDidMount() {
-    document.title='Our Providers'
+    document.title = 'Our Providers'
   }
 
   render() {
-    return(
+    return (
       <>
         <h1 className='pageTitleReader' aria-label="Our Providers page">Our Providers</h1>
         <Image id='image-divider' src={HCDpageDivider2} alt='image used to divide the top navbar from the rest of page. Shows staff working at conference table.' />
@@ -50,7 +49,7 @@ class OurProviders extends Component {
           <Divider />
           <div id='profileSectionOurProviders'>
             {profiles.map(profile => {
-              return(
+              return (
                 <div id='eachProfileOurProviders'>
                   <img src={profile.image} alt={`Profile of ${profile.shortName}`}></img>
                   <h3>{profile.name}</h3>
@@ -107,7 +106,7 @@ class OurProviders extends Component {
                         {eachProvider.people.map(person =>
                           <>
                             <p id='stateProvider'>{person}</p>
-                            <Divider  id='providerDivider'/>
+                            <Divider id='providerDivider' />
                           </>
                         )}
                       </b>

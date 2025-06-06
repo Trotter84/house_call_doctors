@@ -56,7 +56,7 @@ class App extends Component {
                 <Route path='/our-privacy-policy' element={<OurPrivacyPolicy />} />
                 <Route path='/contact-us' element={<ContactUs />} />
                 <Route path='/weight-loss' element={<WeightLoss />} />
-                <Route to='/'/>
+                <Route to='/' />
               </Routes>
               <div>
                 <Footer />

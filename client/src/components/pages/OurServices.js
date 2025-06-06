@@ -10,7 +10,6 @@ import {
 import { Link } from 'react-router-dom';
 import Styled from 'styled-components';
 import AestheticsImage from '../coolStuffWorking/AestheticsImage';
-// import HCDpageDivider from '../../images/HCDpageDivider.jpg';
 import HCDpageDivider2 from '../../images/HCD_group_divider.jpg';
 import KarenBefore from '../../images/karenbefore.jpg';
 import KarenAfter from '../../images/karenafter.jpg';
